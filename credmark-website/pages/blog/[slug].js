@@ -17,6 +17,7 @@ const BlogDetail = ({post}) => {
         <img width={338} height={270} className="rounded-lg block m-auto my-10" src={post.mainImage} />
         <h1>{post.title}</h1>
         <BlockContent
+            className="text-left leading-loose pt-10"
             serializers={serializers}
             blocks={post.content}
             {...sanity.config()}
