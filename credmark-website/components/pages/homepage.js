@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
 
+
 const navigation = [
     { name: 'Home', href: '#', current: true },
     { name: 'White Paper', href: '#', current: false },
@@ -152,9 +153,9 @@ export default function Example() {
                     </div>
 
                     <main className="flex-1 mb-10 relative overflow-y-auto focus:outline-none rounded-3xl bg-white md:mr-5">
-                        <div className="rounded-md">
+                        <div className="homeTop rounded-md">
                             <img src="/assets/swirls.png" alt="colored swirls" />
-                            <div className="max-w-3xl block m-auto">
+                            <div className="max-w-5xl block m-auto">
                                 <div className="px-5">
                                     <div className="text-center text-xl">
                                         <h1 className="py-5 font-bold text-5xl md:pt-0">
@@ -167,34 +168,34 @@ export default function Example() {
                                             <p>HIGH INTEGRITY DEFI DATA</p>
                                         </div>
                                     </div>
-                                    <div className="max-w-md pb-12 md:pb-10 block m-auto">
+                                    <div className="max-w-lg pb-12 md:mb-10 block m-auto">
                                         <p className="pt-10 pb-5 text-center">Credmark provides high-integrity data through a community-driven platform.Our data and models will help users make better investment decisions.</p>
                                         <p className="text-center"> Read our White Paper and then join us in Discord for discussion and,feedback around our Product, Token, and soon-to-come Platform!</p>
                                     </div>
-                                    <div className="grid grid-cols-2 max-w-sm block m-auto jutify-center">
-                                        <img width={180} alt="Discord channel link" className="block m-auto" src="/assets/discord.png" />
-                                        <img width={180} alt="Credmark white paper link" className="block m-auto" src="/assets/credmark-white-paper-image.png" />
+                                    <div className="grid grid-cols-2 max-w-lg block m-auto jutify-center pb-16">
+                                        <a href="https://discord.com/invite/BJbYSRDdtr" target="_blank" rel="norefferer"><img width={300} alt="Discord channel link" className="block m-auto" src="/assets/discord.png" /></a>
+                                        <a href="https://credmarkhq.gitbook.io/credmark/" target="_blank" rel="norefferer"><img width={300} alt="Credmark white paper link" className="block m-auto" src="/assets/credmark-white-paper-image.png" /></a>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div className="py-20 pt-10 homeBackground border-2">
+                        <div className="max-w-xl block m-auto">
+                        <a href="https://www.credmark.com/blog/liquidity-swap-drop" rel="norefferer"><img src="/assets/releaseCMK.png" alt="Release of CMK" /></a>
+                        <a href="https://credmarkhq.gitbook.io/credmark/tokenomics/cmk" target="_blank" rel="norefferer"><img src="/assets/utilityCMK.png" alt="Utility of CMK" /></a>
                             </div>
-                            <div className="bg-pink py-10 mt-10">
-                                <div className="rounded-md border-2 bg-white max-w-md block m-auto shadow-2xl">
-                                    <p className="py-5 text-center">THE RELEASE OF CMK</p>
-                                </div>
-                                <div className="my-5 rounded-md border-2 bg-white max-w-md block m-auto shadow-2xl">
-                                    <p className="py-5 text-center">THE RELEASE OF CMK</p>
-                                </div>
-                                <p className="text-thin text-center text-xl">AVAILABLE MARKETS</p>
-                                <div className="grid grid-cols-2 max-w-lg block m-auto">
-                                <div className="rounded-md border-2 bg-white max-w-md block m-auto shadow-2xl">
-                                    <p className="py-5 text-center">ETH - CMK</p>
-                                </div>
-                                <div className="my-5 rounded-md border-2 bg-white max-w-md block m-auto shadow-2xl">
-                                    <p className="py-5 text-center">USDC - CMK</p>
-                                </div>
-                                </div>
+                            <p className="text-thin text-center text-xl">AVAILABLE MARKETS</p>
+                            <div className="grid grid-cols-2 max-w-2xl block m-auto">
+                            <a href="https://app.uniswap.org/" rel="norefferer"><img src="/assets/ethCMK.png" alt="CMK ETH" /></a>
+                            <a href="https://app.uniswap.org/" rel="norefferer"><img src="/assets/usdcCMK.png" alt="CMK ETH" /></a>
                             </div>
+                        </div>
+                        <div className="py-20 homeBottom">
+                            <h3 className="text-center text-lg md:text-3xl font-semibold pb-5">THE ROADMAP TO
+                                <br></br>
+                                <span className="font-bold text-2xl md:text-5xl">DECENTRALIZATION </span></h3>
+                            <img src="/assets/roadmap.png" alt="Credmark 3 year roadmap" />
+                        </div>
                     </main>
                 </div>
             </div>

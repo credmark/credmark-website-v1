@@ -27,3 +27,20 @@ h1, h2, h3, h4, p {
 .nav{
   background: linear-gradient(90deg, rgba(50,197,255,0.04) 0%, rgba(182,32,224,0.04) 51%, rgba(247,181,0,0.04) 100%);
 }
+
+.homeBackground{
+  background: url("/assets/credmarklogobackground.jpg"); 
+  background-position: center center; 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.homeTop{
+  background: rgb(255,255,255);
+  background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(110,150,191,0.396796218487395) 100%);
+}
+
+.homeBottom{
+  background: rgb(255,255,255);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(110,150,191,0.396796218487395) 100%);
+}
