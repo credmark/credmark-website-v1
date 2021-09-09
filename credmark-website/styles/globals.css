@@ -3,12 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Credmark";
+  src: url("/font/sf-mono/Credmark-Regular.ttf") format("ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto';
 }
 
 a {
@@ -20,6 +26,11 @@ h1, h2, h3, h4, p {
   @apply text-purple;
 }
 
+.credmark {
+  font-family: "Credmark";
+}
+
+mono
 * {
   box-sizing: border-box;
 }

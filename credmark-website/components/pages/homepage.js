@@ -148,7 +148,6 @@ export default function Example() {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -157,19 +156,20 @@ export default function Example() {
                             <img src="/assets/swirls.png" alt="colored swirls" />
                             <div className="max-w-5xl block m-auto">
                                 <div className="px-5">
-                                    <div className="text-center text-xl">
-                                        <h1 className="py-5 font-bold text-5xl md:pt-0">
+                                    <div className="text-center">
+                                        <h1 className="credmark py-5 font-bold text-7xl md:pt-10">
                                             CREDMARK
                                         </h1>
                                     </div>
-                                    <div className="rounded-full border-2 max-w-md text-center block m-auto">
-                                        <div className="grid grid-cols-2 py-5">
-                                            <p>HIGH INTEGRITY DEFI DATA +</p>
+                                    <div className="rounded-full border-2 max-w-2xl block m-auto">
+                                        <div className="flex flex-wrap py-5 credmark justify-center text-xl">
+                                            <p>HIGH INTEGRITY DEFI DATA</p>
+                                            <p className="px-2">+</p>
                                             <p>HIGH INTEGRITY DEFI DATA</p>
                                         </div>
                                     </div>
                                     <div className="max-w-lg pb-12 md:mb-10 block m-auto">
-                                        <p className="pt-10 pb-5 text-center">Credmark provides high-integrity data through a community-driven platform.Our data and models will help users make better investment decisions.</p>
+                                        <p className="pt-10 pb-5 text-center">Credmark provides high-integrity data through a community-driven platform. Our data and models will help users make better investment decisions.</p>
                                         <p className="text-center"> Read our White Paper and then join us in Discord for discussion and,feedback around our Product, Token, and soon-to-come Platform!</p>
                                     </div>
                                     <div className="grid grid-cols-2 max-w-lg block m-auto jutify-center pb-16">
@@ -191,7 +191,7 @@ export default function Example() {
                             </div>
                         </div>
                         <div className="py-20 homeBottom">
-                            <h3 className="text-center text-lg md:text-3xl font-semibold pb-5">THE ROADMAP TO
+                            <h3 className="credmark text-center text-lg md:text-3xl font-semibold pb-5">THE ROADMAP TO
                                 <br></br>
                                 <span className="font-bold text-2xl md:text-5xl">DECENTRALIZATION </span></h3>
                             <img src="/assets/roadmap.png" alt="Credmark 3 year roadmap" />
