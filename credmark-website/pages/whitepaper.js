@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Homepage from '../components/pages/homepage'
 import Nav from '../components/layout/nav'
+import Whitepaper from '../components/pages/whitepaper'
 
-export default function Home() {
+export default function WhitepaperPage() {
   return (
     <>
       <Head>
@@ -12,8 +12,8 @@ export default function Home() {
       </Head>
 
       <div>
-      <Nav
-                page={<Homepage />} />
+          <Nav 
+          page={Whitepaper} />
       </div>
     </>
   )
