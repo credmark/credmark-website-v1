@@ -1,50 +1,43 @@
+import faqquestion from "./faqQuestion"
+
+
 export default function faq() {
 
     return (
         <>
-            <div className="homeTop rounded-md">
-                <img src="/assets/swirls.png" alt="colored swirls" />
-                <div className="max-w-5xl block m-auto">
-                    <div className="px-5">
-                        <div className="text-center">
-                            <h1 className="credmark py-5 font-bold text-7xl md:pt-10">
-                                FAQ
-                            </h1>
-                        </div>
-                        <div className="rounded-full border-2 max-w-2xl block m-auto">
-                            <div className="flex flex-wrap py-5 credmark justify-center text-xl">
-                                <p>HIGH INTEGRITY DEFI DATA</p>
-                                <p className="px-2">+</p>
-                                <p>HIGH INTEGRITY DEFI DATA</p>
-                            </div>
-                        </div>
-                        <div className="max-w-lg pb-12 md:mb-10 block m-auto">
-                            <p className="pt-10 pb-5 text-center">Credmark provides high-integrity data through a community-driven platform. Our data and models will help users make better investment decisions.</p>
-                            <p className="text-center"> Read our White Paper and then join us in Discord for discussion and,feedback around our Product, Token, and soon-to-come Platform!</p>
-                        </div>
-                        <div className="grid grid-cols-2 max-w-lg block m-auto jutify-center pb-16">
-                            <a href="https://discord.com/invite/BJbYSRDdtr" target="_blank" rel="norefferer"><img width={300} alt="Discord channel link" className="block m-auto" src="/assets/discord.png" /></a>
-                            <a href="https://credmarkhq.gitbook.io/credmark/" target="_blank" rel="norefferer"><img width={300} alt="Credmark white paper link" className="block m-auto" src="/assets/credmark-white-paper-image.png" /></a>
+            <div className="homeTop">
+                <div className="max-w-5xl block m-auto py-10">
+                    <div className="bg-white max-w-4xl block m-auto rounded-3xl">
+                        <h1 className="credmark text-center py-5 font-bold text-7xl md:pt-10">
+                            FAQ
+                        </h1>
+                        <div className="px-10">
+                            <p className="font-extrabold pb-5">What is Credmark?</p>
+                            <p className="font-thin pb-10">Credmark is a risk modeling platform in the DeFi space. We leverage the community to build models - these models can be freely used by anyone to make better decisions when investing in DeFi. We do this through our token ($CMK) and a careful governance system. We aim to bring the risk tools used by traditional finance institutions to the average DeFi user. </p>
+                            <p className="font-extrabold pb-5">Where can I buy or sell the Credmark token - $CMK?</p>
+                            <p className="font-thin pb-10">Both buying and selling CMK is available on Uniswap <a href="https://app.uniswap.org/" className="underline" target="_blank" rel="noreferrer">here.</a></p>
+                            <p className="font-extrabold pb-5">How is the $CMK token distributed to team and investors?</p>
+                            <p className="font-thin pb-2.5">We are minting 100 million tokens, which will be distributed as follows -</p>
+                            <ul className="list-disc list-inside pb-10">
+                                <li>10M distributed at our token launch.</li>
+                                <li>21.2M is preallocated to investors.</li>
+                                <li>24M is distributed to the core team and advisors (Partially distributed every month for 3 years, with the first distribution occurring 6 months after the token launch.) </li>
+                                <li>The remainder is owned by the DAO, for use to establish partnerships, pay for legal and development fees,  provide additional market liquidity, and used as rewards in our community treasury.</li>
+                            </ul>
+                            <p className="font-extrabold pb-5">What is the utility of the Credmark token $CMK?</p>
+                            <ul className="list-decimal list-inside pb-10">
+                                <li>$CMK will be used in our governance platform and gives voting rights to the public - users can use their CMK to vote on the quality of models produced in the Credmark community.</li>
+                                <li>$CMK will be used to reward the community of data scientists for making models. Furthermore, modelers have to stake $CMK in order to submit their models.</li>
+                            </ul>
+                            <p className="font-extrabold pb-1-">How does Credmark encourage data model contributors?</p>
+                            <p className="font-thin pb-10">Model contributors will be compensated based on the efficacy and use of their models. Once a model has been submitted and validated on our platform it will enter a leaderboard. The more effective and popular a model is, the higher it will go on the leaderboard- the model contributors at the top of the leaderboard are rewarded out of our community treasury. Because we funnel the fees from retail use back into our community treasury, there will always be rewards available for model contributors.</p>
+                            <p className="font-extrabold pb-5">How can a Credmark user tell if a model is accurate or not?</p>
+                            <p className="font-thin pb-10">Governance dictates the success metrics used by the models. Each category for models has its own metrics and the accuracy is determined by open and transparent ML backtesting methods. To avoid overfitting, we test the models against live data for a period of time.</p>
+                            <p className="font-extrabold pb-5">I just bought CMK, why don’t I see it in my wallet?</p>
+                            <p className="font-thin pb-10">Purchases on the Ethereum network are often slow, and will vary depending on the gas fee you pay. Check the status of the transaction on etherscan.io by searching your wallet ID- if it is pending, the transaction is still being processed, if it has failed, try again with a higher gas fee. </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="py-20 pt-10 homeBackground border-2">
-                <div className="max-w-xl block m-auto">
-                    <a href="https://www.credmark.com/blog/liquidity-swap-drop" rel="norefferer"><img src="/assets/releaseCMK.png" alt="Release of CMK" /></a>
-                    <a href="https://credmarkhq.gitbook.io/credmark/tokenomics/cmk" target="_blank" rel="norefferer"><img src="/assets/utilityCMK.png" alt="Utility of CMK" /></a>
-                </div>
-                <p className="text-thin text-center text-xl">AVAILABLE MARKETS</p>
-                <div className="grid grid-cols-2 max-w-2xl block m-auto">
-                    <a href="https://app.uniswap.org/" rel="norefferer"><img src="/assets/ethCMK.png" alt="CMK ETH" /></a>
-                    <a href="https://app.uniswap.org/" rel="norefferer"><img src="/assets/usdcCMK.png" alt="CMK ETH" /></a>
-                </div>
-            </div>
-            <div className="py-20 homeBottom">
-                <h3 className="credmark text-center text-lg md:text-3xl font-semibold pb-5">THE ROADMAP TO
-                    <br></br>
-                    <span className="font-bold text-2xl md:text-5xl">DECENTRALIZATION </span></h3>
-                <img src="/assets/roadmap.png" alt="Credmark 3 year roadmap" />
             </div>
         </>
 
