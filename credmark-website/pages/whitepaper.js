@@ -12,8 +12,8 @@ export default function WhitepaperPage() {
       </Head>
 
       <div>
-          <Nav 
-          page={Whitepaper} />
+        <Nav
+          page={<Whitepaper />} />
       </div>
     </>
   )
