@@ -1,14 +1,10 @@
 import { getAllPosts } from "../lib/api"
 import BlogCard from '../components/blog/blogCard'
-import Nav from '../components/layout/nav'
-import Whitepaper from '../components/pages/whitepaper'
 
 
 export default function BlogPage({ posts }) {
     return (
         <>
-            <Nav
-                page={<Whitepaper />} />
             <div className="py-12 px-5">
                 <div className="text-center">
                     <h1 className="text-5xl">BLOG</h1>
