@@ -7,7 +7,7 @@ export default function Homepage() {
                             <div className="max-w-5xl block m-auto">
                                 <div className="px-5">
                                     <div className="text-center">
-                                        <h1 className="credmark py-5 font-bold text-7xl md:pt-10">
+                                        <h1 className="py-5 font-bold text-7xl md:pt-10">
                                             CREDMARK
                                         </h1>
                                     </div>

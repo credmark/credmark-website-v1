@@ -26,6 +26,9 @@ h1, h2, h3, h4, p, a, li {
   @apply text-purple;
 }
 
+h1{
+    font-family: "Credmark";
+}
 
 .credmark {
   font-family: "Credmark";
@@ -47,9 +50,25 @@ mono
   background-repeat: no-repeat;
 }
 
+.faqBackground{
+  background: url("/assets/faq.jpg"); 
+  background-position: center center; 
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.triangle{
+	width: 0;
+	height: 0;
+	border-width: 124px 53px 0 0;
+	border-color: #3B0065 transparent transparent transparent;
+	border-style: solid;
+}
+
 .homeTop{
   background: rgb(255,255,255);
-  background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(110,150,191,0.396796218487395) 100%);
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, rgba(110, 151, 191, 0.164) 100%);
 }
 
 .homeBottom{
@@ -60,6 +79,7 @@ mono
 .mediaTop{
   background: rgb(255,255,255);
   background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(59, 0, 101, 0.396796218487395) 100%);
+  z-index: 0;
 }
 
 .mediaBottom{
