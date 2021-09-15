@@ -1,7 +1,8 @@
+import Footer from '../layout/footer'
+
 export default function Media() {
     return (
-        <main className="flex-1 mb-10 relative overflow-y-auto focus:outline-none rounded-3xl bg-white">
-
+        <main className="flex-1 relative overflow-y-auto focus:outline-none rounded-3xl bg-white">
             <div className="homeTop rounded-md text-center px-5">
                 <div className="max-w-3xl block m-auto">
                     <h1 className="py-5 font-bold text-2xl md:text-6xl md:pt-10">
@@ -41,6 +42,7 @@ export default function Media() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </main>
     )
 }

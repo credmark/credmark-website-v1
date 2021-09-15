@@ -1,7 +1,9 @@
+import Footer from '../layout/footer'
+
 export default function Homepage() {
 
     return (
-                    <main className="flex-1 mb-10 relative overflow-y-auto focus:outline-none rounded-3xl bg-white md:mr-5">
+                    <main className="flex-1 relative overflow-y-auto focus:outline-none rounded-3xl bg-white">
                         <div className="homeTop rounded-md">
                             <img src="/assets/swirls.png" alt="colored swirls" />
                             <div className="max-w-5xl block m-auto">
@@ -46,6 +48,7 @@ export default function Homepage() {
                                 <span className="font-bold text-2xl md:text-5xl">DECENTRALIZATION </span></h3>
                             <img src="/assets/roadmap.png" alt="Credmark 3 year roadmap" />
                         </div>
+                        <Footer />
                     </main>
 
     )
