@@ -14,9 +14,9 @@ const Footer = () => {
                     <div className="grid grid-cols-1">
                         <a className="block m-auto" href="mailto:info@credmark.com" target="_blank">info@credmark.com</a>
                         <p className="block m-auto text-center">
-                        © 2021 Credmark. All rights 
-                        <br></br>
-                        reserved
+                            © 2021 Credmark. All rights
+                            <br></br>
+                            reserved
                         </p>
                     </div>
                 </div>

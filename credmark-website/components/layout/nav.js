@@ -16,7 +16,7 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Nav( props ) {
+export default function Nav(props) {
     const [sidebarOpen, setSidebarOpen] = useState(false)
 
     return (
@@ -114,10 +114,10 @@ export default function Nav( props ) {
                     </div>
                 </div>
                 <div className="flex flex-col w-0 flex-1 overflow-hidden">
-                    <div className="relative z-10 flex-shrink-0 flex h-16">
+                    <div className="relative z-10 h-16">
                         <button
                             type="button"
-                            className="px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
+                            className="pt-2.5 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
                             onClick={() => setSidebarOpen(true)}
                         >
                             <svg viewBox="0 0 100 80" width="40" height="40">
@@ -127,21 +127,26 @@ export default function Nav( props ) {
                             </svg>
                             <span className="sr-only">Open sidebar</span>
                         </button>
-                        <div className="flex-1 flex justify-between">
-                            <div className="flex-1 flex">
-                                <div className="relative w-full text-gray-400 focus-within:text-gray-600 nav">
-                                    <div className="hidden md:grid">
-                                    <img width={45} className="block m-auto pt-2.5" src="/assets/credmark-logo.png" alt="Credmark Logo" />
-                                    </div>
-                                </div>
+                        <div className="grid grid-cols-2">
+                            <div className="hidden md:flex justify-end">
+                                <a href="/" rel="noreferrer"><img width={45} className="flex justify-right pt-2.5" src="/assets/credmark-logo.png" alt="Credmark Logo" /></a>
+                            </div>
+                            <div className="flex flex-1 hidden md:flex medium:flex-grow-0 items-center justify-end mr-10 md:pt-2.5">
+                                <a
+                                    href="https://app.toucan.events/"
+                                    rel="noopener"
+                                    className="flex items-center justify-center py-1 md:py-2 px-4 md:px-8 rounded-full bg-pink text-white text-base font-semibold whitespace-no-wrap cursor-pointer"
+                                >
+                                    <span>APP</span>
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <main className="flex-1 mb-10 relative overflow-y-auto focus:outline-none rounded-3xl bg-white md:mr-5">
-                      <div>
-                          {props.page}
-                      </div>
+                        <div>
+                            {props.page}
+                        </div>
                     </main>
                 </div>
             </div>

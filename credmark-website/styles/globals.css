@@ -43,6 +43,34 @@ mono
   background: linear-gradient(90deg, rgba(50,197,255,0.04) 0%, rgba(182,32,224,0.04) 51%, rgba(247,181,0,0.04) 100%);
 }
 
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgb(59, 0, 101);
+  height: 5px; 
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+background: white; 
+}
+
+.scrollbar-colored {
+  scrollbar-color: red green;
+}
+
+
 .homeBackground{
   background: url("/assets/credmarklogobackground.jpg"); 
   background-position: center center; 
