@@ -9,15 +9,31 @@ export default function Homepage() {
                             <div className="max-w-5xl block m-auto">
                                 <div className="px-5">
                                     <div className="text-center">
-                                        <h1 className="py-5 font-bold text-7xl md:pt-10">
+                                        <h1 className="py-5 font-bold text-5xl md:text-7xl md:pt-10">
                                             CREDMARK
                                         </h1>
                                     </div>
-                                    <div className="rounded-full border-2 max-w-2xl block m-auto">
-                                        <div className="flex flex-wrap py-5 credmark justify-center text-xl">
-                                            <p>HIGH INTEGRITY DEFI DATA</p>
+                                    <div className="rounded-full border-2 max-w-xl block m-auto">
+                                        <div className="hidden md:flex flex-wrap py-5 credmark justify-center text-2xl">
+                                            <p className="text-right">HIGH INTEGRITY 
+                                            <br></br>
+                                            DEFI DATA</p>
                                             <p className="px-2">+</p>
-                                            <p>HIGH INTEGRITY DEFI DATA</p>
+                                            <p>HIGH INTEGRITY 
+                                            <br></br>
+                                            DEFI DATA</p>
+                                        </div>
+                                        <div className="md:hidden flex flex-wrap py-5 credmark justify-center text-xl">
+                                            <p className="text-center">
+                                            HIGH INTEGRITY 
+                                            <br></br>
+                                            DEFI DATA
+                                            <br></br>
+                                            +
+                                            <br></br>
+                                            HIGH INTEGRITY 
+                                            <br></br>
+                                            DEFI DATA</p>
                                         </div>
                                     </div>
                                     <div className="max-w-lg pb-12 md:mb-10 block m-auto">
