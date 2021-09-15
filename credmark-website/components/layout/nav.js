@@ -103,10 +103,7 @@ export default function Nav( props ) {
                                         <a
                                             key={item.name}
                                             href={item.href}
-                                            className={classNames(
-                                                item.current ? 'bg-gray-100' : 'hover:bg-gray-50 hover:text-gray-900',
-                                                'group flex flex-row-reverse pr-5 px-2 py-2 text-sm font-medium rounded-md'
-                                            )}
+                                            className='hover:bg-gray-50 hover:text-gray-900 group flex flex-row-reverse pr-5 px-2 py-2 text-sm font-medium rounded-md'
                                         >
                                             {item.name}
                                         </a>
