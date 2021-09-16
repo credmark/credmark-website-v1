@@ -9,7 +9,7 @@ const navigation = [
     { name: 'Media/CCR', href: '/media', current: false },
     { name: 'FAQ', href: '/faq', current: false },
     { name: 'The Team', href: '/team', current: false },
-    { name: 'Buy CMK', href: '/buy-cmk', current: false },
+    { name: 'Buy CMK', href: 'https://app.uniswap.org/#/swap', current: false },
 ]
 
 function classNames(...classes) {
@@ -133,7 +133,7 @@ export default function Nav(props) {
                             </div>
                             <div className="flex flex-1 hidden md:flex medium:flex-grow-0 items-center justify-end mr-10 md:pt-2.5">
                                 <a
-                                    href="https://app.toucan.events/"
+                                    href="https://app.credmark.com/"
                                     rel="noopener"
                                     className="flex items-center justify-center py-1 md:py-2 px-4 md:px-8 rounded-full bg-pink text-white text-base font-semibold whitespace-no-wrap cursor-pointer"
                                 >
