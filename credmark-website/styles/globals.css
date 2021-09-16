@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Credmark";
-  src: url("/font/sf-mono/Credmark-Regular.ttf") format("ttf");
+  src: url("/public/fonts/Credmark-Regular.ttf") format("ttf");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -27,11 +27,11 @@ h1, h2, h3, h4, p, a, li {
 }
 
 h1{
-    font-family: "Credmark";
+    font-family: 'Credmark';
 }
 
 .credmark {
-  font-family: "Credmark";
+  font-family: 'Credmark';
 }
 
 mono
