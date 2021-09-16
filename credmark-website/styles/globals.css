@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Credmark";
-  src: url("/public/fonts/Credmark-Regular.ttf") format("ttf");
+  src: url("/fonts/Credmark-Regular.ttf") format("ttf");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
