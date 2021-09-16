@@ -3,12 +3,23 @@ import { getBlogBySlug, getAllPosts } from '../../lib/api';
 import BlockContent from '@sanity/block-content-to-react';
 import sanity from '../../lib/sanity';
 
+import Nav from '../../components/layout/nav'
+
 const serializers = {
     types: {
         code: () => {
             return <h1>Code Block</h1>
         }
     }
+}
+
+export default function BlogPostPage({post}) {
+
+    return (
+        <>
+            <Nav page={<BlogDetail post={post} />} />
+        </>
+    )
 }
 
 const BlogDetail = ({ post }) => {
@@ -43,5 +54,3 @@ export async function getStaticPaths() {
         fallback: false
     }
 }
-
-export default BlogDetail;

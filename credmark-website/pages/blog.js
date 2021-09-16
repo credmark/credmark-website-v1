@@ -9,6 +9,14 @@ import { useGetPosts } from "../actions"
 
 export default function BlogPage({posts}) {
 
+    return (
+        <>
+            <Nav page={<BlogPageContent />} />
+        </>
+    )
+}
+
+function BlogPageContent() {
     const [filter, setFilter] = useState({
         view: { list: 0 }
     });
@@ -16,8 +24,6 @@ export default function BlogPage({posts}) {
     const { data: blogsData, error } = useGetPosts();
     
     return (
-        <>
-            <Nav />
             <div className="py-12 px-5">
                 <div className="text-center">
                     <h1 className="text-5xl">BLOG</h1>
@@ -30,7 +36,7 @@ export default function BlogPage({posts}) {
                         setFilter({...filter, [option]: value});
                     }}
                 />
-                {posts.map(posts =>
+                {blogsData?.map(posts =>
                     filter.view.list ?
                     <div key={`${posts.slug}-list`}>
                     <BlogCard 
@@ -56,8 +62,7 @@ export default function BlogPage({posts}) {
                 )
                 }
             </div>
-        </>
-    )
+    );
 }
 
 // this function is called during build time (always called on the server)
