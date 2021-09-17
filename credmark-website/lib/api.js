@@ -12,7 +12,7 @@ subtitle,
 
 export async function getAllPosts() {
    const results =  await client
-   .fetch(`*[_type == "post"]| order(publishedAt desc) {${postFields}} [0...5]`);
+   .fetch(`*[_type == "post"]| order(publishedAt desc) {${postFields}}`);
    return results;
 }
 

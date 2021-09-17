@@ -6,8 +6,9 @@ import moment from 'moment'
 import FilteringMenu from "../components/blog/fiterMenu"
 import { useState } from "react"
 import { useGetPosts } from "../actions"
+import Footer from "../components/layout/footer"
 
-export default function BlogPage({posts}) {
+export default function BlogPage({ posts }) {
 
     return (
         <>
@@ -22,8 +23,9 @@ function BlogPageContent() {
     });
 
     const { data: blogsData, error } = useGetPosts();
-    
+
     return (
+        <div>
             <div className="py-12 px-5">
                 <div className="text-center">
                     <h1 className="text-5xl">BLOG</h1>
@@ -33,22 +35,22 @@ function BlogPageContent() {
                 <FilteringMenu
                     filter={filter}
                     onChange={(option, value) => {
-                        setFilter({...filter, [option]: value});
+                        setFilter({ ...filter, [option]: value });
                     }}
                 />
                 {blogsData?.map(posts =>
                     filter.view.list ?
-                    <div key={`${posts.slug}-list`}>
-                    <BlogCard 
-                     title={posts.title}
-                     date={moment(posts.date).format('MM/DD/YYYY')}
-                     author={posts.author}
-                     slug={posts.slug}
-                     link={{
-                         href: `/blog/${posts.slug}`
-                     }}/>
-                    </div>
-                    :
+                        <div key={`${posts.slug}-list`}>
+                            <BlogCard
+                                title={posts.title}
+                                date={moment(posts.date).format('MM/DD/YYYY')}
+                                author={posts.author}
+                                slug={posts.slug}
+                                link={{
+                                    href: `/blog/${posts.slug}`
+                                }} />
+                        </div>
+                        :
                         <BlogCard
                             title={posts.title}
                             date={moment(posts.date).format('MM/DD/YYYY')}
@@ -62,13 +64,15 @@ function BlogPageContent() {
                 )
                 }
             </div>
+            <Footer />
+        </div>
     );
 }
 
 // this function is called during build time (always called on the server)
 //provides props to the page
 export async function getStaticProps() {
-    const posts = await getAllPosts({offset: 3});
+    const posts = await getAllPosts({ offset: 3 });
     return {
         props: {
             posts

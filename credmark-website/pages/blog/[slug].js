@@ -4,6 +4,7 @@ import BlockContent from '@sanity/block-content-to-react';
 import sanity from '../../lib/sanity';
 
 import Nav from '../../components/layout/nav'
+import Footer from "../../components/layout/footer"
 
 const serializers = {
     types: {
@@ -13,7 +14,7 @@ const serializers = {
     }
 }
 
-export default function BlogPostPage({post}) {
+export default function BlogPostPage({ post }) {
 
     return (
         <>
@@ -24,18 +25,21 @@ export default function BlogPostPage({post}) {
 
 const BlogDetail = ({ post }) => {
     return (
-        <div className="max-w-5xl block m-auto text-center px-5">
-            <a href="/blog" rel="noreferrer">
-                <img className="pt-10" width={40} src="/assets/arrow.svg" />
-            </a>
-            <img width={338} height={270} className="rounded-lg block m-auto my-10 mt-10" src={post.mainImage} />
-            <h1 className="text-xl">{post.title}</h1>
-            <BlockContent
-                className="text-left leading-loose pt-10"
-                serializers={serializers}
-                blocks={post.content}
-                {...sanity.config()}
-            />
+        <div>
+            <div className="max-w-5xl block m-auto text-center px-5">
+                <a href="/blog" rel="noreferrer">
+                    <img className="pt-10" width={40} src="/assets/arrow.svg" />
+                </a>
+                <img width={338} height={270} className="rounded-lg block m-auto my-10 mt-10" src={post.mainImage} />
+                <h1 className="text-xl">{post.title}</h1>
+                <BlockContent
+                    className="text-left leading-loose pt-10"
+                    serializers={serializers}
+                    blocks={post.content}
+                    {...sanity.config()}
+                />
+            </div>
+            <Footer />
         </div>
     )
 }
