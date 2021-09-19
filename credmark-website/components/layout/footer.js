@@ -12,7 +12,7 @@ const Footer = () => {
                         <a href="https://discord.com/invite/3dSfMqP3d4" target="_blank" rel="noreferrer"><img width={30} src="../assets/twitter.png" alt="Twitter logo" target="_blank" rel="noreferrer" /></a>
                     </div>
                     <div className="grid grid-cols-1">
-                        <a className="block m-auto" href="mailto:info@credmark.com" target="_blank">info@credmark.com</a>
+                        <a className="block m-auto" href="mailto:info@credmark.com" rel="noreferrer noopener" target="_blank">info@credmark.com</a>
                         <p className="block m-auto text-center">
                             © 2021 Credmark. All rights
                             <br></br>

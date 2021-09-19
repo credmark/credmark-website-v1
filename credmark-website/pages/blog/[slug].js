@@ -5,10 +5,11 @@ import sanity from '../../lib/sanity';
 
 import Nav from '../../components/layout/nav'
 import Footer from "../../components/layout/footer"
+import Link from 'next/link'
 
 const serializers = {
     types: {
-        code: () => {
+        code: (serializer) => {
             return <h1>Code Block</h1>
         }
     }
@@ -27,9 +28,9 @@ const BlogDetail = ({ post }) => {
     return (
         <div>
             <div className="max-w-5xl block m-auto text-center px-5">
-                <a href="/blog" rel="noreferrer">
+                <Link href="/blog" rel="noreferrer">
                     <img className="pt-10" width={40} src="/assets/arrow.svg" />
-                </a>
+                </Link>
                 <img width={338} height={270} className="rounded-lg block m-auto my-10 mt-10" src={post.mainImage} />
                 <h1 className="text-xl">{post.title}</h1>
                 <BlockContent

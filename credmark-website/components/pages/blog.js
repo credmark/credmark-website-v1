@@ -11,16 +11,18 @@ export default function Blog({ posts }) {
                 <p className="text-pink pb-5 hover:underline">Subscribe</p>
             </div>
             {posts.map(posts =>
-                <BlogCard
-                    title={posts.title}
-                    date={posts.date}
-                    img={posts.mainImage}
-                    author={posts.author}
-                    slug={posts.slug}
-                    link={{
-                        href: `/blog/${posts.slug}`
-                    }}
-                />
+                <props key={post.id} sm="4">
+                    <BlogCard
+                        title={posts.title}
+                        date={posts.date}
+                        img={posts.mainImage}
+                        author={posts.author}
+                        slug={posts.slug}
+                        link={{
+                            href: `/blog/${posts.slug}`
+                        }}
+                    />
+                </props>
             )
             }
         </div>

@@ -41,21 +41,21 @@ export default function Homepage() {
                                         <p className="text-center"> Read our White Paper and then join us in Discord for discussion and,feedback around our Product, Token, and soon-to-come Platform!</p>
                                     </div>
                                     <div className="grid grid-cols-2 max-w-lg block m-auto jutify-center pb-16">
-                                        <a href="https://discord.com/invite/BJbYSRDdtr" target="_blank" rel="norefferer"><img width={300} alt="Discord channel link" className="block m-auto" src="/assets/discord.png" /></a>
-                                        <a href="https://credmarkhq.gitbook.io/credmark/" target="_blank" rel="norefferer"><img width={300} alt="Credmark white paper link" className="block m-auto" src="/assets/credmark-white-paper-image.png" /></a>
+                                        <a href="https://discord.com/invite/BJbYSRDdtr" target="_blank" rel="noreferrer"><img width={300} alt="Discord channel link" className="block m-auto" src="/assets/discord.png" /></a>
+                                        <a href="https://credmarkhq.gitbook.io/credmark/" target="_blank" rel="noreferrer"><img width={300} alt="Credmark white paper link" className="block m-auto" src="/assets/credmark-white-paper-image.png" /></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="py-20 pt-10 homeBackground border-2">
                         <div className="max-w-xl block m-auto">
-                        <a href="https://www.credmark.com/blog/liquidity-swap-drop" rel="norefferer"><img src="/assets/releaseCMK.png" alt="Release of CMK" /></a>
-                        <a href="https://credmarkhq.gitbook.io/credmark/tokenomics/cmk" target="_blank" rel="norefferer"><img src="/assets/utilityCMK.png" alt="Utility of CMK" /></a>
+                        <a href="https://www.credmark.com/blog/liquidity-swap-drop" rel="noreferrer"><img src="/assets/releaseCMK.png" alt="Release of CMK" /></a>
+                        <a href="https://credmarkhq.gitbook.io/credmark/tokenomics/cmk" target="_blank" rel="noreferrer"><img src="/assets/utilityCMK.png" alt="Utility of CMK" /></a>
                             </div>
                             <p className="text-thin text-center text-xl">AVAILABLE MARKETS</p>
                             <div className="grid grid-cols-2 max-w-2xl block m-auto">
-                            <a href="https://app.uniswap.org/" rel="norefferer"><img src="/assets/ethCMK.png" alt="CMK ETH" /></a>
-                            <a href="https://app.uniswap.org/" rel="norefferer"><img src="/assets/usdcCMK.png" alt="CMK ETH" /></a>
+                            <a href="https://app.uniswap.org/" rel="noreferrer"><img src="/assets/ethCMK.png" alt="CMK ETH" /></a>
+                            <a href="https://app.uniswap.org/" rel="noreferrer"><img src="/assets/usdcCMK.png" alt="CMK ETH" /></a>
                             </div>
                         </div>
                         <div className="py-20 homeBottom">
