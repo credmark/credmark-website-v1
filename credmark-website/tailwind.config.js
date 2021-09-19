@@ -13,6 +13,13 @@ module.exports = {
       bold: 700,
       extrabold: 800,
     },
+    borderRadius: {
+      'sm': '0.125rem',
+      'md': '0.375rem',
+      'lg': '0.5rem',
+      'full': '9999px',
+     '4xl': '3.5rem',
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',

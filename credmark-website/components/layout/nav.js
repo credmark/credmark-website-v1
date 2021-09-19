@@ -144,7 +144,7 @@ export default function Nav(props) {
                         </div>
                     </div>
 
-                    <main className="flex-1 mb-10 relative overflow-y-auto focus:outline-none rounded-3xl bg-white md:mr-5">
+                    <main className="flex-1 mb-10 relative overflow-y-auto focus:outline-none rounded-4xl bg-white md:mr-5">
                         <div>
                             {props.page}
                         </div>
