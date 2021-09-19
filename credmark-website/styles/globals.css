@@ -34,11 +34,20 @@ h1{
   font-family: 'Credmark';
 }
 
+#arrow {
+  margin: 5px;
+  display: flex;
+}
+
 img {
   margin: auto;
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+#blogPage {
+  border-radius: 2.5rem;
 }
 
 mono

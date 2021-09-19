@@ -11,6 +11,7 @@ const BlogCard = (props) => {
                             alt={props.alt}
                             src={props.img}
                             className='h-72 w-96 rounded-3xl cursor-pointer'
+                            id="blogPage"
                         />
                     </Link>
 
