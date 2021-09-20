@@ -1,5 +1,6 @@
 import { getAllPosts } from "../../lib/api"
 import BlogCard from '../blog/blogCard'
+import Fade from "react-reveal/Fade";
 
 
 export default function Blog({ posts }) {
@@ -10,6 +11,7 @@ export default function Blog({ posts }) {
                 <p>News, stories, and announcements from the Credmark team.</p>
                 <p className="text-pink pb-5 hover:underline">Subscribe</p>
             </div>
+            <Fade>
             {posts.map(posts =>
                 <props key={post.id} sm="4">
                     <BlogCard
@@ -25,6 +27,7 @@ export default function Blog({ posts }) {
                 </props>
             )
             }
+            </Fade>
         </div>
     )
 }

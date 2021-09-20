@@ -1,4 +1,6 @@
 import Footer from '../layout/footer'
+import Fade from "react-reveal/Fade";
+
 
 export default function Whitepaper() {
 
@@ -15,11 +17,13 @@ export default function Whitepaper() {
                                 <p className="italic pt-5">Published May 17, 2021</p>
                                 <a href="https://reports.credmark.com/whitepaper.pdf" target="_blank" rel="noreferrer"><img width={350} className="block m-auto" src="/assets/credmark-white-paper.png" alt="Credmark White Paper"></img></a>
                         </div>
+                        <Fade>
                         <div className="grid grid-cols-1 md:grid-cols-3 block m-auto pb-20">
                         <a href="https://reports.credmark.com/litepaper.pdf" target="_blank" rel="noreferrer"><img width={350} className="block m-auto" src="/assets/credmark-english-white-paper.png" alt="Credmark White Paper"></img></a>
                         <a href="https://storage.googleapis.com/credmark-cryptocreditreports/Credmark%20Litepaper%20Simplified%20Chinese%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87.pdf" target="_blank" rel="noreferrer"><img width={350} className="block m-auto" src="/assets/credmark-tc-white-paper.png" alt="Credmark White Paper"></img></a>
                         <a href="https://storage.googleapis.com/credmark-cryptocreditreports/Credmark%20Litepaper%20Simplified%20Chinese%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87.pdf" target="_blank" rel="noreferrer"><img width={350} className="block m-auto" src="/assets/credmark-sc-white-paper.png" alt="Credmark White Paper"></img></a>
                         </div>
+                        </Fade>
                     </div>
                     <Footer />
                 </main>
