@@ -64,7 +64,8 @@ mono
 }
 
 .nav{
-  background: linear-gradient(90deg, rgba(50,197,255,0.04) 0%, rgba(182,32,224,0.04) 51%, rgba(247,181,0,0.04) 100%);
+background: rgb(247,181,0);
+background: linear-gradient(130deg, rgba(247,181,0,0.03) 0%, rgba(182,32,224,0.03) 49%, rgba(50,197,255,0.03) 100%);
 }
 
 /* Let's get this party started */
