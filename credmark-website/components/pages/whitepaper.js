@@ -7,7 +7,7 @@ export default function Whitepaper() {
             <main className="flex-1 relative overflow-y-auto focus:outline-none rounded-md">
                     <div className="rounded-md trianglePaper">
                         <div className="px-5 py-10 md:pt-28 md:px-40">
-                                <h1 className="pt-5 font-light text-5xl md:pt-0">
+                                <h1 className="pt-5 font-light text-4xl md:text-5xl md:pt-0">
                                     WHITE PAPER
                                 </h1>
                                 <p className="py-5">Click below to explore our White Paper and Lite Paper. </p>

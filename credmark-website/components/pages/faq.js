@@ -7,9 +7,9 @@ export default function faq() {
     return (
         <>
             <div className="faqBackground z-10">
-                <div className="homeTop z-0">
+                <div className="faqGradient z-0">
                     <div className="max-w-5xl block m-auto py-10">
-                        <div className="bg-white max-w-4xl block m-auto rounded-3xl">
+                        <div className="bg-white max-w-4xl block m-auto rounded-4xl">
                             <h1 className="credmark text-center py-5 font-bold text-5xl md:text-7xl md:pt-10">
                                 FAQ
                             </h1>
