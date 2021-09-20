@@ -7,11 +7,35 @@ import FilteringMenu from "../components/blog/fiterMenu"
 import { useState } from "react"
 import { useGetPosts } from "../actions"
 import Footer from "../components/layout/footer"
+import Head from 'next/head'
 
 export default function BlogPage({ posts }) {
 
     return (
         <>
+        <Head>
+        <title>Blog | CREDMARK</title>
+        <meta content="Blog | Credmark" property="og:title" key="og:title" />
+        <meta name="description" content="Welcome to the Credmark blog. Subscribe to find out about company updates and industry research." />
+        <link rel="icon" href="/favicon.ico" />
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
+      </Head>
             <Nav page={<BlogPageContent />} />
         </>
     )
@@ -26,11 +50,11 @@ function BlogPageContent() {
 
     return (
         <div>
-            <div className="py-12 px-5">
+            <div className="py-12 px-5 blogGradient">
                 <div className="text-center">
                     <h1 className="text-5xl">BLOG</h1>
                     <p>News, stories, and announcements from the Credmark team.</p>
-                    <p className="text-pink pb-5 hover:underline">Subscribe</p>
+                    <a href="http://eepurl.com/gLAid9" target="_blank" rel="noreferrer"><p className="text-pink pb-5 hover:underline">Subscribe</p></a>
                 </div>
                 <FilteringMenu
                     filter={filter}

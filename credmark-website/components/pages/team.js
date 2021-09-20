@@ -1,17 +1,19 @@
 import TeamCard from '../layout/teamCard'
 import AdvisorCard from '../layout/advisorCard'
 import Footer from '../layout/footer'
+import Fade from "react-reveal/Fade";
 
 export default function Team() {
 
     return (
         <>
             <main className="flex-1 relative overflow-y-auto focus:outline-none rounded-md ">
-                <div className="rounded-md">
+                <div className="blogGradient rounded-md">
                     <div className="px-5 py-10 md:px-10">
                         <h1 className="credmark text-center py-5 font-bold text-5xl md:text-7xl pb-10 md:pt-10">
                             THE TEAM
                         </h1>
+                        <Fade>
                         <div className="grid grid-cols-1 md:grid-cols-3 block m-auto space-x-6">
                             <TeamCard
                                 img="../assets/neil.jpg"
@@ -78,10 +80,12 @@ export default function Team() {
                                 descriptiontwo="Outside of work, Joe is either cooking, bodybuilding, or watching YouTube videos about non-duality."
                             />
                         </div>
+                        </Fade>
                         <div className="px-5 py-10 md:px-10">
-                            <h1 className="credmark text-center py-5 font-bold text-7xl pb-10 md:pt-10">
+                            <h1 className="credmark text-center py-5 font-bold text-5xl md:text-7xl pb-10 md:pt-10">
                                 ADVISORS
                             </h1>
+                            <Fade>
                             <div className="grid grid-cols-1 md:grid-cols-3 block m-auto space-x-4">
                                 <AdvisorCard
                                     img="../assets/alberto.jpg"
@@ -105,6 +109,7 @@ export default function Team() {
                                     company="API3"
                                 />
                             </div>
+                            </Fade>
                             <div className="grid grid-cols-1 md:grid-cols-2 block m-auto">
                                 <AdvisorCard
                                     img="../assets/renner.jpg"

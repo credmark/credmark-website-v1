@@ -74,14 +74,12 @@ export default function Nav(props) {
                                 <div className="mt-5 flex-1 h-0 overflow-y-auto">
                                     <nav className="px-2 space-y-1">
                                         {navigation.map((item) => (
-                                            <a
+                                            <Link
                                                 key={item.name}
                                                 href={item.href}
-                                                className=
-                                                'bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'
                                             >
-                                                {item.name}
-                                            </a>
+                                            <p className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>{item.name}</p>
+                                            </Link>
                                         ))}
                                     </nav>
                                 </div>
@@ -101,13 +99,12 @@ export default function Nav(props) {
                             <div className="mt-5 flex-grow flex flex-col">
                                 <nav className="flex-1 px-2 pt-16 space-y-1 text-right">
                                     {navigation.map((item) => (
-                                        <a
+                                        <Link
                                             key={item.name}
-                                            href={item.href}
-                                            className='hover:bg-gray-50 hover:text-gray-900 group flex flex-row-reverse pr-5 px-2 py-2 text-sm font-medium rounded-md'
+                                            href={item.href}                                      
                                         >
-                                            {item.name}
-                                        </a>
+                                           <p className='cursor-pointer hover:bg-gray-50 hover:text-gray-900 group flex flex-row-reverse pr-5 px-2 py-2 text-sm font-medium rounded-md'> {item.name}</p>
+                                        </Link>
                                     ))}
                                 </nav>
                             </div>
@@ -130,7 +127,7 @@ export default function Nav(props) {
                         </button>
                         <div className="grid grid-cols-2">
                             <div className="hidden md:flex justify-end">
-                                <Link href="/" rel="noreferrer"><img width={45} className="flex justify-right pt-2.5" src="/assets/credmark-logo.png" alt="Credmark Logo" /></Link>
+                                <a href="https://credmark.com/" rel="noreferrer"><img width={45} className="flex justify-right pt-2.5" src="/assets/credmark-logo.png" alt="Credmark Logo" /></a>
                             </div>
                             <div className="flex flex-1 hidden md:flex medium:flex-grow-0 items-center justify-end mr-10 md:pt-2.5">
                                 <a
@@ -144,7 +141,7 @@ export default function Nav(props) {
                         </div>
                     </div>
 
-                    <main className="flex-1 mb-10 relative overflow-y-auto focus:outline-none rounded-3xl bg-white md:mr-5">
+                    <main className="flex-1 mb-10 relative overflow-y-auto focus:outline-none rounded-4xl bg-white md:mr-5">
                         <div>
                             {props.page}
                         </div>
