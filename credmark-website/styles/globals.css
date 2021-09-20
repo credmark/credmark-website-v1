@@ -41,6 +41,12 @@ img {
   padding-bottom: 10px;
 }
 
+#hackathon{
+  padding-top: 35px;
+  right: 0;
+  bottom: 0;
+}
+
 #blogPage {
   border-radius: 2.5rem;
 }
@@ -83,7 +89,7 @@ background: white;
 
 
 .homeBackground{
-  background: url("/assets/credmarklogobackground.jpg"); 
+  background: url("/assets/credmark-hackathon.jpg"); 
   background-position: center center; 
   background-size: cover;
   background-repeat: no-repeat;

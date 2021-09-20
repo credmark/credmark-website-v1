@@ -77,11 +77,11 @@ export default function Team() {
                                 descriptiontwo="Outside of work, Joe is either cooking, bodybuilding, or watching YouTube videos about non-duality."
                             />
                         </div>
-                        <div className="px-5 py-10 md:px-10">
+                        <div className="px-5 py-10">
                             <h1 className="credmark text-center py-5 text-5xl md:text-7xl pb-10 md:pt-10">
                                 ADVISORS
                             </h1>
-                            <div className="grid grid-cols-1 md:grid-cols-3 block m-auto space-x-4">
+                            <div className="grid grid-cols-1 md:grid-cols-3 block m-auto">
                                 <AdvisorCard
                                     img="../assets/alberto.jpg"
                                     alt="Alberto Ornaghi"
