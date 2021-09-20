@@ -1,11 +1,9 @@
-import Footer from '../layout/footer'
-
 export default function Media() {
     return (
         <main className="flex-1 absolute overflow-y-auto focus:outline-none rounded-md">
             <div className="rounded-md triangletest">
                 <div className="px-5 py-10 md:pt-28 md:px-40">
-                    <h1 className="text-center py-5 font-bold text-4xl md:text-6xl">
+                    <h1 className="text-center py-5 text-4xl md:text-6xl">
                         CREDMARK
                         <br></br>
                         IN THE MEDIA
@@ -19,7 +17,7 @@ export default function Media() {
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 md:py-20">
                         <div>
-                            <h2 className="text-center credmark py-5 font-bold text-4xl md:text-6xl md:text-left">
+                            <h2 className="text-center credmark py-5 text-4xl md:text-6xl md:text-left">
                                 CRYPTO
                                 <br></br>
                                 CREDIT
@@ -42,7 +40,6 @@ export default function Media() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </main>
     )
 }

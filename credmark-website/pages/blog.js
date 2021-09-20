@@ -6,7 +6,6 @@ import moment from 'moment'
 import FilteringMenu from "../components/blog/fiterMenu"
 import { useState } from "react"
 import { useGetPosts } from "../actions"
-import Footer from "../components/layout/footer"
 import Head from 'next/head'
 
 export default function BlogPage({ posts }) {
@@ -36,7 +35,9 @@ export default function BlogPage({ posts }) {
             }}
           />
       </Head>
+      <div className="nav">
             <Nav page={<BlogPageContent />} />
+            </div>
         </>
     )
 }
@@ -88,7 +89,6 @@ function BlogPageContent() {
                 )
                 }
             </div>
-            <Footer />
         </div>
     );
 }

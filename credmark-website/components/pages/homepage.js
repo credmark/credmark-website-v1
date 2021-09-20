@@ -1,5 +1,3 @@
-import Footer from '../layout/footer'
-
 export default function Homepage() {
 
     return (
@@ -9,7 +7,7 @@ export default function Homepage() {
                             <div className="max-w-5xl block m-auto">
                                 <div className="px-5">
                                     <div className="text-center">
-                                        <h1 className="py-5 font-bold text-5xl md:text-7xl md:pt-10">
+                                        <h1 className="py-5 text-5xl md:text-7xl md:pt-10">
                                             CREDMARK
                                         </h1>
                                     </div>
@@ -47,24 +45,12 @@ export default function Homepage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="py-20 pt-10 homeBackground border-2">
-                        <div className="max-w-xl block m-auto">
-                        <a href="https://www.credmark.com/blog/liquidity-swap-drop" rel="noreferrer"><img src="/assets/releaseCMK.png" alt="Release of CMK" /></a>
-                        <a href="https://credmarkhq.gitbook.io/credmark/tokenomics/cmk" target="_blank" rel="noreferrer"><img src="/assets/utilityCMK.png" alt="Utility of CMK" /></a>
-                            </div>
-                            <p className="text-thin text-center text-xl">AVAILABLE MARKETS</p>
-                            <div className="grid grid-cols-2 max-w-2xl block m-auto">
-                            <a href="https://app.uniswap.org/" rel="noreferrer"><img src="/assets/ethCMK.png" alt="CMK ETH" /></a>
-                            <a href="https://app.uniswap.org/" rel="noreferrer"><img src="/assets/usdcCMK.png" alt="CMK ETH" /></a>
-                            </div>
-                        </div>
                         <div className="py-20 homeBottom">
                             <h3 className="credmark text-center text-lg md:text-3xl font-semibold pb-5">THE ROADMAP TO
                                 <br></br>
                                 <span className="font-bold text-2xl md:text-5xl">DECENTRALIZATION </span></h3>
                             <img src="/assets/roadmap.png" alt="Credmark 3 year roadmap" />
                         </div>
-                        <Footer />
                     </main>
 
     )

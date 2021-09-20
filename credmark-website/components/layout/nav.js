@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
 import Link from 'next/link'
+import Footer from '../layout/footer'
 
 
 const navigation = [
@@ -10,7 +11,6 @@ const navigation = [
     { name: 'Media/CCR', href: '/media', current: false },
     { name: 'FAQ', href: '/faq', current: false },
     { name: 'The Team', href: '/team', current: false },
-    { name: 'Buy CMK', href: 'https://app.uniswap.org/#/swap', current: false },
 ]
 
 function classNames(...classes) {
@@ -21,8 +21,8 @@ export default function Nav(props) {
     const [sidebarOpen, setSidebarOpen] = useState(false)
 
     return (
-        <div className="nav">
-            <div className="flex h-screen overflow-hidden nav">
+        <div>
+            <div className="flex h-screen overflow-hidden max-w-7xl block m-auto">
                 <Transition.Root show={sidebarOpen} as={Fragment}>
                     <Dialog as="div" className="fixed inset-0 flex z-40 md:hidden" onClose={setSidebarOpen}>
                         <Transition.Child
@@ -81,6 +81,7 @@ export default function Nav(props) {
                                             <p className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>{item.name}</p>
                                             </Link>
                                         ))}
+                                        <a href='https://app.uniswap.org/#/swap' target="_blank" rel="noreferrer" className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>Buy CMK</a>
                                     </nav>
                                 </div>
                             </div>
@@ -92,7 +93,7 @@ export default function Nav(props) {
                 </Transition.Root>
 
                 {/* Static sidebar for desktop */}
-                <div className="hidden nav md:flex md:flex-shrink-0">
+                <div className="hidden md:flex md:flex-shrink-0">
                     <div className="flex flex-col w-64">
                         {/* Sidebar component, swap this element with another sidebar if you like */}
                         <div className="flex flex-col flex-grow pt-5 pb-4 overflow-y-auto">
@@ -103,15 +104,16 @@ export default function Nav(props) {
                                             key={item.name}
                                             href={item.href}                                      
                                         >
-                                           <p className='cursor-pointer hover:bg-gray-50 hover:text-gray-900 group flex flex-row-reverse pr-5 px-2 py-2 text-sm font-medium rounded-md'> {item.name}</p>
+                                           <p className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm font-medium rounded-md'> {item.name}</p>
                                         </Link>
                                     ))}
+                                    <a href='https://app.uniswap.org/#/swap' target="_blank" rel="noreferrer" className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm font-medium rounded-md'>Buy CMK</a>
                                 </nav>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col w-0 flex-1 overflow-hidden">
+                <div className="flex flex-col w-0 flex-1 overflow-hidden md:mr-40">
                     <div className="relative z-10 h-16">
                         <button
                             type="button"
@@ -125,7 +127,7 @@ export default function Nav(props) {
                             </svg>
                             <span className="sr-only">Open sidebar</span>
                         </button>
-                        <div className="grid grid-cols-2">
+                        <div className="grid grid-cols-2 h-16">
                             <div className="hidden md:flex justify-end">
                                 <a href="https://credmark.com/" rel="noreferrer"><img width={45} className="flex justify-right pt-2.5" src="/assets/credmark-logo.png" alt="Credmark Logo" /></a>
                             </div>
@@ -133,7 +135,7 @@ export default function Nav(props) {
                                 <a
                                     href="https://app.credmark.com/"
                                     rel="noopener"
-                                    className="flex items-center justify-center py-1 md:py-2 px-4 md:px-8 rounded-full bg-pink text-white text-base font-semibold whitespace-no-wrap cursor-pointer"
+                                    className="flex items-center justify-center py-1 px-4 md:px-8 rounded-full bg-pink text-white text-base font-semibold whitespace-no-wrap cursor-pointer"
                                 >
                                     <span>APP</span>
                                 </a>
@@ -141,11 +143,12 @@ export default function Nav(props) {
                         </div>
                     </div>
 
-                    <main className="flex-1 mb-10 relative overflow-y-auto focus:outline-none rounded-4xl bg-white md:mr-5">
+                    <main className="flex-1 mb-2.5 relative overflow-y-auto focus:outline-none rounded-4xl bg-white">
                         <div>
                             {props.page}
                         </div>
                     </main>
+                    <Footer />
                 </div>
             </div>
         </div>

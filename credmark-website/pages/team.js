@@ -29,7 +29,7 @@ export default function TeamPage() {
           />
       </Head>
 
-      <div>
+      <div className="nav">
         <Nav
           page={<Team />} />
       </div>

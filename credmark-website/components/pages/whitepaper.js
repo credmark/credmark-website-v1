@@ -1,5 +1,3 @@
-import Footer from '../layout/footer'
-
 export default function Whitepaper() {
 
     return (
@@ -21,7 +19,6 @@ export default function Whitepaper() {
                         <a href="https://storage.googleapis.com/credmark-cryptocreditreports/Credmark%20Litepaper%20Simplified%20Chinese%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87.pdf" target="_blank" rel="noreferrer"><img width={350} className="block m-auto" src="/assets/credmark-sc-white-paper.png" alt="Credmark White Paper"></img></a>
                         </div>
                     </div>
-                    <Footer />
                 </main>
         </>
 
