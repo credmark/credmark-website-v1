@@ -10,7 +10,6 @@ const navigation = [
     { name: 'Media/CCR', href: '/media', current: false },
     { name: 'FAQ', href: '/faq', current: false },
     { name: 'The Team', href: '/team', current: false },
-    { name: 'Buy CMK', href: 'https://app.uniswap.org/#/swap', current: false },
 ]
 
 function classNames(...classes) {
@@ -81,6 +80,7 @@ export default function Nav(props) {
                                             <p className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>{item.name}</p>
                                             </Link>
                                         ))}
+                                        <a href='https://app.uniswap.org/#/swap' target="_blank" rel="noreferrer" className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>Buy CMK</a>
                                     </nav>
                                 </div>
                             </div>
@@ -106,6 +106,7 @@ export default function Nav(props) {
                                            <p className='cursor-pointer hover:bg-gray-50 hover:text-gray-900 group flex flex-row-reverse pr-5 px-2 py-2 text-sm font-medium rounded-md'> {item.name}</p>
                                         </Link>
                                     ))}
+                                    <a href='https://app.uniswap.org/#/swap' target="_blank" rel="noreferrer" className='cursor-pointer hover:bg-gray-50 hover:text-gray-900 group flex flex-row-reverse pr-5 px-2 py-2 text-sm font-medium rounded-md'>Buy CMK</a>
                                 </nav>
                             </div>
                         </div>
