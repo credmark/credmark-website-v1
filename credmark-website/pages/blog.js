@@ -36,7 +36,9 @@ export default function BlogPage({ posts }) {
             }}
           />
       </Head>
+      <div className="nav">
             <Nav page={<BlogPageContent />} />
+            </div>
         </>
     )
 }

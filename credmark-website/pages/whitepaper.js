@@ -29,7 +29,7 @@ export default function WhitepaperPage() {
           />
       </Head>
 
-      <div>
+      <div className="nav">
         <Nav
           page={<Whitepaper />} />
       </div>

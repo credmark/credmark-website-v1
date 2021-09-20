@@ -10,7 +10,7 @@ export default function faq() {
                 <div className="faqGradient z-0">
                     <div className="max-w-5xl block m-auto py-10">
                         <div className="bg-white max-w-4xl block m-auto rounded-4xl">
-                            <h1 className="credmark text-center py-5 font-bold text-5xl md:text-7xl md:pt-10">
+                            <h1 className="credmark text-center py-5 text-5xl md:text-7xl md:pt-10">
                                 FAQ
                             </h1>
                             <div className="px-10">

@@ -20,8 +20,8 @@ export default function Nav(props) {
     const [sidebarOpen, setSidebarOpen] = useState(false)
 
     return (
-        <div className="nav">
-            <div className="flex h-screen overflow-hidden nav">
+        <div>
+            <div className="flex h-screen overflow-hidden max-w-7xl block m-auto">
                 <Transition.Root show={sidebarOpen} as={Fragment}>
                     <Dialog as="div" className="fixed inset-0 flex z-40 md:hidden" onClose={setSidebarOpen}>
                         <Transition.Child
@@ -92,7 +92,7 @@ export default function Nav(props) {
                 </Transition.Root>
 
                 {/* Static sidebar for desktop */}
-                <div className="hidden nav md:flex md:flex-shrink-0">
+                <div className="hidden md:flex md:flex-shrink-0">
                     <div className="flex flex-col w-64">
                         {/* Sidebar component, swap this element with another sidebar if you like */}
                         <div className="flex flex-col flex-grow pt-5 pb-4 overflow-y-auto">
@@ -103,17 +103,17 @@ export default function Nav(props) {
                                             key={item.name}
                                             href={item.href}                                      
                                         >
-                                           <p className='cursor-pointer hover:bg-gray-50 hover:text-gray-900 group flex flex-row-reverse pr-5 px-2 py-2 text-sm font-medium rounded-md'> {item.name}</p>
+                                           <p className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm font-medium rounded-md'> {item.name}</p>
                                         </Link>
                                     ))}
-                                    <a href='https://app.uniswap.org/#/swap' target="_blank" rel="noreferrer" className='cursor-pointer hover:bg-gray-50 hover:text-gray-900 group flex flex-row-reverse pr-5 px-2 py-2 text-sm font-medium rounded-md'>Buy CMK</a>
+                                    <a href='https://app.uniswap.org/#/swap' target="_blank" rel="noreferrer" className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm font-medium rounded-md'>Buy CMK</a>
                                 </nav>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col w-0 flex-1 overflow-hidden">
-                    <div className="relative z-10 h-16">
+                <div className="flex flex-col w-0 flex-1 overflow-hidden md:mr-40">
+                    <div className="relative z-10 h-24">
                         <button
                             type="button"
                             className="pt-2.5 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
@@ -134,7 +134,7 @@ export default function Nav(props) {
                                 <a
                                     href="https://app.credmark.com/"
                                     rel="noopener"
-                                    className="flex items-center justify-center py-1 md:py-2 px-4 md:px-8 rounded-full bg-pink text-white text-base font-semibold whitespace-no-wrap cursor-pointer"
+                                    className="flex items-center justify-center py-1 px-4 md:px-8 rounded-full bg-pink text-white text-base font-semibold whitespace-no-wrap cursor-pointer"
                                 >
                                     <span>APP</span>
                                 </a>
@@ -147,6 +147,7 @@ export default function Nav(props) {
                             {props.page}
                         </div>
                     </main>
+                    
                 </div>
             </div>
         </div>

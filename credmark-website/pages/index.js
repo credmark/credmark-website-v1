@@ -29,7 +29,7 @@ export default function Home() {
           />
       </Head>
 
-      <div>
+      <div className="nav">
       <Nav
                 page={<Homepage />} />
       </div>

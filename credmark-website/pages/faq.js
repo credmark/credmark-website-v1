@@ -29,8 +29,11 @@ export default function FAQPage() {
                     }}
                 />
             </Head>
+
+            <div className="nav">
             <Nav
                 page={<FAQ />} />
+                </div>
 
         </>
     )
