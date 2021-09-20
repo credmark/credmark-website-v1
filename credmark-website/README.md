@@ -3,10 +3,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Before starting, you need to install next:
 ```
 npm install next
-
+```
 First, change the directory to git-task:
+
 ```
 cd git-task
+```
 
 ## Getting Started
 
