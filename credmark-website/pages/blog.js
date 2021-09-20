@@ -26,11 +26,11 @@ function BlogPageContent() {
 
     return (
         <div>
-            <div className="py-12 px-5">
+            <div className="py-12 px-5 blogGradient">
                 <div className="text-center">
                     <h1 className="text-5xl">BLOG</h1>
                     <p>News, stories, and announcements from the Credmark team.</p>
-                    <p className="text-pink pb-5 hover:underline">Subscribe</p>
+                    <a href="http://eepurl.com/gLAid9" target="_blank" rel="noreferrer"><p className="text-pink pb-5 hover:underline">Subscribe</p></a>
                 </div>
                 <FilteringMenu
                     filter={filter}

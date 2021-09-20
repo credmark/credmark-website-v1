@@ -29,9 +29,11 @@ const BlogDetail = ({ post }) => {
         <div>
             <div className="max-w-5xl block m-auto text-center px-5">
                 <Link href="/blog" rel="noreferrer">
-                    <img className="pt-10" width={40} src="/assets/arrow.svg" />
+                    <svg className="pt-10 h-auto" width={40} height={40}> 
+                    <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/>
+                    </svg>
                 </Link>
-                <img width={338} height={270} className="rounded-lg block m-auto my-10 mt-10" src={post.mainImage} />
+                <img id="blogPage" width={338} height={270} className="rounded-lg block m-auto mb-10" src={post.mainImage} />
                 <h1 className="text-xl">{post.title}</h1>
                 <BlockContent
                     className="text-left leading-loose pt-10"

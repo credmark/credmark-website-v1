@@ -130,7 +130,7 @@ export default function Nav(props) {
                         </button>
                         <div className="grid grid-cols-2">
                             <div className="hidden md:flex justify-end">
-                                <Link href="/" rel="noreferrer"><img width={45} className="flex justify-right pt-2.5" src="/assets/credmark-logo.png" alt="Credmark Logo" /></Link>
+                                <a href="https://credmark.com/" rel="noreferrer"><img width={45} className="flex justify-right pt-2.5" src="/assets/credmark-logo.png" alt="Credmark Logo" /></a>
                             </div>
                             <div className="flex flex-1 hidden md:flex medium:flex-grow-0 items-center justify-end mr-10 md:pt-2.5">
                                 <a
@@ -144,7 +144,7 @@ export default function Nav(props) {
                         </div>
                     </div>
 
-                    <main className="flex-1 mb-10 relative overflow-y-auto focus:outline-none rounded-3xl bg-white md:mr-5">
+                    <main className="flex-1 mb-10 relative overflow-y-auto focus:outline-none rounded-4xl bg-white md:mr-5">
                         <div>
                             {props.page}
                         </div>

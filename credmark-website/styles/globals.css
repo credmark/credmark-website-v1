@@ -41,6 +41,10 @@ img {
   padding-bottom: 10px;
 }
 
+#blogPage {
+  border-radius: 2.5rem;
+}
+
 mono
 * {
   box-sizing: border-box;
@@ -99,6 +103,19 @@ background: white;
 	border-width: 124px 53px 0 0;
 	border-color: #3B0065 transparent transparent transparent;
 	border-style: solid;
+  position: relative;
+}
+
+.triangletest {
+  background: rgb(59,0,101);
+  background: linear-gradient(110deg, rgba(59,0,101,1) 0%, rgba(59,0,101,1) 9%, rgba(255,255,255,0.1783088235294118) 9%, rgba(255,255,255,1) 92%, rgba(59,0,101,1) 92%, rgba(59,0,101,1) 100%);
+
+}
+
+.trianglePaper {
+  background: rgb(59,0,101);
+  background: linear-gradient(70deg, rgba(59,0,101,1) 0%, rgba(59,0,101,1) 6%, rgba(255,255,255,0.1783088235294118) 6%, rgba(255,255,255,1) 92%, rgba(59,0,101,1) 92%, rgba(59,0,101,1) 100%);
+
 }
 
 .homeTop{
@@ -111,13 +128,12 @@ background: white;
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(110,150,191,0.396796218487395) 100%);
 }
 
-.mediaTop{
-  background: rgb(255,255,255);
-  background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(59, 0, 101, 0.396796218487395) 100%);
-  z-index: 0;
+.blogGradient{
+  background: rgb(177,214,255);
+  background: linear-gradient(130deg, rgba(177,214,255,0.27) 0%, rgba(255,255,255,0.1783088235294118) 10%, rgba(255,255,255,1) 91%, rgba(177,214,255,0.2007177871148459) 100%);
 }
 
-.mediaBottom{
-  background: rgb(255,255,255);
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(59, 0, 101,0.396796218487395) 100%);
+.faqGradient{
+  background: rgb(177,214,255);
+  background: linear-gradient(130deg, rgba(177,214,255,0.27) 0%, rgba(255,255,255,0.1783088235294118) 47%, rgba(255,255,255,1) 79%, rgba(177,214,255,0.2007177871148459) 100%);
 }
