@@ -47,17 +47,6 @@ export default function Homepage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="py-20 pt-10 homeBackground border-2">
-                        <div className="max-w-xl block m-auto">
-                        <a href="https://www.credmark.com/blog/liquidity-swap-drop" rel="noreferrer"><img src="/assets/releaseCMK.png" alt="Release of CMK" /></a>
-                        <a href="https://credmarkhq.gitbook.io/credmark/tokenomics/cmk" target="_blank" rel="noreferrer"><img src="/assets/utilityCMK.png" alt="Utility of CMK" /></a>
-                            </div>
-                            <p className="text-thin text-center text-xl">AVAILABLE MARKETS</p>
-                            <div className="grid grid-cols-2 max-w-2xl block m-auto">
-                            <a href="https://app.uniswap.org/" rel="noreferrer"><img src="/assets/ethCMK.png" alt="CMK ETH" /></a>
-                            <a href="https://app.uniswap.org/" rel="noreferrer"><img src="/assets/usdcCMK.png" alt="CMK ETH" /></a>
-                            </div>
-                        </div>
                         <div className="py-20 homeBottom">
                             <h3 className="credmark text-center text-lg md:text-3xl font-semibold pb-5">THE ROADMAP TO
                                 <br></br>
