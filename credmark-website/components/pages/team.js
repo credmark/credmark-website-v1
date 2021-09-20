@@ -11,9 +11,9 @@ export default function Team() {
                         <h1 className="credmark text-center py-5 text-5xl md:text-7xl pb-10 md:pt-10">
                             THE TEAM
                         </h1>
-                        <div className="grid grid-cols-1 md:grid-cols-3 block m-auto space-x-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 block m-auto space-x-6">
                             <TeamCard
-                                img="../assets/neil.jpg"
+                                img="../assets/neil.png"
                                 alt="Neil Zumwalde"
                                 name="Neil Zumwalde"
                                 title="Founder"
@@ -81,7 +81,7 @@ export default function Team() {
                             <h1 className="credmark text-center py-5 text-5xl md:text-7xl pb-10 md:pt-10">
                                 ADVISORS
                             </h1>
-                            <div className="grid grid-cols-1 md:grid-cols-3 block m-auto">
+                            <div className="grid grid-cols-1 md:grid-cols-2 block m-auto">
                                 <AdvisorCard
                                     img="../assets/alberto.jpg"
                                     alt="Alberto Ornaghi"
@@ -103,8 +103,6 @@ export default function Team() {
                                     role="Advisor"
                                     company="API3"
                                 />
-                            </div>
-                            <div className="grid grid-cols-1 md:grid-cols-2 block m-auto">
                                 <AdvisorCard
                                     img="../assets/renner.jpg"
                                     alt="Renan Feldman"

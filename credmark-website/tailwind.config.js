@@ -11,7 +11,7 @@ module.exports = {
       medium: 500,
       semibold: 600,
       bold: 700,
-      extrabold: 800,
+      extrabold: 1000,
     },
     borderRadius: {
       'sm': '0.125rem',
@@ -35,7 +35,9 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      fontWeight: ['hover', 'focus'],
+    },
   },
   plugins: [],
 }

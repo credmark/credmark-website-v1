@@ -104,10 +104,10 @@ export default function Nav(props) {
                                             key={item.name}
                                             href={item.href}                                      
                                         >
-                                           <p className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm font-medium rounded-md'> {item.name}</p>
+                                           <p className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm hover:font-medium rounded-md'> {item.name}</p>
                                         </Link>
                                     ))}
-                                    <a href='https://app.uniswap.org/#/swap' target="_blank" rel="noreferrer" className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm font-medium rounded-md'>Buy CMK</a>
+                                    <a href='https://app.uniswap.org/#/swap' target="_blank" rel="noreferrer" className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm active:font-medium rounded-md'>Buy CMK</a>
                                 </nav>
                             </div>
                         </div>
