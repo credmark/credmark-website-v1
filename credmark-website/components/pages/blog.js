@@ -11,7 +11,7 @@ export default function Blog({ posts }) {
                 <p className="text-pink pb-5 hover:underline">Subscribe</p>
             </div>
             {posts.map(posts =>
-                <props key={post.id} sm="4">
+                <props key={posts.id} sm="4">
                     <BlogCard
                         title={posts.title}
                         date={posts.date}
