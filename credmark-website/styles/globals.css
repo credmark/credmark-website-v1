@@ -52,6 +52,12 @@ img {
   border-radius: 2.5rem;
 }
 
+#whitepaper {
+  width: auto;
+  display: flex;
+  width: 1050px;
+}
+
 mono
 * {
   box-sizing: border-box;
