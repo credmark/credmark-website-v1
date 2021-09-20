@@ -1,5 +1,3 @@
-import Footer from '../layout/footer'
-
 export default function Homepage() {
 
     return (
@@ -53,7 +51,6 @@ export default function Homepage() {
                                 <span className="font-bold text-2xl md:text-5xl">DECENTRALIZATION </span></h3>
                             <img src="/assets/roadmap.png" alt="Credmark 3 year roadmap" />
                         </div>
-                        <Footer />
                     </main>
 
     )

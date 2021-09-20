@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
 import Link from 'next/link'
+import Footer from '../layout/footer'
 
 
 const navigation = [
@@ -113,7 +114,7 @@ export default function Nav(props) {
                     </div>
                 </div>
                 <div className="flex flex-col w-0 flex-1 overflow-hidden md:mr-40">
-                    <div className="relative z-10 h-24">
+                    <div className="relative z-10 h-16">
                         <button
                             type="button"
                             className="pt-2.5 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
@@ -126,7 +127,7 @@ export default function Nav(props) {
                             </svg>
                             <span className="sr-only">Open sidebar</span>
                         </button>
-                        <div className="grid grid-cols-2">
+                        <div className="grid grid-cols-2 h-16">
                             <div className="hidden md:flex justify-end">
                                 <a href="https://credmark.com/" rel="noreferrer"><img width={45} className="flex justify-right pt-2.5" src="/assets/credmark-logo.png" alt="Credmark Logo" /></a>
                             </div>
@@ -142,12 +143,12 @@ export default function Nav(props) {
                         </div>
                     </div>
 
-                    <main className="flex-1 mb-10 relative overflow-y-auto focus:outline-none rounded-4xl bg-white">
+                    <main className="flex-1 mb-2.5 relative overflow-y-auto focus:outline-none rounded-4xl bg-white">
                         <div>
                             {props.page}
                         </div>
                     </main>
-                    
+                    <Footer />
                 </div>
             </div>
         </div>

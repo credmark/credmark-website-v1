@@ -1,5 +1,3 @@
-import Footer from '../layout/footer'
-
 export default function Media() {
     return (
         <main className="flex-1 absolute overflow-y-auto focus:outline-none rounded-md">
@@ -42,7 +40,6 @@ export default function Media() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </main>
     )
 }

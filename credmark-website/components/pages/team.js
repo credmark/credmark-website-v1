@@ -1,6 +1,5 @@
 import TeamCard from '../layout/teamCard'
 import AdvisorCard from '../layout/advisorCard'
-import Footer from '../layout/footer'
 
 export default function Team() {
 
@@ -124,7 +123,6 @@ export default function Team() {
                         </div>
                     </div>
                 </div>
-                <Footer />
             </main>
         </>
 

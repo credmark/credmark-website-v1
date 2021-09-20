@@ -1,7 +1,3 @@
-import faqquestion from "./faqQuestion"
-
-import Footer from '../layout/footer'
-
 export default function faq() {
 
     return (
@@ -41,7 +37,6 @@ export default function faq() {
                         </div>
                     </div>
                 </div>
-                <Footer />
             </div>
         </>
 
