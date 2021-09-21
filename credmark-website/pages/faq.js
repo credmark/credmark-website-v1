@@ -1,4 +1,4 @@
-import Nav from '../components/layout/nav'
+import Nav from '../components/layout/navFaq'
 import FAQ from '../components/pages/faq'
 import Head from 'next/head'
 

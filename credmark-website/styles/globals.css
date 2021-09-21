@@ -9,6 +9,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 html,
 body {
@@ -34,6 +35,10 @@ h1{
   font-family: 'Credmark';
 }
 
+#blogbutton {
+  margin: 0px;
+}
+
 img {
   margin: auto;
   display: block;
@@ -41,8 +46,20 @@ img {
   padding-bottom: 10px;
 }
 
+#hackathon{
+  padding-top: 35px;
+  right: 0;
+  bottom: 0;
+}
+
 #blogPage {
   border-radius: 2.5rem;
+}
+
+#whitepaper {
+  width: auto;
+  display: flex;
+  width: 1050px;
 }
 
 mono
@@ -51,39 +68,37 @@ mono
 }
 
 .nav{
-  background: linear-gradient(90deg, rgba(50,197,255,0.04) 0%, rgba(182,32,224,0.04) 51%, rgba(247,181,0,0.04) 100%);
+background: rgb(247,181,0);
+background: linear-gradient(130deg, rgba(247,181,0,0.04) 0%, rgba(182,32,224,0.04) 49%, rgba(50,197,255,0.04) 100%);
 }
 
 /* Let's get this party started */
 ::-webkit-scrollbar {
   width: 12px;
+  padding-top: 15px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: rgb(59, 0, 101);
+  border-radius: 12px;
+  background-image: url("/assets/ScrollWheelSpace.svg");
+  background-repeat: no-repeat;
   height: 5px; 
+  margin-right: -20px;
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
 background: white; 
 }
 
-.scrollbar-colored {
-  scrollbar-color: red green;
-}
-
-
 .homeBackground{
-  background: url("/assets/credmarklogobackground.jpg"); 
+  background: url("/assets/credmark-hackathon.jpg"); 
   background-position: center center; 
   background-size: cover;
   background-repeat: no-repeat;
@@ -92,8 +107,8 @@ background: white;
 .faqBackground{
   background: url("/assets/faq.jpg"); 
   background-position: center center; 
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: contain;
   z-index: 10;
 }
 
@@ -108,13 +123,13 @@ background: white;
 
 .triangletest {
   background: rgb(59,0,101);
-  background: linear-gradient(110deg, rgba(59,0,101,1) 0%, rgba(59,0,101,1) 9%, rgba(255,255,255,0.1783088235294118) 9%, rgba(255,255,255,1) 92%, rgba(59,0,101,1) 92%, rgba(59,0,101,1) 100%);
+  background: linear-gradient(105deg, rgba(59,0,101,1) 0%, rgba(59,0,101,1) 9%, rgba(255,255,255,0.1783088235294118) 9%, rgba(255,255,255,1) 92%, rgba(59,0,101,1) 92%, rgba(59,0,101,1) 100%);
 
 }
 
 .trianglePaper {
   background: rgb(59,0,101);
-  background: linear-gradient(70deg, rgba(59,0,101,1) 0%, rgba(59,0,101,1) 6%, rgba(255,255,255,0.1783088235294118) 6%, rgba(255,255,255,1) 92%, rgba(59,0,101,1) 92%, rgba(59,0,101,1) 100%);
+  background: linear-gradient(70deg, rgba(59,0,101,1) 0%, rgba(59,0,101,1) 9%, rgba(255,255,255,0.1783088235294118) 9%, rgba(255,255,255,1) 92%, rgba(59,0,101,1) 92%, rgba(59,0,101,1) 100%);
 
 }
 
