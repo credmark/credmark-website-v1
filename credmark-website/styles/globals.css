@@ -70,7 +70,8 @@ background: linear-gradient(130deg, rgba(247,181,0,0.03) 0%, rgba(182,32,224,0.0
 
 /* Let's get this party started */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
+  padding-top: 15px;
 }
 
 /* Track */
@@ -81,20 +82,16 @@ background: linear-gradient(130deg, rgba(247,181,0,0.03) 0%, rgba(182,32,224,0.0
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: rgb(59, 0, 101);
+  background-image: url("/assets/ScrollWheel.svg");
+  background-repeat: no-repeat;
   height: 5px; 
+  margin-right: -20px;
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
 background: white; 
 }
-
-.scrollbar-colored {
-  scrollbar-color: red green;
-}
-
 
 .homeBackground{
   background: url("/assets/credmark-hackathon.jpg"); 
@@ -121,13 +118,13 @@ background: white;
 
 .triangletest {
   background: rgb(59,0,101);
-  background: linear-gradient(110deg, rgba(59,0,101,1) 0%, rgba(59,0,101,1) 9%, rgba(255,255,255,0.1783088235294118) 9%, rgba(255,255,255,1) 92%, rgba(59,0,101,1) 92%, rgba(59,0,101,1) 100%);
+  background: linear-gradient(105deg, rgba(59,0,101,1) 0%, rgba(59,0,101,1) 9%, rgba(255,255,255,0.1783088235294118) 9%, rgba(255,255,255,1) 92%, rgba(59,0,101,1) 92%, rgba(59,0,101,1) 100%);
 
 }
 
 .trianglePaper {
   background: rgb(59,0,101);
-  background: linear-gradient(70deg, rgba(59,0,101,1) 0%, rgba(59,0,101,1) 6%, rgba(255,255,255,0.1783088235294118) 6%, rgba(255,255,255,1) 92%, rgba(59,0,101,1) 92%, rgba(59,0,101,1) 100%);
+  background: linear-gradient(70deg, rgba(59,0,101,1) 0%, rgba(59,0,101,1) 9%, rgba(255,255,255,0.1783088235294118) 9%, rgba(255,255,255,1) 92%, rgba(59,0,101,1) 92%, rgba(59,0,101,1) 100%);
 
 }
 
