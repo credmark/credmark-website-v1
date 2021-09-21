@@ -52,10 +52,10 @@ const BlogDetail = ({ post }) => {
         <div>
             <div className="max-w-5xl block m-auto text-center px-5">
                 <Link href="/blog" rel="noreferrer">
-                    <img id="blogbutton" className="pt-10 h-auto cursor-pointer" fill="#3B0065" width={30} height={30} src="/assets/BackButton.svg">
+                    <img id="blogbutton" className="h-auto cursor-pointer" fill="#3B0065" width={30} height={30} src="/assets/BackButton.svg">
                     </img>
                 </Link>
-                <img id="blogPage" width={338} height={270} className="rounded-lg block m-auto mb-10" src={post.mainImage} />
+                <img id="blogPage" className="w-64 h-52 rounded-lg block m-auto mb-10" src={post.mainImage} />
                 <h1 className="text-xl">{post.title}</h1>
                 <BlockContent
                     className="text-left leading-loose pt-10"
