@@ -4,7 +4,6 @@ import BlockContent from '@sanity/block-content-to-react';
 import sanity from '../../lib/sanity';
 
 import Nav from '../../components/layout/nav'
-import Footer from "../../components/layout/footer"
 import Link from 'next/link'
 import Head from 'next/head'
 
@@ -53,9 +52,8 @@ const BlogDetail = ({ post }) => {
         <div>
             <div className="max-w-5xl block m-auto text-center px-5">
                 <Link href="/blog" rel="noreferrer">
-                    <svg className="pt-10 h-auto" width={40} height={40}>
-                        <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
-                    </svg>
+                    <img id="blogbutton" className="pt-10 h-auto cursor-pointer" fill="#3B0065" width={30} height={30} src="/assets/BackButton.svg">
+                    </img>
                 </Link>
                 <img id="blogPage" width={338} height={270} className="rounded-lg block m-auto mb-10" src={post.mainImage} />
                 <h1 className="text-xl">{post.title}</h1>
@@ -66,7 +64,6 @@ const BlogDetail = ({ post }) => {
                     {...sanity.config()}
                 />
             </div>
-            <Footer />
         </div>
     )
 }

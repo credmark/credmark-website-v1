@@ -35,6 +35,10 @@ h1{
   font-family: 'Credmark';
 }
 
+#blogbutton {
+  margin: 0px;
+}
+
 img {
   margin: auto;
   display: block;
