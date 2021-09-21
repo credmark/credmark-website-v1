@@ -114,7 +114,7 @@ export default function Nav(props) {
                     </div>
                 </div>
                 <div className="flex flex-col w-0 flex-1 overflow-hidden md:mr-40">
-                    <div className="relative z-10 h-16">
+                    <div className="relative z-10 h-24">
                         <button
                             type="button"
                             className="pt-2.5 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
@@ -127,15 +127,15 @@ export default function Nav(props) {
                             </svg>
                             <span className="sr-only">Open sidebar</span>
                         </button>
-                        <div className="grid grid-cols-2 h-16">
+                        <div className="grid grid-cols-2 h-24">
                             <div className="hidden md:flex justify-end">
-                                <a href="https://credmark.com/" rel="noreferrer"><img width={45} className="flex justify-right pt-2.5" src="/assets/credmark-logo.png" alt="Credmark Logo" /></a>
+                                <a href="https://credmark.com/" rel="noreferrer"><img width={45} className="flex justify-right pt-6" src="/assets/credmark-logo.png" alt="Credmark Logo" /></a>
                             </div>
                             <div className="flex flex-1 hidden md:flex medium:flex-grow-0 items-center justify-end mr-10 md:pt-2.5">
                                 <a
                                     href="https://app.credmark.com/"
                                     rel="noopener"
-                                    className="flex items-center justify-center py-1 px-4 md:px-8 rounded-full bg-pink text-white text-base font-semibold whitespace-no-wrap cursor-pointer"
+                                    className="credmark text-xs flex items-center justify-center px-4 md:px-5 rounded-full bg-pink text-white text-base whitespace-no-wrap cursor-pointer"
                                 >
                                     <span>APP</span>
                                 </a>
