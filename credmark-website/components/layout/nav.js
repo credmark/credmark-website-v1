@@ -131,13 +131,12 @@ export default function Nav(props) {
                             <div className="hidden md:flex justify-end">
                                 <a href="https://credmark.com/" rel="noreferrer"><img width={45} className="flex justify-right pt-6" src="/assets/credmark-logo.png" alt="Credmark Logo" /></a>
                             </div>
-                            <div className="flex flex-1 hidden md:flex medium:flex-grow-0 items-center justify-end mr-10 md:pt-2.5">
+                            <div className="flex flex-1 hidden md:flex medium:flex-grow-0 items-center justify-end mr-10 md:pt-2.5 mr-16">
                                 <a
                                     href="https://app.credmark.com/"
                                     rel="noopener"
-                                    className="credmark text-xs flex items-center justify-center px-4 md:px-5 rounded-full bg-pink text-white text-base whitespace-no-wrap cursor-pointer"
                                 >
-                                    <span>APP</span>
+                                    <img src="/assets/App.png" width={75} alt="App button" />
                                 </a>
                             </div>
                         </div>
