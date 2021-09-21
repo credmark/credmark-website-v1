@@ -11,27 +11,9 @@ export default function Homepage() {
                                 CREDMARK
                             </h1>
                         </div>
-                        <div className="rounded-full border-2 max-w-xl block m-auto">
-                            <div className="hidden md:flex flex-wrap py-5 credmark justify-center text-2xl">
-                                <p className="text-right">HIGH INTEGRITY
-                                    <br></br>
-                                    DEFI DATA</p>
-                                <p className="px-2">+</p>
-                                <p>HIGH INTEGRITY
-                                    <br></br>
-                                    DEFI DATA</p>
-                            </div>
-                            <div className="md:hidden flex flex-wrap py-5 credmark justify-center text-xl">
-                                <p className="text-center">
-                                    HIGH INTEGRITY
-                                    <br></br>
-                                    DEFI DATA
-                                    <br></br>
-                                    +
-                                    <br></br>
-                                    HIGH INTEGRITY
-                                    <br></br>
-                                    DEFI DATA</p>
+                        <div className="max-w-xl block m-auto">
+                            <div className="flex flex-wrap py-5 credmark justify-center text-2xl">
+                            <img className="px-5" src="/assets/ModelPlatform.png" alt="Image saying 'High integrity data and risk modeling platform'" />
                             </div>
                         </div>
                         <div className="max-w-lg pb-12 md:mb-10 block m-auto">
@@ -58,7 +40,7 @@ export default function Homepage() {
                 <h3 className="credmark text-center text-2xl md:text-3xl pb-5">THE ROADMAP TO
                     <br></br>
                     <span className="text-2xl md:text-5xl">DECENTRALIZATION </span></h3>
-                <img src="/assets/roadmap.png" alt="Credmark 3 year roadmap" />
+                <img className="px-5" src="/assets/roadmap.png" alt="Credmark 3 year roadmap" />
             </div>
         </main>
 
