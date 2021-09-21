@@ -2,10 +2,11 @@ export default function faq() {
 
     return (
         <>
+    <main className="flex-1 mb-2.5 focus:outline-none rounded-4xl bg-white overflow-hidden">
             <div className="faqBackground z-10">
-                <div className="faqGradient z-0">
+                <div className="faqGradient z-0 ">
                     <div className="max-w-5xl block m-auto py-10">
-                        <div className="bg-white max-w-2xl block m-auto rounded-4xl overflow-auto">
+                        <div className="bg-white max-w-2xl block m-auto rounded-4xl overflow-auto bg-scroll h-screen">
                             <h1 className="credmark text-center py-5 text-5xl md:text-7xl md:pt-10">
                                 FAQ
                             </h1>
@@ -38,6 +39,7 @@ export default function faq() {
                     </div>
                 </div>
             </div>
+            </main>
         </>
 
     )

@@ -55,7 +55,7 @@ export default function Homepage() {
                 </div>
             </div>
             <div className="py-20 homeBottom">
-                <h3 className="credmark text-center text-lg md:text-3xl pb-5">THE ROADMAP TO
+                <h3 className="credmark text-center text-2xl md:text-3xl pb-5">THE ROADMAP TO
                     <br></br>
                     <span className="text-2xl md:text-5xl">DECENTRALIZATION </span></h3>
                 <img src="/assets/roadmap.png" alt="Credmark 3 year roadmap" />
