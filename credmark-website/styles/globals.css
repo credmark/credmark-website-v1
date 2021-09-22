@@ -129,6 +129,15 @@ background: white;
   background: linear-gradient(130deg, rgba(177,214,255,0.27) 0%, rgba(255,255,255,0.1783088235294118) 10%, rgba(255,255,255,1) 91%, rgba(177,214,255,0.2007177871148459) 100%);
 }
 
+.paperGradient{
+  background: rgb(177,214,255);
+  background: linear-gradient(130deg, rgba(255,240,253,1) 0%, rgb(255, 255, 255) 10%, rgba(255,255,255,1) 80%, rgba(255,240,253,1) 100%);
+}
+.pinkGradient{
+  background: rgb(177,214,255);
+  background: linear-gradient(70deg, rgba(255,240,253,1) 0%, rgb(255, 255, 255) 10%, rgba(255,255,255,1) 88%, rgba(255,240,253,1) 100%);
+}
+
 .faqGradient{
   background: rgb(177,214,255);
   background: linear-gradient(130deg, rgba(177,214,255,0.27) 0%, rgba(255,255,255,0.1783088235294118) 47%, rgba(255,255,255,1) 79%, rgba(177,214,255,0.2007177871148459) 100%);
