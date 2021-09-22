@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Nav from '../components/layout/nav'
+import Nav from '../components/layout/navWhitepaper'
 import Whitepaper from '../components/pages/whitepaper'
 
 export default function WhitepaperPage() {
