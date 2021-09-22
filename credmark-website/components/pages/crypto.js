@@ -3,16 +3,15 @@ export default function Media() {
         <main className="flex-1 absolute overflow-y-auto focus:outline-none rounded-md bg-white">
             <div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 h-screen md:p-40 2xl:py-96">
-                    
                         <div>
-                            <h2 className="text-center credmark text-4xl md:text-5xl md:text-left">
+                            <h2 className="text-center credmark text-4xl md:text-5xl md:text-left pt-10 md:pt-0">
                                 CRYPTO
                                 <br></br>
                                 CREDIT
                                 <br></br>
                                 REPORT
                             </h2>
-                            <p className="pb-5 md:text-left">Archive of Credmark&apos; s quarterly reports - definitive aggregate insights on the state of the cryptop credit industry.</p>
+                            <p className="pt-5 text-center md:text-left">Archive of Credmark&apos; s quarterly reports - definitive aggregate insights on the state of the cryptop credit industry.</p>
                         </div>
                         <div className="text-center">
                             <p className="text-2xl font-bold">2020</p>
