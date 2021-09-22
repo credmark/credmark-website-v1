@@ -8,7 +8,8 @@ const navigation = [
     { name: 'Home', href: '/', current: true },
     { name: 'White Paper', href: '/whitepaper', current: false },
     { name: 'Blog', href: '/blog', current: false },
-    { name: 'Media/CCR', href: '/media', current: false },
+    { name: 'Media', href: '/media', current: false },
+    { name: 'CCR', href: '/crypto-credit-report', current: false },
     { name: 'FAQ', href: '/faq', current: false },
     { name: 'The Team', href: '/team', current: false },
 ]
