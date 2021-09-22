@@ -1,6 +1,6 @@
 export default function Media() {
     return (
-        <main className="flex-1 absolute overflow-y-auto focus:outline-none rounded-md">
+        <main className="flex-1 absolute overflow-y-auto focus:outline-none rounded-md bg-white">
             <div className="rounded-md">
                 <div className="px-5 py-10 md:pt-28 md:px-40">
                     <h1 className="text-center py-5 text-4xl md:text-6xl">

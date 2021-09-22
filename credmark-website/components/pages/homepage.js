@@ -4,7 +4,7 @@ export default function Homepage() {
 
     return (
         <main className="flex-1 relative overflow-y-auto focus:outline-none rounded-3xl bg-white">
-            <div className="homeTop rounded-md">
+            <div className="homeTop rounded-md bg-white">
                 <img src="/assets/swirls.png" alt="colored swirls" />
                 <div className="max-w-5xl block m-auto">
                     <div className="px-5">

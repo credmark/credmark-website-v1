@@ -2,7 +2,7 @@ export default function Whitepaper() {
 
     return (
         <>
-            <main className="flex-1 relative overflow-y-auto focus:outline-none rounded-md">
+            <main className="flex-1 relative overflow-y-auto focus:outline-none rounded-md bg-white">
                     <div className="rounded-md">
                         <div className="px-5 py-10 md:pt-28 md:px-28">
                                 <h1 className="pt-5 font-light text-4xl md:text-5xl md:pt-0">
