@@ -112,27 +112,6 @@ background: white;
   z-index: 10;
 }
 
-.triangle{
-	width: 0;
-	height: 0;
-	border-width: 124px 53px 0 0;
-	border-color: #3B0065 transparent transparent transparent;
-	border-style: solid;
-  position: relative;
-}
-
-.triangletest {
-  background: rgb(59,0,101);
-  background: linear-gradient(105deg, rgba(59,0,101,1) 0%, rgba(59,0,101,1) 9%, rgba(255,255,255,0.1783088235294118) 9%, rgba(255,255,255,1) 92%, rgba(59,0,101,1) 92%, rgba(59,0,101,1) 100%);
-
-}
-
-.trianglePaper {
-  background: rgb(59,0,101);
-  background: linear-gradient(70deg, rgba(59,0,101,1) 0%, rgba(59,0,101,1) 9%, rgba(255,255,255,0.1783088235294118) 9%, rgba(255,255,255,1) 92%, rgba(59,0,101,1) 92%, rgba(59,0,101,1) 100%);
-
-}
-
 .homeTop{
   background: rgb(255,255,255);
   background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, rgba(110, 151, 191, 0.164) 100%);
