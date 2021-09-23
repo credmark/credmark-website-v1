@@ -51,7 +51,7 @@ function BlogPageContent() {
 
     return (
         <div>
-            <div className="py-12 px-5 blogGradient">
+            <div className="py-12 px-5 blogGradient bg-white">
                 <div className="text-center">
                     <h1 className="text-5xl pb-2.5">BLOG</h1>
                     <p className="pb-2.5">News, stories, and announcements from the Credmark team.</p>

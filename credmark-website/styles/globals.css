@@ -99,6 +99,30 @@ background: linear-gradient(130deg, rgba(247,181,0,0.07) 0%, rgba(182,32,224,0.0
 background: white; 
 }
 
+/* Blog */
+
+h4{
+  font-family: 'Credmark';
+  font-size: 28px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+ul{
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li {
+  display: list-item;
+}
+
+
 .homeBackground{
   background: url("/assets/credmark-hackathon.jpg"); 
   background-position: center center; 
