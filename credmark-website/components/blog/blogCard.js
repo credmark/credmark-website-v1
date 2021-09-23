@@ -10,7 +10,7 @@ const BlogCard = (props) => {
                         <img
                             alt={props.alt}
                             src={props.img}
-                            className='w-64 h-52 rounded-3xl cursor-pointer'
+                            className='w-56 h-52 rounded-3xl cursor-pointer'
                             id="blogPage"
                         />
                     </Link>

@@ -55,10 +55,10 @@ const BlogDetail = ({ post }) => {
                     <img id="blogbutton" className="h-auto cursor-pointer" fill="#3B0065" width={30} height={30} src="/assets/BackButton.svg">
                     </img>
                 </Link>
-                <img id="blogPage" className="w-64 h-52 rounded-lg block m-auto mb-10" src={post.mainImage} />
+                <img id="blogPage" className="w-56 h-52 rounded-lg block m-auto mb-10" src={post.mainImage} />
                 <h1 className="text-xl">{post.title}</h1>
                 <BlockContent
-                    className="text-left leading-loose pt-10"
+                    className="text-left leading-loose pt-10 px-5 md:px-20"
                     serializers={serializers}
                     blocks={post.content}
                     {...sanity.config()}

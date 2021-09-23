@@ -53,8 +53,8 @@ function BlogPageContent() {
         <div>
             <div className="py-12 px-5 blogGradient">
                 <div className="text-center">
-                    <h1 className="text-5xl">BLOG</h1>
-                    <p>News, stories, and announcements from the Credmark team.</p>
+                    <h1 className="text-5xl pb-2.5">BLOG</h1>
+                    <p className="pb-2.5">News, stories, and announcements from the Credmark team.</p>
                     <a href="http://eepurl.com/gLAid9" target="_blank" rel="noreferrer"><p className="text-pink pb-5 hover:underline">Subscribe</p></a>
                 </div>
                 <FilteringMenu
@@ -96,7 +96,7 @@ function BlogPageContent() {
 // this function is called during build time (always called on the server)
 //provides props to the page
 export async function getStaticProps() {
-    const posts = await getAllPosts({ offset: 3 });
+    const posts = await getAllPosts({ offset: 0 });
     return {
         props: {
             posts
