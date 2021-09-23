@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Whitepaper() {
 
     return (
-        <main className="flex-1 relative overflow-y-auto focus:outline-none rounded-3xl bg-white">
+        <main className="flex-1 relative overflow-y-auto focus:outline-none rounded-4xl bg-white">
             <div className="paperGradient rounded-md bg-white">
                 <div className="max-w-5xl block m-auto">
                     <div className="md:pt-28 md:px-28">
@@ -24,13 +24,6 @@ export default function Whitepaper() {
                             <a href="https://reports.credmark.com/litepaper.pdf" target="_blank" rel="noreferrer"><img id="whitepaper" src="/assets/credmark-english-white-paper.png" alt="Credmark White Paper"></img></a>
                             <a href="https://storage.googleapis.com/credmark-cryptocreditreports/Credmark%20Litepaper%20Simplified%20Chinese%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87.pdf" target="_blank" rel="noreferrer"><img id="whitepaper" src="/assets/credmark-tc-white-paper.png" alt="Credmark White Paper"></img></a>
                             <a href="https://storage.googleapis.com/credmark-cryptocreditreports/Credmark%20Litepaper%20Simplified%20Chinese%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87.pdf" target="_blank" rel="noreferrer"><img id="whitepaper" src="/assets/credmark-sc-white-paper.png" alt="Credmark White Paper"></img></a>
-                        </div>
-                        <div className="max-w-lg md:pb-40">
-                            <p className="text-white">Credmark aims to provide high integrity data and risk metrics through a transparent, community-driven platform. By leveraging our community, we provide transparent models and data that can be used to make better investment decisions.</p>
-                            <p className="text-white"> Read our White Paper and then join us in Discord for discussion and feedback around our Product, Token, and soon-to-come Platform!</p>
-                            <p className="text-white"> Read our White Paper and then join us in Discord for discussion and feedback around our Product, Token, and soon-to-come Platform!</p>
-                            <p className="text-white"> Read our White Paper and then join us in Discord for discussion and feedback around our Product, Token, and soon-to-come Platform!</p>
-
                         </div>
                     </div>
                 </div>
