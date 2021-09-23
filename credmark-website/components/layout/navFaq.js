@@ -3,6 +3,9 @@ import { Dialog, Menu, Transition } from '@headlessui/react'
 import Link from 'next/link'
 import Footer from '../layout/footer'
 
+import { XIcon } from '@heroicons/react/outline'
+
+
 
 const navigation = [
     { name: 'Home', href: '/', current: true },
@@ -62,12 +65,7 @@ export default function NavFAQ(props) {
                                             className="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                                             onClick={() => setSidebarOpen(false)}
                                         >
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" enableBackground="new 0 0 40 40">
-                                                <line x1="15" y1="15" x2="25" y2="25" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeMiterlimit="10"></line>
-                                                <line x1="25" y1="15" x2="15" y2="25" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeMiterlimit="10"></line>
-                                                <circle cx="20" cy="20" r="19" opacity="0" stroke="#000" strokeWidth="2.5" strokeLinecap="round" strokeMiterlimit="10" fill="none"></circle>
-                                                <path d="M20 1c10.45 0 19 8.55 19 19s-8.55 19-19 19-19-8.55-19-19 8.55-19 19-19z" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeMiterlimit="10" fill="none"></path>
-                                            </svg>
+                                            <XIcon className="h-6 w-6 text-white" aria-hidden="true" />
                                             <span className="sr-only">Close sidebar</span>
                                         </button>
                                     </div>
@@ -79,7 +77,7 @@ export default function NavFAQ(props) {
                                                 key={item.name}
                                                 href={item.href}
                                             >
-                                            <p className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>{item.name}</p>
+                                                <p className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>{item.name}</p>
                                             </Link>
                                         ))}
                                         <a href='https://app.uniswap.org/#/swap' target="_blank" rel="noreferrer" className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>Buy CMK</a>
@@ -103,9 +101,9 @@ export default function NavFAQ(props) {
                                     {navigation.map((item) => (
                                         <Link
                                             key={item.name}
-                                            href={item.href}                                      
+                                            href={item.href}
                                         >
-                                           <p className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm hover:font-medium rounded-md'> {item.name}</p>
+                                            <p className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm hover:font-medium rounded-md'> {item.name}</p>
                                         </Link>
                                     ))}
                                     <a href='https://app.uniswap.org/#/swap' target="_blank" rel="noreferrer" className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm active:font-medium rounded-md'>Buy CMK</a>
@@ -115,13 +113,13 @@ export default function NavFAQ(props) {
                     </div>
                 </div>
                 <div className="flex flex-col w-0 flex-1 overflow-hidden md:mr-40">
-                    <div className="relative z-10 h-24">
+                    <div className="relative z-10 h-16 md:h-24">
                         <button
                             type="button"
                             className="pt-2.5 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
                             onClick={() => setSidebarOpen(true)}
                         >
-                            <svg viewBox="0 0 100 80" width="40" height="40">
+                            <svg fill="#3b0065" viewBox="0 0 100 80" width="30" height="30">
                                 <rect width="100" height="10"></rect>
                                 <rect y="30" width="100" height="10"></rect>
                                 <rect y="60" width="100" height="10"></rect>
@@ -137,7 +135,7 @@ export default function NavFAQ(props) {
                                     href="https://app.credmark.com/"
                                     rel="noopener"
                                 >
-                                      <img src="/assets/App.png" width={75} alt="App button" />
+                                    <img src="/assets/App.png" width={75} alt="App button" />
                                 </a>
                             </div>
                         </div>
