@@ -1,8 +1,10 @@
+import Link from 'next/link'
+
 export default function Homepage() {
 
     return (
         <main className="flex-1 relative overflow-y-auto focus:outline-none rounded-3xl bg-white">
-            <div className="homeTop rounded-md">
+            <div className="homeTop rounded-md bg-white">
                 <img src="/assets/swirls.png" alt="colored swirls" />
                 <div className="max-w-5xl block m-auto">
                     <div className="px-5">
@@ -17,8 +19,8 @@ export default function Homepage() {
                             </div>
                         </div>
                         <div className="max-w-lg pb-12 md:mb-10 block m-auto">
-                            <p className="pt-10 pb-5 text-center">Credmark provides high-integrity data through a community-driven platform. Our data and models will help users make better investment decisions.</p>
-                            <p className="text-center"> Read our White Paper and then join us in Discord for discussion and,feedback around our Product, Token, and soon-to-come Platform!</p>
+                            <p className="pt-10 pb-5 text-center"><strong>Credmark</strong> aims to provide <strong>high integrity data</strong> and <strong>risk metrics</strong> through a <strong>transparent, community-driven platform.</strong> By leveraging our community, we provide transparent models and data that can be used to <strong>make better investment decisions.</strong></p>
+                            <p className="text-center"> Read our <Link href="/whitepaper" rel="noreferrer"><span className="cursor-pointer"><strong>White Paper</strong></span></Link> and then join us in <a href="https://discord.com/invite/3dSfMqP3d4" target="_blank" rel="noreferrer"><strong>Discord</strong></a> for discussion and feedback around our <strong>Product, Token,</strong> and soon-to-come <a href="https://app.credmark.com/" target="_blank" rel="noreferrer"><strong>Platform!</strong></a></p>
                         </div>
                         <div className="grid grid-cols-2 max-w-lg block m-auto jutify-center pb-16">
                             <a href="https://discord.com/invite/BJbYSRDdtr" target="_blank" rel="noreferrer"><img width={300} alt="Discord channel link" className="block m-auto" src="/assets/discord.png" /></a>

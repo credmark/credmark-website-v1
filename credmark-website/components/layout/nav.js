@@ -8,7 +8,8 @@ const navigation = [
     { name: 'Home', href: '/', current: true },
     { name: 'White Paper', href: '/whitepaper', current: false },
     { name: 'Blog', href: '/blog', current: false },
-    { name: 'Media/CCR', href: '/media', current: false },
+    { name: 'Media', href: '/media', current: false },
+    { name: 'CCR', href: '/crypto-credit-report', current: false },
     { name: 'FAQ', href: '/faq', current: false },
     { name: 'The Team', href: '/team', current: false },
 ]
@@ -142,7 +143,7 @@ export default function Nav(props) {
                         </div>
                     </div>
 
-                    <main className="flex-1 mb-2.5 relative overflow-y-auto focus:outline-none rounded-4xl bg-white">
+                    <main className="flex-1 mb-2.5 relative overflow-y-auto focus:outline-none rounded-4xl bg-transparent">
                         <div>
                             {props.page}
                         </div>
