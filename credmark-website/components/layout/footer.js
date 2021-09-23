@@ -6,7 +6,7 @@ const Footer = () => {
         <>
             <div>
                 <div className="block m-auto">
-                    <div className="hidden lg:flex space-x-4 justify-center pb-1.5">
+                    <div className="hidden sm:flex space-x-4 justify-center pb-1.5">
                         <a className="pt-3.5 text-xs" href="mailto:info@credmark.com" rel="noreferrer noopener" target="_blank"> info@credmark.com </a>
                         <a href="https://discord.com/invite/3dSfMqP3d4" target="_blank" rel="noreferrer"><img width={25} src="../assets/discordsingle.png" alt="Discord logo" target="_blank" rel="noreferrer" /></a>
                         <a href="https://t.me/credmark" target="_blank" rel="noreferrer"><img width={25} src="../assets/telegram.png" alt="Telegram logo" target="_blank" rel="noreferrer" /></a>
@@ -16,7 +16,7 @@ const Footer = () => {
                         </p>
                     </div>
                 </div>
-                <div className="lg:hidden block m-auto max-w-xs">
+                <div className="sm:hidden block m-auto max-w-xs">
                     <div className="flex space-x-4 justify-center pb-1.5">
                         <a href="https://discord.com/invite/3dSfMqP3d4" target="_blank" rel="noreferrer"><img width={30} src="../assets/discordsingle.png" alt="Discord logo" target="_blank" rel="noreferrer" /></a>
                         <a href="https://t.me/credmark" target="_blank" rel="noreferrer"><img width={30} src="../assets/telegram.png" alt="Telegram logo" target="_blank" rel="noreferrer" /></a>
