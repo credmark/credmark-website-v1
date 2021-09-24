@@ -126,8 +126,11 @@ export default function NavFAQ(props) {
                             </svg>
                             <span className="sr-only">Open sidebar</span>
                         </button>
-                        <div className="grid grid-cols-2 h-24">
-                            <div className="hidden md:flex justify-end">
+                        <div className="grid grid-cols-3 h-24">
+                            <div>
+
+                            </div>
+                            <div className="hidden md:flex justify-center">
                                 <a href="https://credmark.com/" rel="noreferrer"><img width={45} className="flex justify-right pt-6" src="/assets/credmark-logo.png" alt="Credmark Logo" /></a>
                             </div>
                             <div className="flex flex-1 hidden md:flex medium:flex-grow-0 items-center justify-end mr-10 md:pt-2.5 mr-16">
