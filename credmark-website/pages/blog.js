@@ -77,6 +77,7 @@ function BlogPageContent() {
                         </div>
                         :
                         <BlogCard
+                            key={`${posts.slug}-list`}
                             title={posts.title}
                             date={moment(posts.date).format('MM/DD/YYYY')}
                             img={posts.mainImage}
