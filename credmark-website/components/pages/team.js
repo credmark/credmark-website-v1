@@ -110,8 +110,10 @@ export default function Team() {
                                     role="Advisor"
                                     company="UBS"
                                 />
+                                </div>
+                                <div className="block m-auto">
                                 <AdvisorCard
-                                    img="../assets/serge.jpg"
+                                    img="../assets/serge.png"
                                     alt="Serge Ugarte"
                                     name="Serge Ugarte"
                                     role="Advisor"

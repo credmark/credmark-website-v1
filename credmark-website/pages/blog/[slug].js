@@ -42,23 +42,25 @@ export default function BlogPostPage({ post }) {
                     }}
                 />
             </Head>
+            <div className="nav">
             <Nav page={<BlogDetail post={post} />} />
+            </div>
         </>
     )
 }
 
 const BlogDetail = ({ post }) => {
     return (
-        <div>
+        <div className="bg-white pb-10">
             <div className="max-w-5xl block m-auto text-center px-5">
                 <Link href="/blog" rel="noreferrer">
                     <img id="blogbutton" className="h-auto cursor-pointer" fill="#3B0065" width={30} height={30} src="/assets/BackButton.svg">
                     </img>
                 </Link>
-                <img id="blogPage" className="w-64 h-52 rounded-lg block m-auto mb-10" src={post.mainImage} />
-                <h1 className="text-xl">{post.title}</h1>
+                <img id="blogPage" className="w-56 h-52 rounded-lg block m-auto mb-10" src={post.mainImage} />
+                <h1 className="text-xl md:px-20">{post.title}</h1>
                 <BlockContent
-                    className="text-left leading-loose pt-10"
+                    className="text-left leading-loose pt-10 px-5 md:px-20"
                     serializers={serializers}
                     blocks={post.content}
                     {...sanity.config()}

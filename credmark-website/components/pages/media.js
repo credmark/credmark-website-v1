@@ -4,7 +4,7 @@ export default function Media() {
         <>
             <main className="flex-1 relative overflow-y-auto focus:outline-none rounded-md bg-white h-screen pinkGradient">
                 <div className="rounded-md">
-                    <div className="px-5 md:pt-28 md:px-28">
+                    <div className="px-5 pt-10 md:pt-28 md:px-28">
                         <h1 className="text-center text-4xl md:text-6xl">
                             CREDMARK
                             <br></br>
