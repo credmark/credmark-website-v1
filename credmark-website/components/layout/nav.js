@@ -2,8 +2,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
 import Link from 'next/link'
 import Footer from '../layout/footer'
-import SimpleBar from 'simplebar-react';
-import 'simplebar/dist/simplebar.min.css';
+import SimpleBar from 'simplebar-react'
 
 import { XIcon } from '@heroicons/react/outline'
 

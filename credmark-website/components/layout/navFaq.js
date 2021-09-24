@@ -144,10 +144,8 @@ export default function NavFAQ(props) {
                         </div>
                     </div>
 
-                    <main className="flex-1 mb-2.5 relative overflow-hidden focus:outline-none rounded-4xl bg-white">
-                        <div>
-                            {props.page}
-                        </div>
+                    <main className="flex-1 mb-2.5 relative overflow-hidden focus:outline-none rounded-4xl bg-white flex">
+                        {props.page}
                     </main>
                     <Footer />
                 </div>
