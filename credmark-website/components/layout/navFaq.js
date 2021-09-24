@@ -62,7 +62,7 @@ export default function NavFAQ(props) {
                                     <div className="absolute top-0 right-0 -mr-12 pt-2">
                                         <button
                                             type="button"
-                                            className="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                                            className="ml-1 flex items-center justify-center h-10 w-10"
                                             onClick={() => setSidebarOpen(false)}
                                         >
                                             <XIcon className="h-6 w-6 text-white" aria-hidden="true" />
