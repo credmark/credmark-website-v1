@@ -1,12 +1,13 @@
-export default function faq() {
+import SimpleBar from 'simplebar-react'
 
+
+export default function faq() {
     return (
-        <>
-    <main className="flex-1 mb-2.5 focus:outline-none rounded-4xl bg-white overflow-hidden">
-            <div className="faqBackground z-10">
-                <div className="faqGradient z-0 ">
-                    <div className="max-w-5xl block m-auto py-10">
-                        <div className="bg-white max-w-2xl block m-auto rounded-4xl overflow-auto bg-scroll h-screen">
+            <div className="faqBackground z-10 flex-1 flex">
+                <div className="faqGradient z-0 flex-1 flex">
+                    <div className="max-w-5xl py-10 flex-1 flex justify-center">
+                        <div className="flex-1 bg-white max-w-2xl rounded-4xl bg-scroll overflow-y-hidden">
+                        <SimpleBar style={{ maxHeight: '100%' }} forceVisible="y" autoHide={false} scrollbarMinSize={60} scrollbarMaxSize={60}>
                             <h1 className="credmark text-center py-5 text-5xl md:text-7xl md:pt-10">
                                 FAQ
                             </h1>
@@ -35,12 +36,10 @@ export default function faq() {
                                 <p className="font-extrabold pb-5">I just bought CMK, why don’t I see it in my wallet?</p>
                                 <p className="font-thin pb-10">Purchases on the Ethereum network are often slow, and will vary depending on the gas fee you pay. Check the status of the transaction on etherscan.io by searching your wallet ID- if it is pending, the transaction is still being processed, if it has failed, try again with a higher gas fee. </p>
                             </div>
+                            </SimpleBar>
                         </div>
                     </div>
                 </div>
             </div>
-            </main>
-        </>
-
     )
 }

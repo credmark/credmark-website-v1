@@ -70,34 +70,47 @@ mono
 
 .nav{
 background: rgb(247,181,0);
-background: linear-gradient(130deg, rgba(247,181,0,0.05) 0%, rgba(182,32,224,0.05) 49%, rgba(50,197,255,0.05) 100%);
+background: linear-gradient(130deg, rgba(247,181,0,0.07) 0%, rgba(182,32,224,0.07) 49%, rgba(50,197,255,0.07) 100%);
 }
 
-/* Let's get this party started */
-::-webkit-scrollbar {
-  width: 12px;
+.simplebar-track.simplebar-vertical {
+  right: 60px;
+  width: 20px !important;
+}
+
+.simplebar-scrollbar.simplebar-visible {
+  cursor: pointer;
+}
+
+.simplebar-scrollbar.simplebar-visible::before {
+  cursor: pointer;
+  background: rgb(59, 0, 101);
+  opacity: 1 !important;
+}
+
+/* Blog */
+
+h4{
+  font-family: 'Credmark';
+  font-size: 28px;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  -webkit-border-radius: 12px;
-  border-radius: 12px;
-  background: rgba(0, 0, 0, 0);
+ul{
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 12px;
-  background-image: url("/assets/ScrollWheelSpace.svg");
-  background-repeat: no-repeat;
-  height: 5px; 
-  margin-right: -20px;
+li {
+  display: list-item;
 }
 
-::-webkit-scrollbar-thumb:window-inactive {
-background: white; 
-}
 
 .homeBackground{
   background: url("/assets/credmark-hackathon.jpg"); 
