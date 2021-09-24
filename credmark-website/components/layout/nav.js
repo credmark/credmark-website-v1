@@ -2,6 +2,8 @@ import { Fragment, useState } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
 import Link from 'next/link'
 import Footer from '../layout/footer'
+import SimpleBar from 'simplebar-react';
+import 'simplebar/dist/simplebar.min.css';
 
 import { XIcon } from '@heroicons/react/outline'
 
@@ -143,10 +145,10 @@ export default function Nav(props) {
                         </div>
                     </div>
 
-                    <main className="flex-1 mb-2.5 relative overflow-y-auto focus:outline-none rounded-4xl bg-transparent">
-                        <div>
-                            {props.page}
-                        </div>
+                    <main className="flex-1 mb-2.5 relative overflow-y-hidden focus:outline-none rounded-4xl bg-transparent">
+                        <SimpleBar style={{ maxHeight: '100%' }} forceVisible="y" autoHide={false} scrollbarMinSize={60} scrollbarMaxSize={60}>
+                                {props.page}
+                        </SimpleBar>
                     </main>
                     <Footer />
                 </div>
