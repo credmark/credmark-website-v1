@@ -115,7 +115,7 @@ export default function Nav(props) {
                     <div className="relative z-10 h-16 md:h-24">
                         <button
                             type="button"
-                            className="pt-2.5 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
+                            className="my-3 pt-2.5 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
                             onClick={() => setSidebarOpen(true)}
                         >
                             <svg fill="#3b0065" viewBox="0 0 100 80" width="30" height="30">
@@ -125,8 +125,11 @@ export default function Nav(props) {
                             </svg>
                             <span className="sr-only">Open sidebar</span>
                         </button>
-                        <div className="grid grid-cols-2 h-24">
-                            <div className="hidden md:flex justify-end">
+                        <div className="grid grid-cols-3 h-24">
+                            <div>
+
+                            </div>
+                            <div className="hidden md:flex justify-center">
                                 <a href="https://credmark.com/" rel="noreferrer"><img width={45} className="flex justify-right pt-6" src="/assets/credmark-logo.png" alt="Credmark Logo" /></a>
                             </div>
                             <div className="flex flex-1 hidden md:flex medium:flex-grow-0 items-center justify-end mr-10 md:pt-2.5 mr-16">
