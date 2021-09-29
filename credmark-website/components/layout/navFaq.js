@@ -97,7 +97,7 @@ export default function NavFAQ(props) {
                         {/* Sidebar component, swap this element with another sidebar if you like */}
                         <div className="flex flex-col flex-grow pt-5 pb-4 overflow-y-auto">
                             <div className="mt-5 flex-grow flex flex-col">
-                                <nav className="flex-1 px-2 pt-16 space-y-1 text-right">
+                                <nav className="flex-1 px-2 pt-28 space-y-1 text-right">
                                     {navigation.map((item) => (
                                         <Link
                                             key={item.name}
