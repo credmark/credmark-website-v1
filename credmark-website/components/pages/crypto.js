@@ -11,7 +11,7 @@ export default function Media() {
                                 <br></br>
                                 REPORT
                             </h2>
-                            <p className="pt-5 text-center md:text-left">Archive of Credmark&apos; s quarterly reports - definitive aggregate insights on the state of the cryptop credit industry.</p>
+                            <p className="pt-5 px-10 md:px-0 text-center md:text-left">Archive of Credmark&apos; s quarterly reports - definitive aggregate insights on the state of the cryptop credit industry.</p>
                         </div>
                         <div className="text-center">
                             <p className="text-2xl font-bold">2020</p>
