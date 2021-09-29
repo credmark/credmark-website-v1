@@ -74,9 +74,19 @@ background: linear-gradient(130deg, rgba(247,181,0,0.07) 0%, rgba(182,32,224,0.0
 }
 
 .simplebar-track.simplebar-vertical {
-  right: 60px;
-  width: 20px !important;
+  right: 50px;
+  width: 15px !important;
+  padding-top: 60px;
 }
+
+@media screen and (max-width: 480px) {
+  .simplebar-track.simplebar-vertical {
+    right: 10px;
+    width: 15px !important;
+    padding-top: 60px;
+  }
+}
+
 
 .simplebar-scrollbar.simplebar-visible {
   cursor: pointer;

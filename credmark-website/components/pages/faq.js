@@ -7,7 +7,7 @@ export default function faq() {
                 <div className="faqGradient z-0 flex-1 flex">
                     <div className="max-w-5xl py-10 flex-1 flex justify-center">
                         <div className="flex-1 bg-white max-w-2xl rounded-4xl bg-scroll overflow-y-hidden">
-                        <SimpleBar style={{ maxHeight: '100%' }} forceVisible="y" autoHide={false} scrollbarMinSize={60} scrollbarMaxSize={60}>
+                        <SimpleBar style={{ maxHeight: '100%' }} forceVisible="y" autoHide={false} scrollbarMinSize={50} scrollbarMaxSize={50}>
                             <h1 className="credmark text-center py-5 text-5xl md:text-7xl md:pt-10">
                                 FAQ
                             </h1>
