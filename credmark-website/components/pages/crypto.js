@@ -4,13 +4,13 @@ export default function Media() {
             <div>
                 <div className="grid grid-cols-1 xl:grid-cols-2 md:p-10 lg:pt-40 lg:px-40 2xl:pt-96">
                     <div>
-                        <h2 className="text-center credmark text-4xl md:text-5xl xl:text-left pt-10 md:pt-0">
+                        <h1 className="text-center credmark text-4xl md:text-5xl xl:text-left pt-10 md:pt-0">
                             CRYPTO
                             <br></br>
                             CREDIT
                             <br></br>
                             REPORT
-                        </h2>
+                        </h1>
                         <p className="pt-5 px-10 md:px-0 text-center xl:text-left pb-5">Archive of Credmark&apos; s quarterly reports - definitive aggregate insights on the state of the cryptop credit industry.</p>
                     </div>
                     <div className="text-center">

@@ -130,27 +130,19 @@ li {
   background-repeat: no-repeat;
 }
 
-.ccrBackground{
-  background: url("/assets/sky.png");
-  background: url("/assets/sky.png"), linear-gradient(70deg, rgba(255,240,253,1) 0%, rgb(255, 255, 255) 10%, rgba(255,255,255,1) 88%, rgba(255,240,253,1) 100%); 
-  background-position: bottom; 
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 1300px){
-  .ccrBackground{
-    background: linear-gradient(70deg, rgba(255,240,253,1) 0%, rgb(255, 255, 255) 10%, rgba(255,255,255,1) 88%, rgba(255,240,253,1) 100%); 
-  }
-  }
-  
-
 .faqBackground{
   background: url("/assets/faq.jpg"); 
   background-position: center center; 
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 10;
+}
+
+.mediaBackground{
+  background: url("/assets/media.png");
+  background-position: center; 
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .homeTop{
