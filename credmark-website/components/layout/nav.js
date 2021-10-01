@@ -97,7 +97,7 @@ export default function Nav(props) {
                         {/* Sidebar component, swap this element with another sidebar if you like */}
                         <div className="flex flex-col flex-grow pt-5 pb-4 overflow-y-auto">
                             <div className="mt-5 flex-grow flex flex-col">
-                                <nav className="flex-1 px-2 pt-16 space-y-1 text-right">
+                                <nav className="flex-1 px-2 pt-28 space-y-1 text-right">
                                     {navigation.map((item) => (
                                         <Link
                                             key={item.name}
@@ -145,7 +145,7 @@ export default function Nav(props) {
                     </div>
 
                     <main className="flex-1 mb-2.5 relative overflow-y-hidden focus:outline-none rounded-4xl bg-transparent">
-                        <SimpleBar style={{ maxHeight: '100%' }} forceVisible="y" autoHide={false} scrollbarMinSize={60} scrollbarMaxSize={60}>
+                        <SimpleBar style={{ maxHeight: '100%' }} forceVisible="y" autoHide={false} scrollbarMinSize={50} scrollbarMaxSize={50}>
                                 {props.page}
                         </SimpleBar>
                     </main>
