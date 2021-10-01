@@ -12,7 +12,7 @@ export default function Media() {
                         </h1>
                     </div>
                     <div className="block m-auto">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 py-2.5 max-w-2xl block m-auto">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 max-w-2xl block m-auto">
                             <MediaCard
                                 link="https://www.coindesk.com/markets/2021/06/03/crypto-credit-rating-firm-credmark-pivots-to-modeling-defi-protocol-risks/"
                                 alt="Coindesk article about Toucan"
