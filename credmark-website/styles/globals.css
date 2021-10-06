@@ -37,7 +37,11 @@ h1{
 }
 
 #blogbutton {
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 50px;
+  padding-top: 40px;
 }
 
 img {
