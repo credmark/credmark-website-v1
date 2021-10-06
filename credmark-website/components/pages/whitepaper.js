@@ -6,7 +6,7 @@ export default function Whitepaper() {
         <main className="flex-1 relative overflow-y-auto focus:outline-none rounded-4xl bg-white">
             <div className="paperGradient rounded-md bg-white">
                 <div className="max-w-5xl block m-auto">
-                    <div className="md:pt-28 md:px-28">
+                    <div className="md:pt-16 md:px-28">
                         <div className="text-center md:text-left px-10" >
                         <h1 className="pt-20 font-light text-4xl md:text-5xl md:pt-0">
                             WHITE PAPER
