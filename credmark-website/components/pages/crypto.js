@@ -1,8 +1,8 @@
 export default function Media() {
     return (
-        <main className="flex-1 overflow-y-auto focus:outline-none rounded-md bg-white">
+        <main className="flex-1 overflow-y-auto focus:outline-none rounded-4xl bg-white">
             <div>
-                <div className="grid grid-cols-1 xl:grid-cols-2 md:p-10 lg:pt-40 lg:px-40 2xl:pt-96">
+                <div className="grid grid-cols-1 xl:grid-cols-2 md:p-10 lg:pt-16 lg:px-40 2xl:pt-16">
                     <div>
                         <h1 className="text-center credmark text-4xl md:text-5xl xl:text-left pt-10 md:pt-0">
                             CRYPTO
@@ -26,7 +26,7 @@ export default function Media() {
                     </div>
                     </div>
                     <div className="w-full">
-                        <img id="whitepaper" src="/assets/sky.png" alt="Credmark White Paper"></img>
+                        <img className="pb-0" id="whitepaper" src="/assets/sky.png" alt="Credmark White Paper"></img>
                     </div>
             </div>
         </main>
