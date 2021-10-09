@@ -139,9 +139,20 @@ li {
   background: url("/assets/faq.jpg"); 
   background-position: center center; 
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   z-index: 10;
 }
+
+@media (min-width: 1450px){
+  .faqBackground{
+    background: url("/assets/faq.jpg"); 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+  }
+}
+
 
 .mediaBackground{
   background: url("/assets/media.png");
