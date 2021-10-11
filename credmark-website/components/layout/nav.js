@@ -80,7 +80,7 @@ export default function Nav(props) {
                                                 <p className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>{item.name}</p>
                                             </Link>
                                         ))}
-                                        <a href='https://app.uniswap.org/#/swap' target="_blank" rel="noreferrer" className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>Buy CMK</a>
+                                        <a href='https://app.uniswap.org/#/swap?outputCurrency=0x68cfb82eacb9f198d508b514d898a403c449533e' target="_blank" rel="noreferrer" className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>Buy CMK</a>
                                     </nav>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@ export default function Nav(props) {
                                             <p className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm hover:font-medium rounded-md'> {item.name}</p>
                                         </Link>
                                     ))}
-                                    <a href='https://app.uniswap.org/#/swap' target="_blank" rel="noreferrer" className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm active:font-medium rounded-md'>Buy CMK</a>
+                                    <a href='https://app.uniswap.org/#/swap?outputCurrency=0x68cfb82eacb9f198d508b514d898a403c449533e' target="_blank" rel="noreferrer" className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm active:font-medium rounded-md'>Buy CMK</a>
                                 </nav>
                             </div>
                         </div>
