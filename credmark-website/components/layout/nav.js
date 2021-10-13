@@ -136,6 +136,7 @@ export default function Nav(props) {
                             <div className="flex flex-1 hidden md:flex medium:flex-grow-0 items-center justify-end mr-10 md:pt-2.5 mr-16">
                                 <a
                                     href="https://app.credmark.com/"
+                                    target="_blank"
                                     rel="noopener"
                                 >
                                     <img src="/assets/App.png" width={75} alt="App button" />
