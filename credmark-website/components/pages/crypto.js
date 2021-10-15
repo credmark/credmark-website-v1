@@ -10,7 +10,7 @@ export default function Media() {
                             REPORT
                         </h1>
                         <p className="text-center py-5 text-base px-10 md:px-48">
-                        Archive of Credmark' s quarterly reports - definitive aggregate insights on the state of the cryptop credit industry.
+                        Archive of Credmark&apos;s quarterly reports - definitive aggregate insights on the state of the cryptop credit industry.
                         </p>
                 <div className="grid grid-cols-1 xl:grid-cols-2 md:p-10 lg:pt-16 lg:px-40 2xl:pt-16">
                     <div className="text-center">
