@@ -84,7 +84,7 @@ export default function Team() {
                                 description="Asan has worked in the risk departments of two of Australia’s largest banks. He has a PhD in applied math. He loves risk strategy and building the most complicated risk models. "
                             />
                             <TeamCard
-                                img="../assets/When.png"
+                                img="../assets/when.png"
                                 alt="Wen-Chiao"
                                 name="Wen-Chiao"
                                 title="Marketing"
