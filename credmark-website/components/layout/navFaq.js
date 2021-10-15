@@ -137,7 +137,7 @@ export default function NavFAQ(props) {
                                 <a
                                     href="https://app.credmark.com/"
                                     target="_blank"
-                                    rel="noopener"
+                                    rel="noreferrer"
                                 >
                                     <img src="/assets/App.png" width={75} alt="App button" />
                                 </a>
