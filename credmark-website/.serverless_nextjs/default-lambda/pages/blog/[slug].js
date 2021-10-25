@@ -188,7 +188,7 @@ async function getStaticPaths() {
 
 /***/ }),
 
-/***/ 444:
+/***/ 5718:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -282,11 +282,11 @@ __webpack_require__.r(__webpack_exports__);
         rewrites: combinedRewrites,
         i18n: undefined,
         page: "/blog/[slug]",
-        buildId: "0xqDXtdDmIQbhZhQlYApk",
-        escapedBuildId: "0xqDXtdDmIQbhZhQlYApk",
+        buildId: "c2YWods6VWPWr2ykFGRll",
+        escapedBuildId: "c2YWods6VWPWr2ykFGRll",
         basePath: "",
         pageIsDynamic: true,
-        encodedPreviewProps: {previewModeId:"6b6b8ef15f4b8ede64e71686c2e346b6",previewModeSigningKey:"31911fe3e216d2c748b8d549ecdc8eae7901d99296a263f6cdebe6e59acbcac4",previewModeEncryptionKey:"d81d608810d34703d86e3559862841330ade4c59d45219972227f3e3e8740c2f"}
+        encodedPreviewProps: {previewModeId:"83dd37984f9bfbe00b2093af21208357",previewModeSigningKey:"cdb206107589660013a2feff8f9582a79eee5cc6af63c50fcad197175ad920f8",previewModeEncryptionKey:"5cecb8147c3c5d8c85489192278cd14c4603589c6f7cbb29a8fa87e61395d50a"}
       })
       
     
@@ -475,7 +475,7 @@ module.exports = require("zlib");
 /******/ 	__webpack_require__.x = () => {
 /******/ 		// Load entry module and return exports
 /******/ 		// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 		var __webpack_exports__ = __webpack_require__.O(undefined, [112,436,536,729,863,414,193,998], () => (__webpack_require__(444)))
+/******/ 		var __webpack_exports__ = __webpack_require__.O(undefined, [112,436,536,729,863,414,193,998], () => (__webpack_require__(5718)))
 /******/ 		__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 		return __webpack_exports__;
 /******/ 	};
