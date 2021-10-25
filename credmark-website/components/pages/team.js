@@ -76,6 +76,20 @@ export default function Team() {
                                 description="After receiving a PhD in algebraic topology and postdoctoral fellowships at MIT and MSRI, Joe worked in blockchain/AI consulting and served as a mentor for dLab. "
                                 descriptiontwo="Outside of work, Joe is either cooking, bodybuilding, or watching YouTube videos about non-duality."
                             />
+                                <TeamCard
+                                img="../assets/Asan.png"
+                                alt="Asan Tulemis"
+                                name="Asan Tulemis"
+                                title="Head of Risk Solutions"
+                                description="Asan has worked in the risk departments of two of Australia’s largest banks. He has a PhD in applied math. He loves risk strategy and building the most complicated risk models. "
+                            />
+                            <TeamCard
+                                img="../assets/when.png"
+                                alt="Wen-Chiao"
+                                name="Wen-Chiao"
+                                title="Marketing"
+                                description="Originally from Taiwan,  Wen-Chiao grew up in the US, went back to Taiwan for high school, and then moved to Japan for university. He’s worked in both Taipei and Tokyo in tech and innovation. In his spare time, he likes reading and asking questions."
+                            />
                         </div>
                         <div className="px-5 py-10">
                             <h1 className="credmark text-center py-5 text-5xl md:text-7xl pb-10 md:pt-10">

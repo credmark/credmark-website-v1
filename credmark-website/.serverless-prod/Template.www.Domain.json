@@ -1,0 +1,13 @@
+{
+  "region": "us-east-1",
+  "privateZone": false,
+  "domain": "credmark.com",
+  "subdomains": [
+    {
+      "domain": "www.credmark.com",
+      "distributionId": "E371K92FGB92MJ",
+      "url": "https://d26jspc6nb7cam.cloudfront.net",
+      "type": "awsCloudFront"
+    }
+  ]
+}

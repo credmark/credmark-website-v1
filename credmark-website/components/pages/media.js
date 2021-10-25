@@ -3,9 +3,9 @@ import MediaCard from "../media/mediaCard"
 export default function Media() {
 
     return (
-        <main className="flex-1 overflow-y-auto focus:outline-none rounded-md mediaBackground">
+        <main className="flex-1 overflow-y-auto focus:outline-none rounded-4xl mediaBackground">
             <div>
-                <div className="pt-20">
+                <div className="pt-16">
                     <div>
                         <h1 className="text-center credmark text-4xl lg:text-5xl border-b-2 border-black max-w-2xl block m-auto mx-10 md:m-auto">
                             IN THE MEDIA

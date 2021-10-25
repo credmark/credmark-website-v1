@@ -37,7 +37,11 @@ h1{
 }
 
 #blogbutton {
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 50px;
+  padding-top: 40px;
 }
 
 img {
@@ -76,7 +80,8 @@ background: linear-gradient(130deg, rgba(247,181,0,0.07) 0%, rgba(182,32,224,0.0
 .simplebar-track.simplebar-vertical {
   right: 50px;
   width: 15px !important;
-  padding-top: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   filter: drop-shadow(2px 0px 4px #999999);
 }
 
@@ -134,9 +139,20 @@ li {
   background: url("/assets/faq.jpg"); 
   background-position: center center; 
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   z-index: 10;
 }
+
+@media (min-width: 1450px){
+  .faqBackground{
+    background: url("/assets/faq.jpg"); 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+  }
+}
+
 
 .mediaBackground{
   background: url("/assets/media.png");
@@ -171,5 +187,5 @@ li {
 
 .faqGradient{
   background: rgb(177,214,255);
-  background: linear-gradient(130deg, rgba(177,214,255,0.27) 0%, rgba(255,255,255,0.1783088235294118) 47%, rgba(255,255,255,1) 79%, rgba(177,214,255,0.2007177871148459) 100%);
+  background: linear-gradient(130deg, rgba(177,214,255,0.27) 0%, rgba(255,255,255,0.1783088235294118) 47%, rgba(255,255,255,0.1783088235294118) 79%, rgba(177,214,255,0.2007177871148459) 100%);
 }

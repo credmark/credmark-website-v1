@@ -80,7 +80,7 @@ export default function Nav(props) {
                                                 <p className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>{item.name}</p>
                                             </Link>
                                         ))}
-                                        <a href='https://app.uniswap.org/#/swap' target="_blank" rel="noreferrer" className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>Buy CMK</a>
+                                        <a href='https://app.uniswap.org/#/swap?outputCurrency=0x68cfb82eacb9f198d508b514d898a403c449533e' target="_blank" rel="noreferrer" className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>Buy CMK</a>
                                     </nav>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@ export default function Nav(props) {
                                             <p className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm hover:font-medium rounded-md'> {item.name}</p>
                                         </Link>
                                     ))}
-                                    <a href='https://app.uniswap.org/#/swap' target="_blank" rel="noreferrer" className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm active:font-medium rounded-md'>Buy CMK</a>
+                                    <a href='https://app.uniswap.org/#/swap?outputCurrency=0x68cfb82eacb9f198d508b514d898a403c449533e' target="_blank" rel="noreferrer" className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm active:font-medium rounded-md'>Buy CMK</a>
                                 </nav>
                             </div>
                         </div>
@@ -136,15 +136,16 @@ export default function Nav(props) {
                             <div className="flex flex-1 hidden md:flex medium:flex-grow-0 items-center justify-end mr-10 md:pt-2.5 mr-16">
                                 <a
                                     href="https://app.credmark.com/"
-                                    rel="noopener"
-                                >
+                                    target="_blank"
+                                    rel="noreferrer"
+                                   >
                                     <img src="/assets/App.png" width={75} alt="App button" />
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <main className="flex-1 mb-2.5 relative overflow-y-hidden focus:outline-none rounded-4xl bg-transparent">
+                    <main className="flex-1 mb-2.5 relative overflow-y-hidden focus:outline-none rounded-4xl">
                         <SimpleBar style={{ maxHeight: '100%' }} forceVisible="y" autoHide={false} scrollbarMinSize={50} scrollbarMaxSize={50}>
                                 {props.page}
                         </SimpleBar>

@@ -1,0 +1,17 @@
+{
+  "name": "vqclgj-lh3lqlw",
+  "hash": "cK2rYZF7bUZ8x8S9aDRMvPLz/bBiErxSVUhRpRte0bg=",
+  "description": "prod WWW marketing site",
+  "memory": 512,
+  "timeout": 10,
+  "code": "/Users/emilie/git/credmark/credmark-website/credmark-website/.serverless_nextjs/default-lambda",
+  "shims": [],
+  "handler": "index.handler",
+  "runtime": "nodejs14.x",
+  "env": {},
+  "role": {
+    "arn": "arn:aws:iam::415687062322:role/vqclgj-8rhskk"
+  },
+  "arn": "arn:aws:lambda:us-east-1:415687062322:function:vqclgj-lh3lqlw",
+  "region": "us-east-1"
+}
