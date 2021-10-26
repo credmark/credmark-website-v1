@@ -1,47 +1,69 @@
-import MediaCard from "../media/mediaCard"
+import MediaCard from "../media/mediaCard";
+import moment from "moment";
+import React from "react";
 
-export default function Media() {
+export default function Media({ posts }) {
+  // Uncomment all the "UNCOMMENT ME"s to use filtering
 
-    return (
-        <main className="flex-1 overflow-y-auto focus:outline-none rounded-md mediaBackground">
-            <div>
-                <div className="pt-20">
-                    <div>
-                        <h1 className="text-center credmark text-4xl lg:text-5xl border-b-2 border-black max-w-2xl block m-auto mx-10 md:m-auto">
-                            IN THE MEDIA
-                        </h1>
-                    </div>
-                    <div className="block m-auto">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 max-w-2xl block m-auto">
-                            <MediaCard
-                                link="https://www.coindesk.com/markets/2021/06/03/crypto-credit-rating-firm-credmark-pivots-to-modeling-defi-protocol-risks/"
-                                alt="Coindesk article about Toucan"
-                                img="/assets/coindesk.png"
-                                title="COINDESK EXCLUSIVE"
-                                description="CRYPTO PIVOTS TO MODELING DEFI PROTOCOL RISKS"
-                                date="June 3rd, 2021"
-                            />
-                            <MediaCard
-                                link="https://medium.com/api3/announcing-the-api3-partnership-with-credmark-72d45c976375"
-                                alt="API 3 Partnership"
-                                img="/assets/api3.png"
-                                title="API 3 PARTNERSHIP"
-                                description="ANNOUNCING THE API3 PARTNERSHIP WITH CREDMARK"
-                                date="June 4th, 2021"
-                            />
-                            <MediaCard
-                                link="https://www.businesslive.co.za/bd/markets/2021-07-02-native-how-hedge-funds-are-earning-up-to-20-a-year-on-usd-deposits/"
-                                alt="Business Day article about Toucan"
-                                img="/assets/business-day.png"
-                                title="BUSINESS DAY"
-                                description="HEDGEFUNDS ARE EARNING UP TO 20% ON DOLLAR DEPOSITS"
-                                date="July 22nd, 2021"
-                            />
-                        </div>
-                    </div>
-                </div>
+  // UNCOMMENT ME
+  /*const [filteredPosts, setFilteredPosts] = React.useState([]);
+  const [selectedCategory, setSelectedCategory] = React.useState("all");
+
+  React.useEffect(() => {
+    if (selectedCategory === "all") {
+      setFilteredPosts(posts);
+    } else {
+      setFilteredPosts(
+        posts.filter((post) => post.category.slug.current === selectedCategory)
+      );
+    }
+  }, [selectedCategory]);*/
+
+  return (
+    <main className="flex-1 overflow-y-auto focus:outline-none rounded-md mediaBackground">
+      <div>
+        <div className="pt-20">
+          <div>
+            <h1 className="text-center credmark text-4xl lg:text-5xl border-b-2 border-black max-w-2xl block m-auto mx-10 md:m-auto">
+              IN THE MEDIA
+            </h1>
+          </div>
+          {// UNCOMMENT ME
+          /*<div className="mx-10 max-w-2xl md:m-auto flex justify-around">
+              <button onClick={()=>{setSelectedCategory("all")}}>All</button>
+              <button onClick={()=>{setSelectedCategory("press")}}>Press</button>
+              <button onClick={()=>{setSelectedCategory("announcements")}}>Announcements</button>
+              <button onClick={()=>{setSelectedCategory("new-features")}}>New Features</button>
+          </div>*/}
+          <div className="block m-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 max-w-2xl m-auto">
+              {posts.map((post) => (
+                <MediaCard
+                  key={post.slug}
+                  link={post.url}
+                  img={post.mainImage}
+                  alt={post.mainImageAlt}
+                  title={post.title}
+                  description={post.subtitle}
+                  date={moment(post.publishedAt).format("MMMM Do, Y")}
+                />
+              ))}
+              {// UNCOMMENT ME
+              /*filteredPosts.map((post) => (
+                <MediaCard
+                  key={post.slug}
+                  link={post.url}
+                  img={post.mainImage}
+                  alt={post.mainImageAlt}
+                  title={post.title}
+                  description={post.subtitle}
+                  date={moment(post.publishedAt).format("MMMM Do, Y")}
+                />
+              ))*/}
             </div>
-        </main>
-    )
+          </div>
+        </div>
+      </div>
+    </main>
+  );
 }
-
