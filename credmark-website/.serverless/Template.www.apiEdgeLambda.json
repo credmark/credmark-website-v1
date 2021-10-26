@@ -1,7 +1,7 @@
 {
-  "name": "gep1gxe-j727ez",
-  "hash": "CKbEIWQ98jVg2J2r8JIfO0kMrdkbDYDyAFP1IqOpgYk=",
-  "description": "staging WWW marketing site (API)",
+  "name": "vqclgj-dhh1hmd",
+  "hash": "9sTeFaNk1mU/sm2OnCcR9iD0Nh5vbnSIJThk2WpT91k=",
+  "description": "prod WWW marketing site (API)",
   "memory": 512,
   "timeout": 10,
   "code": "/Users/emilie/git/credmark/credmark-website/credmark-website/.serverless_nextjs/api-lambda",
@@ -10,8 +10,8 @@
   "runtime": "nodejs14.x",
   "env": {},
   "role": {
-    "arn": "arn:aws:iam::415687062322:role/gep1gxe-7xxx8om"
+    "arn": "arn:aws:iam::415687062322:role/vqclgj-shkk10d"
   },
-  "arn": "arn:aws:lambda:us-east-1:415687062322:function:gep1gxe-j727ez",
+  "arn": "arn:aws:lambda:us-east-1:415687062322:function:vqclgj-dhh1hmd",
   "region": "us-east-1"
 }

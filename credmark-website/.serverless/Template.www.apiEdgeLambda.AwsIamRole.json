@@ -1,6 +1,6 @@
 {
-  "name": "gep1gxe-7xxx8om",
-  "arn": "arn:aws:iam::415687062322:role/gep1gxe-7xxx8om",
+  "name": "vqclgj-shkk10d",
+  "arn": "arn:aws:iam::415687062322:role/vqclgj-shkk10d",
   "service": [
     "edgelambda.amazonaws.com",
     "lambda.amazonaws.com"
@@ -19,7 +19,7 @@
       },
       {
         "Effect": "Allow",
-        "Resource": "arn:aws:s3:::gep1gxe-nd1oxn/*",
+        "Resource": "arn:aws:s3:::vqclgj-99erzr9/*",
         "Action": [
           "s3:GetObject",
           "s3:PutObject"
