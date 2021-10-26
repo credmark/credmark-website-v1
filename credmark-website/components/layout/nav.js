@@ -145,7 +145,7 @@ export default function Nav(props) {
                         </div>
                     </div>
 
-                    <main className="scrollbar flex-1 mb-2.5 relative overflow-y-scroll focus:outline-none rounded-4xl">
+                    <main className="max-w-full scrollbar flex-1 mb-2.5 relative overflow-y-scroll focus:outline-none rounded-4xl">
                                 {props.page}
                     </main>
                     <Footer />
