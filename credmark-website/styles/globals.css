@@ -77,6 +77,10 @@ background: rgb(247,181,0);
 background: linear-gradient(130deg, rgba(247,181,0,0.07) 0%, rgba(182,32,224,0.07) 49%, rgba(50,197,255,0.07) 100%);
 }
 
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 .simplebar-track.simplebar-vertical {
   right: 50px;
   width: 15px !important;

@@ -6,8 +6,7 @@ export default function faq() {
             <div className="faqBackground z-10 flex-1 flex">
                 <div className="faqGradient z-0 flex-1 flex">
                     <div className="max-w-5xl py-10 flex-1 flex justify-center">
-                        <div className="flex-1 bg-white max-w-2xl rounded-4xl bg-scroll overflow-y-hidden">
-                        <SimpleBar style={{ maxHeight: '100%' }} forceVisible="y" autoHide={false} scrollbarMinSize={50} scrollbarMaxSize={50}>
+                        <div className="scrollbar flex-1 bg-white max-w-2xl rounded-4xl bg-scroll overflow-y-scroll">
                             <h1 className="credmark text-center py-5 text-5xl md:text-7xl md:pt-10">
                                 FAQ
                             </h1>
@@ -36,7 +35,6 @@ export default function faq() {
                                 <p className="font-extrabold pb-5">I just bought CMK, why don’t I see it in my wallet?</p>
                                 <p className="font-thin pb-10">Purchases on the Ethereum network are often slow, and will vary depending on the gas fee you pay. Check the status of the transaction on etherscan.io by searching your wallet ID- if it is pending, the transaction is still being processed, if it has failed, try again with a higher gas fee. </p>
                             </div>
-                            </SimpleBar>
                         </div>
                     </div>
                 </div>
