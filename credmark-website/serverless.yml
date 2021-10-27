@@ -2,5 +2,6 @@ stage: "${env.stage}"
 www:
   component: "@sls-next/serverless-component@3.3.0" # it is recommended you pin the latest stable version of serverless-next.js
   inputs:
-    domain: [ "${env.subdomain}", "credmark.com" ]
+    domain: [ "credmark.com" ]
+#    domain: [ "${env.subdomain}", "credmark.com" ]
     description: "${stage} WWW marketing site"
