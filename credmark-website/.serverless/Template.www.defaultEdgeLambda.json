@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
+  "name": "gep1gxe-jn1jx3",
+  "hash": "4cpxnPnVX3Hv4oKh/I1U/xR2bSsfLULYYh9G0H+B/qI=",
+  "description": "staging WWW marketing site",
+=======
   "name": "vqclgj-lh3lqlw",
   "hash": "olrJq44WZH9FRayEn0Zmmysg4qv6QF8m+Qmm9Azpmi8=",
   "description": "prod WWW marketing site",
+>>>>>>> 77133a39a37afd37375acb5e633d89c6a1a20366
   "memory": 512,
   "timeout": 10,
   "code": "/Users/emilie/git/credmark/credmark-website/credmark-website/.serverless_nextjs/default-lambda",

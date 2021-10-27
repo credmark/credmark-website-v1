@@ -3,7 +3,7 @@ import MediaCard from "../media/mediaCard"
 export default function Media() {
 
     return (
-        <main className="flex-1 overflow-y-auto focus:outline-none rounded-4xl mediaBackground">
+        <main className="max-w-full flex-1 overflow-y-auto focus:outline-none rounded-4xl mediaBackground">
             <div>
                 <div className="pt-16">
                     <div>

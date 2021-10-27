@@ -228,17 +228,8 @@ function Nav(props) {
             })]
           })]
         }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("main", {
-          className: "flex-1 mb-2.5 relative overflow-y-hidden focus:outline-none rounded-4xl",
-          children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx((simplebar_react__WEBPACK_IMPORTED_MODULE_3___default()), {
-            style: {
-              maxHeight: '100%'
-            },
-            forceVisible: "y",
-            autoHide: false,
-            scrollbarMinSize: 50,
-            scrollbarMaxSize: 50,
-            children: props.page
-          })
+          className: "max-w-full scrollbar flex-1 mb-2.5 relative overflow-y-scroll focus:outline-none rounded-4xl",
+          children: props.page
         }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx(_layout_footer__WEBPACK_IMPORTED_MODULE_2__/* .default */ .Z, {})]
       })]
     })
