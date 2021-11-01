@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Whitepaper() {
 
     return (
-        <main className="flex-1 relative overflow-y-auto focus:outline-none rounded-4xl bg-white">
+        <main className="max-w-full flex-1 relative overflow-y-auto focus:outline-none rounded-4xl bg-white">
             <div className="paperGradient rounded-md bg-white">
                 <div className="max-w-5xl block m-auto">
                     <div className="md:pt-28 md:px-28">
