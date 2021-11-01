@@ -7,9 +7,9 @@ exports.modules = {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "B": () => (/* binding */ getAllPosts)
+/* harmony export */   "Bd": () => (/* binding */ getAllPosts)
 /* harmony export */ });
-/* unused harmony export getBlogBySlug */
+/* unused harmony exports getBlogBySlug, getAllMediaPosts */
 /* harmony import */ var _sanity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1095);
 
 const postFields = `
@@ -31,6 +31,19 @@ async function getBlogBySlug(slug) {
     }`, {
     slug
   }).then(res => res === null || res === void 0 ? void 0 : res[0]);
+  return results;
+}
+async function getAllMediaPosts() {
+  const mediaPostFields = `"category": category->,
+    title, 
+    subtitle,
+    url,
+    publishedAt,
+    "mainImage": mainImage.asset->url,
+    "mainImageAlt": mainImage.alt,
+    body,
+    "slug": slug.current`;
+  const results = await client.fetch(`*[_type == "mediaPost"]| order(publishedAt desc) {${mediaPostFields}}`);
   return results;
 }
 

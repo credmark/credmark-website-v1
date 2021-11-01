@@ -2,7 +2,9 @@ import Head from 'next/head'
 import Media from '../components/pages/media'
 import Nav from '../components/layout/nav'
 
-export default function Home() {
+import { getAllMediaPosts } from "../lib/api"
+
+export default function Home({posts}) {
   return (
     <>
       <Head>
@@ -31,8 +33,17 @@ export default function Home() {
 
       <div className="nav">
       <Nav
-                page={<Media />} />
+                page={<Media posts={posts} />} />
       </div>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const posts = await getAllMediaPosts();
+  return {
+      props: {
+          posts
+      }
+  };
 }
