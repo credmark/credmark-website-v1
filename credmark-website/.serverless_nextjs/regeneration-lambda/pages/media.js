@@ -2,7 +2,240 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 5520:
+/***/ 1183:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ Home),
+  "getStaticProps": () => (/* binding */ getStaticProps)
+});
+
+// EXTERNAL MODULE: ./node_modules/next/head.js
+var head = __webpack_require__(9008);
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(7294);
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(5893);
+;// CONCATENATED MODULE: ./components/media/mediaCard.js
+
+
+
+
+
+const MediaCard = props => {
+  return /*#__PURE__*/jsx_runtime.jsx(jsx_runtime.Fragment, {
+    children: /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+      className: "pt-10",
+      children: [/*#__PURE__*/jsx_runtime.jsx("img", {
+        width: 200,
+        src: "/assets/DailyNews.png",
+        alt: "Daily News"
+      }), /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+        className: "grid grid-cols-1 md:grid-cols-2 border-t-2 border-b-2 border-black py-0.5 mx-4",
+        children: [/*#__PURE__*/jsx_runtime.jsx("p", {
+          className: "text-xs text-black text-center md:text-right font-bold",
+          children: "CREDMARK IN THE MEDIA"
+        }), /*#__PURE__*/jsx_runtime.jsx("p", {
+          className: "text-xs text-black text-center font-bold",
+          children: props.date
+        })]
+      }), /*#__PURE__*/jsx_runtime.jsx("h3", {
+        className: "credmark text-center text-4xl pt-2",
+        children: props.title
+      }), /*#__PURE__*/jsx_runtime.jsx("a", {
+        href: props.link,
+        target: "_blank",
+        rel: "noreferrer",
+        children: /*#__PURE__*/jsx_runtime.jsx("img", {
+          alt: props.alt,
+          src: props.img,
+          className: "cursor-pointer px-5"
+        })
+      }), /*#__PURE__*/jsx_runtime.jsx("a", {
+        href: props.link,
+        target: "_blank",
+        rel: "noreferrer",
+        children: /*#__PURE__*/jsx_runtime.jsx("p", {
+          className: "cursor-pointer credmark text-center text-black text-2xl",
+          children: props.description
+        })
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const mediaCard = (MediaCard);
+// EXTERNAL MODULE: ./node_modules/moment/moment.js
+var moment = __webpack_require__(381);
+var moment_default = /*#__PURE__*/__webpack_require__.n(moment);
+;// CONCATENATED MODULE: ./components/pages/media.js
+
+
+
+
+
+function Media({
+  posts
+}) {
+  // Uncomment all the "UNCOMMENT ME"s to use filtering
+  // UNCOMMENT ME
+
+  /*const [filteredPosts, setFilteredPosts] = React.useState([]);
+  const [selectedCategory, setSelectedCategory] = React.useState("all");
+  React.useEffect(() => {
+    if (selectedCategory === "all") {
+      setFilteredPosts(posts);
+    } else {
+      setFilteredPosts(
+        posts.filter((post) => post.category.slug.current === selectedCategory)
+      );
+    }
+  }, [selectedCategory]);*/
+  return /*#__PURE__*/jsx_runtime.jsx("main", {
+    className: "flex-1 overflow-y-auto focus:outline-none rounded-md mediaBackground",
+    children: /*#__PURE__*/jsx_runtime.jsx("div", {
+      children: /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+        className: "pt-20",
+        children: [/*#__PURE__*/jsx_runtime.jsx("div", {
+          children: /*#__PURE__*/jsx_runtime.jsx("h1", {
+            className: "text-center credmark text-4xl lg:text-5xl border-b-2 border-black max-w-2xl block m-auto mx-10 md:m-auto",
+            children: "IN THE MEDIA"
+          })
+        }), /*#__PURE__*/jsx_runtime.jsx("div", {
+          className: "block m-auto",
+          children: /*#__PURE__*/jsx_runtime.jsx("div", {
+            className: "grid grid-cols-1 lg:grid-cols-2 max-w-2xl m-auto",
+            children: posts.map(post => /*#__PURE__*/jsx_runtime.jsx(mediaCard, {
+              link: post.url,
+              img: post.mainImage,
+              alt: post.mainImageAlt,
+              title: post.title,
+              description: post.subtitle,
+              date: moment_default()(post.publishedAt).format("MMMM Do, Y")
+            }, post.slug))
+          })
+        })]
+      })
+    })
+  });
+}
+// EXTERNAL MODULE: ./components/layout/nav.js
+var nav = __webpack_require__(3998);
+// EXTERNAL MODULE: ./node_modules/@sanity/client/lib/sanityClient.js
+var sanityClient = __webpack_require__(9729);
+var sanityClient_default = /*#__PURE__*/__webpack_require__.n(sanityClient);
+;// CONCATENATED MODULE: ./lib/sanity.js
+
+/* harmony default export */ const sanity = (sanityClient_default()({
+  projectId: "9y1au457",
+  // you can find this in sanity.json
+  dataset: "production",
+  apiVersion: "2021-09-07",
+  // or the name you chose in step 1
+  useCdn: false // `false` if you want to ensure fresh data
+
+}));
+;// CONCATENATED MODULE: ./lib/api.js
+
+const postFields = (/* unused pure expression or super */ null && (`
+title, 
+subtitle,
+"date": publishedAt,
+"author": author->name,
+"slug": slug.current,
+"mainImage": mainImage.asset->url,
+"content": body,
+`));
+async function getAllPosts() {
+  const results = await client.fetch(`*[_type == "post"]| order(publishedAt desc) {${postFields}}`);
+  return results;
+}
+async function getBlogBySlug(slug) {
+  const results = await client.fetch(`*[_type == "post" && slug.current == $slug] {
+        ${postFields}
+    }`, {
+    slug
+  }).then(res => res === null || res === void 0 ? void 0 : res[0]);
+  return results;
+}
+async function getAllMediaPosts() {
+  const mediaPostFields = `"category": category->,
+    title, 
+    subtitle,
+    url,
+    publishedAt,
+    "mainImage": mainImage.asset->url,
+    "mainImageAlt": mainImage.alt,
+    body,
+    "slug": slug.current`;
+  const results = await sanity.fetch(`*[_type == "mediaPost"]| order(publishedAt desc) {${mediaPostFields}}`);
+  return results;
+}
+;// CONCATENATED MODULE: ./pages/media.js
+
+
+
+
+
+
+
+function Home({
+  posts
+}) {
+  return /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(head.default, {
+      children: [/*#__PURE__*/jsx_runtime.jsx("title", {
+        children: "Media and Crypto Reports | CREDMARK"
+      }), /*#__PURE__*/jsx_runtime.jsx("meta", {
+        content: "Media and Crypto Reports | Credmark",
+        property: "og:title"
+      }, "og:title"), /*#__PURE__*/jsx_runtime.jsx("meta", {
+        name: "description",
+        content: "Check out our latest press articles and crypto credit reports."
+      }), /*#__PURE__*/jsx_runtime.jsx("link", {
+        rel: "icon",
+        href: "/favicon.ico"
+      }), /*#__PURE__*/jsx_runtime.jsx("script", {
+        async: true,
+        src: `https://www.googletagmanager.com/gtag/js?id=${"UA-201404361-1"}`
+      }), /*#__PURE__*/jsx_runtime.jsx("script", {
+        dangerouslySetInnerHTML: {
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${"UA-201404361-1"}', {
+              page_path: window.location.pathname,
+            });
+          `
+        }
+      })]
+    }), /*#__PURE__*/jsx_runtime.jsx("div", {
+      className: "nav",
+      children: /*#__PURE__*/jsx_runtime.jsx(nav/* default */.Z, {
+        page: /*#__PURE__*/jsx_runtime.jsx(Media, {
+          posts: posts
+        })
+      })
+    })]
+  });
+}
+async function getStaticProps() {
+  const posts = await getAllMediaPosts();
+  return {
+    props: {
+      posts
+    }
+  };
+}
+
+/***/ }),
+
+/***/ 2858:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -45,7 +278,7 @@ __webpack_require__.r(__webpack_exports__);
       const appMod = __webpack_require__(7672)
       let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
 
-      const compMod = __webpack_require__(3359)
+      const compMod = __webpack_require__(1183)
 
       const Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Component);
@@ -95,7 +328,7 @@ __webpack_require__.r(__webpack_exports__);
 
         rewrites: combinedRewrites,
         i18n: undefined,
-        page: "/_error",
+        page: "/media",
         buildId: "GugTdsg63HvBaYyqZmDjk",
         escapedBuildId: "GugTdsg63HvBaYyqZmDjk",
         basePath: "",
@@ -104,6 +337,25 @@ __webpack_require__.r(__webpack_exports__);
       })
       
     
+
+/***/ }),
+
+/***/ 7294:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+
+if (true) {
+  module.exports = __webpack_require__(2408);
+} else {}
+
+
+/***/ }),
+
+/***/ 9059:
+/***/ ((module) => {
+
+module.exports = require("assert");
 
 /***/ }),
 
@@ -156,6 +408,13 @@ module.exports = require("https");
 
 /***/ }),
 
+/***/ 1631:
+/***/ ((module) => {
+
+module.exports = require("net");
+
+/***/ }),
+
 /***/ 3700:
 /***/ ((module) => {
 
@@ -195,6 +454,20 @@ module.exports = require("stream");
 /***/ ((module) => {
 
 module.exports = require("string_decoder");
+
+/***/ }),
+
+/***/ 4016:
+/***/ ((module) => {
+
+module.exports = require("tls");
+
+/***/ }),
+
+/***/ 3867:
+/***/ ((module) => {
+
+module.exports = require("tty");
 
 /***/ }),
 
@@ -261,7 +534,7 @@ module.exports = require("zlib");
 /******/ 	__webpack_require__.x = () => {
 /******/ 		// Load entry module and return exports
 /******/ 		// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 		var __webpack_exports__ = __webpack_require__.O(undefined, [112,436,639,893,414], () => (__webpack_require__(5520)))
+/******/ 		var __webpack_exports__ = __webpack_require__.O(undefined, [112,436,536,729,381,414,193,998], () => (__webpack_require__(2858)))
 /******/ 		__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 		return __webpack_exports__;
 /******/ 	};
@@ -384,7 +657,7 @@ module.exports = require("zlib");
 /******/ 		// object to store loaded chunks
 /******/ 		// "1" means "loaded", otherwise not loaded yet
 /******/ 		var installedChunks = {
-/******/ 			820: 1
+/******/ 			361: 1
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.O.require = (chunkId) => (installedChunks[chunkId]);
@@ -425,9 +698,12 @@ module.exports = require("zlib");
 /******/ 		__webpack_require__.x = () => {
 /******/ 			__webpack_require__.e(112);
 /******/ 			__webpack_require__.e(436);
-/******/ 			__webpack_require__.e(639);
-/******/ 			__webpack_require__.e(893);
+/******/ 			__webpack_require__.e(536);
+/******/ 			__webpack_require__.e(729);
+/******/ 			__webpack_require__.e(381);
 /******/ 			__webpack_require__.e(414);
+/******/ 			__webpack_require__.e(193);
+/******/ 			__webpack_require__.e(998);
 /******/ 			return next();
 /******/ 		};
 /******/ 	})();

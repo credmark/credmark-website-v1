@@ -52,6 +52,19 @@ async function getBlogBySlug(slug) {
   }).then(res => res === null || res === void 0 ? void 0 : res[0]);
   return results;
 }
+async function getAllMediaPosts() {
+  const mediaPostFields = `"category": category->,
+    title, 
+    subtitle,
+    url,
+    publishedAt,
+    "mainImage": mainImage.asset->url,
+    "mainImageAlt": mainImage.alt,
+    body,
+    "slug": slug.current`;
+  const results = await client.fetch(`*[_type == "mediaPost"]| order(publishedAt desc) {${mediaPostFields}}`);
+  return results;
+}
 // EXTERNAL MODULE: ./node_modules/@sanity/block-content-to-react/lib/BlockContent.js
 var BlockContent = __webpack_require__(8863);
 var BlockContent_default = /*#__PURE__*/__webpack_require__.n(BlockContent);
@@ -188,7 +201,7 @@ async function getStaticPaths() {
 
 /***/ }),
 
-/***/ 121:
+/***/ 1147:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -282,11 +295,11 @@ __webpack_require__.r(__webpack_exports__);
         rewrites: combinedRewrites,
         i18n: undefined,
         page: "/blog/[slug]",
-        buildId: "7-_nVjiVTWJoutNcexIam",
-        escapedBuildId: "7\-_nVjiVTWJoutNcexIam",
+        buildId: "GugTdsg63HvBaYyqZmDjk",
+        escapedBuildId: "GugTdsg63HvBaYyqZmDjk",
         basePath: "",
         pageIsDynamic: true,
-        encodedPreviewProps: {previewModeId:"6b03f59eee33ec1f06004cfe8a1dcf96",previewModeSigningKey:"95b360adfcf757e7e773f98b01c782cfb862086e4a69a18c7e9a5bd030d6d8b7",previewModeEncryptionKey:"adb1d2a6a7a31cabc2eee7050ac45d73f8e75fc1010a48bf52441d1531e5c732"}
+        encodedPreviewProps: {previewModeId:"301d74426ce2ca8e4208e7994143e0d8",previewModeSigningKey:"1a8305bfb8df6ddba17dfd47e6b75ac81f04132ea18267c7dabbb17e2052911c",previewModeEncryptionKey:"57246cd7bf723f43923e289df1b9921c3894b60ecf32663d2454494e41b610a9"}
       })
       
     
@@ -475,7 +488,7 @@ module.exports = require("zlib");
 /******/ 	__webpack_require__.x = () => {
 /******/ 		// Load entry module and return exports
 /******/ 		// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 		var __webpack_exports__ = __webpack_require__.O(undefined, [112,436,536,729,863,414,193,998], () => (__webpack_require__(121)))
+/******/ 		var __webpack_exports__ = __webpack_require__.O(undefined, [112,436,536,729,863,414,193,998], () => (__webpack_require__(1147)))
 /******/ 		__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 		return __webpack_exports__;
 /******/ 	};
