@@ -10,5 +10,5 @@ deploy-staging:
 deploy-prod: 
 	git pull
 	cp .serverless/.serverless-prod/* .serverless/
-	serverless --stage="prod"
+	export stage="prod"; serverless --stage="prod"
 	cp .serverless/* .serverless/.serverless-prod/

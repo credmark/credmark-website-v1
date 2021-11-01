@@ -238,7 +238,7 @@ async function getStaticProps() {
 
 /***/ }),
 
-/***/ 7384:
+/***/ 7811:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -332,11 +332,11 @@ __webpack_require__.r(__webpack_exports__);
         rewrites: combinedRewrites,
         i18n: undefined,
         page: "/blog",
-        buildId: "3ggFM9bUhs3xfeMydrVvQ",
-        escapedBuildId: "3ggFM9bUhs3xfeMydrVvQ",
+        buildId: "7-_nVjiVTWJoutNcexIam",
+        escapedBuildId: "7\-_nVjiVTWJoutNcexIam",
         basePath: "",
         pageIsDynamic: false,
-        encodedPreviewProps: {previewModeId:"bd1c0ea367cb01ce340dad9518719140",previewModeSigningKey:"59f54e9a5972c66e6512d6f01544917ba06945a0fe876d2c749b6bcea2ef466b",previewModeEncryptionKey:"cd263b6a499cd153d327df31deac37aa20fc0ed38163d65e8a8da35b65107aba"}
+        encodedPreviewProps: {previewModeId:"6b03f59eee33ec1f06004cfe8a1dcf96",previewModeSigningKey:"95b360adfcf757e7e773f98b01c782cfb862086e4a69a18c7e9a5bd030d6d8b7",previewModeEncryptionKey:"adb1d2a6a7a31cabc2eee7050ac45d73f8e75fc1010a48bf52441d1531e5c732"}
       })
       
     
@@ -525,7 +525,7 @@ module.exports = require("zlib");
 /******/ 	__webpack_require__.x = () => {
 /******/ 		// Load entry module and return exports
 /******/ 		// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 		var __webpack_exports__ = __webpack_require__.O(undefined, [112,436,536,729,853,414,193,998,883], () => (__webpack_require__(7384)))
+/******/ 		var __webpack_exports__ = __webpack_require__.O(undefined, [112,436,536,729,853,414,193,998,883], () => (__webpack_require__(7811)))
 /******/ 		__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 		return __webpack_exports__;
 /******/ 	};
