@@ -30,15 +30,6 @@ export default function Homepage() {
                     </div>
                 </div>
             </div>
-            <div className="py-20 pt-10 homeBackground border-2">
-                <div className="max-w-xl block m-auto">
-
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 max-w-2xl block m-auto">
-                    <img />
-                    <a href="https://blog.credmark.com/credmarks-uniswap-v3-hackathon-announcement-70dd71cb60e9" target="_blank" rel="noreferrer"><img className="md:pt-80" src="/assets/hackathon-button.png" alt="Credmark hackathon button" /></a>
-                </div>
-            </div>
             <div className="py-20 homeBottom">
                 <h3 className="credmark text-center text-2xl md:text-3xl pb-5">THE ROADMAP TO
                     <br></br>
