@@ -5,7 +5,7 @@ export default function Team() {
 
     return (
         <>
-            <main className="max-w-full flex-1 relative overflow-y-auto focus:outline-none rounded-md bg-white">
+            <main className="flex-1 relative overflow-y-auto focus:outline-none rounded-md bg-white">
                 <div className="blogGradient rounded-md">
                     <div className="px-5 py-10 md:px-10">
                         <h1 className="credmark text-center py-5 text-5xl md:text-7xl pb-10 md:pt-10">

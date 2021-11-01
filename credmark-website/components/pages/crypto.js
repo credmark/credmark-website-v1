@@ -1,6 +1,6 @@
 export default function Media() {
     return (
-        <main className="max-w-full flex-1 overflow-y-auto focus:outline-none rounded-md bg-white">
+        <main className="flex-1 overflow-y-auto focus:outline-none rounded-md bg-white">
             <div>
                 <div className="grid grid-cols-1 xl:grid-cols-2 md:p-10 lg:pt-40 lg:px-40 2xl:pt-96">
                     <div>

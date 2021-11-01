@@ -144,7 +144,10 @@ export default function Nav(props) {
                         </div>
                     </div>
 
-                    <main className="max-w-full scrollbar flex-1 mb-2.5 relative overflow-y-hidden focus:outline-none rounded-4xl bg-transparent">
+                    <main className="flex-1 mb-2.5 relative overflow-y-hidden focus:outline-none rounded-4xl bg-transparent">
+                        <SimpleBar style={{ maxHeight: '100%' }} forceVisible="y" autoHide={false} scrollbarMinSize={50} scrollbarMaxSize={50}>
+                                {props.page}
+                        </SimpleBar>
                     </main>
                     <Footer />
                 </div>

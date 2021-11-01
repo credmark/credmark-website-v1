@@ -20,7 +20,7 @@ export default function Media({ posts }) {
   }, [selectedCategory]);*/
 
   return (
-    <main className="max-w-full flex-1 overflow-y-auto focus:outline-none rounded-md mediaBackground">
+    <main className="flex-1 overflow-y-auto focus:outline-none rounded-md mediaBackground">
       <div>
         <div className="pt-20">
           <div>
