@@ -25,3 +25,21 @@ export async function getBlogBySlug(slug) {
 
     return results;
 }
+
+export async function getAllMediaPosts() {
+    const mediaPostFields = 
+    `"category": category->,
+    title, 
+    subtitle,
+    url,
+    publishedAt,
+    "mainImage": mainImage.asset->url,
+    "mainImageAlt": mainImage.alt,
+    body,
+    "slug": slug.current`;
+ 
+    const results =  await client
+    .fetch(`*[_type == "mediaPost"]| order(publishedAt desc) {${mediaPostFields}}`);
+    return results;
+}
+ 
