@@ -80,7 +80,7 @@ export default function Nav(props) {
                                                 <p className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>{item.name}</p>
                                             </Link>
                                         ))}
-                                        <a href='https://app.uniswap.org/#/swap?outputCurrency=0x68cfb82eacb9f198d508b514d898a403c449533e' target="_blank" rel="noreferrer" className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>Buy CMK</a>
+                                        <a href='https://info.uniswap.org/#/pools/0xf7a716e2df2bde4d0ba7656c131b06b1af68513c' target="_blank" rel="noreferrer" className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>Buy CMK</a>
                                     </nav>
                                 </div>
                             </div>
