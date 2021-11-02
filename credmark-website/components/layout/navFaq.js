@@ -106,7 +106,7 @@ export default function NavFAQ(props) {
                                             <p className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm hover:font-medium rounded-md'> {item.name}</p>
                                         </Link>
                                     ))}
-                                    <a href='https://info.uniswap.org/#/pools/0xf7a716e2df2bde4d0ba7656c131b06b1af68513c' target="_blank" rel="noreferrer" className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm active:font-medium rounded-md'>Buy CMK</a>
+                                    <a href='https://app.uniswap.org/#/swap?outputCurrency=0x68cfb82eacb9f198d508b514d898a403c449533e' target="_blank" rel="noreferrer" className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm active:font-medium rounded-md'>Buy CMK</a>
                                 </nav>
                             </div>
                         </div>
