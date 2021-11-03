@@ -3,8 +3,13 @@ import Media from '../components/pages/media'
 import Nav from '../components/layout/nav'
 
 import { getAllMediaPosts } from "../lib/api"
+import { useGetMediaPosts } from '../actions'
 
-export default function Home({posts}) {
+export default function Home({posts: initialPosts}) {
+  // 'posts' is pre-filled with posts cached when getStaticProps() was run during build time
+  // then will be fetched fresh on client-side
+  const { data: posts } = useGetMediaPosts(initialPosts);
+
   return (
     <>
       <Head>
@@ -44,6 +49,6 @@ export async function getStaticProps() {
   return {
       props: {
           posts
-      }
+      },
   };
 }
