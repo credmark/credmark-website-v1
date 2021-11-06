@@ -1,12 +1,10 @@
 import MediaCard from "../media/mediaCard";
 import moment from "moment";
 import React from "react";
+import Header from "../layout/header"
 
 export default function Media({ posts }) {
-  // Uncomment all the "UNCOMMENT ME"s to use filtering
-
-  // UNCOMMENT ME
-  /*const [filteredPosts, setFilteredPosts] = React.useState([]);
+  const [filteredPosts, setFilteredPosts] = React.useState([]);
   const [selectedCategory, setSelectedCategory] = React.useState("all");
   React.useEffect(() => {
     if (selectedCategory === "all") {
@@ -16,27 +14,26 @@ export default function Media({ posts }) {
         posts.filter((post) => post.category.slug.current === selectedCategory)
       );
     }
-  }, [selectedCategory]);*/
+  }, [selectedCategory]);
 
   return (
-    <main className="flex-1 overflow-y-auto focus:outline-none rounded-md mediaBackground">
+    <main>
       <div>
-        <div className="pt-20">
-          <div>
-            <h1 className="text-center credmark text-4xl lg:text-5xl border-b-2 border-black max-w-2xl block m-auto mx-10 md:m-auto">
-              IN THE MEDIA
-            </h1>
+        <Header
+          title="Media"
+          description="Featuring Credmark's" />
+      </div>
+      {<div className="px-5 max-w-5xl md:m-auto">
+        <div className="pt-10 border-b-1 border-gray-700 block m-auto md:m-auto space-x-5 md:space-x-20">
+              <button className="border-b-2 border-transparent hover:border-purple pb-5 pl-5" onClick={()=>{setSelectedCategory("all")}}>All</button>
+              <button className="border-b-2 border-transparent hover:border-purple pb-5" onClick={()=>{setSelectedCategory("press")}}>Press</button>
+              <button className="border-b-2 border-transparent hover:border-purple pb-5" onClick={()=>{setSelectedCategory("announcements")}}>Announcements</button>
+              <button className="border-b-2 border-transparent hover:border-purple pb-5" onClick={()=>{setSelectedCategory("new-features")}}>New Features</button>
           </div>
-          {// UNCOMMENT ME
-          /*<div className="mx-10 max-w-2xl md:m-auto flex justify-around">
-              <button onClick={()=>{setSelectedCategory("all")}}>All</button>
-              <button onClick={()=>{setSelectedCategory("press")}}>Press</button>
-              <button onClick={()=>{setSelectedCategory("announcements")}}>Announcements</button>
-              <button onClick={()=>{setSelectedCategory("new-features")}}>New Features</button>
-          </div>*/}
-          <div className="block m-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 max-w-2xl m-auto">
-              {posts.map((post) => (
+          </div>}
+      <div className="block m-auto max-w-5xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 m-auto container-md">
+          {filteredPosts.map((post) => (
                 <MediaCard
                   key={post.slug}
                   link={post.url}
@@ -47,20 +44,6 @@ export default function Media({ posts }) {
                   date={moment(post.publishedAt).format("MMMM Do, Y")}
                 />
               ))}
-              {// UNCOMMENT ME
-              /*filteredPosts.map((post) => (
-                <MediaCard
-                  key={post.slug}
-                  link={post.url}
-                  img={post.mainImage}
-                  alt={post.mainImageAlt}
-                  title={post.title}
-                  description={post.subtitle}
-                  date={moment(post.publishedAt).format("MMMM Do, Y")}
-                />
-              ))*/}
-            </div>
-          </div>
         </div>
       </div>
     </main>

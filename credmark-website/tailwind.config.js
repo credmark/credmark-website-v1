@@ -4,6 +4,14 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    borderWidth: {
+      '1': '1px',
+      '2': '2px',
+      '3': '3px',
+      '4': '4px',
+      '6': '6px',
+      '8': '8px',
+    },
     fontFamily: {
       'serif': ["Times New Roman"],
     },
@@ -34,13 +42,23 @@ module.exports = {
       blue: colors.blue,
       purple: "#3b0065",
       pink: "#DE1A60",
+      lightpink:"#FCECF3",
     },
-    extend: {},
+    extend: {
+      screens: {
+        small: "415px",
+        medium: "560px",
+        large: "960px",
+        xlarge: "1500px",
+      }
   },
   variants: {
     extend: {
       fontWeight: ['hover', 'focus'],
+      borderColor: ['hover', 'active'],
+      borderWidth: ['hover', 'focus'],
     },
   },
   plugins: [],
+}
 }

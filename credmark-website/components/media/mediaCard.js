@@ -3,13 +3,7 @@ import * as React from 'react';
 const MediaCard = (props) => {
     return (
         <>
-                    <div className="pt-10">
-                    <img width={200} src="/assets/DailyNews.png" alt="Daily News" />
-                        <div className="grid grid-cols-1 md:grid-cols-2 border-t-2 border-b-2 border-black py-0.5 mx-4">
-                            <p className="text-xs text-black text-center md:text-right font-bold">CREDMARK IN THE MEDIA</p>
-                            <p className="text-xs text-black text-center font-bold">{props.date}</p>
-                        </div>
-                        <h3 className="credmark text-center text-4xl pt-2">{props.title}</h3>
+                    <div className="py-10 max-w-xl block m-auto">
                         <a href={props.link} target="_blank" rel="noreferrer">
                             <img
                                 alt={props.alt}
@@ -17,7 +11,9 @@ const MediaCard = (props) => {
                                 className='cursor-pointer px-5'
                             />
                         </a>
-                        <a href={props.link} target="_blank" rel="noreferrer"><p className="cursor-pointer credmark text-center text-black text-2xl">{props.description}</p></a>
+                        <p className="text-xs text-black font-bold px-5">{props.date}</p>
+                        <a href={props.link} target="_blank" rel="noreferrer"><p className="px-5 credmark cursor-pointer text-black text-lg">{props.description}</p></a>
+                        <a href={props.link} target="_blank" rel="noreferrer"><p className="px-5 cursor-pointer text-black text-base">Read more</p></a>
                     </div>
         </>
     );

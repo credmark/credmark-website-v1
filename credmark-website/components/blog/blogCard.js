@@ -4,7 +4,7 @@ import Link from 'next/link';
 const BlogCard = (props) => {
     return (
         <>
-            <div className="mt-10 md:mt-0 block m-auto max-w-3xl">
+            <div className="container-xl mt-10 md:mt-0 block m-auto max-w-3xl">
                 <div className="grid grid-cols-1 md:grid-cols-2 py-2.5 max-w-lg block m-auto">
                     <Link href={`/blog/${props.slug}`}>
                         <img
