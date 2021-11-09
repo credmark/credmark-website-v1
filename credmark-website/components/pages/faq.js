@@ -28,7 +28,7 @@ export default function faq() {
                                     <li>$CMK will be used in our governance platform and gives voting rights to the public - users can use their CMK to vote on the quality of models produced in the Credmark community.</li>
                                     <li>$CMK will be used to reward the community of data scientists for making models. Furthermore, modelers have to stake $CMK in order to submit their models.</li>
                                 </ul>
-                                <p className="font-extrabold pb-1-">How does Credmark encourage data model contributors?</p>
+                                <p className="font-extrabold pb-1-">How does Credmark encourage data model contributors? </p>
                                 <p className="font-thin pb-10">Model contributors will be compensated based on the efficacy and use of their models. Once a model has been submitted and validated on our platform it will enter a leaderboard. The more effective and popular a model is, the higher it will go on the leaderboard- the model contributors at the top of the leaderboard are rewarded out of our community treasury. Because we funnel the fees from retail use back into our community treasury, there will always be rewards available for model contributors.</p>
                                 <p className="font-extrabold pb-5">How can a Credmark user tell if a model is accurate or not?</p>
                                 <p className="font-thin pb-10">Governance dictates the success metrics used by the models. Each category for models has its own metrics and the accuracy is determined by open and transparent ML backtesting methods. To avoid overfitting, we test the models against live data for a period of time.</p>
