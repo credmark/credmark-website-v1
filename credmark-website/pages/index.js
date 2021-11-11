@@ -9,6 +9,8 @@ export default function Home() {
         <title>CREDMARK</title>
         <meta content="Credmark | High Integrity Data | Risk Modeling" property="og:title" key="og:title" />
         <meta name="description" content="Credmark aims to provide high integrity data and risk metrics through a transparent, community-driven platform." />
+        <meta property="og:title" content="Credmark | High Integrity Data | Risk Modeling" key="ogtitle" />
+         <meta property="og:description" content="Credmark aims to provide high integrity data and risk metrics through a transparent, community-driven platform." key="ogdesc" />
         <link rel="icon" href="/favicon.ico" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script

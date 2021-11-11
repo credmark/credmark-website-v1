@@ -9,6 +9,8 @@ export default function TeamPage() {
         <title>Team | CREDMARK</title>
         <meta content="Team | Credmark" property="og:title" key="og:title" />
         <meta name="description" content="Meet the team behind Credmark and our advisors." />
+        <meta property="og:title" content="Team | Credmark" key="ogtitle" />
+         <meta property="og:description" content="Meet the team behind Credmark and our advisors." key="ogdesc" />
         <link rel="icon" href="/favicon.ico" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script

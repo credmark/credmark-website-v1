@@ -9,6 +9,8 @@ export default function CryptoReportPage() {
         <title>Media and Crypto Reports | CREDMARK</title>
         <meta content="Media and Crypto Reports | Credmark" property="og:title" key="og:title" />
         <meta name="description" content="Check out our latest press articles and crypto credit reports." />
+        <meta property="og:title" content="Media and Crypto Reports | Credmark" key="ogtitle" />
++       <meta property="og:description" content="Check out our latest press articles and crypto credit reports." key="ogdesc" />
         <link rel="icon" href="/favicon.ico" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
