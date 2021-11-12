@@ -1,0 +1,19 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - npm install serverless -g
+  build:
+    commands:
+      - npm install
+      - |
+        if expr "${CLOUDFRONTID}" : "DEFAULT" >/dev/null; then
+          serverless; 
+          aws s3 sync ./.serverless s3://credmark-website/.serverless;
+        else 
+          aws s3 sync s3://credmark-website/.serverless ./.serverless;
+          serverless;
+          aws cloudfront create-invalidation --distribution-id ${CLOUDFRONTID} --paths '/*';
+        fi
