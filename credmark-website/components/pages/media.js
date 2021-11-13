@@ -2,6 +2,8 @@ import MediaCard from "../media/mediaCard";
 import moment from "moment";
 import React from "react";
 import Header from "../layout/header"
+import Subscribe from "../layout/subscribe";
+import Footer from "../layout/footer";
 
 export default function Media({ posts }) {
   const [filteredPosts, setFilteredPosts] = React.useState([]);
@@ -46,6 +48,8 @@ export default function Media({ posts }) {
               ))}
         </div>
       </div>
+      <Subscribe />
+      <Footer />
     </main>
   );
 }
