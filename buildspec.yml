@@ -5,6 +5,7 @@ phases:
     runtime-versions:
       nodejs: 14
     commands:
+      - npm install 
       - npm install serverless -g
   build:
     on-failure: ABORT
