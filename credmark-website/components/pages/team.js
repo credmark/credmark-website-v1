@@ -1,5 +1,6 @@
 import TeamCard from '../layout/teamCard'
 import AdvisorCard from '../layout/advisorCard'
+import CenteredHeader from "../layout/centeredHeader"
 
 export default function Team() {
 
@@ -7,11 +8,11 @@ export default function Team() {
         <>
             <main className="max-w-full flex-1 relative overflow-y-auto focus:outline-none rounded-md bg-white">
                 <div className="blogGradient rounded-md">
+                    <CenteredHeader
+                        title="Contributors"
+                        description="Our team speaks numerous languages and are distributed across multiple regions around the world" />
                     <div className="px-5 py-10 md:px-10">
-                        <h1 className="credmark text-center py-5 text-5xl md:text-7xl pb-10 md:pt-10">
-                            THE TEAM
-                        </h1>
-                        <div className="grid grid-cols-1 md:grid-cols-2 block m-auto space-x-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 block m-auto space-x-6">
                             <TeamCard
                                 img="../assets/neil.png"
                                 alt="Neil Zumwalde"
@@ -76,7 +77,7 @@ export default function Team() {
                                 description="After receiving a PhD in algebraic topology and postdoctoral fellowships at MIT and MSRI, Joe worked in blockchain/AI consulting and served as a mentor for dLab. "
                                 descriptiontwo="Outside of work, Joe is either cooking, bodybuilding, or watching YouTube videos about non-duality."
                             />
-                                <TeamCard
+                            <TeamCard
                                 img="../assets/Asan.png"
                                 alt="Asan Tulemis"
                                 name="Asan Tulemis"
@@ -95,7 +96,7 @@ export default function Team() {
                             <h1 className="credmark text-center py-5 text-5xl md:text-7xl pb-10 md:pt-10">
                                 ADVISORS
                             </h1>
-                            <div className="grid grid-cols-1 md:grid-cols-2 block m-auto">
+                            <div className="grid grid-cols-1 md:grid-cols-2 block m-auto max-w-4xl">
                                 <AdvisorCard
                                     img="../assets/alberto.jpg"
                                     alt="Alberto Ornaghi"
@@ -110,6 +111,9 @@ export default function Team() {
                                     role="Advisor"
                                     company="Crypto.com"
                                 />
+                                </div>
+                            <div className="grid grid-cols-1 md:grid-cols-3 block m-auto">
+
                                 <AdvisorCard
                                     img="../assets/heiki.jpg"
                                     alt="Heikki Vänttinen"
@@ -124,8 +128,6 @@ export default function Team() {
                                     role="Advisor"
                                     company="UBS"
                                 />
-                                </div>
-                                <div className="block m-auto">
                                 <AdvisorCard
                                     img="../assets/serge.png"
                                     alt="Serge Ugarte"

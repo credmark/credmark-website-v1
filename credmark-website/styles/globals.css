@@ -72,11 +72,6 @@ mono
   box-sizing: border-box;
 }
 
-.nav{
-background: rgb(247,181,0);
-background: linear-gradient(130deg, rgba(247,181,0,0.07) 0%, rgba(182,32,224,0.07) 49%, rgba(50,197,255,0.07) 100%);
-}
-
 .scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -131,14 +126,6 @@ li {
   display: list-item;
 }
 
-
-.homeBackground{
-  background: url("/assets/credmark-hackathon.jpg"); 
-  background-position: center center; 
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .faqBackground{
   background: url("/assets/faq.jpg"); 
   background-position: center center; 
@@ -165,31 +152,3 @@ li {
   background-repeat: no-repeat;
 }
 
-.homeTop{
-  background: rgb(255,255,255);
-  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, rgba(110, 151, 191, 0.164) 100%);
-}
-
-.homeBottom{
-  background: rgb(255,255,255);
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(110,150,191,0.396796218487395) 100%);
-}
-
-.blogGradient{
-  background: rgb(177,214,255);
-  background: linear-gradient(130deg, rgba(177,214,255,0.27) 0%, rgba(255,255,255,0.1783088235294118) 10%, rgba(255,255,255,1) 91%, rgba(177,214,255,0.2007177871148459) 100%);
-}
-
-.paperGradient{
-  background: rgb(177,214,255);
-  background: linear-gradient(130deg, rgba(255,240,253,1) 0%, rgb(255, 255, 255) 10%, rgba(255,255,255,1) 80%, rgba(255,240,253,1) 100%);
-}
-.pinkGradient{
-  background: rgb(177,214,255);
-  background: linear-gradient(70deg, rgba(255,240,253,1) 0%, rgb(255, 255, 255) 10%, rgba(255,255,255,1) 88%, rgba(255,240,253,1) 100%);
-}
-
-.faqGradient{
-  background: rgb(177,214,255);
-  background: linear-gradient(130deg, rgba(177,214,255,0.27) 0%, rgba(255,255,255,0.1783088235294118) 47%, rgba(255,255,255,0.1783088235294118) 79%, rgba(177,214,255,0.2007177871148459) 100%);
-}
