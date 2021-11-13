@@ -1,15 +1,18 @@
 version: 0.2
 phases:
   install:
+    on-failure: ABORT
     runtime-versions:
       nodejs: 14
     commands:
       - npm install serverless -g
   build:
+    on-failure: ABORT
     commands:
       - cp .serverless/.serverless-staging/* .serverless/
+      - ls -lah .serverless
       - export subdomain="staging"; export stage="staging"; serverless --stage="staging"  
       - cp .serverless/* .serverless/.serverless-staging
   post_build:
     commands: 
-      - aws s3 sync ./.serverless s3://credmark-staging-website/.serverless-staging;
+      - aws s3 sync ./.serverless s3://credmark-serverless/marketing-site-staging/.serverless;
