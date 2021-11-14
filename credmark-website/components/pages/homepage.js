@@ -22,9 +22,9 @@ export default function Homepage() {
                 <div className="max-w-7xl block m-auto">
                     <div className="px-5">
                         <div className="text-center">
-                            <h2 className="credmark text-5xl md:text-4xl pt-10">
+                            <h3 className="credmark text-5xl md:text-4xl pt-10">
                                 What is Credmark?
-                            </h2>
+                            </h3>
                         </div>
                         <div className="max-w-3xl pb-7 block m-auto">
                             <p className="pt-5 text-center">Credmark is a community-driven project that connects data providers, risk modelers and DeFi users.
@@ -40,9 +40,9 @@ export default function Homepage() {
             <div className="max-w-7xl block m-auto">
                 <div className="px-5">
                     <div className="text-center">
-                        <h2 className="credmark text-5xl md:text-4xl md:pt-10">
+                        <h3 className="credmark text-5xl md:text-4xl md:pt-10">
                             Defining DeFi risk
-                        </h2>
+                        </h3>
                     </div>
                     <div className="max-w-3xl pb-7 block m-auto">
                         <p className="pt-5 text-center">Credmark's ecosystem curates high integrity data and utilizes the data to produce the risk encyclopedia and  research on DeFi risks, protocol risks, and the overarching crypto credit industry.</p>
@@ -66,9 +66,9 @@ export default function Homepage() {
                     <div className="max-w-7xl block m-auto">
                         <div className="px-5">
                             <div className="text-center">
-                                <h2 className="credmark text-5xl md:text-4xl md:pt-10 py-5">
+                                <h3 className="credmark text-5xl md:text-4xl md:pt-10 py-5">
                                     Reports
-                                </h2>
+                                </h3>
                             </div>
                         </div>
                     </div>

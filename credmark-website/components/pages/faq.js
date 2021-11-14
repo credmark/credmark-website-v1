@@ -1,6 +1,3 @@
-import SimpleBar from 'simplebar-react'
-
-
 export default function faq() {
     return (
             <div className="faqBackground z-10 flex-1 flex">

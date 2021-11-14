@@ -44,6 +44,7 @@ module.exports = {
       lightpurple: "#7C5498",
       pink: "#DE1A60",
       lightpink:"#FCECF3",
+      pinkextralight: "#FDFAFC",
     },
     extend: {
       screens: {
@@ -58,6 +59,7 @@ module.exports = {
       fontWeight: ['hover', 'focus'],
       borderColor: ['hover', 'active'],
       borderWidth: ['hover', 'focus'],
+      animation: ['hover', 'focus'],
     },
   },
   plugins: [],
