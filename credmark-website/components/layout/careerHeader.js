@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const CenteredHeader = (props) => {
+const CareerHeader = (props) => {
     return (
         <>
             <div className="bg-lightpink py-20">
@@ -9,10 +9,16 @@ const CenteredHeader = (props) => {
                     <h2 className="text-pink text-center">{props.description}</h2>
                     <br />
                     <h3 className="text-pink text-center">{props.descriptionTwo}</h3>
+                    <button
+                        type="button"
+                        className="credmark mt-10 block m-auto items-center px-10 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-purple"
+                    >
+                        {props.button}
+                    </button>
                 </div>
             </div>
         </>
     );
 }
 
-export default CenteredHeader;
+export default CareerHeader;

@@ -11,7 +11,7 @@ export default function Careers() {
         <>
             <main className="max-w-full flex-1 relative overflow-y-auto focus:outline-none rounded-md bg-white">
                 <div className="blogGradient rounded-md">
-                    <CenteredHeader
+                    <CareerHeader
                         title="Build the Future of DeFi With us"
                         description="Our mission is to de-risk the DeFi industry to enable users to make better informed investment decisions."
                         descriptionTwo="We believe the key to mainstream adoption lies in reducing risk for users."
@@ -77,7 +77,6 @@ export default function Careers() {
                             </div>
                         </div>
                         </div>
-
                         <Subscribe />
                         <Footer />
                 </div>
