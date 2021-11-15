@@ -5,7 +5,6 @@ import moment from 'moment'
 
 import FilteringMenu from "../components/blog/fiterMenu"
 import { useState } from "react"
-import { useGetPosts } from "../actions"
 import Head from 'next/head'
 
 export default function BlogPage({ posts }) {
@@ -36,18 +35,16 @@ export default function BlogPage({ posts }) {
           />
       </Head>
       <div className="nav">
-            <Nav page={<BlogPageContent />} />
+            <Nav page={<BlogPageContent posts={posts} />} />
             </div>
         </>
     )
 }
 
-function BlogPageContent() {
+function BlogPageContent({posts: blogsData}) {
     const [filter, setFilter] = useState({
         view: { list: 0 }
     });
-
-    const { data: blogsData, error } = useGetPosts();
 
     return (
         <div>
