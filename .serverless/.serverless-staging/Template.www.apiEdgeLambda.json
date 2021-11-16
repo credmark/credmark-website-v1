@@ -1,10 +1,10 @@
 {
   "name": "gep1gxe-j727ez",
-  "hash": "Q7mSCouGOMT3r39bC1VueWUPhk+oni0O9dusgtNTeMA=",
+  "hash": "OToagguPqSieX6b78NlnOHhqgWyArpOYPM05eVw08ww=",
   "description": "staging WWW marketing site (API)",
   "memory": 512,
   "timeout": 10,
-  "code": "/Users/emilie/git/credmark/credmark-website/credmark-website/.serverless_nextjs/api-lambda",
+  "code": "/Users/emilie/git/credmark/credmark-website/.serverless_nextjs/api-lambda",
   "shims": [],
   "handler": "index.handler",
   "runtime": "nodejs14.x",
