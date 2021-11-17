@@ -1,4 +1,4 @@
-import CenteredHeader from "../layout/centeredHeader"
+import CareerHeader from "../layout/centeredHeader"
 import Culture from '../careers/culture'
 import OpenRoles from "../careers/openRoles"
 import Subscribe from "../layout/subscribe"

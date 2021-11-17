@@ -73,7 +73,7 @@ function BlogPageContent() {
           </div>
           </div>
             <div className="container-xl mt-10 md:mt-0 block m-auto max-w-5xl">
-                <div className="grid grid-cols-1 md:grid-cols-3 space-x-8 py-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 py-10">
                     {blogsData?.map(posts =>
                         filter.view.list ?
                             <div key={`${posts.slug}-list`}>

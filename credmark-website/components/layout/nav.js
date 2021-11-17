@@ -43,19 +43,19 @@ export default function Nav(props) {
                                                     <span className="sr-only">Open user menu</span>
                                                     <a
                                                         href="#"
-                                                        className="px-5 border-transparent hover:border-purple inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                                        className="px-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
                                                         Community
                                                     </a>
                                                     <a
                                                         href="/team"
-                                                        className="px-5 border-transparent hover:border-purple inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                                        className="px-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
                                                         Team
                                                     </a>
                                                     <a
                                                         href="/faq"
-                                                        className="px-8 border-transparent hover:border-purple inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                                        className="px-8 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
                                                         FAQ
                                                     </a>

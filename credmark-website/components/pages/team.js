@@ -1,6 +1,8 @@
 import TeamCard from '../layout/teamCard'
 import AdvisorCard from '../layout/advisorCard'
 import CenteredHeader from "../layout/centeredHeader"
+import Footer from "../layout/footer"
+import Subscribe from "../layout/subscribe"
 
 export default function Team() {
 
@@ -11,8 +13,8 @@ export default function Team() {
                     <CenteredHeader
                         title="Contributors"
                         description="Our team speaks numerous languages and are distributed across multiple regions around the world" />
-                    <div className="px-5 py-10 md:px-10">
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 block m-auto space-x-6">
+                    <div className="px-5 py-10 md:px-10 max-w-5xl block m-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 block m-auto">
                             <TeamCard
                                 img="../assets/neil.png"
                                 alt="Neil Zumwalde"
@@ -92,8 +94,10 @@ export default function Team() {
                                 description="Originally from Taiwan,  Wen-Chiao grew up in the US, went back to Taiwan for high school, and then moved to Japan for university. He’s worked in both Taipei and Tokyo in tech and innovation. In his spare time, he likes reading and asking questions."
                             />
                         </div>
+                    </div>
+                    <div className="bg-lightgray">
                         <div className="px-5 py-10">
-                            <h1 className="credmark text-center py-5 text-5xl md:text-7xl pb-10 md:pt-10">
+                            <h1 className="credmark text-center py-5 text-3xl md:text-4xl pb-10 md:pt-10">
                                 ADVISORS
                             </h1>
                             <div className="grid grid-cols-1 md:grid-cols-2 block m-auto max-w-4xl">
@@ -111,7 +115,7 @@ export default function Team() {
                                     role="Advisor"
                                     company="Crypto.com"
                                 />
-                                </div>
+                            </div>
                             <div className="grid grid-cols-1 md:grid-cols-3 block m-auto">
 
                                 <AdvisorCard
@@ -138,6 +142,21 @@ export default function Team() {
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <h4 className="credmark text-4xl text-center pt-10 md:pt-32 pb-9">Looking to de-risk DeFi together?</h4>
+                        <div className="flex justify-center">
+                            <a href="/careers">
+                                <button
+                                    type="button"
+                                    className="credmark inline-flex items-center md:mb-32 px-7 py-2 shadow-sm text-sm rounded-md text-white bg-credmarkpurple"
+                                >
+                                    See open positions
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <Subscribe />
+                    <Footer />
                 </div>
             </main>
         </>

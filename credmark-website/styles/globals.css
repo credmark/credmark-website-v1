@@ -25,7 +25,7 @@ a {
 }
 
 h1, h2, h3, h4, p, a, li {
-  @apply text-purple;
+  @apply text-credmarkpurple;
 }
 
 h1{
@@ -67,6 +67,16 @@ img {
   width: 1050px;
 }
 
+.swirls {
+  margin-top: -155px;
+}
+
+.riskEncyclopedia{
+  background: url("/assets/purple-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 mono
 * {
   box-sizing: border-box;
@@ -85,10 +95,8 @@ mono
 }
 
 @media screen and (max-width: 480px) {
-  .simplebar-track.simplebar-vertical {
-    right: 10px;
-    width: 15px !important;
-    padding-top: 60px;
+  .swirls {
+    margin-top: -75px;
   }
 }
 
@@ -126,22 +134,12 @@ li {
   display: list-item;
 }
 
-.faqBackground{
-  background: url("/assets/faq.jpg"); 
-  background-position: center center; 
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 10;
-}
 
 @media (min-width: 1450px){
-  .faqBackground{
-    background: url("/assets/faq.jpg"); 
-    background-position: center center; 
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 10;
+  .swirls {
+    margin-top: -75px;
   }
+  
 }
 
 

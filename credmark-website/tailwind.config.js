@@ -40,11 +40,13 @@ module.exports = {
       red: colors.red,
       yellow: colors.amber,
       blue: colors.blue,
-      purple: "#3b0065",
+      purple: "#51256E",
+      credmarkpurple: "#3b0065",
       lightpurple: "#7C5498",
       pink: "#DE1A60",
       lightpink:"#FCECF3",
       pinkextralight: "#FDFAFC",
+      lightgray: "#FCFAFB"
     },
     extend: {
       screens: {
