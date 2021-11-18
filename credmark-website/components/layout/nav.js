@@ -42,7 +42,9 @@ export default function Nav(props) {
                                                 <Menu.Button>
                                                     <span className="sr-only">Open user menu</span>
                                                     <a
-                                                        href="#"
+                                                        href="https://discord.com/invite/3dSfMqP3d4"
+                                                        target="_blank"
+                                                        rel="noreferrer"
                                                         className="px-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
                                                         Community
@@ -61,7 +63,7 @@ export default function Nav(props) {
                                                     </a>
                                                     <button
                                                         type="button"
-                                                        className="px-5 credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-pink focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                                        className="px-5 credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                                     >
                                                         APP
                                                     </button>

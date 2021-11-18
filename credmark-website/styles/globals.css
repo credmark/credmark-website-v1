@@ -77,38 +77,18 @@ img {
   background-size: cover;
 }
 
+.app-image {
+  margin-top: -100px;
+  margin-bottom: -90px;
+}
+
+.drop-shadow-xl {
+  box-shadow: 5px 10px hsla(279, 27%, 46%, 0.301)
+}
+
 mono
 * {
   box-sizing: border-box;
-}
-
-.scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-.simplebar-track.simplebar-vertical {
-  right: 50px;
-  width: 15px !important;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  filter: drop-shadow(2px 0px 4px #999999);
-}
-
-@media screen and (max-width: 480px) {
-  .swirls {
-    margin-top: -75px;
-  }
-}
-
-
-.simplebar-scrollbar.simplebar-visible {
-  cursor: pointer;
-}
-
-.simplebar-scrollbar.simplebar-visible::before {
-  cursor: pointer;
-  background: rgb(59, 0, 101);
-  opacity: 1 !important;
 }
 
 /* Blog */
@@ -134,19 +114,44 @@ li {
   display: list-item;
 }
 
-
-@media (min-width: 1450px){
-  .swirls {
-    margin-top: -75px;
-  }
-  
-}
-
-
 .mediaBackground{
   background: url("/assets/media.png");
   background-position: center; 
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+
+
+@media (min-width: 1450px){
+  .swirls {
+    margin-top: -75px;
+  }
+  .app-image {
+    margin-top: -30px;
+    margin-bottom: 0px;
+  }
+  .riskEncyclopedia {
+    background: url(/assets/purple-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .swirls {
+    margin-top: -75px;
+  }
+  .app-image {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .riskEncyclopedia {
+    background: url(/assets/purple-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+  }
+}
+
+
 
