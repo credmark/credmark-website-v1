@@ -4,12 +4,12 @@ import Link from 'next/link';
 const BlogCard = (props) => {
     return (
         <>
-                <div className="py-2.5 max-w-lg block m-auto">
+                <div className="py-2.5 max-w-lg block m-auto px-2.5">
                     <Link href={`/blog/${props.slug}`}>
                         <img
                             alt={props.alt}
                             src={props.img}
-                            className='rounded-3xl cursor-pointer max-h-64'
+                            className='rounded-3xl cursor-pointer'
                             id="blogPage"
                         />
                     </Link>

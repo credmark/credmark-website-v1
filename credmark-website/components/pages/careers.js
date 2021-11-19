@@ -18,38 +18,49 @@ export default function Careers() {
                         button="Join us"
                     />
                     <div className="px-5 py-10">
-                        <h3 className="credmark text-center py-5 text-5xl md:text-4xl pb-10 md:pt-10">
+                        <h3 className="credmark text-center py-5 text-5xl md:text-4xl md:pt-10">
                             Our Culture
                         </h3>
-                        <div className="grid grid-cols-1 md:grid-cols-3 block m-auto">
-
+                        <div className="grid grid-cols-1 md:grid-cols-3 block m-auto pb-10">
                             <Culture
-                                img="../assets/heiki.jpg"
-                                alt="Heikki Vänttinen"
+                                img="../assets/decentralized.svg"
+                                alt="Decentralized Ideas"
                                 title="Decentralized Ideas"
                                 description="We understand everyone has their own expertise and unique experiences. All voices are heard so every person can develop ownership as long as they can back up what they say."
                             />
                             <Culture
-                                img="../assets/renner.jpg"
-                                alt="Renan Feldman"
+                                img="../assets/global.svg"
+                                alt="Global Team"
                                 title="Global"
                                 description="We're aiming to become a DAO. Naturally that means our team is very distributed. We're situated across
                                     various time zones and our differences
                                     bring together fresh new ideas."
                             />
                             <Culture
-                                img="../assets/serge.png"
-                                alt="Serge Ugarte"
+                                img="../assets/turbo-learning.svg"
+                                alt="Turbo-charged learning"
                                 title="Turbo-charged learning"
                                 description="DeFi moves at lightning fast speed, but so does being at Credmark. We're paving the path for data integrity and reducing risk so we can increase DeFi adoption."
                             />
                         </div>
-                        <div className="px-5 py-10 bg-pinkextralight">
+                        <div className="py-10 bg-pinkextralight">
                             <h3 className="credmark text-center py-5 text-5xl md:text-4xl pb-10 md:pt-10">
                                 Open Roles
                             </h3>
                             <OpenRoles
-                                jobtitle="Front End Developer"
+                                jobtitle="Senior Backend Developer"
+                            />
+                            <OpenRoles
+                                jobtitle="Senior Cloud Architect"
+                            />
+                            <OpenRoles
+                                jobtitle="Senior Frontend Developer"
+                            />
+                            <OpenRoles
+                                jobtitle="Senior Risk Manager"
+                            />
+                            <OpenRoles
+                                jobtitle="Senior Solidity Engineer"
                             />
                         </div>
                         <div className="px-5 py-10">
@@ -57,22 +68,21 @@ export default function Careers() {
                                 Our mission
                             </h3>
                             <div className="grid grid-cols-1 md:grid-cols-3 block m-auto">
-
                                 <Culture
-                                    img="../assets/heiki.jpg"
+                                    img="../assets/curate-crypto-data.svg"
                                     alt="Heikki Vänttinen"
-                                    title="Develop risk management tools"
+                                    title="Curate crypto data"
                                 />
                                 <Culture
-                                    img="../assets/renner.jpg"
+                                    img="../assets/publish-research.svg"
                                     alt="Publish industry leading research"
-                                    title="Global"
+                                    title="Publish industry leading research"
 
                                 />
                                 <Culture
-                                    img="../assets/serge.png"
-                                    alt="Serge Ugarte"
-                                    title="Curate crypto data"
+                                    img="../assets/risk-management-tool.svg"
+                                    alt="Develop risk management tools"
+                                    title="Develop risk management tools"
                                 />
                             </div>
                         </div>
