@@ -16,7 +16,7 @@ export default function Homepage() {
                     title="Manage DeFi Risks"
                     description="DeFi is rife with hidden risks, but our tools help YOU navigate the sea of risk"
                     url="#what-is" />
-                    <div className="swirls">
+                <div className="swirls">
                     <img src="/assets/swirls-transparent.png" alt="colored swirls" />
                 </div>
             </div>
@@ -73,17 +73,19 @@ export default function Homepage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-5 md:px-20 block m-auto max-w-7xl">
                     <div>
                         <p className="text-white">Research</p>
-                        <p className="credmark text-2xl text-white py-5">Risk Encyclopedia</p>
+                        <p className="credmark text-2xl text-white py-5">Risk Library</p>
                         <p className="text-white pt-5">Discover the industry standards for DeFi risks - learn how it is  assesed and matricized to safeguard your assets.</p>
-                        <button
-                            type="button"
-                            className="border-2 border-white credmark my-5 md:mt-16 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white"
-                        >
-                            Open library
-                        </button>
+                        <a href="https://docs.credmark.com/credmark-risk-library/" target="_blank" rel="noreferrer">
+                            <button
+                                type="button"
+                                className="border-2 border-white credmark my-5 md:mt-16 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white"
+                            >
+                                Open library
+                            </button>
+                        </a>
                     </div>
                     <div>
-                        <a href="https://docs.credmark.com/credmark-risk-library/lending-protocols/aave-and-compound-defi-protocols" target="_blank" rel="noreferrer"><img alt="Credmark Risk Library" className="md:max-h-80 block m-auto" src="/assets/encyclopedia.png" /></a>
+                        <a href="https://docs.credmark.com/credmark-risk-library/" target="_blank" rel="noreferrer"><img alt="Credmark Risk Library" className="md:max-h-80 block m-auto" src="/assets/encyclopedia.png" /></a>
                     </div>
                 </div>
             </div>
@@ -98,7 +100,7 @@ export default function Homepage() {
                             </div>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3">
-                        <CCRCard
+                            <CCRCard
                                 title="Idle Finance Report"
                                 url="https://docs.credmark.com/credmark-risk-library/yield-aggregators/idle-finance" />
                             <CCRCard
@@ -109,10 +111,10 @@ export default function Homepage() {
                                 url="https://s3.amazonaws.com/reports.credmark.com/TheCryptoCreditReport-Q3-2020.pdf" />
                         </div>
                         <div className="flex justify-center pt-10">
-                        <a href="/reports">
-                        <p className="credmark cursor-pointer text-center text-md float-left">All reports<img width={40} className="float-right pt-0 pl-5" alt="arrow right" src="../assets/Arrow-1.svg" /></p>
-                        </a>
-                    </div>
+                            <a href="/reports">
+                                <p className="credmark cursor-pointer text-center text-md float-left">All reports<img width={40} className="float-right pt-0 pl-5" alt="arrow right" src="../assets/Arrow-1.svg" /></p>
+                            </a>
+                        </div>
                     </div>
                     <div>
                     </div>
@@ -123,40 +125,25 @@ export default function Homepage() {
                     <p className="credmark text-2xl text-center text-white py-5">DeFi Data Created For Industry Agnostic Application</p>
                     <p className="text-white text-center max-w-2xl block m-auto">Credmark’s Data is collected via proprietary blockchain ETL through the platform. All data is indexed so filters can be applied to optimize for accuracy.</p>
                 </div>
-            </div>
-            <div className="grid grid-cols-1 lg:grid-cols-4 bg-purple pt-10 pb-20 px-5 md:px-20 lg:space-x-8">
-                <div className="md:pt-20  max-w-6xl">
-                    <h5 className="text-white credmark text-lg">Risk Dashboard</h5>
-                    <p className="text-white text-sm">View how our data is used in a risk context with analytics and visuals.</p>
-                    <button
-                        type="button"
-                        className="credmark mt-5 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-purple bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                    >
-                        View Dashboard
-                    </button>
-                </div>
-                <div className="pt-10 md:pt-20">
-                    <h5 className="text-white credmark text-lg">API Keys</h5>
-                    <p className="text-white text-sm">Connect your wallet to access our data. At least holding one CMK token is required.</p>
-                    <button
-                        type="button"
-                        className="credmark mt-5 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-purple bg-white"
-                    >
-                        Access API Keys
-                    </button>
-                </div>
-                <div className="pt-10 md:pt-20">
-                    <h5 className="text-white credmark text-lg">Documentation</h5>
-                    <p className="text-white text-sm">See how to integrate the API into your services or product.</p>
-                    <button
-                        type="button"
-                        className="credmark mt-5 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-purple bg-white"
-                    >
-                        View docs
-                    </button>
-                </div>
-                <div>
-                    <img alt="Discord channel link" className="h-80 mt-10 md:mt-0" src="/assets/crypto-data.png" />
+                <div className="grid grid-cols-1 lg:grid-cols-2 max-w-5xl block m-auto pt-10 pb-20 px-5 md:px-20 lg:space-x-8">
+                    <div>
+                        <img alt="Discord channel link" className="h-80 mt-10 md:mt-0" src="/assets/crypto-data.png" />
+                    </div>
+                    <div className="pt-10 md:pt-20">
+                        <h5 className="text-white credmark text-lg">Documentation</h5>
+                        <p className="text-white text-sm">See how to integrate the API into your services <br /> or product.</p>
+                        <a
+                            href="https://app.gitbook.com/o/-MaWsKysgImxTlCSGQdb/s/-MaWoA0QFeF_cQL5NVcu/"
+                            target="_blank"
+                            rel="noreferrer">
+                            <button
+                                type="button"
+                                className="credmark mt-5 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-purple bg-white"
+                            >
+                                View docs
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div>
