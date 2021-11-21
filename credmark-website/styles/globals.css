@@ -86,6 +86,10 @@ img {
   box-shadow: 5px 10px hsla(279, 27%, 46%, 0.301)
 }
 
+.job-image{
+  margin-top: -150px;
+}
+
 mono
 * {
   box-sizing: border-box;
@@ -146,6 +150,9 @@ li {
     background-size: cover;
     background-position: center top;
   }
+  .job-image{
+    margin-top: auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -160,6 +167,9 @@ li {
     background: url(/assets/purple-bg.jpg);
     background-size: cover;
     background-position: center top;
+  }
+  .job-image{
+    margin-top: auto;
   }
 }
 
