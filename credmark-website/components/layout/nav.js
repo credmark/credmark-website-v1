@@ -27,10 +27,10 @@ export default function Nav(props) {
                                             />
                                             <a href="/">
                                                 <img
-                                                className="hidden lg:block h-12 flex justify-start m-0 mt-4"
-                                                src="../assets/credmark-logo-purple.png"
-                                                alt="Credmark logo"
-                                            />
+                                                    className="hidden lg:block h-12 flex justify-start m-0 mt-4"
+                                                    src="../assets/credmark-logo-purple.png"
+                                                    alt="Credmark logo"
+                                                />
                                             </a>
                                         </div>
                                     </div>
@@ -61,12 +61,17 @@ export default function Nav(props) {
                                                     >
                                                         FAQ
                                                     </a>
-                                                    <button
-                                                        type="button"
-                                                        className="transform hover:scale-110 px-5 credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                                                    >
-                                                        APP
-                                                    </button>
+                                                    <a
+                                                        href="https://app.credmark.com/"
+                                                        target="_blank"
+                                                        rel="noreferrer">
+                                                        <button
+                                                            type="button"
+                                                            className="transform hover:scale-110 px-5 credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                                        >
+                                                            APP
+                                                        </button>
+                                                    </a>
                                                 </Menu.Button>
                                             </div>
                                         </Menu>
@@ -109,12 +114,17 @@ export default function Nav(props) {
                                     >
                                         FAQ
                                     </Disclosure.Button>
-                                    <button
-                                        type="button"
-                                        className="ml-3 px-5 credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                                    >
-                                        APP
-                                    </button>
+                                    <a
+                                        href="https://app.credmark.com/"
+                                        target="_blank"
+                                        rel="noreferrer">
+                                        <button
+                                            type="button"
+                                            className="ml-3 px-5 credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                        >
+                                            APP
+                                        </button>
+                                    </a>
                                 </div>
                                 <div className="pt-4 pb-3 border-t border-gray-200">
                                     <div className="flex items-center px-4">

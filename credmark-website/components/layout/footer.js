@@ -4,20 +4,20 @@ import Link from 'next/link';
 /* This example requires Tailwind CSS v2.0+ */
 const navigation = {
     projects: [
-        { name: 'Research', href: '#' },
-        { name: 'Crypto Data', href: '#' },
-        { name: 'Risk Management Tools', href: '#' },
+        { name: 'Research', href: '/reports' },
+        { name: 'Crypto Data', href: '/reports' },
+        { name: 'Risk Management Tools', href: 'https://app.credmark.com/' },
     ],
     learn: [
-        { name: 'Documentation', href: '#' },
+        { name: 'Documentation', href: '/reports' },
         { name: 'Blog', href: '/blog' },
         { name: 'Media', href: '/media' },
         { name: 'FAQ', href: '/faq' },
     ],
     community: [
         { name: 'The Team', href: '/team' },
-        { name: 'Work with us', href: '#' },
-        { name: 'Contributors', href: '#' },
+        { name: 'Work with us', href: '/careers' },
+        { name: 'Community', href: 'https://discord.com/invite/3dSfMqP3d4' },
     ],
     social: [
         {

@@ -14,8 +14,9 @@ export default function Homepage() {
             <div>
                 <HeaderHome
                     title="Manage DeFi Risks"
-                    description="DeFi is rife with hidden risks, but our tools help YOU navigate the sea of risk" />
-                <div className="swirls">
+                    description="DeFi is rife with hidden risks, but our tools help YOU navigate the sea of risk"
+                    url="#what-is" />
+                    <div className="swirls">
                     <img src="/assets/swirls-transparent.png" alt="colored swirls" />
                 </div>
             </div>
@@ -25,7 +26,7 @@ export default function Homepage() {
                 <div className="max-w-7xl block m-auto">
                     <div className="px-5">
                         <div className="text-center">
-                            <h3 className="credmark text-5xl md:text-4xl pt-10">
+                            <h3 id="what-is" className="credmark text-5xl md:text-4xl pt-10">
                                 What is Credmark?
                             </h3>
                         </div>
