@@ -24,7 +24,7 @@ a {
   cursor: pointer;
 }
 
-h1, h2, h3, h4, p, a, li {
+h1, h2, h3, h4, p, a, li, em {
   @apply text-credmarkpurple;
 }
 
@@ -98,6 +98,16 @@ h4{
   font-size: 28px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+blockquote {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 ul{

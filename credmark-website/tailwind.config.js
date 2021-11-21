@@ -4,6 +4,11 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    cursor: {
+      auto: 'auto',
+      default: 'default',
+      pointer: 'pointer',
+    },
     borderRadius: {
      'lg': '1.625rem',
     },
@@ -65,6 +70,7 @@ module.exports = {
       borderColor: ['hover', 'active'],
       borderWidth: ['hover', 'focus'],
       animation: ['hover', 'focus'],
+      animation: ['motion-safe'],
     },
   },
   plugins: [],

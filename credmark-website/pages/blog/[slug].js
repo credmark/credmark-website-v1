@@ -6,6 +6,8 @@ import sanity from '../../lib/sanity';
 import Nav from '../../components/layout/nav'
 import Link from 'next/link'
 import Head from 'next/head'
+import moment from 'moment'
+
 
 const serializers = {
     types: {
@@ -52,13 +54,10 @@ export default function BlogPostPage({ post }) {
 const BlogDetail = ({ post }) => {
     return (
         <div className="bg-white pb-10">
-            <div className="max-w-5xl block m-auto text-center px-5">
-                <Link href="/blog" rel="noreferrer">
-                    <img id="blogbutton" className="h-auto cursor-pointer mt-40" fill="#3B0065" width={30} height={30} src="/assets/BackButton.svg">
-                    </img>
-                </Link>
-                <img id="blogPage" className="w-56 h-52 rounded-lg block m-auto mb-10" src={post.mainImage} />
-                <h1 className="text-xl md:px-20">{post.title}</h1>
+            <div className="max-w-5xl block m-auto px-5 md:px-20">
+                <h1 className="pt-20 text-5xl pb-5 px-5 md:px-20">{post.title}</h1>
+                <p className="text-pink credmark pb-5 px-5 md:px-20 text-base">{post.author} I {moment(post.date).format('MM.DD.YYYY')}</p>
+                <img className="px-5 md:px-20" id="blogPage" src={post.mainImage} />
                 <BlockContent
                     className="text-left leading-loose pt-10 px-5 md:px-20"
                     serializers={serializers}

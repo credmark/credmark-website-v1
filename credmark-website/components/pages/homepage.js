@@ -3,6 +3,8 @@ import HeaderHome from "../layout/headerHome"
 import Subscribe from '../layout/subscribe'
 import Footer from '../layout/footer'
 import CCRCard from '../ccr/ccr-card'
+import React, { useState } from "react";
+
 
 
 export default function Homepage() {
@@ -80,7 +82,7 @@ export default function Homepage() {
                         </button>
                     </div>
                     <div>
-                        <a href="https://docs.credmark.com/credmark-risk-library/lending-protocols/aave-and-compound-defi-protocols" target="_blank" rel="noreferrer"><img alt="Discord channel link" className="md:max-h-80 block m-auto" src="/assets/defi-market-risk.png" /></a>
+                        <a href="https://docs.credmark.com/credmark-risk-library/lending-protocols/aave-and-compound-defi-protocols" target="_blank" rel="noreferrer"><img alt="Credmark Risk Library" className="md:max-h-80 block m-auto" src="/assets/encyclopedia.png" /></a>
                     </div>
                 </div>
             </div>
@@ -92,20 +94,24 @@ export default function Homepage() {
                         </h3>
                         <div className="px-5 max-w-5xl md:m-auto">
                             <div className="pt-10 block m-auto md:m-auto space-x-5 pb-10">
-                                <button className="credmark text-credmarkpurple mb-5 px-7 py-2 rounded-md hover:text-white hover:bg-credmarkpurple" onClick={() => { setSelectedCategory("crypto") }}>Crypto Credit Report</button>
-                                <button className="credmark text-credmarkpurple mb-5 px-7 py-2 rounded-md hover:text-white hover:bg-credmarkpurple" onClick={() => { setSelectedCategory("protocol") }}>Protocol Risk</button>
-                                <button className="credmark text-credmarkpurple mb-5 px-7 py-2 rounded-md hover:text-white hover:bg-credmarkpurple" onClick={() => { setSelectedCategory("market") }}>Market Risk</button>
                             </div>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3">
+                        <CCRCard
+                                title="Idle Finance Report"
+                                url="https://docs.credmark.com/credmark-risk-library/yield-aggregators/idle-finance" />
                             <CCRCard
-                                title="2020 Q1" />
+                                title="2020 Year End Report"
+                                url="https://s3.amazonaws.com/reports.credmark.com/TheCryptoCreditReport-Q4-2020.pdf" />
                             <CCRCard
-                                title="2020 Q1" />
-                            <CCRCard
-                                title="2020 Q1" />
+                                title="2020 Q3"
+                                url="https://s3.amazonaws.com/reports.credmark.com/TheCryptoCreditReport-Q3-2020.pdf" />
                         </div>
-
+                        <div className="flex justify-center pt-10">
+                        <a href="/reports">
+                        <p className="credmark cursor-pointer text-center text-md float-left">All reports<img width={40} className="float-right pt-0 pl-5" alt="arrow right" src="../assets/Arrow-1.svg" /></p>
+                        </a>
+                    </div>
                     </div>
                     <div>
                     </div>

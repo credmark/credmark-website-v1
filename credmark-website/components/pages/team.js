@@ -140,8 +140,8 @@ export default function Team() {
 
                                 <AdvisorCard
                                     img="../assets/heiki.jpg"
-                                    alt="Heikki Vänttinen"
-                                    name="Heikki Vänttinen"
+                                    alt="Heikki Vanttinen"
+                                    name="Heikki Vanttinen"
                                     role="Advisor"
                                     company="API3"
                                 />

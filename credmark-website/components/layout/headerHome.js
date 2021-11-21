@@ -9,7 +9,7 @@ const HeaderHome = (props) => {
                     <h2 className="credmark text-pink text-lg">{props.description}</h2>
                     <button
                         type="button"
-                        className="credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-purple"
+                        className="transform hover:shadow-xl credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple"
                     >
                         Learn more
                     </button>           
