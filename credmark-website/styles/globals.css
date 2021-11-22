@@ -170,5 +170,8 @@ li {
   }
 }
 
-
-
+@media screen and (max-width: 770px) {
+  .job-image{
+    margin-top: auto;
+  }
+}

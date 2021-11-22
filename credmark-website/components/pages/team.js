@@ -32,7 +32,7 @@ export default function Team() {
                     <CenteredHeader
                         title="Contributors"
                         description="Our team speaks numerous languages and are distributed across multiple regions around the world" />
-                    <Button button={buttons} filter={filter} />
+                    <Button className="hover:border-purple pb-5" button={buttons} filter={filter} />
                     <div className="px-5 py-10 md:px-10 max-w-5xl block m-auto">
                             <Menu menuItem={menuItem} />
                     </div>
