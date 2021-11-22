@@ -22,10 +22,23 @@ export default function BlogPostPage({ post }) {
     return (
         <>
             <Head>
-                <title>{post.title} | CREDMARK</title>
-                <meta content="Blog | Credmark" property="og:title" key="og:title" />
-                <meta name="description" content="Welcome to the Credmark blog. Subscribe to find out about company updates and industry research." />
-                <link rel="icon" href="/favicon.ico" />
+                <title key="title">{post.title} | Blog | Credmark</title>
+                <meta name="description" content={post.description} />
+                <meta content={`${post.title} | Blog | Toucan Events`} property="og:title" key="og:title" />
+                <meta content={`${post.title} | Blog | Toucan Events`} name="twitter:title" key="twitter:title" />
+                <meta content={post.description} property="og:description" key="og:description" />
+                <meta content={post.description} property="twitter:description" key="twitter:description" />
+                {post.mainImage && (
+                    <>
+                        <meta content={post.mainImage} property="og:image" key="og:image" />
+                        <meta
+                            content={post.mainImage}
+                            property="og:image:secure_url"
+                            key="og:image:secure_url"
+                        />
+                        <meta content={post.mainImage} name="twitter:image" key="twitter:image" />
+                    </>
+                )}
                 {/* Global Site Tag (gtag.js) - Google Analytics */}
                 <script
                     async
@@ -45,7 +58,7 @@ export default function BlogPostPage({ post }) {
                 />
             </Head>
             <div className="nav">
-            <Nav page={<BlogDetail post={post} />} />
+                <Nav page={<BlogDetail post={post} />} />
             </div>
         </>
     )
@@ -59,12 +72,14 @@ const BlogDetail = ({ post }) => {
                 <p className="text-pink credmark pb-5 px-5 md:px-20 text-base">{post.author} I {moment(post.date).format('MM.DD.YYYY')}</p>
                 <img className="px-5 md:px-20" id="blogPage" src={post.mainImage} />
                 <BlockContent
-                    className="text-left leading-loose pt-10 px-5 md:px-20"
+                    className="blog text-left leading-loose pt-10 px-5 md:px-20"
                     serializers={serializers}
                     blocks={post.content}
                     {...sanity.config()}
                 />
-                <a href="/blog" rel="noreferrer"><p className="font-bold pt-10 pb-5 px-5 md:px-20">Back to blog</p></a>
+                <div className="flex">
+                    <a href="/blog" rel="noreferrer"><p className="font-bold pt-10 pb-5 px-5 md:px-20"><img width={40} className="float-left pt-0 pr-5" src="../assets/arrow.svg" />Back to blog</p></a>
+                </div>
             </div>
         </div>
     )

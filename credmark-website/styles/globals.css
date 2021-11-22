@@ -134,10 +134,9 @@ li {
 }
 
 
-
 @media (min-width: 1450px){
   .swirls {
-    margin-top: -75px;
+    margin-top: -220px;
   }
   .app-image {
     margin-top: -30px;

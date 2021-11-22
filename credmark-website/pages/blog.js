@@ -6,7 +6,6 @@ import Header from '../components/layout/header'
 
 import FilteringMenu from "../components/blog/fiterMenu"
 import { useState } from "react"
-import { useGetPosts } from "../actions"
 import Head from 'next/head'
 import Footer from "../components/layout/footer"
 import Subscribe from "../components/layout/subscribe"
@@ -39,18 +38,16 @@ export default function BlogPage({ posts }) {
                 />
             </Head>
             <div className="nav">
-                <Nav page={<BlogPageContent />} />
+            <Nav page={<BlogPageContent posts={posts} />} />
             </div>
         </>
     )
 }
 
-function BlogPageContent() {
-    const [filter, setFilter] = useState({
+function BlogPageContent({posts: blogsData}) {
+        const [filter, setFilter] = useState({
         view: { list: 0 }
     });
-
-    const { data: blogsData, error } = useGetPosts();
 
     return (
         <div>
