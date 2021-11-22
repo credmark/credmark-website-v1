@@ -3,12 +3,12 @@ import * as React from 'react';
 const MediaCard = (props) => {
     return (
         <>
-                    <div className="py-10 max-w-xl block m-auto">
+                    <div className="box col-xs pt-10">
                         <a href={props.link} target="_blank" rel="noreferrer">
                             <img
                                 alt={props.alt}
                                 src={props.img}
-                                className='cursor-pointer px-5'
+                                className='cursor-pointer px-5 pb-5'
                             />
                         </a>
                         <p className="text-xs text-black font-bold px-5">{props.date}</p>

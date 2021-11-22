@@ -5,17 +5,7 @@ const faqs = [
   {
     question: "What is Credmark?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  {
-    question: "What is Credmark?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  {
-    question: "What is Credmark?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Credmark is a community-driven project that connects data providers, risk modelers, and DeFi users. Our community curates crypto data, develops risk management tools, and publishes industry-leading research. We aim to bring institutional grade risk management to individuals and to allow DeFi developers to embed those tools into their applications.",
   },
 ]
 
@@ -29,12 +19,12 @@ export default function Questions() {
       <div className="max-w-7xl mx-auto py-12 sm:py-16">
           <dl className="space-y-6 divide-y divide-gray-200">
             {faqs.map((faq) => (
-              <Disclosure as="div" key={faq.question} className="border-2 border-gray rounded-lg bg-gray-50 p-5">
+              <Disclosure as="div" key={faq.question} className="text-black border-2 border-gray rounded-lg bg-gray-50 p-5">
                 {({ open }) => (
                   <>
                     <dt className="text-lg">
                       <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
-                        <span className="font-medium text-purple">{faq.question}</span>
+                        <span className="font-medium text-black">{faq.question}</span>
                         <span className="ml-6 h-7 flex items-center">
                           <ChevronDownIcon
                             className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
@@ -44,7 +34,7 @@ export default function Questions() {
                       </Disclosure.Button>
                     </dt>
                     <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                      <p className="text-base text-gray-500">{faq.answer}</p>
+                      <p className="text-base text-black">{faq.answer}</p>
                     </Disclosure.Panel>
                   </>
                 )}

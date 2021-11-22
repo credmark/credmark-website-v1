@@ -9,11 +9,11 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Nav(props) {
+export default function NavWhite(props) {
     return (
         <div className="h-16 sticky top-0 z-10">
             <main>
-                <Disclosure as="nav" className="bg-lightpink shadow">
+                <Disclosure as="nav" className="shadow">
                     {({ open }) => (
                         <>
                             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,8 +27,8 @@ export default function Nav(props) {
                                             />
                                             <a href="/">
                                                 <img
-                                                     width={250}
-                                                     className="h-auto hidden lg:block h-12 flex justify-start m-0 mt-4 px-10"
+                                                    width={250}
+                                                    className="h-auto hidden lg:block h-12 flex justify-start m-0 mt-4 px-10"
                                                     src="../assets/credmark-logo-purple.png"
                                                     alt="Credmark logo"
                                                 />

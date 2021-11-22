@@ -94,7 +94,8 @@ export default function Footer() {
                 <div className="xl:grid xl:grid-cols-3 xl:gap-8">
                     <div className="space-y-8 xl:col-span-1">
                         <img
-                            className="h-12 flex justify-start m-0"
+                            width={150}
+                            className="h-auto flex justify-start m-0"
                             src="../assets/credmark-logo-purple.png"
                             alt="Credmark logo"
                         />

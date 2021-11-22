@@ -30,7 +30,6 @@ export default function Media({ posts }) {
               <button className="border-b-2 border-transparent hover:border-purple pb-5 pl-5" onClick={()=>{setSelectedCategory("all")}}>All</button>
               <button className="border-b-2 border-transparent hover:border-purple pb-5" onClick={()=>{setSelectedCategory("press")}}>Press</button>
               <button className="border-b-2 border-transparent hover:border-purple pb-5" onClick={()=>{setSelectedCategory("announcements")}}>Announcements</button>
-              <button className="border-b-2 border-transparent hover:border-purple pb-5" onClick={()=>{setSelectedCategory("new-features")}}>New Features</button>
           </div>
           </div>}
       <div className="block m-auto max-w-5xl">
@@ -43,7 +42,7 @@ export default function Media({ posts }) {
                   alt={post.mainImageAlt}
                   title={post.title}
                   description={post.subtitle}
-                  date={moment(post.publishedAt).format("MMMM Do, Y")}
+                  date={moment(post.publishedAt).format('MM/DD/YYYY')}
                 />
               ))}
         </div>

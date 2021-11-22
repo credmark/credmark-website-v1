@@ -3,7 +3,7 @@ import { getBlogBySlug, getAllPosts } from '../../lib/api';
 import BlockContent from '@sanity/block-content-to-react';
 import sanity from '../../lib/sanity';
 
-import Nav from '../../components/layout/nav'
+import Nav from '../../components/layout/navWhite'
 import Link from 'next/link'
 import Head from 'next/head'
 import moment from 'moment'
