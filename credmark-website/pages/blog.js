@@ -7,24 +7,23 @@ import FilteringMenu from "../components/blog/fiterMenu"
 import { useState } from "react"
 import Head from 'next/head'
 
-
 export default function BlogPage({ posts }) {
 
     return (
         <>
-            <Head>
-                <title>Blog | CREDMARK</title>
-                <meta content="Blog | Credmark" property="og:title" key="og:title" />
-                <meta name="description" content="Welcome to the Credmark blog. Subscribe to find out about company updates and industry research." />
-                <link rel="icon" href="/favicon.ico" />
-                {/* Global Site Tag (gtag.js) - Google Analytics */}
-                <script
-                    async
-                    src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-                />
-                <script
-                    dangerouslySetInnerHTML={{
-                        __html: `
+        <Head>
+        <title>Blog | CREDMARK</title>
+        <meta content="Blog | Credmark" property="og:title" key="og:title" />
+        <meta name="description" content="Welcome to the Credmark blog. Subscribe to find out about company updates and industry research." />
+        <link rel="icon" href="/favicon.ico" />
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -32,17 +31,17 @@ export default function BlogPage({ posts }) {
               page_path: window.location.pathname,
             });
           `,
-                    }}
-                />
-            </Head>
-            <div className="nav">
-                <Nav page={<BlogPageContent posts={posts} />} />
+            }}
+          />
+      </Head>
+      <div className="nav">
+            <Nav page={<BlogPageContent posts={posts} />} />
             </div>
         </>
     )
 }
 
-function BlogPageContent({ posts: blogsData }) {
+function BlogPageContent({posts: blogsData}) {
     const [filter, setFilter] = useState({
         view: { list: 0 }
     });
@@ -91,8 +90,6 @@ function BlogPageContent({ posts: blogsData }) {
                     }
                 </div>
             </div>
-            <Subscribe />
-            <Footer />
         </div>
     );
 }
