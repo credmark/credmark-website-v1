@@ -68,7 +68,7 @@ export default function NavWhite(props) {
                                                         rel="noreferrer">
                                                         <button
                                                             type="button"
-                                                            className="transform hover:scale-110 px-5 credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                                            className="ml-5 transform hover:scale-110 px-5 credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                                         >
                                                             APP
                                                         </button>

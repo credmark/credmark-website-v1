@@ -52,13 +52,13 @@ export default function Nav(props) {
                                                     </a>
                                                     <Link
                                                         href="/team"
-                                                        className="px-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                                        className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
                                                         Team
                                                     </Link>
                                                     <Link
                                                         href="/faq"
-                                                        className="px-8 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                                        className="mx-8 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
                                                         FAQ
                                                     </Link>
@@ -68,7 +68,7 @@ export default function Nav(props) {
                                                         rel="noreferrer">
                                                         <button
                                                             type="button"
-                                                            className="transform hover:scale-110 px-5 credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                                            className="transform hover:scale-110 ml-5 px-5 credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                                         >
                                                             APP
                                                         </button>
