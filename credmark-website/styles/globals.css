@@ -25,7 +25,7 @@ a {
 }
 
 h1, h2, h3, h4, p, a, li, em {
-  @apply text-purple;
+  @apply text-credmarkpurple;
 }
 
 h1{
@@ -47,8 +47,6 @@ h1{
 img {
   margin: auto;
   display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 #hackathon{
@@ -57,14 +55,51 @@ img {
   bottom: 0;
 }
 
-#blogPage {
-  border-radius: 2.5rem;
-}
-
 #whitepaper {
   width: auto;
   display: flex;
   width: 1050px;
+}
+
+.swirls {
+  margin-top: -155px;
+}
+
+.riskEncyclopedia{
+  background: url("/assets/purple-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app-image {
+  margin-top: -100px;
+  margin-bottom: -90px;
+}
+
+.drop-shadow-xl {
+  box-shadow: 5px 10px hsla(279, 27%, 46%, 0.301)
+}
+
+.job-image{
+  margin-top: -150px;
+}
+
+#blogPage{
+  border-radius: 15px;
+}
+
+mono
+* {
+  box-sizing: border-box;
+}
+
+/* Blog */
+
+h4{
+  font-family: 'Credmark';
+  font-size: 28px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 p {
@@ -75,56 +110,6 @@ p {
 blockquote {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-mono
-* {
-  box-sizing: border-box;
-}
-
-.nav{
-background: rgb(247,181,0);
-background: linear-gradient(130deg, rgba(247,181,0,0.07) 0%, rgba(182,32,224,0.07) 49%, rgba(50,197,255,0.07) 100%);
-}
-
-.scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-.simplebar-track.simplebar-vertical {
-  right: 50px;
-  width: 15px !important;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  filter: drop-shadow(2px 0px 4px #999999);
-}
-
-@media screen and (max-width: 480px) {
-  .simplebar-track.simplebar-vertical {
-    right: 10px;
-    width: 15px !important;
-    padding-top: 60px;
-  }
-}
-
-
-.simplebar-scrollbar.simplebar-visible {
-  cursor: pointer;
-}
-
-.simplebar-scrollbar.simplebar-visible::before {
-  cursor: pointer;
-  background: rgb(59, 0, 101);
-  opacity: 1 !important;
-}
-
-/* Blog */
-
-h4{
-  font-family: 'Credmark';
-  font-size: 28px;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 ul{
@@ -141,33 +126,6 @@ li {
   display: list-item;
 }
 
-
-.homeBackground{
-  background: url("/assets/credmark-hackathon.jpg"); 
-  background-position: center center; 
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.faqBackground{
-  background: url("/assets/faq.jpg"); 
-  background-position: center center; 
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 10;
-}
-
-@media (min-width: 1450px){
-  .faqBackground{
-    background: url("/assets/faq.jpg"); 
-    background-position: center center; 
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 10;
-  }
-}
-
-
 .mediaBackground{
   background: url("/assets/media.png");
   background-position: center; 
@@ -175,31 +133,45 @@ li {
   background-repeat: no-repeat;
 }
 
-.homeTop{
-  background: rgb(255,255,255);
-  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, rgba(110, 151, 191, 0.164) 100%);
+
+@media (min-width: 1450px){
+  .swirls {
+    margin-top: -220px;
+  }
+  .app-image {
+    margin-top: -30px;
+    margin-bottom: 0px;
+  }
+  .riskEncyclopedia {
+    background: url(/assets/purple-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+  }
+  .job-image{
+    margin-top: auto;
+  }
 }
 
-.homeBottom{
-  background: rgb(255,255,255);
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(110,150,191,0.396796218487395) 100%);
+@media screen and (max-width: 480px) {
+  .swirls {
+    margin-top: -75px;
+  }
+  .app-image {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .riskEncyclopedia {
+    background: url(/assets/purple-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+  }
+  .job-image{
+    margin-top: auto;
+  }
 }
 
-.blogGradient{
-  background: rgb(177,214,255);
-  background: linear-gradient(130deg, rgba(177,214,255,0.27) 0%, rgba(255,255,255,0.1783088235294118) 10%, rgba(255,255,255,1) 91%, rgba(177,214,255,0.2007177871148459) 100%);
-}
-
-.paperGradient{
-  background: rgb(177,214,255);
-  background: linear-gradient(130deg, rgba(255,240,253,1) 0%, rgb(255, 255, 255) 10%, rgba(255,255,255,1) 80%, rgba(255,240,253,1) 100%);
-}
-.pinkGradient{
-  background: rgb(177,214,255);
-  background: linear-gradient(70deg, rgba(255,240,253,1) 0%, rgb(255, 255, 255) 10%, rgba(255,255,255,1) 88%, rgba(255,240,253,1) 100%);
-}
-
-.faqGradient{
-  background: rgb(177,214,255);
-  background: linear-gradient(130deg, rgba(177,214,255,0.27) 0%, rgba(255,255,255,0.1783088235294118) 47%, rgba(255,255,255,0.1783088235294118) 79%, rgba(177,214,255,0.2007177871148459) 100%);
+@media screen and (max-width: 770px) {
+  .job-image{
+    margin-top: auto;
+  }
 }

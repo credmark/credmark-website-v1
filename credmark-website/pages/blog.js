@@ -1,3 +1,4 @@
+
 import { getAllPosts } from "../lib/api"
 import BlogCard from '../components/blog/blogCard'
 import Nav from '../components/layout/nav'
@@ -45,48 +46,50 @@ function BlogPageContent({posts: blogsData}) {
     const [filter, setFilter] = useState({
         view: { list: 0 }
     });
-
     return (
         <div>
-            <div className="py-12 px-5 blogGradient bg-white">
-                <div className="text-center">
-                    <h1 className="text-5xl pb-2.5">BLOG</h1>
-                    <p className="pb-2.5">News, stories, and announcements from the Credmark team.</p>
-                    <a href="http://eepurl.com/gLAid9" target="_blank" rel="noreferrer"><p className="text-pink pb-5 hover:underline">Subscribe</p></a>
-                </div>
-                <FilteringMenu
-                    filter={filter}
-                    onChange={(option, value) => {
-                        setFilter({ ...filter, [option]: value });
-                    }}
-                />
-                {blogsData?.map(posts =>
-                    filter.view.list ?
-                        <div key={`${posts.slug}-list`}>
+            <Header
+                title="Credmark Blog"
+                description="For the latest technical analysis, partnerships, and community updates"
+            />
+            <FilteringMenu
+                filter={filter}
+                onChange={(option, value) => {
+                    setFilter({ ...filter, [option]: value });
+                }}
+            />
+            <div className="max-w-5xl block m-auto px-4 pt-10 pb-24">
+                <div className="grid grid-cols-1 gap-10 md:grid-cols-3 pt-10">
+                    {blogsData?.map(posts =>
+                        filter.view.list ?
+                            <div key={`${posts.slug}-list`}>
+                                <BlogCard
+                                    title={posts.title}
+                                    date={moment(posts.date).format('MM/DD/YYYY')}
+                                    author={posts.author}
+                                    slug={posts.slug}
+                                    link={{
+                                        href: `/blog/${posts.slug}`
+                                    }} />
+                            </div>
+                            :
                             <BlogCard
+                                key={`${posts.slug}-list`}
                                 title={posts.title}
                                 date={moment(posts.date).format('MM/DD/YYYY')}
+                                img={posts.mainImage}
                                 author={posts.author}
                                 slug={posts.slug}
                                 link={{
                                     href: `/blog/${posts.slug}`
-                                }} />
-                        </div>
-                        :
-                        <BlogCard
-                            key={`${posts.slug}-list`}
-                            title={posts.title}
-                            date={moment(posts.date).format('MM/DD/YYYY')}
-                            img={posts.mainImage}
-                            author={posts.author}
-                            slug={posts.slug}
-                            link={{
-                                href: `/blog/${posts.slug}`
-                            }}
-                        />
-                )
-                }
+                                }}
+                            />
+                    )
+                    }
+                </div>
             </div>
+            <Subscribe />
+            <Footer />
         </div>
     );
 }

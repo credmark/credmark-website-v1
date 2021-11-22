@@ -3,9 +3,11 @@ import { getBlogBySlug, getAllPosts } from '../../lib/api';
 import BlockContent from '@sanity/block-content-to-react';
 import sanity from '../../lib/sanity';
 
-import Nav from '../../components/layout/nav'
+import Nav from '../../components/layout/navWhite'
 import Link from 'next/link'
 import Head from 'next/head'
+import moment from 'moment'
+
 
 const serializers = {
     types: {
@@ -20,10 +22,23 @@ export default function BlogPostPage({ post }) {
     return (
         <>
             <Head>
-                <title>{post.title} | CREDMARK</title>
-                <meta content="Blog | Credmark" property="og:title" key="og:title" />
-                <meta name="description" content="Welcome to the Credmark blog. Subscribe to find out about company updates and industry research." />
-                <link rel="icon" href="/favicon.ico" />
+                <title key="title">{post.title} | Blog | Credmark</title>
+                <meta name="description" content={post.description} />
+                <meta content={`${post.title} | Blog | Toucan Events`} property="og:title" key="og:title" />
+                <meta content={`${post.title} | Blog | Toucan Events`} name="twitter:title" key="twitter:title" />
+                <meta content={post.description} property="og:description" key="og:description" />
+                <meta content={post.description} property="twitter:description" key="twitter:description" />
+                {post.mainImage && (
+                    <>
+                        <meta content={post.mainImage} property="og:image" key="og:image" />
+                        <meta
+                            content={post.mainImage}
+                            property="og:image:secure_url"
+                            key="og:image:secure_url"
+                        />
+                        <meta content={post.mainImage} name="twitter:image" key="twitter:image" />
+                    </>
+                )}
                 {/* Global Site Tag (gtag.js) - Google Analytics */}
                 <script
                     async
@@ -43,7 +58,7 @@ export default function BlogPostPage({ post }) {
                 />
             </Head>
             <div className="nav">
-            <Nav page={<BlogDetail post={post} />} />
+                <Nav page={<BlogDetail post={post} />} />
             </div>
         </>
     )
@@ -52,19 +67,19 @@ export default function BlogPostPage({ post }) {
 const BlogDetail = ({ post }) => {
     return (
         <div className="bg-white pb-10">
-            <div className="max-w-5xl block m-auto text-center px-5">
-                <Link href="/blog" rel="noreferrer">
-                    <img id="blogbutton" className="h-auto cursor-pointer mt-40" fill="#3B0065" width={30} height={30} src="/assets/BackButton.svg">
-                    </img>
-                </Link>
-                <img id="blogPage" className="w-56 h-52 rounded-lg block m-auto mb-10" src={post.mainImage} />
-                <h1 className="text-xl md:px-20">{post.title}</h1>
+            <div className="max-w-6xl block m-auto px-5 md:px-20">
+                <h1 className="pt-20 text-5xl pb-5 px-5 md:px-20">{post.title}</h1>
+                <p className="text-pink credmark pb-5 px-5 md:px-20 text-base">{post.author} I {moment(post.date).format('MM.DD.YYYY')}</p>
+                <img className="px-5 md:px-20" id="blogPage" src={post.mainImage} />
                 <BlockContent
-                    className="text-left leading-loose pt-10 px-5 md:px-20"
+                    className="blog text-left leading-loose pt-10 px-5 md:px-20"
                     serializers={serializers}
                     blocks={post.content}
                     {...sanity.config()}
                 />
+                <div className="flex">
+                    <a href="/blog" rel="noreferrer"><p className="font-bold pt-10 pb-5 px-5 md:px-20"><img width={40} className="float-left pt-0 pr-5" src="../assets/arrow.svg" />Back to blog</p></a>
+                </div>
             </div>
         </div>
     )
