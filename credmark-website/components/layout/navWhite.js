@@ -50,18 +50,22 @@ export default function NavWhite(props) {
                                                     >
                                                         Community
                                                     </a>
+                                                    <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                                                     <Link
                                                         href="/team"
                                                         className="px-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
                                                         Team
                                                     </Link>
+                                                    </div>
+                                                    <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                                                     <Link
                                                         href="/faq"
                                                         className="px-8 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
                                                         FAQ
                                                     </Link>
+                                                    </div>
                                                     <a
                                                         href="https://app.credmark.com/"
                                                         target="_blank"
