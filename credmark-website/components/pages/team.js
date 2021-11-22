@@ -42,15 +42,15 @@ export default function Team() {
                                 ADVISORS
                             </h1>
                             <div className="grid grid-cols-1 md:grid-cols-2 block m-auto max-w-4xl">
-                                <AdvisorCard
-                                    img="../assets/alberto.jpg"
-                                    alt="Alberto Ornaghi"
-                                    name="Alberto Ornaghi"
+                            <AdvisorCard
+                                    img="../assets/renner.png"
+                                    alt="Renan Feldman"
+                                    name="Renan Feldman"
                                     role="Advisor"
-                                    company="Coinbase"
+                                    company="UBS"
                                 />
                                 <AdvisorCard
-                                    img="../assets/jonah.jpg"
+                                    img="../assets/jonah.png"
                                     alt="Jonah Lau"
                                     name="Jonah Lau"
                                     role="Advisor"
@@ -60,18 +60,18 @@ export default function Team() {
                             <div className="grid grid-cols-1 md:grid-cols-3 block m-auto">
 
                                 <AdvisorCard
-                                    img="../assets/heiki.jpg"
+                                    img="../assets/heiki.png"
                                     alt="Heikki Vanttinen"
                                     name="Heikki Vanttinen"
                                     role="Advisor"
                                     company="API3"
                                 />
-                                <AdvisorCard
-                                    img="../assets/renner.jpg"
-                                    alt="Renan Feldman"
-                                    name="Renan Feldman"
+                                 <AdvisorCard
+                                    img="../assets/alberto.png"
+                                    alt="Alberto Ornaghi"
+                                    name="Alberto Ornaghi"
                                     role="Advisor"
-                                    company="UBS"
+                                    company="Coinbase"
                                 />
                                 <AdvisorCard
                                     img="../assets/serge.png"
