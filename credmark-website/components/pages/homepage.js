@@ -111,9 +111,9 @@ export default function Homepage() {
                                 url="https://s3.amazonaws.com/reports.credmark.com/TheCryptoCreditReport-Q3-2020.pdf" />
                         </div>
                         <div className="flex justify-center pt-10">
-                            <a href="/reports">
+                            <Link href="/reports">
                                 <p className="credmark cursor-pointer text-center text-md float-left">All reports<img width={40} className="float-right pt-0 pl-5" alt="arrow right" src="../assets/Arrow-1.svg" /></p>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div>

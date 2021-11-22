@@ -78,7 +78,9 @@ const BlogDetail = ({ post }) => {
                     {...sanity.config()}
                 />
                 <div className="flex">
-                    <a href="/blog" rel="noreferrer"><p className="font-bold pt-10 pb-5 px-5 md:px-20"><img width={40} className="float-left pt-0 pr-5" src="../assets/arrow.svg" />Back to blog</p></a>
+                <Link href="/blog" rel="noreferrer">
+                    <p className="font-bold pt-10 pb-5 px-5 md:px-20"><img width={40} className="float-left pt-0 pr-5" src="../assets/arrow.svg" />Back to blog</p>
+                    </Link>
                 </div>
             </div>
         </div>
