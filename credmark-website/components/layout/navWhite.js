@@ -25,14 +25,14 @@ export default function NavWhite(props) {
                                                 src="../assets/credmark-logo.png"
                                                 alt="Workflow"
                                             />
-                                            <a href="/">
+                                            <Link href="/">
                                                 <img
                                                     width={250}
                                                     className="h-auto hidden lg:block h-12 flex justify-start m-0 mt-4 px-10"
                                                     src="../assets/credmark-logo-purple.png"
                                                     alt="Credmark logo"
                                                 />
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="hidden sm:ml-8 sm:flex sm:items-center">
@@ -50,18 +50,18 @@ export default function NavWhite(props) {
                                                     >
                                                         Community
                                                     </a>
-                                                    <a
+                                                    <Link
                                                         href="/team"
                                                         className="px-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
                                                         Team
-                                                    </a>
-                                                    <a
+                                                    </Link>
+                                                    <Link
                                                         href="/faq"
                                                         className="px-8 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
                                                         FAQ
-                                                    </a>
+                                                    </Link>
                                                     <a
                                                         href="https://app.credmark.com/"
                                                         target="_blank"
@@ -103,14 +103,14 @@ export default function NavWhite(props) {
                                     </Disclosure.Button>
                                     <Disclosure.Button
                                         as="a"
-                                        href="#"
+                                        href="/team"
                                         className="border-transparent block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
                                     >
                                         Team
                                     </Disclosure.Button>
                                     <Disclosure.Button
                                         as="a"
-                                        href="#"
+                                        href="/faq"
                                         className="border-transparent block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
                                     >
                                         FAQ

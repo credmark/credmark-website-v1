@@ -2,13 +2,11 @@ import { getAllPosts } from "../lib/api"
 import BlogCard from '../components/blog/blogCard'
 import Nav from '../components/layout/nav'
 import moment from 'moment'
-import Header from '../components/layout/header'
 
 import FilteringMenu from "../components/blog/fiterMenu"
 import { useState } from "react"
 import Head from 'next/head'
-import Footer from "../components/layout/footer"
-import Subscribe from "../components/layout/subscribe"
+
 
 export default function BlogPage({ posts }) {
 
@@ -38,23 +36,25 @@ export default function BlogPage({ posts }) {
                 />
             </Head>
             <div className="nav">
-            <Nav page={<BlogPageContent posts={posts} />} />
+                <Nav page={<BlogPageContent posts={posts} />} />
             </div>
         </>
     )
 }
 
-function BlogPageContent({posts: blogsData}) {
-        const [filter, setFilter] = useState({
+function BlogPageContent({ posts: blogsData }) {
+    const [filter, setFilter] = useState({
         view: { list: 0 }
     });
 
     return (
         <div>
-            <Header
-                title="Credmark Blog"
-                description="For the latest technical analysis, partnerships, and community updates"
-            />
+            <div className="bg-lightpink py-20">
+                <div className="max-w-6xl px-5 block m-auto">
+                    <h1 className="credmark text-5xl py-5">Credmark Blog</h1>
+                    <h2 className="credmark text-pink text-lg">For the latest technical analysis, partnerships, and community updates</h2>
+                </div>
+            </div>
             <FilteringMenu
                 filter={filter}
                 onChange={(option, value) => {
