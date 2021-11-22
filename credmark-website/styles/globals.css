@@ -47,18 +47,12 @@ h1{
 img {
   margin: auto;
   display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 #hackathon{
   padding-top: 35px;
   right: 0;
   bottom: 0;
-}
-
-#blogPage {
-  border-radius: 2.5rem;
 }
 
 #whitepaper {
@@ -88,6 +82,10 @@ img {
 
 .job-image{
   margin-top: -150px;
+}
+
+#blogPage{
+  border-radius: 15px;
 }
 
 mono

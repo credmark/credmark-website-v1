@@ -54,7 +54,7 @@ export default function BlogPostPage({ post }) {
 const BlogDetail = ({ post }) => {
     return (
         <div className="bg-white pb-10">
-            <div className="max-w-5xl block m-auto px-5 md:px-20">
+            <div className="max-w-6xl block m-auto px-5 md:px-20">
                 <h1 className="pt-20 text-5xl pb-5 px-5 md:px-20">{post.title}</h1>
                 <p className="text-pink credmark pb-5 px-5 md:px-20 text-base">{post.author} I {moment(post.date).format('MM.DD.YYYY')}</p>
                 <img className="px-5 md:px-20" id="blogPage" src={post.mainImage} />
@@ -64,6 +64,7 @@ const BlogDetail = ({ post }) => {
                     blocks={post.content}
                     {...sanity.config()}
                 />
+                <a href="/blog" rel="noreferrer"><p className="font-bold pt-10 pb-5 px-5 md:px-20">Back to blog</p></a>
             </div>
         </div>
     )

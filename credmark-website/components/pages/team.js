@@ -83,7 +83,7 @@ export default function Team() {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div className="pb-10 md:pb-0">
                         <h4 className="credmark text-4xl text-center pt-10 md:pt-32 pb-9">Looking to de-risk DeFi together?</h4>
                         <div className="flex justify-center">
                             <a href="/careers">

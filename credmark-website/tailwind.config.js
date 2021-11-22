@@ -71,6 +71,7 @@ module.exports = {
       borderWidth: ['hover', 'focus'],
       animation: ['hover', 'focus'],
       animation: ['motion-safe'],
+      backdropBlur: ['hover', 'focus'],
     },
   },
   plugins: [],

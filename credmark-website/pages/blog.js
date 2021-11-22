@@ -64,16 +64,8 @@ function BlogPageContent() {
                     setFilter({ ...filter, [option]: value });
                 }}
             />
-        <div className="px-5 max-w-5xl md:m-auto pt-10 md:pt-16">
-        <div className="pt-10 border-b-1 border-gray-700 block m-auto md:m-auto space-x-5 md:space-x-20">
-              <button className="border-b-2 border-transparent hover:border-purple pb-5 pl-5" onClick={()=>{setSelectedCategory("all")}}>All</button>
-              <button className="border-b-2 border-transparent hover:border-purple pb-5" onClick={()=>{setSelectedCategory("press")}}>Technical Analysis</button>
-              <button className="border-b-2 border-transparent hover:border-purple pb-5" onClick={()=>{setSelectedCategory("announcements")}}>Partnerships</button>
-              <button className="border-b-2 border-transparent hover:border-purple pb-5" onClick={()=>{setSelectedCategory("new-features")}}>Community Updates</button>
-          </div>
-          </div>
-            <div className="container-xl mt-10 md:mt-0 block m-auto max-w-5xl">
-                <div className="grid grid-cols-1 md:grid-cols-3 py-10">
+            <div className="max-w-5xl block m-auto px-4 pt-10 pb-24">
+                <div className="grid grid-cols-1 gap-10 md:grid-cols-3 pt-10">
                     {blogsData?.map(posts =>
                         filter.view.list ?
                             <div key={`${posts.slug}-list`}>

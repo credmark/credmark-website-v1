@@ -4,16 +4,16 @@ import Link from 'next/link';
 const BlogCard = (props) => {
     return (
         <>
-                <div className="py-2.5 max-w-lg block m-auto px-2.5">
+                <div className="box col-xs">
                     <Link href={`/blog/${props.slug}`}>
                         <img
                             alt={props.alt}
                             src={props.img}
-                            className='rounded-3xl cursor-pointer'
+                            className='rounded-md w-auto h-52 flex justify-center cursor-pointer mb-5'
                             id="blogPage"
                         />
                     </Link>
-                    <div className="pl-5 font-light py-10">
+                    <div className="pl-5 font-light pb-10">
                         <p>{props.date}</p>
                         <Link href={`/blog/${props.slug}`}>
                         <p className="credmark cursor-pointer text-xl">{props.title}</p>
