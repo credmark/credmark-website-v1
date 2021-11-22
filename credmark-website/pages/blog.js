@@ -1,32 +1,30 @@
+
 import { getAllPosts } from "../lib/api"
 import BlogCard from '../components/blog/blogCard'
 import Nav from '../components/layout/nav'
 import moment from 'moment'
-import Header from '../components/layout/header'
 
 import FilteringMenu from "../components/blog/fiterMenu"
 import { useState } from "react"
 import Head from 'next/head'
-import Footer from "../components/layout/footer"
-import Subscribe from "../components/layout/subscribe"
 
 export default function BlogPage({ posts }) {
 
     return (
         <>
-            <Head>
-                <title>Blog | CREDMARK</title>
-                <meta content="Blog | Credmark" property="og:title" key="og:title" />
-                <meta name="description" content="Welcome to the Credmark blog. Subscribe to find out about company updates and industry research." />
-                <link rel="icon" href="/favicon.ico" />
-                {/* Global Site Tag (gtag.js) - Google Analytics */}
-                <script
-                    async
-                    src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-                />
-                <script
-                    dangerouslySetInnerHTML={{
-                        __html: `
+        <Head>
+        <title>Blog | CREDMARK</title>
+        <meta content="Blog | Credmark" property="og:title" key="og:title" />
+        <meta name="description" content="Welcome to the Credmark blog. Subscribe to find out about company updates and industry research." />
+        <link rel="icon" href="/favicon.ico" />
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -34,10 +32,10 @@ export default function BlogPage({ posts }) {
               page_path: window.location.pathname,
             });
           `,
-                    }}
-                />
-            </Head>
-            <div className="nav">
+            }}
+          />
+      </Head>
+      <div className="nav">
             <Nav page={<BlogPageContent posts={posts} />} />
             </div>
         </>
@@ -45,10 +43,9 @@ export default function BlogPage({ posts }) {
 }
 
 function BlogPageContent({posts: blogsData}) {
-        const [filter, setFilter] = useState({
+    const [filter, setFilter] = useState({
         view: { list: 0 }
     });
-
     return (
         <div>
             <Header
