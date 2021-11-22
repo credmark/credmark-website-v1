@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 
-const Description = (props) => {
+const DescriptionSolidity = (props) => {
     return (
         <>
             <div className="bg-lightpink py-20">
@@ -52,9 +52,6 @@ const Description = (props) => {
                         <li className="text-black">{props.responsibilitiesFour}</li>
                         <li className="text-black">{props.responsibilitiesFive}</li>
                         <li className="text-black">{props.responsibilitiesSix}</li>
-                        <li className="text-black">{props.responsibilitiesSeven}</li>
-                        <li className="text-black">{props.responsibilitiesEight}</li>
-                        <li className="text-black">{props.responsibilitiesNine}</li>
 
                     </ul>
                     <h3 className="credmark text-3xl pt-16">The Ideal Candidate</h3>
@@ -63,12 +60,6 @@ const Description = (props) => {
                         <li className="text-black">{props.skillsOne}</li>
                         <li className="text-black">{props.skillsTwo}</li>
                         <li className="text-black">{props.skillsThree}</li>
-                        <li className="text-black">{props.skillsFour}</li>
-                        <li className="text-black">{props.skillsFive}</li>
-                        <li className="text-black">{props.skillsSix}</li>
-                        <li className="text-black">{props.skillsSeven}</li>
-                        <li className="text-black">{props.skillsEight}</li>
-                        <li className="text-black">{props.skillsNine}</li>
                     </ul>
                     <h3 className="credmark text-3xl pt-16">About the team</h3>
                     <p className="text-black">
@@ -96,4 +87,4 @@ const Description = (props) => {
     );
 }
 
-export default Description;
+export default DescriptionSolidity;

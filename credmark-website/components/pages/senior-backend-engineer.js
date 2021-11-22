@@ -1,6 +1,3 @@
-import CareerHeader from "../layout/centeredHeader"
-import Culture from '../careers/culture'
-import OpenRoles from "../careers/openRoles"
 import Subscribe from "../layout/subscribe"
 import Footer from "../layout/footer"
 import Description from "../careers/description"
@@ -18,6 +15,7 @@ export default function SeniorBackendEngineer() {
                         experience="5+ Years"
                         location="Austin, TX (partial remote)"
                         job="Full-time"
+                        summary="We need engineers who like to build from the ground up and deeply understand: Scaling, Security, Big data, API’s."
                         responsibilities="Assist with planning and architecting of our future developer platform"
                         responsibilitiesOne="Create simple and feature-rich API’s with your language of choice"
                         responsibilitiesTwo="Advise and assist with creation of scalable data ETL pipelines"

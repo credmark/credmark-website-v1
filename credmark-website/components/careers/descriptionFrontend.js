@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 
-const Description = (props) => {
+const DescriptionFrontend = (props) => {
     return (
         <>
             <div className="bg-lightpink py-20">
@@ -43,20 +43,7 @@ const Description = (props) => {
                 <div className="max-w-3xl block m-auto">
                 <h3 className="credmark text-3xl pt-16">Job Summary</h3>
                 <p className="text-black">{props.summary}</p>
-                    <h3 className="credmark text-3xl pt-16">Responsibilities</h3>
-                    <ul>
-                        <li className="text-black">{props.responsibilities}</li>
-                        <li className="text-black">{props.responsibilitiesOne}</li>
-                        <li className="text-black">{props.responsibilitiesTwo}</li>
-                        <li className="text-black">{props.responsibilitiesThree}</li>
-                        <li className="text-black">{props.responsibilitiesFour}</li>
-                        <li className="text-black">{props.responsibilitiesFive}</li>
-                        <li className="text-black">{props.responsibilitiesSix}</li>
-                        <li className="text-black">{props.responsibilitiesSeven}</li>
-                        <li className="text-black">{props.responsibilitiesEight}</li>
-                        <li className="text-black">{props.responsibilitiesNine}</li>
-
-                    </ul>
+                <p className="text-black">{props.summaryTwo}</p>
                     <h3 className="credmark text-3xl pt-16">The Ideal Candidate</h3>
                     <ul>
                     <li className="text-black">{props.skills}</li>
@@ -96,4 +83,4 @@ const Description = (props) => {
     );
 }
 
-export default Description;
+export default DescriptionFrontend;

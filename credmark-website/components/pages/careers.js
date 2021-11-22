@@ -48,19 +48,24 @@ export default function Careers() {
                                 Open Roles
                             </h3>
                             <OpenRoles
-                                jobtitle="Senior Backend Developer"
+                                jobtitle="Senior Backend Engineer"
+                                link="/careers/senior-backend-engineer"
                             />
                             <OpenRoles
                                 jobtitle="Senior Cloud Architect"
+                                link="/careers/senior-cloud-architect"
                             />
                             <OpenRoles
-                                jobtitle="Senior Frontend Developer"
+                                jobtitle="Senior Frontend Engineer"
+                                link="/careers/senior-frontend-engineer"
                             />
                             <OpenRoles
                                 jobtitle="Senior Risk Manager"
+                                link="/careers/senior-risk-manager"
                             />
                             <OpenRoles
                                 jobtitle="Senior Solidity Engineer"
+                                link="/careers/senior-solidity-engineer"
                             />
                         </div>
                         <div className="px-5 py-10">

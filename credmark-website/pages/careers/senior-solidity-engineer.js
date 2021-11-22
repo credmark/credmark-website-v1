@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Nav from '../../components/layout/nav'
-import CareerDescription from '../../components/pages/senior-backend-engineer'
+import CareerDescription from '../../components/pages/seniorSolidityEngineer'
 
-export default function SeniorBackendEngineerPage() {
+export default function SeniorSolidityEngineerPage() {
   return (
     <>
       <Head>
-        <title>Careers | Senior Backend Engineer | CREDMARK</title>
+        <title>Careers | Senior Solidity Engineer | CREDMARK</title>
         <meta content="Team | Credmark" property="og:title" key="og:title" />
         <meta name="description" content="Build the future of DeFi with us by joining the Credmark team." />
         <link rel="icon" href="/favicon.ico" />
