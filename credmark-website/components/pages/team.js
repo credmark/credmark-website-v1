@@ -7,6 +7,7 @@ import items from "../../styles/teamData"
 import { useState } from 'react'
 import Menu from '../filters/Menu'
 import Button from '../filters/Button'
+import Link from 'next/link'
 
 const allCategories = ['All', ...items.map(item => item.category)];
 
@@ -86,14 +87,14 @@ export default function Team() {
                     <div className="pb-10 md:pb-0">
                         <h4 className="credmark text-4xl text-center pt-10 md:pt-32 pb-9">Looking to de-risk DeFi together?</h4>
                         <div className="flex justify-center">
-                            <a href="/careers">
+                            <Link href="/careers">
                                 <button
                                     type="button"
                                     className="credmark inline-flex items-center md:mb-32 px-7 py-2 shadow-sm text-sm rounded-md text-white bg-credmarkpurple"
                                 >
                                     See open positions
                                 </button>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <Subscribe />
