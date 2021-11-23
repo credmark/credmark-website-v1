@@ -4,10 +4,26 @@ import Subscribe from '../layout/subscribe'
 import Footer from '../layout/footer'
 import CCRCard from '../ccr/ccr-card'
 import React, { useState } from "react";
+import HomeReportsMenu from '../filters/homeReportsMenu'
+import HomeReportsButton from '../filters/homeReportsButton'
+import items from "../../styles/homeReportsData"
 
-
+const allCategories = ['All', ...items.map(item => item.category)];
 
 export default function Homepage() {
+    const [menuItem, setMenuItem] = useState(items);
+    const [buttons, setButtons] = useState([allCategories]);
+
+    const filter = (button) => {
+
+        if (button === 'All') {
+            setMenuItem(items);
+            return;
+        }
+
+        const filteredData = items.filter(item => item.category === button);
+        setMenuItem(filteredData)
+    }
 
     return (
         <>
@@ -15,7 +31,7 @@ export default function Homepage() {
                 <HeaderHome
                     title="Manage DeFi Risks"
                     description="DeFi is rife with hidden risks, but our tools help YOU navigate the sea of risk"
-                    url="#what-is" />
+                    url="#what-is-credmark" />
                 <div className="swirls">
                     <img src="/assets/swirls-transparent.png" alt="colored swirls" />
                 </div>
@@ -26,7 +42,7 @@ export default function Homepage() {
                 <div className="max-w-7xl block m-auto">
                     <div className="px-5">
                         <div className="text-center">
-                            <h3 id="what-is" className="credmark text-5xl md:text-4xl pt-10">
+                            <h3 id="what-is-credmark" className="credmark text-5xl md:text-4xl pt-10">
                                 What is Credmark?
                             </h3>
                         </div>
@@ -78,7 +94,7 @@ export default function Homepage() {
                         <a href="https://docs.credmark.com/credmark-risk-library/" target="_blank" rel="noreferrer">
                             <button
                                 type="button"
-                                className="border-2 border-white credmark my-5 md:mt-16 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white"
+                                className="border-2 border-white credmark my-5 md:mt-16 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white hover:bg-white hover:text-credmarkpurple"
                             >
                                 Open library
                             </button>
@@ -92,34 +108,28 @@ export default function Homepage() {
             <div className="max-w-7xl block m-auto py-20">
                 <div className="px-5">
                     <div className="text-center">
-                        <h3 className="credmark text-5xl md:text-4xl py-5">
+                        <h3 className="credmark text-5xl md:text-4xl">
                             Reports
                         </h3>
                         <div className="px-5 max-w-5xl md:m-auto">
-                            <div className="pt-10 block m-auto md:m-auto space-x-5 pb-10">
+                            <div className="block m-auto md:m-auto space-x-5 pb-10">
+                                <HomeReportsButton button={buttons} filter={filter} />
                             </div>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3">
-                            <CCRCard
-                                title="Idle Finance Report"
-                                url="https://docs.credmark.com/credmark-risk-library/yield-aggregators/idle-finance" />
-                            <CCRCard
-                                title="2020 Year End Report"
-                                url="https://s3.amazonaws.com/reports.credmark.com/TheCryptoCreditReport-Q4-2020.pdf" />
-                            <CCRCard
-                                title="2020 Q3"
-                                url="https://s3.amazonaws.com/reports.credmark.com/TheCryptoCreditReport-Q3-2020.pdf" />
+                        <div className="px-5 md:px-0 max-w-5xl block m-auto">
+                            <HomeReportsMenu menuItem={menuItem} />
                         </div>
                         <div className="flex justify-center pt-10">
                             <Link href="/reports">
                                 <p className="credmark cursor-pointer text-center text-md float-left">All reports<img width={40} className="float-right pt-0 pl-5" alt="arrow right" src="../assets/Arrow-1.svg" /></p>
                             </Link>
                         </div>
-                    </div>
-                    <div>
+                        <div>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div className="bg-purple pt-10 px-5 md:px-20">
                 <div>
                     <p className="credmark text-2xl text-center text-white py-5">DeFi Data Created For Industry Agnostic Application</p>
@@ -138,7 +148,7 @@ export default function Homepage() {
                             rel="noreferrer">
                             <button
                                 type="button"
-                                className="credmark mt-5 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-purple bg-white"
+                                className="transform hover:scale-110 credmark mt-5 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-purple bg-white"
                             >
                                 View docs
                             </button>
@@ -160,7 +170,7 @@ export default function Homepage() {
                             <a href="https://app.credmark.com/" target="_blank" rel="noreferrer">
                                 <button
                                     type="button"
-                                    className="border-2 border-white md:border-transparent md:border-0 credmark my-5 md:mt-5 bg-credmarkpurple inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white"
+                                    className="hover:text-credmarkpurple hover:bg-white border-2 border-white md:border-transparent md:border-0 credmark my-5 md:mt-5 bg-credmarkpurple inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white"
                                 >
                                     Enter App
                                 </button>

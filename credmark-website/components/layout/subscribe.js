@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Link from 'next/link';
 
 const Subscribe = () => {
     return (
@@ -9,18 +10,22 @@ const Subscribe = () => {
                         <div className="pb-15">
                             <h4 className="text-white text-center text-2lg pb-5 pt-0">Learn more about Credmark</h4>
                             <div className="flex justify-center">
+                            <Link href="/reports">
                             <button
                                 type="button"
                                 className="credmark mr-5 mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-purple"
                             >
                                 Documentation
                             </button>
+                            </Link>
+                            <a href="mailto:contact@credmark.com" target="_blank" rel="noreferrer">
                             <button
                                 type="button"
                                 className="credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-purple bg-white"
                             >
                                 Get in touch
                             </button>
+                            </a>
                             </div>
                         </div>
                         <div className="ml-15">

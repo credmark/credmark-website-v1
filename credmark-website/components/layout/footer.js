@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
 
-/* This example requires Tailwind CSS v2.0+ */
 const navigation = {
     projects: [
         { name: 'Research', href: '/reports' },
@@ -17,7 +16,7 @@ const navigation = {
     community: [
         { name: 'The Team', href: '/team' },
         { name: 'Work with us', href: '/careers' },
-        { name: 'Community', href: 'https://discord.com/invite/3dSfMqP3d4' },
+        { name: 'Community', href: 'https://discord.gg/credmark' },
     ],
     social: [
         {
