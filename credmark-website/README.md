@@ -4,17 +4,14 @@ Before starting, you need to install next:
 ```
 npm install next
 ```
-First, change the directory to git-task:
-
-```
-cd git-task
-```
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
+git checkout <branch>
+cd credmark-website
 npm run dev
 # or
 yarn dev
