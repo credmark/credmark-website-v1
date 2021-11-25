@@ -7,6 +7,7 @@ const AdvisorCard = (props) => {
         <div className="md:pt-10 text-center py-10">
             <img className="block m-auto max-w-xs" src={props.img} alt={props.alt} />  
             <strong><p className="credmark text-lg py-2.5">{props.name}</p></strong>
+            <p className="credmark text-base">{props.role}</p>
         </div>
         </>
     );

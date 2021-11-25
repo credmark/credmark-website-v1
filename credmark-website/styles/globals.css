@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Credmark";
-  src: url("/fonts/Credmark-Regular.ttf") format("truetype");
+  src: url("/fonts/Credmark-Regular.otf") format("truetype");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -133,6 +133,35 @@ li {
   background-repeat: no-repeat;
 }
 
+.bio-photo {
+  border-radius:50%;
+  display: block;
+  width: var(--width);
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: var(--width);
+  opacity: 0;
+  transition: .5s ease;
+  border-radius:50%;
+}
+
+.img-hover:hover .overlay {
+  opacity: 1;
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+}
 
 @media (min-width: 1450px){
   .swirls {

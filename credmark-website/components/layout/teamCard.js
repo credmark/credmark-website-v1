@@ -4,7 +4,10 @@ const TeamCard = (props) => {
     return (
         <>
             <div id="team" className="py-10">
-                <img className="block m-auto" src={props.img} alt={props.alt} />
+            <div class="img__wrap">
+                <img className="img__img block m-auto" src={props.img} alt={props.alt} />
+                <p class="img__description">This image looks super neat.</p>
+                </div>
                 <p className="credmark py-5 text-center text-sm text-lg">{props.name} I <br /> {props.title}</p>
                 <div className="flex justify-center">
                     <a href={props.twitter} target="_blank" rel="noreferrer">

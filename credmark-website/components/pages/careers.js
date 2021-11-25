@@ -13,8 +13,8 @@ export default function Careers() {
                 <div className="blogGradient rounded-md">
                     <CareerHeader
                         title="Build the Future of DeFi With us"
-                        description="Our mission is to de-risk the DeFi industry to enable users to make better informed investment decisions."
-                        descriptionTwo="We believe the key to mainstream adoption lies in reducing risk for users."
+                        description="Our mission is to de-risk DeFi and enable users to make better informed decisions."
+                        descriptionTwo="Allowing everyone to evaluate risk will enable mainstream adoption of DeFi."
                         button="Join us"
                     />
                     <div className="px-5 py-10">
@@ -26,21 +26,22 @@ export default function Careers() {
                                 img="../assets/decentralized.svg"
                                 alt="Decentralized Ideas"
                                 title="Decentralized Ideas"
-                                description="We understand everyone has their own expertise and unique experiences. All voices are heard so every person can develop ownership as long as they can back up what they say."
+                                description="Everyone has their own expertise and unique experiences. Bring them to the table, back them up, own them!"
                             />
-                            <Culture
-                                img="../assets/global.svg"
-                                alt="Global Team"
-                                title="Global"
-                                description="We're aiming to become a DAO. Naturally that means our team is very distributed. We're situated across
-                                    various time zones and our differences
-                                    bring together fresh new ideas."
-                            />
+                            <div className="pb-10 max-w-xl block m-auto">
+                                    <img
+                                        alt="Global Team"
+                                        src="../assets/global.svg"
+                                        className='cursor-pointer px-5 pt-10'
+                                    />
+                                <p className="px-5 credmark cursor-pointer text-center text-lg max-w-xs block m-auto">Global</p>
+                                <p className="px-5 cursor-pointer text-center text-base">Credmark is a DAO quickly moving towards full decentralization. We are building a global community to take over the DAO's governance.</p>
+                            </div>
                             <Culture
                                 img="../assets/turbo-learning.svg"
                                 alt="Turbo-charged learning"
                                 title="Turbo-charged learning"
-                                description="DeFi moves at lightning fast speed, but so does being at Credmark. We're paving the path for data integrity and reducing risk so we can increase DeFi adoption."
+                                description="DeFi moves lightning fast. So do we."
                             />
                         </div>
                         <div className="py-10 bg-pinkextralight">
@@ -91,9 +92,9 @@ export default function Careers() {
                                 />
                             </div>
                         </div>
-                        </div>
-                        <Subscribe />
-                        <Footer />
+                    </div>
+                    <Subscribe />
+                    <Footer />
                 </div>
             </main>
         </>

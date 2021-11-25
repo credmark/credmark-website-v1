@@ -17,7 +17,7 @@ export default function faq() {
                 </div>
                 <div className="px-5 max-w-5xl md:m-auto pb-10">
                     <div>
-                    <div className="px-5 max-w-5xl md:m-auto">
+                    <div className="max-w-5xl md:m-auto">
                         <h3 className="credmark text-center md:text-left text-3xl md:text-4xl pt-10">
                             Introduction
                         </h3>

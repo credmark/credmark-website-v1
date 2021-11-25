@@ -9,23 +9,39 @@ const Subscribe = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 px-5">
                         <div className="pb-15">
                             <h4 className="text-white text-center text-2lg pb-5 pt-0">Learn more about Credmark</h4>
-                            <div className="flex justify-center">
+                            <div className="flex flex-wrap justify-center">
                             <Link href="/reports">
                             <button
                                 type="button"
-                                className="credmark mr-5 mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-purple"
+                                className="credmark mt-5 inline-flex items-center px-8 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple mx-4"
                             >
-                                Documentation
+                                Docs
                             </button>
                             </Link>
-                            <a href="mailto:contact@credmark.com" target="_blank" rel="noreferrer">
+                            <Link href="/blog" rel="noreferrer">
                             <button
                                 type="button"
-                                className="credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-purple bg-white"
+                                className="credmark mt-5 inline-flex items-center px-8 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple mx-4"
                             >
-                                Get in touch
+                                Blog
                             </button>
-                            </a>
+                            </Link>
+                            <Link href="/media" rel="noreferrer">
+                            <button
+                                type="button"
+                                className="credmark mt-5 inline-flex items-center px-8 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple bg-white mx-4"
+                            >
+                                Media
+                            </button>
+                            </Link>
+                            <Link href="/faq" rel="noreferrer">
+                            <button
+                                type="button"
+                                className="credmark mt-5 inline-flex items-center px-8 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple mx-4"
+                            >
+                                FAQ
+                            </button>
+                            </Link>
                             </div>
                         </div>
                         <div className="ml-15">
