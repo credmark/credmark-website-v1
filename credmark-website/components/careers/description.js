@@ -6,8 +6,8 @@ const Description = (props) => {
         <>
             <div className="bg-lightpink py-20">
                 <div className="max-w-3xl px-5 block m-auto">
-                    <h1 className="credmark text-center text-5xl py-5">{props.title}</h1>
-                    <h2 className="text-lg text-pink text-center pb-10 md:pb-32">{props.description}</h2>
+                    <h1 className="uppercase font-extrabold text-center text-5xl py-5">{props.title}</h1>
+                    <h2 className="font-bold text-lg text-pink text-center pb-10 md:pb-32">{props.description}</h2>
                 </div>
             </div>
             <div className="bg-white">
@@ -41,9 +41,9 @@ const Description = (props) => {
                     </div>
                 </div>
                 <div className="max-w-3xl block m-auto px-5 lg:px-0">
-                <h3 className="credmark text-3xl pt-16">Job Summary</h3>
+                <h3 className="uppercase font-extrabold text-3xl pt-16">Job Summary</h3>
                 <p className="text-black">{props.summary}</p>
-                    <h3 className="credmark text-3xl pt-16">Responsibilities</h3>
+                    <h3 className="uppercase font-extrabold text-3xl pt-16">Responsibilities</h3>
                     <ul>
                         <li className="text-black">{props.responsibilities}</li>
                         <li className="text-black">{props.responsibilitiesOne}</li>
@@ -57,7 +57,7 @@ const Description = (props) => {
                         <li className="text-black">{props.responsibilitiesNine}</li>
 
                     </ul>
-                    <h3 className="credmark text-3xl pt-16">The Ideal Candidate</h3>
+                    <h3 className="uppercase font-extrabold text-3xl pt-16">The Ideal Candidate</h3>
                     <ul>
                     <li className="text-black">{props.skills}</li>
                         <li className="text-black">{props.skillsOne}</li>
@@ -70,7 +70,7 @@ const Description = (props) => {
                         <li className="text-black">{props.skillsEight}</li>
                         <li className="text-black">{props.skillsNine}</li>
                     </ul>
-                    <h3 className="credmark text-3xl pt-16">About the team</h3>
+                    <h3 className="uppercase font-extrabold text-3xl pt-16">About the team</h3>
                     <p className="text-black">
                         Credmark aims to provide high integrity data and risk metrics through a transparent, community-driven platform. By leveraging our community, we provide transparent models and data that can be used to make better investment decisions. Our goal is to be both a credible resource in the crypto community and a creator of useful tools & products inside and outside of crypto.
                         <br />

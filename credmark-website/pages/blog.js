@@ -132,8 +132,8 @@ function BlogPageContent({posts: blogsData}) {
         <div>
             <div className="bg-lightpink py-20">
                 <div className="max-w-6xl px-5 block m-auto">
-                    <h1 className="credmark text-5xl py-5">Credmark Blog</h1>
-                    <h2 className="credmark text-pink text-lg">For the latest technical analysis, partnerships, and community updates</h2>
+                    <h1 className="uppercase text-5xl py-5">Credmark Blog</h1>
+                    <h2 className="uppercase font-bold text-pink text-lg">For the latest technical analysis, partnerships, and community updates</h2>
                 </div>
             </div>
             <FilteringMenu

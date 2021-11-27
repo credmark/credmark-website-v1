@@ -10,6 +10,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 html,
 body {
@@ -29,7 +30,8 @@ h1, h2, h3, h4, p, a, li, em {
 }
 
 h1{
-    font-family: 'Credmark';
+  font-family: 'Roboto';
+  font-weight: 900;
 }
 
 .credmark {

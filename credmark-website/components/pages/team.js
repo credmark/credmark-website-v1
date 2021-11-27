@@ -34,14 +34,14 @@ export default function Team() {
                         title="Contributors"
                         description="Our team speaks numerous languages and are distributed across multiple regions around the world" />
                     <div className="px-5 py-10 md:px-10 max-w-5xl block m-auto">
-                    <h3 className="credmark text-center py-5 text-3xl md:text-4xl pb-10 md:pt-10">
+                    <h3 className="uppercase font-extrabold text-center py-5 text-3xl md:text-4xl pb-10 md:pt-10">
                                 Core Team
                             </h3>
                             <Menu menuItem={menuItem} />
                     </div>
                     <div className="bg-lightgray">
                         <div className="px-5 py-10">
-                            <h3 className="credmark text-center py-5 text-3xl md:text-4xl pb-10 md:pt-10">
+                            <h3 className="uppercase font-extrabold text-center py-5 text-3xl md:text-4xl pb-10 md:pt-10">
                                 Advisors
                             </h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 block m-auto max-w-4xl">

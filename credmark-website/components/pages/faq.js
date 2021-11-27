@@ -18,19 +18,19 @@ export default function faq() {
                 <div className="px-5 max-w-5xl md:m-auto pb-10">
                     <div>
                     <div className="max-w-5xl md:m-auto">
-                        <h3 className="credmark text-center md:text-left text-3xl md:text-4xl pt-10">
+                        <h3 className="font-extrabold uppercase text-center md:text-left text-3xl md:text-4xl pt-10">
                             Introduction
                         </h3>
                         <QuestionsIntro />
                     </div>
                     <div>
-                        <h3 className="credmark text-center md:text-left text-3xl md:text-4xl pt-10">
+                        <h3 className="font-extrabold uppercase text-center md:text-left text-3xl md:text-4xl pt-10">
                             Platform
                         </h3>
                         <QuestionsPlatform />
                     </div>
                     <div>
-                        <h3 className="credmark text-center md:text-left text-3xl md:text-4xl pt-10">
+                        <h3 className="font-extrabold uppercase text-center md:text-left text-3xl md:text-4xl pt-10">
                             Token
                         </h3>
                         <QuestionsToken />

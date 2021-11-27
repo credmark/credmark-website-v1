@@ -1,6 +1,6 @@
 import TeamCard from '../layout/teamCard'
 import AdvisorCard from '../layout/advisorCard'
-import Header from "../layout/Header"
+import Header from "../layout/header"
 import Footer from "../layout/footer"
 import Subscribe from "../layout/subscribe"
 import CCRCard from '../ccr/ccr-card'

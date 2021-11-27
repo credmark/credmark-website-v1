@@ -5,8 +5,8 @@ const HeaderHome = (props) => {
         <>
             <div className="bg-lightpink pt-20 pb-40">
                 <div className="max-w-6xl px-5 block m-auto">
-                    <h1 className="credmark text-5xl py-5">{props.title}</h1>
-                    <h2 className="credmark text-pink text-lg">{props.description}</h2>
+                    <strong><h1 className="text-5xl py-5">{props.title}</h1></strong>
+                    <h2 className="text-pink text-lg font-bold">{props.description}</h2>
                     <a href={props.url}>
                         <button
                             type="button"

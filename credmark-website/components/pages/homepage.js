@@ -29,8 +29,8 @@ export default function Homepage() {
         <>
             <div>
                 <HeaderHome
-                    title="Manage DeFi Risks"
-                    description="DeFi is rife with hidden risks, but our tools help YOU navigate the sea of risk"
+                    title="MANAGE DEFI RISK"
+                    description="DEFI IS RIFE WITH HIDDEN RISKS, BUT OUR TOOLS HELP YOU NAVIGATE THE SEA OF RISK"
                     url="#what-is-credmark" />
                 <div className="swirls">
                     <img src="/assets/swirls-transparent.png" alt="colored swirls" />
@@ -42,9 +42,10 @@ export default function Homepage() {
                 <div className="max-w-7xl block m-auto">
                     <div className="px-5">
                         <div className="text-center">
-                            <h3 id="what-is-credmark" className="credmark text-5xl md:text-4xl pt-10">
-                                What is Credmark?
+                            <strong><h3 id="what-is-credmark" className="font-extrabold text-5xl md:text-4xl pt-10">
+                                WHAT IS CREDMARK?
                             </h3>
+                            </strong>
                         </div>
                         <div className="max-w-4xl pb-7 block m-auto">
                             <p className="pt-5 text-center">Credmark is a community-driven project that connects data providers, risk modelers and DeFi users.
@@ -60,9 +61,10 @@ export default function Homepage() {
             <div className="max-w-7xl block m-auto">
                 <div className="px-5">
                     <div className="text-center">
-                        <h3 className="credmark text-5xl md:text-4xl pt-10">
-                            How it works
+                        <strong><h3 className="font-extrabold text-5xl md:text-4xl pt-10">
+                            HOW IT WORKS
                         </h3>
+                        </strong>
                     </div>
                     <div className="max-w-4xl pb-7 block m-auto">
                         <p className="pt-5 text-center">Access data, build risk applications and de-risk your DeFi experience in one ecosystem.</p>
@@ -76,9 +78,11 @@ export default function Homepage() {
             <div className="max-w-7xl block m-auto">
                 <div className="px-5">
                     <div className="text-center">
-                        <h3 className="credmark text-4xl md:pt-10">
-                            Uncovering DeFi Risks
+                        <strong>
+                            <h3 className="font-extrabold text-4xl md:pt-10">
+                            UNCOVERING DEFI RISKS
                         </h3>
+                        </strong>
                     </div>
                     <div className="max-w-3xl pb-16 md:pb-20 block m-auto">
                         <p className="pt-5 text-center">Credmark’s ecosystem curates high integrity data and utilises the data to produce the risk encyclopedia and research on DeFi risks, protocol risks, and the overarching crypto credit industry.</p>
@@ -108,9 +112,11 @@ export default function Homepage() {
             <div className="max-w-7xl block m-auto py-20">
                 <div className="px-5">
                     <div className="text-center">
-                        <h3 className="credmark text-5xl md:text-4xl">
-                            Reports
+                        <strong>
+                            <h3 className="font-extrabold text-5xl md:text-4xl">
+                            REPORTS
                         </h3>
+                        </strong>
                         <div className="px-5 max-w-5xl md:m-auto">
                             <div className="block m-auto md:m-auto space-x-5 pb-10">
                                 <HomeReportsButton button={buttons} filter={filter} />
@@ -132,7 +138,7 @@ export default function Homepage() {
 
             <div className="bg-purple pt-10 px-5 md:px-20">
                 <div>
-                    <p className="credmark text-2xl text-center text-white py-5">DeFi Data Created For Industry Agnostic Application</p>
+                    <strong><p className="font-extrabold text-2xl text-center text-white py-5">DEFI DATA CREATED FOR INDUSTRY AGNOSTIC APPLICATION</p></strong>
                     <p className="text-white text-center max-w-2xl block m-auto">Credmark’s Data is collected via proprietary blockchain ETL through the platform. All data is indexed so filters can be applied to optimize for accuracy.</p>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 max-w-5xl block m-auto pt-10 pb-20 px-5 md:px-20 lg:space-x-8">
@@ -163,8 +169,7 @@ export default function Homepage() {
                             <a href="https://app.credmark.com/" target="_blank" rel="noreferrer"><img alt="Credmark App" className="app-image block m-auto md:pr-16" src="/assets/credmark-app.jpg" /></a>
                         </div>
                         <div className="order-1 md:order-2">
-                            <p className="credmark text-4xl text-white pb-2.5 pt-10 md:pt-20">Community Powered
-                                Risk Tools</p>
+                            <strong><p className="font-extrabold text-4xl text-white pb-2.5 pt-10 md:pt-20">COMMUNITY POWERED RISK TOOLS</p></strong>
                             <p className="credmark text-white pb-2.5">Smartpool</p>
                             <p className="text-white">Our platform empowers modern data modelers to backtest when new models are submitted.  Leading models for various categories will replace older models once it underperforms.</p>
                             <a href="https://app.credmark.com/" target="_blank" rel="noreferrer">
@@ -180,9 +185,11 @@ export default function Homepage() {
                     </div>
                 </div>
                 <div className="px-5 py-10 md:pt-20 md:pb-10">
-                    <h2 className="max-w-7xl block m-auto credmark text-center text-5xl md:text-4xl">
-                        Partners
+                    <strong>
+                    <h2 className="max-w-7xl block m-auto font-extrabold text-center text-5xl md:text-4xl">
+                        PARTNERS
                     </h2>
+                    </strong>
                 </div>
                 <div className="max-w-4xl block m-auto">
                     <div className="grid grid-cols-1 m-auto block md:grid-cols-3 px-5 pb-10 md:pb-20">
