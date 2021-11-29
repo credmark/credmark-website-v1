@@ -65,7 +65,7 @@ function classNames(...classes) {
 export default function QuestionsToken() {
   return (
     <div>
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-0">
+      <div className="max-w-7xl mx-auto py-12 sm:py-16 sm:px-6 lg:px-0">
           <dl className="space-y-6 divide-y divide-gray-200">
             {faqs.map((faq) => (
               <Disclosure as="div" key={faq.question} className="border-2 border-gray text-black rounded-lg bg-gray-50 p-5">

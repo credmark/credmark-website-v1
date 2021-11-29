@@ -203,7 +203,7 @@ function BlogPageContent({posts: blogsData}) {
                                 <ul role="list" className="mt-4 space-y-4 pl-0">
                                     {navigation.projects.map((item) => (
                                         <li className="list-none" key={item.name}>
-                                            <a href={item.href} className="text-base text-purple font-semibold">
+                                            <a href={item.href} className="text-base text-purple font-medium">
                                                 {item.name}
                                             </a>
                                         </li>
@@ -217,7 +217,7 @@ function BlogPageContent({posts: blogsData}) {
                                 <ul role="list" className="mt-4 space-y-4 pl-0">
                                     {navigation.learn.map((item) => (
                                         <li className="list-none" key={item.name}>
-                                            <a href={item.href} className="text-base text-purple font-semibold">
+                                            <a href={item.href} className="text-base text-purple font-medium">
                                                 {item.name}
                                             </a>
                                         </li>
@@ -229,7 +229,7 @@ function BlogPageContent({posts: blogsData}) {
                                 <ul role="list" className="mt-4 space-y-4 pl-0">
                                     {navigation.community.map((item) => (
                                         <li className="list-none" key={item.name}>
-                                            <a href={item.href} className="text-base text-purple font-semibold">
+                                            <a href={item.href} className="text-base text-purple font-medium">
                                                 {item.name}
                                             </a>
                                         </li>
