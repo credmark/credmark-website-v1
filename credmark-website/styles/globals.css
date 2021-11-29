@@ -73,6 +73,12 @@ img {
   background-size: cover;
 }
 
+.faqBackground{
+  background: url("/assets/purple-swirl.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .app-image {
   margin-top: -100px;
   margin-bottom: -90px;
