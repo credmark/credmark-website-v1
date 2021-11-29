@@ -97,6 +97,7 @@ export default function BlogPage({ posts }) {
         <title>Blog | CREDMARK</title>
         <meta content="Blog | Credmark" property="og:title" key="og:title" />
         <meta name="description" content="Welcome to the Credmark blog. Subscribe to find out about company updates and industry research." />
+        <meta property="og:image" content="https://credmark.com/assets/credmark-og-image.png"/>
         <link rel="icon" href="/favicon.ico" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script

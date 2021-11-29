@@ -9,6 +9,7 @@ export default function ContributorsPage() {
         <title>Contributors | CREDMARK</title>
         <meta content="Contributors | Credmark" property="og:title" key="og:title" />
         <meta name="description" content="Meet Credmark's contributors." />
+        <meta property="og:image" content="https://credmark.com/assets/credmark-og-image.png"/>
         <link rel="icon" href="/favicon.ico" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script

@@ -28,6 +28,7 @@ export default function BlogPostPage({ post }) {
                 <meta content={`${post.title} | Blog | Toucan Events`} name="twitter:title" key="twitter:title" />
                 <meta content={post.description} property="og:description" key="og:description" />
                 <meta content={post.description} property="twitter:description" key="twitter:description" />
+                <meta property="og:image" content={post.mainImage}/>
                 {post.mainImage && (
                     <>
                         <meta content={post.mainImage} property="og:image" key="og:image" />
