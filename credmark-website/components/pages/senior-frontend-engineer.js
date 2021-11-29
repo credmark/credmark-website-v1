@@ -1,4 +1,4 @@
-import Subscribe from "../layout/subscribe"
+import Subscribe from "../subscribe/subscribe"
 import Footer from "../layout/footer"
 import Description from "../careers/descriptionFrontend"
 

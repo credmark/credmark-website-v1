@@ -84,7 +84,7 @@ const Description = (props) => {
                             rel="noreferrer">
                             <button
                                 type="button"
-                                className="credmark mt-5 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple"
+                                className="uppercase mt-5 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple"
                             >
                                 Apply Now
                             </button>

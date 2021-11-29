@@ -92,7 +92,7 @@ export default function Team() {
                             <Link href="/careers">
                                 <button
                                     type="button"
-                                    className="credmark inline-flex items-center md:mb-32 px-7 py-2 shadow-sm text-sm rounded-md text-white bg-credmarkpurple"
+                                    className="uppercase font-semibold inline-flex items-center md:mb-32 px-7 py-2 shadow-sm text-sm rounded-md text-white bg-credmarkpurple"
                                 >
                                     Work with us
                                 </button>

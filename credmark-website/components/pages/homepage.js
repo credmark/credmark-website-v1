@@ -97,7 +97,7 @@ export default function Homepage() {
                         <a href="https://docs.credmark.com/credmark-risk-library/" target="_blank" rel="noreferrer">
                             <button
                                 type="button"
-                                className="border-2 border-white credmark my-5 md:mt-16 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white hover:bg-white hover:text-credmarkpurple"
+                                className="border-2 border-white uppercase my-5 md:mt-16 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white hover:bg-white hover:text-credmarkpurple"
                             >
                                 Open library
                             </button>
@@ -147,7 +147,7 @@ export default function Homepage() {
                             <a href="https://app.credmark.com/" target="_blank" rel="noreferrer">
                                 <button
                                     type="button"
-                                    className="hover:text-credmarkpurple hover:bg-white border-2 border-white md:border-transparent md:border-0 credmark my-5 md:mt-5 bg-credmarkpurple inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white"
+                                    className="hover:text-credmarkpurple hover:bg-white border-2 border-white md:border-transparent md:border-0 uppercase my-5 md:mt-5 bg-credmarkpurple inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white"
                                 >
                                     Try the App
                                 </button>

@@ -3,7 +3,7 @@ import * as React from 'react';
 const MediaCard = (props) => {
     return (
         <>
-                    <div className="box col-xs pt-10">
+                    <div className="box col-xs pt-10 transform hover:scale-105">
                         <a href={props.link} target="_blank" rel="noreferrer">
                             <img
                                 alt={props.alt}
