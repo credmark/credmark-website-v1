@@ -51,6 +51,7 @@ export default function Team() {
                                     name="Renan Feldman"
                                     role="Security"
                                     company="UBS"
+                                    linkedin="https://www.linkedin.com/in/renanfeldman/"
                                 />
                                 <AdvisorCard
                                     img="../assets/jonah.png"
@@ -58,6 +59,8 @@ export default function Team() {
                                     name="Jonah Lau"
                                     role="Product"
                                     company="Crypto.com"
+                                    linkedin="https://www.linkedin.com/in/jonathanlauhk/"
+                                    twitter="https://twitter.com/thejonahlau"
                                 />
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-3 block m-auto">
@@ -68,6 +71,7 @@ export default function Team() {
                                     name="Heikki Vanttinen"
                                     role="Vision"
                                     company="API3"
+                                    linkedin="https://www.linkedin.com/in/heikki-v%C3%A4nttinen-83a86380/"
                                 />
                                  <AdvisorCard
                                     img="../assets/alberto.png"
@@ -75,6 +79,8 @@ export default function Team() {
                                     name="Alberto Ornaghi"
                                     role="Engineering"
                                     company="Coinbase"
+                                    linkedin="https://www.linkedin.com/in/albertoornaghi/"
+                                    twitter="https://twitter.com/AlbertoOrnaghi"
                                 />
                                 <AdvisorCard
                                     img="../assets/serge.png"
@@ -82,6 +88,7 @@ export default function Team() {
                                     name="Serge Ugarte"
                                     role="Strategy"
                                     company="FICO"
+                                    linkedin="https://www.linkedin.com/in/serge-ugarte/"
                                 />
                             </div>
                         </div>
