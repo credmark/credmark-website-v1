@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import Nav from '../components/layout/nav'
-import Team from '../components/pages/team'
+import Contributors from '../components/pages/contributors'
 
-export default function TeamPage() {
+export default function ContributorsPage() {
   return (
     <>
       <Head>
-        <title>Team | CREDMARK</title>
-        <meta content="Team | Credmark" property="og:title" key="og:title" />
-        <meta name="description" content="Meet the team behind Credmark and our advisors." />
+        <title>Contributors | CREDMARK</title>
+        <meta content="Contributors | Credmark" property="og:title" key="og:title" />
+        <meta name="description" content="Meet Credmark's contributors." />
         <link rel="icon" href="/favicon.ico" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
@@ -31,7 +31,7 @@ export default function TeamPage() {
 
       <div className="nav">
         <Nav
-          page={<Team />} />
+          page={<Contributors />} />
       </div>
     </>
   )

@@ -1,5 +1,12 @@
 export default [
     {
+        id: 9,
+        category: 'Risk',
+        title:"DeFi Risk Report",
+        url:"https://docs.credmark.com/credmark-risk-library/reports/aave-and-compound-defi-risk-report",
+        type:"DeFi Risk Library"
+    },
+    {
         id: 1,
         category: 'Commisioned',
         title:"Idle Finance Report",

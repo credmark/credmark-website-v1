@@ -2,7 +2,7 @@ import TeamCard from '../layout/teamCard'
 import AdvisorCard from '../layout/advisorCard'
 import CenteredHeader from "../layout/centeredHeader"
 import Footer from "../layout/footer"
-import Subscribe from "../layout/subscribe"
+import Subscribe from "../subscribe/subscribe"
 import items from "../../styles/teamData"
 import { useState } from 'react'
 import Menu from '../filters/Menu'

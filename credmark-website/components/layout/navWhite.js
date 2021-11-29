@@ -52,10 +52,10 @@ export default function NavWhite(props) {
                                                     </a>
                                                     <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                                                     <Link
-                                                        href="/team"
+                                                        href="/contributors"
                                                         className="px-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
-                                                        Team
+                                                        Contributors
                                                     </Link>
                                                     </div>
                                                     <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
@@ -107,10 +107,10 @@ export default function NavWhite(props) {
                                     </Disclosure.Button>
                                     <Disclosure.Button
                                         as="a"
-                                        href="/team"
+                                        href="/contributors"
                                         className="border-transparent block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
                                     >
-                                        Team
+                                       Contributors
                                     </Disclosure.Button>
                                     <Disclosure.Button
                                         as="a"

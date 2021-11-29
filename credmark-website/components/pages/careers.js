@@ -1,7 +1,7 @@
 import CareerHeader from "../layout/centeredHeader"
 import Culture from '../careers/culture'
 import OpenRoles from "../careers/openRoles"
-import Subscribe from "../layout/subscribe"
+import Subscribe from "../subscribe/subscribe"
 import Footer from "../layout/footer"
 
 
