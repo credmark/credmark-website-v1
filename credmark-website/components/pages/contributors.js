@@ -72,6 +72,7 @@ export default function Team() {
                                     role="Vision"
                                     company="API3"
                                     linkedin="https://www.linkedin.com/in/heikki-v%C3%A4nttinen-83a86380/"
+                                    twitter="https://twitter.com/API3DAO"
                                 />
                                  <AdvisorCard
                                     img="../assets/alberto.png"
