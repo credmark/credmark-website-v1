@@ -20,9 +20,6 @@ module.exports = {
       '6': '6px',
       '8': '8px',
     },
-    fontFamily: {
-      'serif': ["Times New Roman"],
-    },
     fontWeight: {
       thin: 200,
       light: 300,
