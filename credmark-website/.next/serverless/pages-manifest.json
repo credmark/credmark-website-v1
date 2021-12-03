@@ -1,0 +1,22 @@
+{
+  "/api/hello": "pages/api/hello.js",
+  "/api/mediaPosts": "pages/api/mediaPosts.js",
+  "/api/posts": "pages/api/posts.js",
+  "/blog": "pages/blog.js",
+  "/blog/[slug]": "pages/blog/[slug].js",
+  "/careers": "pages/careers.html",
+  "/careers/senior-backend-engineer": "pages/careers/senior-backend-engineer.html",
+  "/careers/senior-cloud-architect": "pages/careers/senior-cloud-architect.html",
+  "/careers/senior-frontend-engineer": "pages/careers/senior-frontend-engineer.html",
+  "/careers/senior-risk-manager": "pages/careers/senior-risk-manager.html",
+  "/careers/senior-solidity-engineer": "pages/careers/senior-solidity-engineer.html",
+  "/crypto-credit-report": "pages/crypto-credit-report.html",
+  "/faq": "pages/faq.html",
+  "/": "pages/index.html",
+  "/media": "pages/media.js",
+  "/reports": "pages/reports.html",
+  "/team": "pages/team.html",
+  "/whitepaper": "pages/whitepaper.html",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
+}
