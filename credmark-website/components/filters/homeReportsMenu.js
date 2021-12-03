@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function ReportsMenu({ menuItem }) {
+function ReportsMenuHome({ menuItem }) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 block m-auto">
             {
@@ -22,4 +22,4 @@ function ReportsMenu({ menuItem }) {
     )
 }
 
-export default ReportsMenu;
+export default ReportsMenuHome;

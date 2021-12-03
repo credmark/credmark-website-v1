@@ -28,6 +28,7 @@ export default function BlogPostPage({ post }) {
                 <meta content={`${post.title} | Blog | Toucan Events`} name="twitter:title" key="twitter:title" />
                 <meta content={post.description} property="og:description" key="og:description" />
                 <meta content={post.description} property="twitter:description" key="twitter:description" />
+                <meta property="og:image" content={post.mainImage}/>
                 {post.mainImage && (
                     <>
                         <meta content={post.mainImage} property="og:image" key="og:image" />
@@ -68,7 +69,7 @@ const BlogDetail = ({ post }) => {
     return (
         <div className="bg-white pb-10">
             <div className="max-w-6xl block m-auto px-5 md:px-20">
-                <h1 className="pt-20 text-5xl pb-5 px-5 md:px-20">{post.title}</h1>
+                <h1 className="uppercase leading-snug pt-20 text-5xl pb-5 px-5 md:px-20">{post.title}</h1>
                 <p className="text-pink credmark pb-5 px-5 md:px-20 text-base">{post.author} I {moment(post.date).format('MM.DD.YYYY')}</p>
                 <img className="px-5 md:px-20" id="blogPage" src={post.mainImage} />
                 <BlockContent
@@ -79,7 +80,7 @@ const BlogDetail = ({ post }) => {
                 />
                 <div className="flex">
                 <Link href="/blog" rel="noreferrer">
-                    <p className="font-bold pt-10 pb-5 px-5 md:px-20"><img width={40} className="float-left pt-0 pr-5" src="../assets/arrow.svg" />Back to blog</p>
+                    <p className="cursor-pointer font-bold pt-10 pb-5 px-5 md:px-20"><img width={40} className="float-left pt-0 pr-5" src="../assets/arrow.svg" />Back to blog</p>
                     </Link>
                 </div>
             </div>

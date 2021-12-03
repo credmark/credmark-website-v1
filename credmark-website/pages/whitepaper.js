@@ -9,6 +9,7 @@ export default function WhitepaperPage() {
         <title>Whitepaper | CREDMARK</title>
         <meta content="Whitepaper | Credmark" property="og:title" key="og:title" />
         <meta name="description" content="Our White Paper offers an in-depth look into the Credmark platform - how we generate high integrity data and how our models are built and delivered." />
+        <meta property="og:image" content="https://credmark.com/assets/credmark-og-image.png"/>
         <link rel="icon" href="/favicon.ico" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script

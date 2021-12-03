@@ -1,23 +1,22 @@
 import * as React from 'react';
 import Link from 'next/link';
 
-/* This example requires Tailwind CSS v2.0+ */
 const navigation = {
     projects: [
-        { name: 'Research', href: '/reports' },
+        { name: 'Documentation', href: 'https://credmarkhq.gitbook.io/credmark/' },
         { name: 'Crypto Data', href: '/reports' },
         { name: 'Risk Management Tools', href: 'https://app.credmark.com/' },
     ],
     learn: [
-        { name: 'Documentation', href: '/reports' },
+        { name: 'Reports', href: '/reports' },
         { name: 'Blog', href: '/blog' },
         { name: 'Media', href: '/media' },
         { name: 'FAQ', href: '/faq' },
     ],
     community: [
-        { name: 'The Team', href: '/team' },
+        { name: 'Contributors', href: '/contributors' },
         { name: 'Work with us', href: '/careers' },
-        { name: 'Community', href: 'https://discord.com/invite/3dSfMqP3d4' },
+        { name: 'Our Discord', href: 'https://discord.gg/credmark' },
     ],
     social: [
         {
@@ -117,7 +116,7 @@ export default function Footer() {
                                 <ul role="list" className="mt-4 space-y-4 pl-0">
                                     {navigation.projects.map((item) => (
                                         <li className="list-none" key={item.name}>
-                                            <a href={item.href} className="text-base text-purple font-semibold">
+                                            <a href={item.href} className="text-base text-purple font-medium">
                                                 {item.name}
                                             </a>
                                         </li>
@@ -131,7 +130,7 @@ export default function Footer() {
                                 <ul role="list" className="mt-4 space-y-4 pl-0">
                                     {navigation.learn.map((item) => (
                                         <li className="list-none" key={item.name}>
-                                            <a href={item.href} className="text-base text-purple font-semibold">
+                                            <a href={item.href} className="text-base text-purple font-medium">
                                                 {item.name}
                                             </a>
                                         </li>
@@ -143,7 +142,7 @@ export default function Footer() {
                                 <ul role="list" className="mt-4 space-y-4 pl-0">
                                     {navigation.community.map((item) => (
                                         <li className="list-none" key={item.name}>
-                                            <a href={item.href} className="text-base text-purple font-semibold">
+                                            <a href={item.href} className="text-base text-purple font-medium">
                                                 {item.name}
                                             </a>
                                         </li>

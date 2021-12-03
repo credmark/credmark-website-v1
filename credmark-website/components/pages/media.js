@@ -2,7 +2,7 @@ import MediaCard from "../media/mediaCard";
 import moment from "moment";
 import React from "react";
 import Header from "../layout/header"
-import Subscribe from "../layout/subscribe";
+import Subscribe from "../subscribe/subscribe";
 import Footer from "../layout/footer";
 
 export default function Media({ posts }) {

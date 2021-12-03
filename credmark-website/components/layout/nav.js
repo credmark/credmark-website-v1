@@ -27,8 +27,8 @@ export default function Nav(props) {
                                             />
                                             <Link href="/">
                                                 <img
-                                                     width={250}
-                                                     className="h-auto hidden lg:block h-12 flex justify-start m-0 mt-4 px-10"
+                                                    width={250}
+                                                    className="cursor-pointer h-auto hidden lg:block h-12 flex justify-start m-0 mt-4 px-10"
                                                     src="../assets/credmark-logo-purple.png"
                                                     alt="Credmark logo"
                                                 />
@@ -42,19 +42,21 @@ export default function Nav(props) {
                                             <div>
                                                 <Menu.Button>
                                                     <span className="sr-only">Open user menu</span>
-                                                    <a
-                                                        href="https://discord.com/invite/3dSfMqP3d4"
+                                                    <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                                    <Link
+                                                        href="/careers"
                                                         target="_blank"
                                                         rel="noreferrer"
                                                         className="px-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
-                                                        Community
-                                                    </a>
+                                                        Work With Us
+                                                    </Link>
+                                                    </div>
                                                     <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                                                     <Link
-                                                        href="/team"
+                                                        href="/contributors"
                                                     >
-                                                        Team
+                                                        Contributors
                                                     </Link>
                                                     </div>
                                                     <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
@@ -71,7 +73,7 @@ export default function Nav(props) {
                                                         rel="noreferrer">
                                                         <button
                                                             type="button"
-                                                            className="transform hover:scale-110 ml-5 px-5 credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                                            className="transform hover:scale-110 ml-5 px-5 uppercase mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                                         >
                                                             APP
                                                         </button>
@@ -99,17 +101,17 @@ export default function Nav(props) {
                                     {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
                                     <Disclosure.Button
                                         as="a"
-                                        href="#"
+                                        href="https://discord.gg/credmark"
                                         className="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
                                     >
                                         Community
                                     </Disclosure.Button>
                                     <Disclosure.Button
                                         as="a"
-                                        href="/team"
+                                        href="/contributors"
                                         className="border-transparent block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
                                     >
-                                        Team
+                                      Contributors
                                     </Disclosure.Button>
                                     <Disclosure.Button
                                         as="a"
@@ -124,7 +126,7 @@ export default function Nav(props) {
                                         rel="noreferrer">
                                         <button
                                             type="button"
-                                            className="ml-3 px-5 credmark mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                            className="ml-3 px-5 uppercase mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                         >
                                             APP
                                         </button>

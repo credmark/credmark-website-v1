@@ -1,9 +1,8 @@
 import TeamCard from '../layout/teamCard'
 import AdvisorCard from '../layout/advisorCard'
-import Header from "../layout/Header"
+import Header from "../layout/header"
 import Footer from "../layout/footer"
-import Subscribe from "../layout/subscribe"
-import CCRCard from '../ccr/ccr-card'
+import Subscribe from "../subscribe/subscribe"
 import { useState } from 'react'
 import ReportsMenu from '../filters/reportsMenu'
 import ReportsButton from '../filters/reportsButton'

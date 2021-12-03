@@ -4,7 +4,7 @@ import Link from 'next/link';
 const BlogCard = (props) => {
     return (
         <>
-                <div className="box col-xs">
+                <div className="box col-xs transform hover:scale-105">
                     <Link href={`/blog/${props.slug}`}>
                         <img
                             alt={props.alt}

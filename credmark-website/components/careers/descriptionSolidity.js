@@ -6,7 +6,7 @@ const DescriptionSolidity = (props) => {
         <>
             <div className="bg-lightpink py-20">
                 <div className="max-w-3xl px-5 block m-auto">
-                    <h1 className="credmark text-center text-5xl py-5">{props.title}</h1>
+                    <h1 className="uppercase text-center text-5xl py-5">{props.title}</h1>
                     <h2 className="text-lg text-pink text-center pb-10 md:pb-32">{props.description}</h2>
                 </div>
             </div>
@@ -75,7 +75,7 @@ const DescriptionSolidity = (props) => {
                             rel="noreferrer">
                             <button
                                 type="button"
-                                className="credmark mt-5 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple"
+                                className="uppercase mt-5 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple"
                             >
                                 Apply Now
                             </button>
