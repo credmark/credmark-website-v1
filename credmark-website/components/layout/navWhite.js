@@ -42,18 +42,16 @@ export default function NavWhite(props) {
                                             <div>
                                                 <Menu.Button>
                                                     <span className="sr-only">Open user menu</span>
-                                                    <a
-                                                        href="https://discord.gg/credmark"
-                                                        target="_blank"
-                                                        rel="noreferrer"
-                                                        className="px-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                                    <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                                    <Link
+                                                        href="/careers"
                                                     >
-                                                        Community
-                                                    </a>
+                                                        Work with us
+                                                    </Link>
+                                                    </div>
                                                     <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                                                     <Link
                                                         href="/contributors"
-                                                        className="px-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
                                                         Contributors
                                                     </Link>
@@ -61,7 +59,6 @@ export default function NavWhite(props) {
                                                     <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                                                     <Link
                                                         href="/faq"
-                                                        className="px-8 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
                                                         FAQ
                                                     </Link>
