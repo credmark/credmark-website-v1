@@ -2,7 +2,7 @@ export default [
     {
         id: 1,
         category: 'Team',
-        img: "../assets/neil.png",
+        img: "../assets/neil-resized.png",
         alt: "Neil Zumwalde",
         name: "Neil Zumwalde",
         title: "Vision & Product",
