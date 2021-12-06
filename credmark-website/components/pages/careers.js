@@ -35,7 +35,7 @@ export default function Careers() {
                                         className='cursor-pointer px-5 pt-10'
                                     />
                                 <p className="px-5 credmark cursor-pointer text-center text-lg max-w-xs block m-auto">Global</p>
-                                <p className="px-5 cursor-pointer text-center text-base">Credmark is a DAO quickly moving towards full decentralization. We are building a global community to take over the DAO's governance.</p>
+                                <p className="px-5 cursor-pointer text-center text-base">Credmark is a DAO quickly moving towards full decentralization. We are building a global community to take over the DAO&apos;s governance.</p>
                             </div>
                             <Culture
                                 img="../assets/turbo-learning.svg"

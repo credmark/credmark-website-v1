@@ -84,7 +84,7 @@ export default function Homepage() {
                         </strong>
                     </div>
                     <div className="max-w-3xl pb-16 md:pb-20 block m-auto">
-                        <p className="pt-5 text-center">Credmark's community curates high-integrity data, develops risk tools, and produces research on crypto assets, protocols, and markets.</p>
+                        <p className="pt-5 text-center">Credmark&apos;s community curates high-integrity data, develops risk tools, and produces research on crypto assets, protocols, and markets.</p>
                     </div>
                 </div>
             </div>
@@ -143,7 +143,7 @@ export default function Homepage() {
                         <div className="order-1 md:order-2">
                             <strong><p className="uppercase font-extrabold text-4xl text-white pb-2.5 pt-10 md:pt-20">COMMUNITY-POWERED RISK TOOLS</p></strong>
                             <p className="credmark text-white pb-2.5">Smartpool</p>
-                            <p className="text-white">SmartPool is the first of many risk tools to be created using the Credmark platform. It's an open-source proof of concept intended to show developers how they can use our data and models to embed risk information into their services and applications.</p>
+                            <p className="text-white">SmartPool is the first of many risk tools to be created using the Credmark platform. It&apos;s an open-source proof of concept intended to show developers how they can use our data and models to embed risk information into their services and applications.</p>
                             <a href="https://app.credmark.com/" target="_blank" rel="noreferrer">
                                 <button
                                     type="button"
