@@ -1,12 +1,11 @@
 import * as React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const AdvisorCard = (props) => {
     return (
         <>
             <div className="md:pt-10 text-center py-10">
-                <Image className="block m-auto max-w-xs" src={props.img} alt={props.alt} />
+                <img className="block m-auto max-w-xs" src={props.img} alt={props.alt} />
                 <strong><p className="credmark text-lg py-2.5">{props.name}</p></strong>
                 <p className="credmark text-base pb-4">{props.role}</p>
                 <div className="flex justify-center">

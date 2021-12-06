@@ -6,7 +6,6 @@ import sanity from '../../lib/sanity';
 import Nav from '../../components/layout/navWhite'
 import Link from 'next/link'
 import Head from 'next/head'
-import Image from 'next/image'
 import moment from 'moment'
 
 
@@ -72,7 +71,7 @@ const BlogDetail = ({ post }) => {
             <div className="max-w-6xl block m-auto px-5 md:px-20">
                 <h1 className="uppercase leading-snug pt-20 text-5xl pb-5 px-5 md:px-20">{post.title}</h1>
                 <p className="text-pink credmark pb-5 px-5 md:px-20 text-base">{post.author} I {moment(post.date).format('MM.DD.YYYY')}</p>
-                <Image className="px-5 md:px-20" id="blogPage" src={post.mainImage} />
+                <img className="px-5 md:px-20" id="blogPage" src={post.mainImage} />
                 <BlockContent
                     className="blog text-left leading-loose pt-10 px-5 md:px-20"
                     serializers={serializers}
@@ -80,8 +79,8 @@ const BlogDetail = ({ post }) => {
                     {...sanity.config()}
                 />
                 <div className="flex">
-                <Link href="/blog" rel="noreferrer" passHref>
-                    <p className="cursor-pointer font-bold pt-10 pb-5 px-5 md:px-20"><Image width={40} className="float-left pt-0 pr-5" src="../assets/arrow.svg" />Back to blog</p>
+                <Link href="/blog" rel="noreferrer">
+                    <p className="cursor-pointer font-bold pt-10 pb-5 px-5 md:px-20"><img width={40} className="float-left pt-0 pr-5" src="../assets/arrow.svg" />Back to blog</p>
                     </Link>
                 </div>
             </div>

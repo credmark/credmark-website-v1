@@ -1,5 +1,4 @@
 import React from "react";
-import Image from 'next/image';
 
 
 function Menu({ menuItem }) {
@@ -11,7 +10,7 @@ function Menu({ menuItem }) {
                     return <div key={item.id}>
                         <div id="team" className="py-10">
                             <div>
-                                <Image className="text-center" src={item.img} alt={item.alt} />
+                                <img className="text-center" src={item.img} alt={item.alt} />
                                 <div>
                                     <p className="credmark py-1.5 text-center text-lg">{item.name}</p>
                                     <p className="credmark pb-5 text-center text-base"> {item.title}</p>

@@ -4,7 +4,7 @@ import Subscribe from "../subscribe/subscribe"
 import QuestionsIntro from "../faq/questionsIntro";
 import QuestionsPlatform from "../faq/questionsPlatform";
 import QuestionsToken from "../faq/questionsToken";
-import Image from 'next/image';
+
 
 export default function faq() {
     return (
@@ -28,7 +28,7 @@ export default function faq() {
                                         type="button"
                                         className="uppercase mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple"
                                     >
-                                        <p className="font-semibold float-left text-white">Find out more<Image width={40} className="float-right pl-5" alt="arrow right" src="../assets/arrow-white.svg" /></p>
+                                        <p className="font-semibold float-left text-white">Find out more<img width={40} className="float-right pl-5" alt="arrow right" src="../assets/arrow-white.svg" /></p>
                                     </button>
                                 </a>
                             </div>
@@ -43,7 +43,7 @@ export default function faq() {
                                     type="button"
                                     className="uppercase mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple"
                                 >
-                                    <p className="font-semibold float-left text-white">Find out more<Image width={40} className="float-right pl-5" alt="arrow right" src="../assets/arrow-white.svg" /></p>
+                                    <p className="font-semibold float-left text-white">Find out more<img width={40} className="float-right pl-5" alt="arrow right" src="../assets/arrow-white.svg" /></p>
                                 </button>
                             </a>
                         </div>
@@ -59,7 +59,7 @@ export default function faq() {
                                     type="button"
                                     className="uppercase mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple"
                                 >
-                                    <p className="font-semibold float-left text-white">Find out more<Image width={40} className="float-right pl-5" alt="arrow right" src="../assets/arrow-white.svg" /></p>
+                                    <p className="font-semibold float-left text-white">Find out more<img width={40} className="float-right pl-5" alt="arrow right" src="../assets/arrow-white.svg" /></p>
                                 </button>
                             </a>
                         </div>

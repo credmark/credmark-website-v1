@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 export default function Media() {
     return (
         <main className="max-w-full flex-1 overflow-y-auto focus:outline-none rounded-4xl bg-white">
@@ -30,7 +28,7 @@ export default function Media() {
                     </div>
                     </div>
                     <div>
-                        <Image className="pb-0" id="whitepaper" src="/assets/sky.png" alt="Credmark White Paper"/>
+                        <img className="pb-0" id="whitepaper" src="/assets/sky.png" alt="Credmark White Paper"></img>
                     </div>
             </div>
         </main>

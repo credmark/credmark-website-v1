@@ -4,7 +4,6 @@ import Footer from '../layout/footer'
 import SimpleBar from 'simplebar-react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
-import Image from 'next/image'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -21,13 +20,13 @@ export default function Nav(props) {
                                 <div className="flex justify-between">
                                     <div className="flex">
                                         <div className="flex-shrink-0 flex items-center">
-                                            <Image
+                                            <img
                                                 className="block lg:hidden h-14 w-auto mt-2"
                                                 src="../assets/credmark-logo.png"
                                                 alt="Workflow"
                                             />
-                                            <Link href="/" passHref>
-                                                <Image
+                                            <Link href="/">
+                                                <img
                                                     width={250}
                                                     className="cursor-pointer h-auto hidden lg:block h-12 flex justify-start m-0 mt-4 px-10"
                                                     src="../assets/credmark-logo-purple.png"
@@ -45,7 +44,6 @@ export default function Nav(props) {
                                                     <span className="sr-only">Open user menu</span>
                                                     <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                                                     <Link
-                                                        passHref
                                                         href="/careers"
                                                         target="_blank"
                                                         rel="noreferrer"

@@ -8,7 +8,6 @@ import { useState } from 'react'
 import Menu from '../filters/Menu'
 import Button from '../filters/Button'
 import Link from 'next/link'
-import Image from 'next/image'
 
 const allCategories = ['All', ...items.map(item => item.category)];
 
@@ -47,7 +46,7 @@ export default function Team() {
                             </h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 block m-auto max-w-4xl">
                             <div className="md:pt-10 text-center py-10">
-                                    <Image className="block m-auto max-w-xs" src="../assets/renner.png" alt="Renan Feldman" />
+                                    <img className="block m-auto max-w-xs" src="../assets/renner.png" alt="Renan Feldman" />
                                     <strong><p className="credmark text-lg py-2.5">Renan Feldman</p></strong>
                                     <p className="credmark text-base pb-4">Security</p>
                                     <div className="flex justify-center">
@@ -89,7 +88,7 @@ export default function Team() {
                                     twitter="https://twitter.com/AlbertoOrnaghi"
                                 />
                                 <div className="md:pt-10 text-center py-10">
-                                    <Image className="block m-auto max-w-xs" src="../assets/serge.png" alt="Serge Ugarte" />
+                                    <img className="block m-auto max-w-xs" src="../assets/serge.png" alt="Serge Ugarte" />
                                     <strong><p className="credmark text-lg py-2.5">Serge Ugarte</p></strong>
                                     <p className="credmark text-base pb-4">Strategy</p>
                                     <div className="flex justify-center">
@@ -106,7 +105,7 @@ export default function Team() {
                     <div className="pb-10 md:pb-0">
                         <h4 className="credmark text-4xl text-center pt-10 md:pt-32 pb-9">Want to help us de-risk DeFi?</h4>
                         <div className="flex justify-center">
-                            <Link href="/careers" passHref>
+                            <Link href="/careers">
                                 <button
                                     type="button"
                                     className="uppercase font-semibold inline-flex items-center md:mb-32 px-7 py-2 shadow-sm text-sm rounded-md text-white bg-credmarkpurple"

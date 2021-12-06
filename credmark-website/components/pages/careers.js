@@ -3,7 +3,6 @@ import Culture from '../careers/culture'
 import OpenRoles from "../careers/openRoles"
 import Subscribe from "../subscribe/subscribe"
 import Footer from "../layout/footer"
-import Image from 'next/image'
 
 
 export default function Careers() {
@@ -30,13 +29,13 @@ export default function Careers() {
                                 description="Everyone has their own expertise and unique experiences. Bring them to the table, back them up, own them!"
                             />
                             <div className="pb-10 max-w-xl block m-auto">
-                                    <Image
+                                    <img
                                         alt="Global Team"
                                         src="../assets/global.svg"
                                         className='cursor-pointer px-5 pt-10'
                                     />
                                 <p className="px-5 credmark cursor-pointer text-center text-lg max-w-xs block m-auto">Global</p>
-                                <p className="px-5 cursor-pointer text-center text-base">Credmark is a DAO quickly moving towards full decentralization. We are building a global community to take over the DAO&apos;s governance.</p>
+                                <p className="px-5 cursor-pointer text-center text-base">Credmark is a DAO quickly moving towards full decentralization. We are building a global community to take over the DAO's governance.</p>
                             </div>
                             <Culture
                                 img="../assets/turbo-learning.svg"

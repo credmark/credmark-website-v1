@@ -1,12 +1,11 @@
 import * as React from 'react';
-import Image from 'next/image';
 
 const MediaCard = (props) => {
     return (
         <>
                     <div className="box col-xs pt-10 transform hover:scale-105 px-5">
                         <a href={props.link} target="_blank" rel="noreferrer">
-                            <Image
+                            <img
                                 alt={props.alt}
                                 src={props.img}
                                 className='rounded-md w-auto h-80 flex justify-center cursor-pointer mb-5'
