@@ -1,6 +1,10 @@
 {
   "name": "tao93g9-xrziwbw",
+<<<<<<< Updated upstream
   "hash": "fldNFNR0Maw/IP/r93kNFhjcfahDeWcxm/J9nAVvJwA=",
+=======
+  "hash": "JCaSbWPaPFxUfT5XykCVJhvYM8P2vCdvXGL7SRPwuhs=",
+>>>>>>> Stashed changes
   "description": "staging WWW marketing site (Image)",
   "memory": 512,
   "timeout": 10,

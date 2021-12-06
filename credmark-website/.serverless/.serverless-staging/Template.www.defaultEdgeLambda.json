@@ -1,6 +1,10 @@
 {
   "name": "tao93g9-pakl9v5",
+<<<<<<< Updated upstream
   "hash": "fgxTEYKCkNV/iPvZyJ77nSIQDwOPbxG94A+ZxBCl45U=",
+=======
+  "hash": "f1J3kZXVjbrmw6EIU4fHcBLfBbAFjyIabWSQgIi23/M=",
+>>>>>>> Stashed changes
   "description": "staging WWW marketing site",
   "memory": 512,
   "timeout": 10,

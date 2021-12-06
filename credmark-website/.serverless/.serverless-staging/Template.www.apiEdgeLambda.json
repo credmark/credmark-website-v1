@@ -1,6 +1,10 @@
 {
   "name": "tao93g9-aiz8j0d",
+<<<<<<< Updated upstream
   "hash": "x8ZEamdRud8yxDaA/pWFCU0DSsLe19LS+go5qRGn8cQ=",
+=======
+  "hash": "2JRclMKYbTA68WrCXm/RhBfWAMDVcuzt8qg6OT/VW0A=",
+>>>>>>> Stashed changes
   "description": "staging WWW marketing site (API)",
   "memory": 512,
   "timeout": 10,
