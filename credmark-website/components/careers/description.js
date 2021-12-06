@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Image from 'next/image';
 
 
 const Description = (props) => {
@@ -14,7 +15,7 @@ const Description = (props) => {
                 <div className="grid grid-cols-1 md:grid-cols-3 block m-auto py-10 max-w-4xl px-5 block m-auto">
                     <div className="job-image mb-10 h-72 w-60 max-w-xl block m-auto bg-white border-2 border-credmarkpurple rounded-lg p-10">
                         <p className="px-5 credmark cursor-pointer text-center text-lg max-w-xs block m-auto">Experience</p>
-                        <img
+                        <Image
                             alt="Experience Image"
                             src="../assets/experience.svg"
                             className='cursor-pointer px-5'
@@ -23,7 +24,7 @@ const Description = (props) => {
                     </div>
                     <div className="job-image mb-10 h-72 w-60 max-w-xl block m-auto bg-white border-2 border-credmarkpurple rounded-lg p-10">
                         <p className="px-5 credmark cursor-pointer text-center text-lg max-w-xs block m-auto">Location</p>
-                        <img
+                        <Image
                             alt="Location"
                             src="../assets/location.svg"
                             className='cursor-pointer px-5'
@@ -32,7 +33,7 @@ const Description = (props) => {
                     </div>
                     <div className="job-image mb-10 h-72 w-60 max-w-xl block m-auto bg-white border-2 border-credmarkpurple rounded-lg p-10">
                         <p className="px-5 credmark cursor-pointer text-center text-lg max-w-xs block m-auto">Job Type</p>
-                        <img
+                        <Image
                             alt="Clock"
                             src="../assets/clock.svg"
                             className='cursor-pointer px-5'

@@ -1,11 +1,12 @@
 import * as React from 'react';
+import Image from 'next/image';
 
 const Culture = (props) => {
     return (
         <>
                     <div className="pb-10 max-w-xl block m-auto">
                         <a href={props.link} target="_blank" rel="noreferrer">
-                            <img
+                            <Image
                                 alt={props.alt}
                                 src={props.img}
                                 className='cursor-pointer px-5'

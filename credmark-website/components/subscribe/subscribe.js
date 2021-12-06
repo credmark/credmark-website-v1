@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Subscribe = () => {
     return (
@@ -10,7 +11,7 @@ const Subscribe = () => {
                         <div className="pb-15">
                             <h4 className="text-white text-center text-2lg pb-5 pt-0">Learn more about Credmark</h4>
                             <div className="flex flex-wrap justify-center">
-                            <Link href="/blog" rel="noreferrer">
+                            <Link href="/blog" rel="noreferrer" passHref>
                             <button
                                 type="button"
                                 className="uppercase font-semibold mt-5 inline-flex items-center px-8 py-2 shadow-sm text-sm font-medium rounded-md text-credmarkpurple bg-white mx-4 hover:bg-credmarkpurple hover:text-white"
@@ -18,7 +19,7 @@ const Subscribe = () => {
                                 Blog
                             </button>
                             </Link>
-                            <Link href="/media" rel="noreferrer">
+                            <Link href="/media" rel="noreferrer" passHref>
                             <button
                                 type="button"
                                 className="uppercase font-semibold mt-5 inline-flex items-center px-8 py-2 shadow-sm text-sm font-medium rounded-md text-white text-credmarkpurple bg-white mx-4 hover:bg-credmarkpurple hover:text-white"
@@ -32,7 +33,7 @@ const Subscribe = () => {
                             <p className="credmark text-center md:text-left text-white text-base pt-16 md:pt-0">Newsletter</p>
                             <p className="text-white text-center md:text-left text-base">For the latest partnerships, community updates and more</p>
                             <div className="flex justify-center md:text-left md:block">
-                            <a href="https://credmark.us19.list-manage.com/subscribe?u=b6dfe393113892a064b435044&id=c295a3edd2" target="blank" rel="noreferrer"><p className="text-white text-center md:text-left text-base float-left pt-5">Subscribe<img width={40} className="float-right pt-0.5 pl-5" alt="arrow right" src="../assets/arrow-white.svg" /></p></a>
+                            <a href="https://credmark.us19.list-manage.com/subscribe?u=b6dfe393113892a064b435044&id=c295a3edd2" target="blank" rel="noreferrer"><p className="text-white text-center md:text-left text-base float-left pt-5">Subscribe<Image width={40} className="float-right pt-0.5 pl-5" alt="arrow right" src="../assets/arrow-white.svg" /></p></a>
                             </div>
                         </div>
                     </div>

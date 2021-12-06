@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const navigation = {
     projects: [
@@ -92,7 +93,7 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <div className="xl:grid xl:grid-cols-3 xl:gap-8">
                     <div className="space-y-8 xl:col-span-1">
-                        <img
+                        <Image
                             width={150}
                             className="h-auto flex justify-start m-0"
                             src="../assets/credmark-logo-purple.png"

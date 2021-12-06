@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import Link from 'next/link'
+import Image from 'next/image'
 import Footer from '../layout/footer'
 import SimpleBar from 'simplebar-react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
@@ -20,13 +21,13 @@ export default function NavWhite(props) {
                                 <div className="flex justify-between">
                                     <div className="flex">
                                         <div className="flex-shrink-0 flex items-center">
-                                            <img
+                                            <Image
                                                 className="block lg:hidden h-14 w-auto mt-2"
                                                 src="../assets/credmark-logo.png"
                                                 alt="Workflow"
                                             />
-                                            <Link href="/">
-                                                <img
+                                            <Link href="/" passHref>
+                                                <Image
                                                     width={250}
                                                     className="cursor-pointer h-auto hidden lg:block h-12 flex justify-start m-0 mt-4 px-10"
                                                     src="../assets/credmark-logo-purple.png"

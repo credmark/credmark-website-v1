@@ -1,11 +1,12 @@
 import * as React from 'react';
+import Image from 'next/image';
 
 const TeamCard = (props) => {
     return (
         <>
             <div id="team" className="py-10">
             <div>
-                <img className="block m-auto" src={props.img} alt={props.alt} />
+                <Image className="block m-auto" src={props.img} alt={props.alt} />
                 </div>
                 <p className="credmark py-5 text-center text-sm text-lg">{props.name} I <br /> {props.title}</p>
                 <div className="flex justify-center">

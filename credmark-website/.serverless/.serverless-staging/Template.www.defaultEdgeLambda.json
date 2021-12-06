@@ -1,6 +1,6 @@
 {
-  "name": "gep1gxe-jn1jx3",
-  "hash": "3yry5sNqOTUkgKvt4SmM1mYU2UpmjscWx4bOsAamDdY=",
+  "name": "tao93g9-pakl9v5",
+  "hash": "fgxTEYKCkNV/iPvZyJ77nSIQDwOPbxG94A+ZxBCl45U=",
   "description": "staging WWW marketing site",
   "memory": 512,
   "timeout": 10,
@@ -10,8 +10,8 @@
   "runtime": "nodejs14.x",
   "env": {},
   "role": {
-    "arn": "arn:aws:iam::415687062322:role/gep1gxe-on5idx"
+    "arn": "arn:aws:iam::415687062322:role/tao93g9-gs93yn"
   },
-  "arn": "arn:aws:lambda:us-east-1:415687062322:function:gep1gxe-jn1jx3",
+  "arn": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-pakl9v5",
   "region": "us-east-1"
 }

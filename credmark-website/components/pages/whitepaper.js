@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Whitepaper() {
 
@@ -17,13 +18,13 @@ export default function Whitepaper() {
                         </div>
                         <div className="max-w-xl block m-auto">
                             <div className="flex flex-wrap py-5 credmark justify-center text-2xl">
-                                <a href="https://s3.amazonaws.com/reports.credmark.com/whitepaper.pdf" target="_blank" rel="noreferrer"><img width={300} className="block m-auto" src="/assets/credmark-white-paper.png" alt="Credmark White Paper"></img></a>
+                                <a href="https://s3.amazonaws.com/reports.credmark.com/whitepaper.pdf" target="_blank" rel="noreferrer"><Image width={300} className="block m-auto" src="/assets/credmark-white-paper.png" alt="Credmark White Paper"/></a>
                             </div>
                         </div>
                         <div className="flex block m-auto md:pb-20 md:px-16">
-                            <a href="https://s3.amazonaws.com/reports.credmark.com/litepaper.pdf" target="_blank" rel="noreferrer"><img id="whitepaper" src="/assets/credmark-english-white-paper.png" alt="Credmark White Paper"></img></a>
-                            <a href="https://storage.googleapis.com/credmark-cryptocreditreports/Credmark%20Litepaper%20Simplified%20Chinese%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87.pdf" target="_blank" rel="noreferrer"><img id="whitepaper" src="/assets/credmark-tc-white-paper.png" alt="Credmark White Paper"></img></a>
-                            <a href="https://storage.googleapis.com/credmark-cryptocreditreports/Credmark%20Litepaper%20Simplified%20Chinese%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87.pdf" target="_blank" rel="noreferrer"><img id="whitepaper" src="/assets/credmark-sc-white-paper.png" alt="Credmark White Paper"></img></a>
+                            <a href="https://s3.amazonaws.com/reports.credmark.com/litepaper.pdf" target="_blank" rel="noreferrer"><Image id="whitepaper" src="/assets/credmark-english-white-paper.png" alt="Credmark White Paper"/></a>
+                            <a href="https://storage.googleapis.com/credmark-cryptocreditreports/Credmark%20Litepaper%20Simplified%20Chinese%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87.pdf" target="_blank" rel="noreferrer"><Image id="whitepaper" src="/assets/credmark-tc-white-paper.png" alt="Credmark White Paper"/></a>
+                            <a href="https://storage.googleapis.com/credmark-cryptocreditreports/Credmark%20Litepaper%20Simplified%20Chinese%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87.pdf" target="_blank" rel="noreferrer"><Image id="whitepaper" src="/assets/credmark-sc-white-paper.png" alt="Credmark White Paper"/></a>
                         </div>
                     </div>
                 </div>

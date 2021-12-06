@@ -1,6 +1,6 @@
 {
-  "name": "tao93g9-gs93yn",
-  "arn": "arn:aws:iam::415687062322:role/tao93g9-gs93yn",
+  "name": "tao93g9-l9k2dh",
+  "arn": "arn:aws:iam::415687062322:role/tao93g9-l9k2dh",
   "service": [
     "lambda.amazonaws.com",
     "edgelambda.amazonaws.com"

@@ -5,9 +5,10 @@
   "subdomains": [
     {
       "domain": "staging.credmark.com",
-      "distributionId": "E1EFJCYY650N2H",
-      "url": "https://d44a8vntsdzfc.cloudfront.net",
+      "distributionId": "E1019564206VDL",
+      "url": "https://d1ghlmqmmzj8a3.cloudfront.net",
       "type": "awsCloudFront"
     }
-  ]
+  ],
+  "domainMinimumProtocolVersion": "TLSv1.2_2018"
 }

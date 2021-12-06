@@ -1,9 +1,9 @@
 {
-  "name": "gep1gxe-7xxx8om",
-  "arn": "arn:aws:iam::415687062322:role/gep1gxe-7xxx8om",
+  "name": "tao93g9-lncnc5",
+  "arn": "arn:aws:iam::415687062322:role/tao93g9-lncnc5",
   "service": [
-    "edgelambda.amazonaws.com",
-    "lambda.amazonaws.com"
+    "lambda.amazonaws.com",
+    "edgelambda.amazonaws.com"
   ],
   "policy": {
     "Version": "2012-10-17",
@@ -19,7 +19,7 @@
       },
       {
         "Effect": "Allow",
-        "Resource": "arn:aws:s3:::gep1gxe-nd1oxn/*",
+        "Resource": "arn:aws:s3:::tao93g9-kxjms4/*",
         "Action": [
           "s3:GetObject",
           "s3:PutObject"
