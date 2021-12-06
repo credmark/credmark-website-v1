@@ -53,37 +53,7 @@
             "queryString": true
           },
           "lambda@edge": {
-<<<<<<< Updated upstream
-            "origin-request": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-aiz8j0d:1"
-=======
-            "origin-request": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-aiz8j0d:4"
->>>>>>> Stashed changes
-          }
-        },
-        "_next/image*": {
-          "minTTL": 0,
-          "defaultTTL": 60,
-          "maxTTL": 31536000,
-          "allowedHttpMethods": [
-            "HEAD",
-            "DELETE",
-            "POST",
-            "GET",
-            "OPTIONS",
-            "PUT",
-            "PATCH"
-          ],
-          "forward": {
-            "headers": [
-              "Accept"
-            ]
-          },
-          "lambda@edge": {
-<<<<<<< Updated upstream
-            "origin-request": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-xrziwbw:1"
-=======
-            "origin-request": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-xrziwbw:4"
->>>>>>> Stashed changes
+            "origin-request": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-aiz8j0d:8"
           }
         },
         "_next/data/*": {
@@ -103,13 +73,8 @@
             "queryString": true
           },
           "lambda@edge": {
-<<<<<<< Updated upstream
-            "origin-request": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-pakl9v5:1",
-            "origin-response": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-pakl9v5:1"
-=======
-            "origin-request": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-pakl9v5:4",
-            "origin-response": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-pakl9v5:4"
->>>>>>> Stashed changes
+            "origin-request": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-pakl9v5:8",
+            "origin-response": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-pakl9v5:8"
           }
         }
       }
@@ -138,13 +103,8 @@
       "PATCH"
     ],
     "lambda@edge": {
-<<<<<<< Updated upstream
-      "origin-request": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-pakl9v5:1",
-      "origin-response": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-pakl9v5:1"
-=======
-      "origin-request": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-pakl9v5:4",
-      "origin-response": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-pakl9v5:4"
->>>>>>> Stashed changes
+      "origin-request": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-pakl9v5:8",
+      "origin-response": "arn:aws:lambda:us-east-1:415687062322:function:tao93g9-pakl9v5:8"
     },
     "compress": true
   }

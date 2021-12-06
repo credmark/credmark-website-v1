@@ -2,13 +2,8 @@
   "name": "tao93g9-l9k2dh",
   "arn": "arn:aws:iam::415687062322:role/tao93g9-l9k2dh",
   "service": [
-<<<<<<< Updated upstream
-    "lambda.amazonaws.com",
-    "edgelambda.amazonaws.com"
-=======
     "edgelambda.amazonaws.com",
     "lambda.amazonaws.com"
->>>>>>> Stashed changes
   ],
   "policy": {
     "Version": "2012-10-17",
