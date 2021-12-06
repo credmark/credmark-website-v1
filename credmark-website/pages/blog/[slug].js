@@ -25,8 +25,8 @@ export default function BlogPostPage({ post }) {
             <Head>
                 <title key="title">{post.title} | Blog | Credmark</title>
                 <meta name="description" content={post.description} />
-                <meta content={`${post.title} | Blog | Toucan Events`} property="og:title" key="og:title" />
-                <meta content={`${post.title} | Blog | Toucan Events`} name="twitter:title" key="twitter:title" />
+                <meta content={`${post.title} | Blog | Credmark`} property="og:title" key="og:title" />
+                <meta content={`${post.title} | Blog | Credmark`} name="twitter:title" key="twitter:title" />
                 <meta content={post.description} property="og:description" key="og:description" />
                 <meta content={post.description} property="twitter:description" key="twitter:description" />
                 <meta property="og:image" content={post.mainImage} />
