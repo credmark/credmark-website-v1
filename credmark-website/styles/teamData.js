@@ -2,7 +2,7 @@ export default [
     {
         id: 1,
         category: 'Team',
-        img: "../assets/neil.png",
+        img: "../assets/neil-resized.png",
         alt: "Neil Zumwalde",
         name: "Neil Zumwalde",
         title: "Vision & Product",
@@ -50,6 +50,16 @@ export default [
     {
         id: 5,
         category: 'Team',
+        img: "../assets/matt.png",
+        alt: "Matthias Knauth",
+        name: "Matthias Knauth",
+        title: "Product",
+        twitter: "https://twitter.com/MatthiasKnauth",
+        linkedin: "https://www.linkedin.com/in/matthias-knauth-b96b6b37/",
+    },
+    {
+        id: 6,
+        category: 'Team',
         img: "../assets/Asan.png",
         alt: "Asan Tulemis",
         name: "Asan Tulemis",
@@ -59,7 +69,7 @@ export default [
         linkedin: "https://www.linkedin.com/in/atulemis/",
     },
     {
-        id: 6,
+        id: 7,
         category: 'Team',
         img: "../assets/nisch.jpg",
         alt: "Nishchal Gaba",
@@ -71,7 +81,7 @@ export default [
         linkedin: "https://www.linkedin.com/in/nishchal-gaba-295701a5/",
     },
     {
-        id: 7,
+        id: 8,
         category: 'Team',
         img: "../assets/collier.jpg",
         alt: "Collier Gray",
@@ -83,7 +93,7 @@ export default [
         linkedin: "https://www.linkedin.com/in/joseph-collier-gray-7a323054/",
     },
     {
-        id: 8,
+        id: 9,
         category: 'Team',
         img: "../assets/stijn.jpg",
         alt: "Stijn Dobbelaere",
@@ -95,7 +105,18 @@ export default [
         linkedin: "https://www.linkedin.com/in/stijn-dobbelaere-5b9a476b/",
     },
     {
-        id: 8,
+        id: 10,
+        category: 'Team',
+        img: "../assets/when.png",
+        alt: "Wen-Chiao",
+        name: "Wen-Chiao",
+        title: "Community",
+        description: "Originally from Taiwan,  Wen-Chiao grew up in the US, went back to Taiwan for high school, and then moved to Japan for university. He’s worked in both Taipei and Tokyo in tech and innovation. In his spare time, he likes reading and asking questions.",
+        twitter: "https://twitter.com/wc_su95",
+        linkedin: "https://www.linkedin.com/in/wen-chiao-su/",
+    },
+    {
+        id: 11,
         category: 'Team',
         img: "../assets/joey.jpg",
         alt: "Joseph Hirsh",
@@ -105,17 +126,6 @@ export default [
         descriptiontwo: "Outside of work, Joe is either cooking, bodybuilding, or watching YouTube videos about non-duality.",
         twitter: "https://twitter.com/corepresentable",
         linkedin: "https://www.linkedin.com/in/joseph-hirsh/",
-    },
-    {
-        id: 8,
-        category: 'Team',
-        img: "../assets/when.png",
-        alt: "Wen-Chiao",
-        name: "Wen-Chiao",
-        title: "Community",
-        description: "Originally from Taiwan,  Wen-Chiao grew up in the US, went back to Taiwan for high school, and then moved to Japan for university. He’s worked in both Taipei and Tokyo in tech and innovation. In his spare time, he likes reading and asking questions.",
-        twitter: "https://twitter.com/wc_su95",
-        linkedin: "https://www.linkedin.com/in/wen-chiao-su/",
     },
 ]
 

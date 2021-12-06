@@ -1,4 +1,3 @@
-import TeamCard from '../layout/teamCard'
 import AdvisorCard from '../layout/advisorCard'
 import CenteredHeader from "../layout/centeredHeader"
 import Footer from "../layout/footer"

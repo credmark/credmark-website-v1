@@ -96,10 +96,60 @@ img {
   border-radius: 15px;
 }
 
+svg.twitter:hover{
+  fill: #3b0065;
+}
+
+svg.linkedin:hover{
+  fill: #3b0065;
+}
+
 mono
 * {
   box-sizing: border-box;
 }
+
+
+/* Team Page */
+
+.bio-photo {
+  border-radius:50%;
+  display: block;
+  width: 100% !important;
+  height: auto;
+}
+
+.img-hover {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: #54366388;
+  border-radius:50%;
+}
+
+.img-hover:hover .overlay {
+  opacity: 0.2;
+}
+
+.socialButtons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 /* Blog */
 
