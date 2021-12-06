@@ -167,7 +167,7 @@ export default function Homepage() {
                     <div className="grid grid-cols-1 m-auto block md:grid-cols-3 px-5 pb-10 md:pb-20">
                         <img className="py-5" width={150} src="../assets/dlab-logo.svg" alt="DLAB logo" />
                         <img className="py-5" width={150} src="../assets/longhash-logo.svg" alt="Long Hash Ventures logo" />
-                        <img className="py-5" width={150} src="../assets/api3-logo.svg" alt="API3 logo" />
+                        <img className="py-5" width={150} src="../assets/API3-logo.svg" alt="API3 logo" />
                         <img className="py-5" width={200} src="../assets/steady-state-logo.svg" alt="Solidity Ventures logo" />
                         <img className="py-5" width={150} src="../assets/Coinshift.svg" alt="Coinshift logo" />
                         <img className="py-5" width={150} src="../assets/yieldapp-logo.svg" alt="Spark Digital Capital logo" />
