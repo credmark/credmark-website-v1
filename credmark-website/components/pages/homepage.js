@@ -29,7 +29,7 @@ export default function Homepage() {
             <div>
                 <HeaderHome
                     title="MANAGE DEFI RISK"
-                    description="DeFi is rife with hidden dangers. Our tools help you navigate this sea of risk."
+                    description="A risk ecosystem powered by reliable data, original research, and an engaged community reducing risk for everyone."
                     url="#what-is-credmark" />
                 <div className="swirls">
                     <img src="/assets/swirls-transparent.png" alt="colored swirls" />
