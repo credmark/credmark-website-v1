@@ -30,9 +30,8 @@ export default function Reports() {
             <main className="max-w-full flex-1 relative overflow-y-auto focus:outline-none rounded-md bg-white">
                 <div className="blogGradient rounded-md">
                     <Header
-                        title="Reports"
+                        title="Archived Reports"
                         description="Check out the latest insights regarding risk in the DeFi industry" />
-                          <ReportsButton button={buttons} filter={filter} />
                     <div className="px-5 md:px-0 py-10 max-w-5xl block m-auto">
                             <ReportsMenu menuItem={menuItem} />
                     </div>

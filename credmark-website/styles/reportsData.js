@@ -1,19 +1,5 @@
 export default [
     {
-        id: 9,
-        category: 'Risk',
-        title:"DeFi Risk Report",
-        url:"https://docs.credmark.com/credmark-risk-library/reports/aave-and-compound-defi-risk-report",
-        type:"DeFi Risk Library"
-    },
-    {
-        id: 1,
-        category: 'Commisioned',
-        title:"Idle Finance Report",
-        url:"https://docs.credmark.com/credmark-risk-library/yield-aggregators/idle-finance",
-        type:"Finance Report"
-    },
-    {
         id: 2,
         category: 'Historical',
         title:"2020 Year End Report",
