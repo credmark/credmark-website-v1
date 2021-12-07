@@ -29,6 +29,10 @@ h1, h2, h3, h4, p, a, li, em {
   @apply text-credmarkpurple;
 }
 
+p {
+  font-size: 18px;
+}
+
 h1{
   font-family: 'Roboto';
   font-weight: 900;

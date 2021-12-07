@@ -47,8 +47,8 @@ export default function Homepage() {
                             </strong>
                         </div>
                         <div className="max-w-4xl pb-7 block m-auto">
-                            <p className="pt-5 text-center">Credmark is a community-driven project that connects data providers, risk modelers and DeFi users.</p>
-                            <p className="text-center">Our community curates crypto data, develop risk management tools, and publish industry leading research.</p>
+                            <p className="pt-5 text-center text-base">Credmark is a community-driven project that connects data providers, risk modelers and DeFi users.</p>
+                            <p className="text-center text-base">Our community curates crypto data, develop risk management tools, and publish industry leading research.</p>
                         </div>
                         <div className="max-w-4xl block m-auto pb-16">
                             <img alt="What is Credmark graph" className="hidden md:flex block m-auto" src="/assets/what-is-credmark.png" />
@@ -66,7 +66,7 @@ export default function Homepage() {
                         </strong>
                     </div>
                     <div className="max-w-4xl pb-7 block m-auto">
-                        <p className="pt-5 text-center">Access data, build risk applications and de-risk your DeFi experience.</p>
+                        <p className="pt-5 text-center text-base">Access data, build risk applications and de-risk your DeFi experience.</p>
                     </div>
                     <div className="max-w-4xl block m-auto pb-16">
                         <img alt="Discord channel link" className="hidden md:flex block m-auto" src="/assets/how-credmark-works.png" />
@@ -84,7 +84,7 @@ export default function Homepage() {
                         </strong>
                     </div>
                     <div className="max-w-3xl pb-16 md:pb-20 block m-auto">
-                        <p className="pt-5 text-center">Credmark&apos;s community curates high-integrity data, develops risk tools, and produces research on crypto assets, protocols, and markets.</p>
+                        <p className="pt-5 text-center text-base">Credmark&apos;s community curates high-integrity data, develops risk tools, and produces research on crypto assets, protocols, and markets.</p>
                     </div>
                 </div>
             </div>
@@ -92,8 +92,8 @@ export default function Homepage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-5 md:px-20 block m-auto max-w-7xl">
                     <div>
                         <p className="text-white">Research</p>
-                        <p className="credmark text-2xl text-white py-5">Risk Library</p>
-                        <p className="text-white pt-5">Discover how to evaluate risks in DeFi by applying traditional and updated metrics to assets, protocols, and markets.</p>
+                        <p className="credmark text-2xl text-white py-5 text-base">Risk Library</p>
+                        <p className="text-white pt-5 text-base">Discover how to evaluate risks in DeFi by applying traditional and updated metrics to assets, protocols, and markets.</p>
                         <a href="https://docs.credmark.com/credmark-risk-library/" target="_blank" rel="noreferrer">
                             <button
                                 type="button"
@@ -143,13 +143,13 @@ export default function Homepage() {
                         <div className="order-1 md:order-2">
                             <strong><p className="uppercase font-extrabold text-4xl text-white pb-2.5 pt-10 md:pt-20">COMMUNITY-POWERED RISK TOOLS</p></strong>
                             <p className="credmark text-white pb-2.5">Smartpool</p>
-                            <p className="text-white">SmartPool is the first of many risk tools to be created using the Credmark platform. It&apos;s an open-source proof of concept intended to show developers how they can use our data and models to embed risk information into their services and applications.</p>
+                            <p className="text-white text-base">SmartPool is the first of many risk tools to be created using the Credmark platform. It&apos;s an open-source proof of concept intended to show developers how they can use our data and models to embed risk information into their services and applications.</p>
                             <a href="https://app.credmark.com/" target="_blank" rel="noreferrer">
                                 <button
                                     type="button"
                                     className="hover:text-credmarkpurple hover:bg-white border-2 border-white md:border-transparent md:border-0 uppercase my-5 md:mt-5 bg-credmarkpurple inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white"
                                 >
-                                    Try the App
+                                    Try Smartpool
                                 </button>
                             </a>
                         </div>
