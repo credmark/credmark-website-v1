@@ -104,7 +104,7 @@ export default function Homepage() {
                         </a>
                     </div>
                     <div>
-                        <a href="https://docs.credmark.com/credmark-risk-library/" target="_blank" rel="noreferrer"><img alt="Credmark Risk Library" className="md:max-h-80 block m-auto p-10 lg:p-0" src="/assets/encyclopedia.png" /></a>
+                        <a href="https://docs.credmark.com/credmark-risk-library/" target="_blank" rel="noreferrer"><img alt="Credmark Risk Library" className="md:max-h-80 block m-auto p-10 lgd:p-0" src="/assets/encyclopedia.png" /></a>
                     </div>
                 </div>
             </div>
