@@ -46,7 +46,7 @@ export default function Nav(props) {
                                                     <span className="sr-only">Open user menu</span>
                                                     <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                                                     <Link
-                                                        href="https://credmarkhq.gitbook.io/credmark/careers"
+                                                        href="https://docs.credmark.com/credmark/"
                                                         target="_blank"
                                                         rel="noreferrer"
                                                         className="px-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
@@ -111,7 +111,7 @@ export default function Nav(props) {
                                     {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
                                     <Disclosure.Button
                                         as="a"
-                                        href="https://credmarkhq.gitbook.io/credmark/careers"
+                                        href="https://docs.credmark.com/credmark/"
                                         className="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
                                     >
                                         Docs
