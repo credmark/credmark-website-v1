@@ -20,11 +20,13 @@ export default function Nav(props) {
                                 <div className="flex justify-between">
                                     <div className="flex">
                                         <div className="flex-shrink-0 flex items-center">
+                                        <Link href="/">
                                             <img
-                                                className="block lg:hidden h-14 w-auto mt-2"
+                                                className="cursor-pointer block lg:hidden h-14 w-auto mt-2"
                                                 src="../assets/credmark-logo.png"
                                                 alt="Workflow"
                                             />
+                                        </Link>
                                             <Link href="/">
                                                 <img
                                                     width={250}
@@ -44,12 +46,12 @@ export default function Nav(props) {
                                                     <span className="sr-only">Open user menu</span>
                                                     <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                                                     <Link
-                                                        href="/careers"
+                                                        href="https://credmarkhq.gitbook.io/credmark/careers"
                                                         target="_blank"
                                                         rel="noreferrer"
                                                         className="px-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
-                                                        Work With Us
+                                                        Docs
                                                     </Link>
                                                     </div>
                                                     <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
@@ -61,10 +63,18 @@ export default function Nav(props) {
                                                     </div>
                                                     <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                                                     <Link
-                                                        href="/faq"
+                                                        href="/blog"
                                                         className="mx-8 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                                     >
-                                                        FAQ
+                                                        Blog
+                                                    </Link>
+                                                    </div>
+                                                    <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                                    <Link
+                                                        href="/media"
+                                                        className="mx-8 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                                    >
+                                                        Media
                                                     </Link>
                                                     </div>
                                                     <a
@@ -101,10 +111,10 @@ export default function Nav(props) {
                                     {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
                                     <Disclosure.Button
                                         as="a"
-                                        href="https://discord.gg/credmark"
+                                        href="https://credmarkhq.gitbook.io/credmark/careers"
                                         className="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
                                     >
-                                        Community
+                                        Docs
                                     </Disclosure.Button>
                                     <Disclosure.Button
                                         as="a"
@@ -115,10 +125,17 @@ export default function Nav(props) {
                                     </Disclosure.Button>
                                     <Disclosure.Button
                                         as="a"
-                                        href="/faq"
+                                        href="/blog"
                                         className="border-transparent block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
                                     >
-                                        FAQ
+                                        Blog
+                                    </Disclosure.Button>
+                                    <Disclosure.Button
+                                        as="a"
+                                        href="/media"
+                                        className="border-transparent block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+                                    >
+                                        Media
                                     </Disclosure.Button>
                                     <a
                                         href="https://app.credmark.com/"

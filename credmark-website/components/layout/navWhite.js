@@ -20,11 +20,13 @@ export default function NavWhite(props) {
                                 <div className="flex justify-between">
                                     <div className="flex">
                                         <div className="flex-shrink-0 flex items-center">
-                                            <img
-                                                className="block lg:hidden h-14 w-auto mt-2"
-                                                src="../assets/credmark-logo.png"
-                                                alt="Workflow"
-                                            />
+                                            <Link href="/">
+                                                <img
+                                                    className="cursor-pointer block lg:hidden h-14 w-auto mt-2"
+                                                    src="../assets/credmark-logo.png"
+                                                    alt="Workflow"
+                                                />
+                                            </Link>
                                             <Link href="/">
                                                 <img
                                                     width={250}
@@ -43,25 +45,37 @@ export default function NavWhite(props) {
                                                 <Menu.Button>
                                                     <span className="sr-only">Open user menu</span>
                                                     <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                                                    <Link
-                                                        href="/careers"
-                                                    >
-                                                        Work with us
-                                                    </Link>
+                                                        <Link
+                                                            href="https://credmarkhq.gitbook.io/credmark/careers"
+                                                            target="_blank"
+                                                            rel="noreferrer"
+                                                            className="px-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                                        >
+                                                            Docs
+                                                        </Link>
                                                     </div>
                                                     <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                                                    <Link
-                                                        href="/contributors"
-                                                    >
-                                                        Contributors
-                                                    </Link>
+                                                        <Link
+                                                            href="/contributors"
+                                                        >
+                                                            Contributors
+                                                        </Link>
                                                     </div>
                                                     <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                                                    <Link
-                                                        href="/faq"
-                                                    >
-                                                        FAQ
-                                                    </Link>
+                                                        <Link
+                                                            href="/blog"
+                                                            className="mx-8 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                                        >
+                                                            Blog
+                                                        </Link>
+                                                    </div>
+                                                    <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                                        <Link
+                                                            href="/media"
+                                                            className="mx-8 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                                        >
+                                                            Media
+                                                        </Link>
                                                     </div>
                                                     <a
                                                         href="https://app.credmark.com/"
@@ -69,7 +83,7 @@ export default function NavWhite(props) {
                                                         rel="noreferrer">
                                                         <button
                                                             type="button"
-                                                            className="ml-5 transform hover:scale-110 px-5 uppercase mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                                            className="transform hover:scale-110 ml-5 px-5 uppercase mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                                         >
                                                             APP
                                                         </button>
@@ -97,24 +111,31 @@ export default function NavWhite(props) {
                                     {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
                                     <Disclosure.Button
                                         as="a"
-                                        href="https://discord.gg/credmark"
+                                        href="https://credmarkhq.gitbook.io/credmark/careers"
                                         className="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
                                     >
-                                        Community
+                                        Docs
                                     </Disclosure.Button>
                                     <Disclosure.Button
                                         as="a"
                                         href="/contributors"
                                         className="border-transparent block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
                                     >
-                                       Contributors
+                                        Contributors
                                     </Disclosure.Button>
                                     <Disclosure.Button
                                         as="a"
-                                        href="/faq"
+                                        href="/blog"
                                         className="border-transparent block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
                                     >
-                                        FAQ
+                                        Blog
+                                    </Disclosure.Button>
+                                    <Disclosure.Button
+                                        as="a"
+                                        href="/media"
+                                        className="border-transparent block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+                                    >
+                                        Media
                                     </Disclosure.Button>
                                     <a
                                         href="https://app.credmark.com/"
