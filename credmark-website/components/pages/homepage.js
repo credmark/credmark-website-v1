@@ -79,8 +79,8 @@ export default function Homepage() {
                     <div className="text-center">
                         <strong>
                             <h3 className="font-extrabold text-4xl md:pt-10">
-                            UNCOVERING DEFI RISKS
-                        </h3>
+                                UNCOVERING DEFI RISKS
+                            </h3>
                         </strong>
                     </div>
                     <div className="max-w-3xl pb-16 md:pb-20 block m-auto">
@@ -104,63 +104,16 @@ export default function Homepage() {
                         </a>
                     </div>
                     <div>
-                        <a href="https://docs.credmark.com/credmark-risk-library/" target="_blank" rel="noreferrer"><img alt="Credmark Risk Library" className="md:max-h-80 block m-auto" src="/assets/encyclopedia.png" /></a>
-                    </div>
-                </div>
-            </div>
-            <div className="max-w-7xl block m-auto py-20">
-                <div className="px-5">
-                    <div className="text-center">
-                        <strong>
-                            <h3 className="font-extrabold text-5xl md:text-4xl">
-                            REPORTS
-                        </h3>
-                        </strong>
-                        <div className="px-5 max-w-5xl md:m-auto">
-                            <div className="block m-auto md:m-auto space-x-5 pb-10">
-                                <HomeReportsButton button={buttons} filter={filter} />
-                            </div>
-                        </div>
-                        <div className="px-5 md:px-0 max-w-5xl block m-auto">
-                            <HomeReportsMenu menuItem={menuItem} />
-                        </div>
-                        <div className="flex justify-center pt-10">
-                            <Link href="/reports">
-                                <p className="credmark cursor-pointer text-center text-md float-left">All reports<img width={40} className="float-right pt-0 pl-5" alt="arrow right" src="../assets/Arrow-1.svg" /></p>
-                            </Link>
-                        </div>
-                        <div>
-                        </div>
+                        <a href="https://docs.credmark.com/credmark-risk-library/" target="_blank" rel="noreferrer"><img alt="Credmark Risk Library" className="md:max-h-80 block m-auto p-10 lg:p-0" src="/assets/encyclopedia.png" /></a>
                     </div>
                 </div>
             </div>
             <div>
-                <div className="riskEncyclopedia">
-                    <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-5 md:px-20 block m-auto max-w-7xl mt-10 lg:my-28">
-                        <div className="order-2 md:order-1">
-                            <a href="https://app.credmark.com/positions" target="_blank" rel="noreferrer"><img alt="Credmark App" className="app-image block m-auto md:pr-16" src="/assets/credmark-app.jpg" /></a>
-                        </div>
-                        <div className="order-1 md:order-2">
-                            <strong><p className="uppercase font-extrabold text-4xl text-white pb-2.5 pt-10 md:pt-20">COMMUNITY-POWERED RISK TOOLS</p></strong>
-                            <p className="credmark text-white pb-2.5">Smartpool</p>
-                            <p className="text-white text-base">SmartPool is the first of many risk tools to be created using the Credmark platform. It&apos;s an open-source proof of concept intended to show developers how they can use our data and models to embed risk information into their services and applications.</p>
-                            <a href="https://app.credmark.com/positions" target="_blank" rel="noreferrer">
-                                <button
-                                    type="button"
-                                    className="hover:text-credmarkpurple hover:bg-white border-2 border-white md:border-transparent md:border-0 uppercase my-5 md:mt-5 bg-credmarkpurple inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white"
-                                >
-                                    Try Smartpool
-                                </button>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
                 <div className="px-5 py-10 md:pt-20 md:pb-10">
                     <strong>
-                    <h2 className="max-w-7xl block m-auto font-extrabold text-center text-5xl md:text-4xl">
-                        PARTNERS
-                    </h2>
+                        <h2 className="max-w-7xl block m-auto font-extrabold text-center text-5xl md:text-4xl">
+                            PARTNERS
+                        </h2>
                     </strong>
                 </div>
                 <div className="max-w-4xl block m-auto">
