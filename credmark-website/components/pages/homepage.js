@@ -70,7 +70,7 @@ export default function Homepage() {
                     </div>
                     <div className="max-w-4xl block m-auto pb-16">
                         <img alt="Discord channel link" className="hidden md:flex block m-auto" src="/assets/how-credmark-works.png" />
-                        <img alt="Discord channel link" className="flex md:hidden block m-auto" src="/assets/how-credmark-works-mobile.png" />
+                        <img alt="Discord channel link" className="flex md:hidden block m-auto" src="/assets/how-it-works-mobile.png" />
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@ export default function Homepage() {
                         </a>
                     </div>
                     <div>
-                        <a href="https://docs.credmark.com/credmark-risk-library/" target="_blank" rel="noreferrer"><img alt="Credmark Risk Library" className="md:max-h-80 block m-auto p-10 lgd:p-0" src="/assets/encyclopedia.png" /></a>
+                        <a href="https://docs.credmark.com/credmark-risk-library/" target="_blank" rel="noreferrer"><img alt="Credmark Risk Library" className="md:max-h-80 block m-auto p-10 lg:p-0" src="/assets/encyclopedia.png" /></a>
                     </div>
                 </div>
             </div>
