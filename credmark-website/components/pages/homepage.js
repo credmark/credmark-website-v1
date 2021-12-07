@@ -138,13 +138,13 @@ export default function Homepage() {
                 <div className="riskEncyclopedia">
                     <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-5 md:px-20 block m-auto max-w-7xl mt-10 lg:my-28">
                         <div className="order-2 md:order-1">
-                            <a href="https://app.credmark.com/" target="_blank" rel="noreferrer"><img alt="Credmark App" className="app-image block m-auto md:pr-16" src="/assets/credmark-app.jpg" /></a>
+                            <a href="https://app.credmark.com/positions" target="_blank" rel="noreferrer"><img alt="Credmark App" className="app-image block m-auto md:pr-16" src="/assets/credmark-app.jpg" /></a>
                         </div>
                         <div className="order-1 md:order-2">
                             <strong><p className="uppercase font-extrabold text-4xl text-white pb-2.5 pt-10 md:pt-20">COMMUNITY-POWERED RISK TOOLS</p></strong>
                             <p className="credmark text-white pb-2.5">Smartpool</p>
                             <p className="text-white text-base">SmartPool is the first of many risk tools to be created using the Credmark platform. It&apos;s an open-source proof of concept intended to show developers how they can use our data and models to embed risk information into their services and applications.</p>
-                            <a href="https://app.credmark.com/" target="_blank" rel="noreferrer">
+                            <a href="https://app.credmark.com/positions" target="_blank" rel="noreferrer">
                                 <button
                                     type="button"
                                     className="hover:text-credmarkpurple hover:bg-white border-2 border-white md:border-transparent md:border-0 uppercase my-5 md:mt-5 bg-credmarkpurple inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white"
