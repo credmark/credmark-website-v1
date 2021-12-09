@@ -9,20 +9,19 @@ import Head from 'next/head'
 
 const navigation = {
     projects: [
-        { name: 'Research', href: '/reports' },
+        { name: 'Documentation', href: 'https://credmarkhq.gitbook.io/credmark/' },
         { name: 'Crypto Data', href: '/reports' },
         { name: 'Risk Management Tools', href: 'https://app.credmark.com/' },
     ],
     learn: [
-        { name: 'Documentation', href: '/reports' },
         { name: 'Blog', href: '/blog' },
         { name: 'Media', href: '/media' },
         { name: 'FAQ', href: '/faq' },
     ],
     community: [
-        { name: 'The Team', href: '/team' },
+        { name: 'Contributors', href: '/contributors' },
         { name: 'Work with us', href: '/careers' },
-        { name: 'Community', href: 'https://discord.gg/credmark' },
+        { name: 'Our Discord', href: 'https://discord.gg/credmark' },
     ],
     social: [
         {
