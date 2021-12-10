@@ -2,7 +2,7 @@ export default function Media() {
     return (
         <main className="max-w-full flex-1 overflow-y-auto focus:outline-none rounded-4xl bg-white">
             <div>
-            <h1 className="credmark text-center py-5 text-5xl md:text-7xl md:pt-16">
+            <h1 className="font-extrabold uppercase text-center py-5 text-5xl md:text-7xl md:pt-16">
                             CRYPTO
                             <br></br>
                             CREDIT

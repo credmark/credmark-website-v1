@@ -5,11 +5,12 @@
 
 @font-face {
   font-family: "Credmark";
-  src: url("/fonts/Credmark-Regular.ttf") format("truetype");
+  src: url("/fonts/Credmark-Regular.otf") format("truetype");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 html,
 body {
@@ -25,11 +26,16 @@ a {
 }
 
 h1, h2, h3, h4, p, a, li, em {
-  @apply text-purple;
+  @apply text-credmarkpurple;
+}
+
+p {
+  font-size: 18px;
 }
 
 h1{
-    font-family: 'Credmark';
+  font-family: 'Roboto';
+  font-weight: 900;
 }
 
 .credmark {
@@ -47,8 +53,6 @@ h1{
 img {
   margin: auto;
   display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 #hackathon{
@@ -57,14 +61,107 @@ img {
   bottom: 0;
 }
 
-#blogPage {
-  border-radius: 2.5rem;
-}
-
 #whitepaper {
   width: auto;
   display: flex;
   width: 1050px;
+}
+
+.swirls {
+  margin-top: -155px;
+}
+
+.riskEncyclopedia{
+  background: url("/assets/purple-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.faqBackground{
+  background: url("/assets/purple-swirl.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.app-image {
+  margin-top: -100px;
+  margin-bottom: -90px;
+}
+
+.drop-shadow-xl {
+  box-shadow: 5px 10px hsla(279, 27%, 46%, 0.301)
+}
+
+.job-image{
+  margin-top: -150px;
+}
+
+#blogPage{
+  border-radius: 15px;
+}
+
+svg.twitter:hover{
+  fill: #3b0065;
+}
+
+svg.linkedin:hover{
+  fill: #3b0065;
+}
+
+mono
+* {
+  box-sizing: border-box;
+}
+
+
+/* Team Page */
+
+.bio-photo {
+  border-radius:50%;
+  display: block;
+  width: 100% !important;
+  height: auto;
+}
+
+.img-hover {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: #54366388;
+  border-radius:50%;
+}
+
+.img-hover:hover .overlay {
+  opacity: 0.2;
+}
+
+.socialButtons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* Blog */
+
+h4{
+  font-family: 'Credmark';
+  font-size: 28px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 p {
@@ -75,56 +172,6 @@ p {
 blockquote {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-mono
-* {
-  box-sizing: border-box;
-}
-
-.nav{
-background: rgb(247,181,0);
-background: linear-gradient(130deg, rgba(247,181,0,0.07) 0%, rgba(182,32,224,0.07) 49%, rgba(50,197,255,0.07) 100%);
-}
-
-.scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-.simplebar-track.simplebar-vertical {
-  right: 50px;
-  width: 15px !important;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  filter: drop-shadow(2px 0px 4px #999999);
-}
-
-@media screen and (max-width: 480px) {
-  .simplebar-track.simplebar-vertical {
-    right: 10px;
-    width: 15px !important;
-    padding-top: 60px;
-  }
-}
-
-
-.simplebar-scrollbar.simplebar-visible {
-  cursor: pointer;
-}
-
-.simplebar-scrollbar.simplebar-visible::before {
-  cursor: pointer;
-  background: rgb(59, 0, 101);
-  opacity: 1 !important;
-}
-
-/* Blog */
-
-h4{
-  font-family: 'Credmark';
-  font-size: 28px;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 ul{
@@ -141,33 +188,6 @@ li {
   display: list-item;
 }
 
-
-.homeBackground{
-  background: url("/assets/credmark-hackathon.jpg"); 
-  background-position: center center; 
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.faqBackground{
-  background: url("/assets/faq.jpg"); 
-  background-position: center center; 
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 10;
-}
-
-@media (min-width: 1450px){
-  .faqBackground{
-    background: url("/assets/faq.jpg"); 
-    background-position: center center; 
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 10;
-  }
-}
-
-
 .mediaBackground{
   background: url("/assets/media.png");
   background-position: center; 
@@ -175,31 +195,77 @@ li {
   background-repeat: no-repeat;
 }
 
-.homeTop{
-  background: rgb(255,255,255);
-  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, rgba(110, 151, 191, 0.164) 100%);
+.bio-photo {
+  border-radius:50%;
+  display: block;
+  width: var(--width);
+  height: auto;
 }
 
-.homeBottom{
-  background: rgb(255,255,255);
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(110,150,191,0.396796218487395) 100%);
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: var(--width);
+  opacity: 0;
+  transition: .5s ease;
+  border-radius:50%;
 }
 
-.blogGradient{
-  background: rgb(177,214,255);
-  background: linear-gradient(130deg, rgba(177,214,255,0.27) 0%, rgba(255,255,255,0.1783088235294118) 10%, rgba(255,255,255,1) 91%, rgba(177,214,255,0.2007177871148459) 100%);
+.img-hover:hover .overlay {
+  opacity: 1;
 }
 
-.paperGradient{
-  background: rgb(177,214,255);
-  background: linear-gradient(130deg, rgba(255,240,253,1) 0%, rgb(255, 255, 255) 10%, rgba(255,255,255,1) 80%, rgba(255,240,253,1) 100%);
-}
-.pinkGradient{
-  background: rgb(177,214,255);
-  background: linear-gradient(70deg, rgba(255,240,253,1) 0%, rgb(255, 255, 255) 10%, rgba(255,255,255,1) 88%, rgba(255,240,253,1) 100%);
+.hover-text {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
 }
 
-.faqGradient{
-  background: rgb(177,214,255);
-  background: linear-gradient(130deg, rgba(177,214,255,0.27) 0%, rgba(255,255,255,0.1783088235294118) 47%, rgba(255,255,255,0.1783088235294118) 79%, rgba(177,214,255,0.2007177871148459) 100%);
+@media (min-width: 1450px){
+  .swirls {
+    margin-top: -220px;
+  }
+  .riskEncyclopedia {
+    background: url(/assets/purple-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+  }
+  .job-image{
+    margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .app-image {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .swirls {
+    margin-top: -75px;
+  }
+  .app-image {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .riskEncyclopedia {
+    background: url(/assets/purple-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+  }
+  .job-image{
+    margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .job-image{
+    margin-top: auto;
+  }
 }

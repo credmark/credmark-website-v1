@@ -1,14 +1,15 @@
 import Head from 'next/head'
-import Nav from '../components/layout/nav'
-import Team from '../components/pages/team'
+import Nav from '../../components/layout/nav'
+import CareerDescription from '../../components/pages/senior-backend-engineer'
 
-export default function TeamPage() {
+export default function SeniorBackendEngineerPage() {
   return (
     <>
       <Head>
-        <title>Team | CREDMARK</title>
+        <title>Careers | Senior Backend Engineer | CREDMARK</title>
         <meta content="Team | Credmark" property="og:title" key="og:title" />
-        <meta name="description" content="Meet the team behind Credmark and our advisors." />
+        <meta name="description" content="Build the future of DeFi with us by joining the Credmark team." />
+        <meta property="og:image" content="https://credmark.com/assets/credmark-og-image.png"/>
         <link rel="icon" href="/favicon.ico" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
@@ -31,7 +32,7 @@ export default function TeamPage() {
 
       <div className="nav">
         <Nav
-          page={<Team />} />
+          page={<CareerDescription />} />
       </div>
     </>
   )

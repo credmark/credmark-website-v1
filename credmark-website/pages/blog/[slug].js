@@ -3,9 +3,12 @@ import { getBlogBySlug, getAllPosts } from '../../lib/api';
 import BlockContent from '@sanity/block-content-to-react';
 import sanity from '../../lib/sanity';
 
-import Nav from '../../components/layout/nav'
+import Nav from '../../components/layout/navWhite'
 import Link from 'next/link'
 import Head from 'next/head'
+import moment from 'moment'
+import React from 'react';
+
 
 const serializers = {
     types: {
@@ -20,10 +23,24 @@ export default function BlogPostPage({ post }) {
     return (
         <>
             <Head>
-                <title>{post.title} | CREDMARK</title>
-                <meta content="Blog | Credmark" property="og:title" key="og:title" />
-                <meta name="description" content="Welcome to the Credmark blog. Subscribe to find out about company updates and industry research." />
-                <link rel="icon" href="/favicon.ico" />
+                <title key="title">{post.title} | Blog | Credmark</title>
+                <meta name="description" content={post.description} />
+                <meta content={`${post.title} | Blog | Credmark`} property="og:title" key="og:title" />
+                <meta content={`${post.title} | Blog | Credmark`} name="twitter:title" key="twitter:title" />
+                <meta content={post.description} property="og:description" key="og:description" />
+                <meta content={post.description} property="twitter:description" key="twitter:description" />
+                <meta property="og:image" content={post.mainImage} />
+                {post.mainImage && (
+                    <>
+                        <meta content={post.mainImage} property="og:image" key="og:image" />
+                        <meta
+                            content={post.mainImage}
+                            property="og:image:secure_url"
+                            key="og:image:secure_url"
+                        />
+                        <meta content={post.mainImage} name="twitter:image" key="twitter:image" />
+                    </>
+                )}
                 {/* Global Site Tag (gtag.js) - Google Analytics */}
                 <script
                     async
@@ -43,28 +60,59 @@ export default function BlogPostPage({ post }) {
                 />
             </Head>
             <div className="nav">
-            <Nav page={<BlogDetail post={post} />} />
+                <Nav page={<BlogDetail post={post} />} />
             </div>
         </>
     )
 }
 
 const BlogDetail = ({ post }) => {
+    const [showCopyModal, setShowCopyModal] = React.useState(false);
+
+    const doCopy = React.useCallback(() => {
+        setShowCopyModal(true);
+        navigator.clipboard?.writeText(window.location.href);
+        setTimeout(() => setShowCopyModal(false), 2000);
+    }, []);
     return (
         <div className="bg-white pb-10">
-            <div className="max-w-5xl block m-auto text-center px-5">
-                <Link href="/blog" rel="noreferrer">
-                    <img id="blogbutton" className="h-auto cursor-pointer mt-40" fill="#3B0065" width={30} height={30} src="/assets/BackButton.svg">
-                    </img>
-                </Link>
-                <img id="blogPage" className="w-56 h-52 rounded-lg block m-auto mb-10" src={post.mainImage} />
-                <h1 className="text-xl md:px-20">{post.title}</h1>
+            <div className="max-w-6xl block m-auto px-5 md:px-20">
+                <h1 className="uppercase leading-snug pt-20 text-5xl pb-5 px-5 md:px-20">{post.title}</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 px-5 md:px-20 pb-5">
+                    <div>
+                        <p className="text-pink credmark text-base float-left">{post.author}</p>
+                        <svg className="mx-4 float-left" width="2" height="30" viewBox="0 0 2 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="2" height="30" fill="#DE1A60" />
+                        </svg>
+                        <p className="text-pink credmark text-base float-left">{moment(post.date).format('MM.DD.YYYY')}</p>
+                    </div>
+                    <span className="flex justify-start md:justify-end cursor-pointer" onClick={doCopy}>
+                        <img className="flex justify-end m-0.5" width={24} id="blogPage" src="../assets/link.svg" alt="copy to clipboard" />
+                    </span>
+                    {showCopyModal && (
+                        <div className="z-10 fixed inset-x-0 top-0 flex items-center justify-center">
+                            <div className="relative w-full z-10 p-4 bg-pink text-white text-center">
+                                Link copied
+                            </div>
+                            <div className="absolute inset-0 bg-gray-100 opacity-75"></div>
+                        </div>
+                    )}
+                </div>
+                <img className="px-5 md:px-20" id="blogPage" src={post.mainImage} />
                 <BlockContent
-                    className="text-left leading-loose pt-10 px-5 md:px-20"
+                    className="blog text-left leading-loose pt-10 px-5 md:px-20"
                     serializers={serializers}
                     blocks={post.content}
                     {...sanity.config()}
                 />
+                <span onClick={doCopy}>
+                    <img className="px-5 md:px-20 flex m-5 cursor-pointer" id="blogPage" src="../assets/link.svg" alt="copy to clipboard" />
+                </span>
+                <div className="flex">
+                    <Link href="/blog" rel="noreferrer">
+                        <p className="cursor-pointer font-bold pt-10 pb-5 px-5 md:px-20"><img width={40} className="float-left pt-0 pr-5" src="../assets/arrow.svg" />Back to blog</p>
+                    </Link>
+                </div>
             </div>
         </div>
     )

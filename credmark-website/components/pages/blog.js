@@ -10,21 +10,23 @@ export default function Blog({ posts }) {
                 <p>News, stories, and announcements from the Credmark team.</p>
                 <p className="text-pink pb-5 hover:underline">Subscribe</p>
             </div>
-            {posts.map(posts =>
-                <props key={posts.id} sm="4">
-                    <BlogCard
-                        title={posts.title}
-                        date={posts.date}
-                        img={posts.mainImage}
-                        author={posts.author}
-                        slug={posts.slug}
-                        link={{
-                            href: `/blog/${posts.slug}`
-                        }}
-                    />
-                </props>
-            )
-            }
+            <div className="grid grid-cols-1 md:grid-cols-3 pb-10">
+                {posts.map(posts =>
+                    <props key={posts.id} sm="4">
+                        <BlogCard
+                            title={posts.title}
+                            date={posts.date}
+                            img={posts.mainImage}
+                            author={posts.author}
+                            slug={posts.slug}
+                            link={{
+                                href: `/blog/${posts.slug}`
+                            }}
+                        />
+                    </props>
+                )
+                }
+            </div>
         </div>
     )
 }

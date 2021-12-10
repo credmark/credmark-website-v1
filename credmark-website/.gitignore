@@ -37,3 +37,8 @@ yarn-error.log*
 .serverless/Template*
 
 .serverless_nextjs/
+
+#npm packages
+/package-lock.json
+/package.json
+/yarn.lock

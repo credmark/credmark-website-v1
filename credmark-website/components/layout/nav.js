@@ -1,156 +1,167 @@
 import { Fragment, useState } from 'react'
-import { Dialog, Menu, Transition } from '@headlessui/react'
-import Link from 'next/link'
+import { Disclosure, Menu, Transition } from '@headlessui/react'
 import Footer from '../layout/footer'
 import SimpleBar from 'simplebar-react'
-
-import { XIcon } from '@heroicons/react/outline'
-
-
-const navigation = [
-    { name: 'Home', href: '/', current: true },
-    { name: 'White Paper', href: '/whitepaper', current: false },
-    { name: 'Blog', href: '/blog', current: false },
-    { name: 'Media', href: '/media', current: false },
-    { name: 'CCR', href: '/crypto-credit-report', current: false },
-    { name: 'FAQ', href: '/faq', current: false },
-    { name: 'The Team', href: '/team', current: false },
-]
+import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
 export default function Nav(props) {
-    const [sidebarOpen, setSidebarOpen] = useState(false)
-
     return (
-        <div>
-            <div className="flex h-screen overflow-hidden max-w-7xl block m-auto">
-                <Transition.Root show={sidebarOpen} as={Fragment}>
-                    <Dialog as="div" className="fixed inset-0 flex z-40 md:hidden" onClose={setSidebarOpen}>
-                        <Transition.Child
-                            as={Fragment}
-                            enter="transition-opacity ease-linear duration-300"
-                            enterFrom="opacity-0"
-                            enterTo="opacity-100"
-                            leave="transition-opacity ease-linear duration-300"
-                            leaveFrom="opacity-100"
-                            leaveTo="opacity-0"
-                        >
-                            <Dialog.Overlay className="fixed bg-white inset-0 bg-gray-600 bg-opacity-75" />
-                        </Transition.Child>
-                        <Transition.Child
-                            as={Fragment}
-                            enter="transition ease-in-out duration-300 transform"
-                            enterFrom="-translate-x-full"
-                            enterTo="translate-x-0"
-                            leave="transition ease-in-out duration-300 transform"
-                            leaveFrom="translate-x-0"
-                            leaveTo="-translate-x-full"
-                        >
-                            <div className="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4">
-                                <Transition.Child
-                                    as={Fragment}
-                                    enter="ease-in-out duration-300"
-                                    enterFrom="opacity-0"
-                                    enterTo="opacity-100"
-                                    leave="ease-in-out duration-300"
-                                    leaveFrom="opacity-100"
-                                    leaveTo="opacity-0"
-                                >
-                                    <div className="absolute top-0 right-0 -mr-12 pt-2">
-                                        <button
-                                            type="button"
-                                            className="ml-1 flex items-center justify-center h-10 w-10"
-                                            onClick={() => setSidebarOpen(false)}
-                                        >
-                                   <XIcon className="h-6 w-6 text-white" aria-hidden="true" />
-                                            <span className="sr-only">Close sidebar</span>
-                                        </button>
-                                    </div>
-                                </Transition.Child>
-                                <div className="mt-5 flex-1 h-0 overflow-y-auto">
-                                    <nav className="px-2 space-y-1">
-                                        {navigation.map((item) => (
-                                            <Link
-                                                key={item.name}
-                                                href={item.href}
-                                            >
-                                                <p className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>{item.name}</p>
+        <div className="h-16 sticky top-0 z-10">
+            <main>
+                <Disclosure as="nav" className="bg-lightpink shadow">
+                    {({ open }) => (
+                        <>
+                            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                                <div className="flex justify-between">
+                                    <div className="flex">
+                                        <div className="flex-shrink-0 flex items-center">
+                                        <Link href="/">
+                                            <img
+                                                className="cursor-pointer block lg:hidden h-14 w-auto mt-2"
+                                                src="../assets/credmark-logo.png"
+                                                alt="Workflow"
+                                            />
+                                        </Link>
+                                            <Link href="/">
+                                                <img
+                                                    width={250}
+                                                    className="cursor-pointer h-auto hidden lg:block h-12 flex justify-start m-0 mt-4 px-10"
+                                                    src="../assets/credmark-logo-purple.png"
+                                                    alt="Credmark logo"
+                                                />
                                             </Link>
-                                        ))}
-                                        <a href='https://app.uniswap.org/#/swap?outputCurrency=0x68cfb82eacb9f198d508b514d898a403c449533e' target="_blank" rel="noreferrer" className='cursor-pointer bg-gray-100 hover:bg-gray-50 group flex justify-center px-2 py-2 text-base font-medium rounded-md'>Buy CMK</a>
-                                    </nav>
+                                        </div>
+                                    </div>
+                                    <div className="hidden sm:ml-8 sm:flex sm:items-center">
+
+                                        {/* Profile dropdown */}
+                                        <Menu as="div" className="ml-3 relative">
+                                            <div>
+                                                <Menu.Button>
+                                                    <span className="sr-only">Open user menu</span>
+                                                    <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                                    <Link
+                                                        href="https://docs.credmark.com/credmark/"
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                        className="px-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                                    >
+                                                        Docs
+                                                    </Link>
+                                                    </div>
+                                                    <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                                    <Link
+                                                        href="/contributors"
+                                                    >
+                                                        Contributors
+                                                    </Link>
+                                                    </div>
+                                                    <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                                    <Link
+                                                        href="/blog"
+                                                        className="mx-8 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                                    >
+                                                        Blog
+                                                    </Link>
+                                                    </div>
+                                                    <div className="mx-5 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                                    <Link
+                                                        href="/media"
+                                                        className="mx-8 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                                    >
+                                                        Media
+                                                    </Link>
+                                                    </div>
+                                                    <a
+                                                        href="https://app.credmark.com/"
+                                                        target="_blank"
+                                                        rel="noreferrer">
+                                                        <button
+                                                            type="button"
+                                                            className="transform hover:scale-110 ml-5 px-5 uppercase mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                                        >
+                                                            APP
+                                                        </button>
+                                                    </a>
+                                                </Menu.Button>
+                                            </div>
+                                        </Menu>
+                                    </div>
+                                    <div className="-mr-2 flex items-center sm:hidden">
+                                        {/* Mobile menu button */}
+                                        <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                            <span className="sr-only">Open main menu</span>
+                                            {open ? (
+                                                <XIcon className="block h-6 w-6" aria-hidden="true" />
+                                            ) : (
+                                                <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                                            )}
+                                        </Disclosure.Button>
+                                    </div>
                                 </div>
                             </div>
-                        </Transition.Child>
-                        <div className="flex-shrink-0 w-14" aria-hidden="true">
-                            {/* Dummy element to force sidebar to shrink to fit close icon */}
-                        </div>
-                    </Dialog>
-                </Transition.Root>
 
-                {/* Static sidebar for desktop */}
-                <div className="hidden md:flex md:flex-shrink-0">
-                    <div className="flex flex-col w-64">
-                        {/* Sidebar component, swap this element with another sidebar if you like */}
-                        <div className="flex flex-col flex-grow pt-5 pb-4 overflow-y-auto">
-                            <div className="mt-5 flex-grow flex flex-col">
-                                <nav className="flex-1 px-2 pt-28 space-y-1 text-right">
-                                    {navigation.map((item) => (
-                                        <Link
-                                            key={item.name}
-                                            href={item.href}
+                            <Disclosure.Panel className="sm:hidden">
+                                <div className="pt-2 pb-3 space-y-1">
+                                    {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
+                                    <Disclosure.Button
+                                        as="a"
+                                        href="https://docs.credmark.com/credmark/"
+                                        className="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+                                    >
+                                        Docs
+                                    </Disclosure.Button>
+                                    <Disclosure.Button
+                                        as="a"
+                                        href="/contributors"
+                                        className="border-transparent block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+                                    >
+                                      Contributors
+                                    </Disclosure.Button>
+                                    <Disclosure.Button
+                                        as="a"
+                                        href="/blog"
+                                        className="border-transparent block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+                                    >
+                                        Blog
+                                    </Disclosure.Button>
+                                    <Disclosure.Button
+                                        as="a"
+                                        href="/media"
+                                        className="border-transparent block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+                                    >
+                                        Media
+                                    </Disclosure.Button>
+                                    <a
+                                        href="https://app.credmark.com/"
+                                        target="_blank"
+                                        rel="noreferrer">
+                                        <button
+                                            type="button"
+                                            className="ml-3 px-5 uppercase mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                         >
-                                            <p className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm hover:font-medium rounded-md'> {item.name}</p>
-                                        </Link>
-                                    ))}
-                                    <a href='https://app.uniswap.org/#/swap?outputCurrency=0x68cfb82eacb9f198d508b514d898a403c449533e' target="_blank" rel="noreferrer" className='cursor-pointer group flex flex-row-reverse pr-5 px-2 py-2 text-sm active:font-medium rounded-md'>Buy CMK</a>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="flex flex-col w-0 flex-1 overflow-hidden md:mr-40">
-                    <div className="relative z-10 h-16 md:h-24">
-                        <button
-                            type="button"
-                            className="my-3 pt-2.5 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
-                            onClick={() => setSidebarOpen(true)}
-                        >
-                            <svg fill="#3b0065" viewBox="0 0 100 80" width="30" height="30">
-                                <rect width="100" height="10"></rect>
-                                <rect y="30" width="100" height="10"></rect>
-                                <rect y="60" width="100" height="10"></rect>
-                            </svg>
-                            <span className="sr-only">Open sidebar</span>
-                        </button>
-                        <div className="grid grid-cols-3 h-24">
-                            <div>
+                                            APP
+                                        </button>
+                                    </a>
+                                </div>
+                                <div className="pt-4 pb-3 border-t border-gray-200">
+                                    <div className="flex items-center px-4">
+                                    </div>
+                                    <div className="mt-3 space-y-1">
 
-                            </div>
-                            <div className="hidden md:flex justify-center">
-                                <a href="https://credmark.com/" rel="noreferrer"><img width={45} className="flex justify-right pt-6" src="/assets/credmark-logo.png" alt="Credmark Logo" /></a>
-                            </div>
-                            <div className="flex flex-1 hidden md:flex medium:flex-grow-0 items-center justify-end mr-10 md:pt-2.5 mr-16">
-                                <a
-                                    href="https://app.credmark.com/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                   >
-                                    <img src="/assets/App.png" width={75} alt="App button" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <main className="max-w-full scrollbar flex-1 mb-2.5 relative overflow-y-scroll focus:outline-none rounded-4xl">
-                                {props.page}
-                    </main>
-                    <Footer />
-                </div>
-            </div>
+                                    </div>
+                                </div>
+                            </Disclosure.Panel>
+                        </>
+                    )}
+                </Disclosure>
+                {props.page}
+            </main>
         </div>
     )
 }
