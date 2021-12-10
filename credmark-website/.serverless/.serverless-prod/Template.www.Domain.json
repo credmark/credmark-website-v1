@@ -9,5 +9,6 @@
       "url": "https://d26jspc6nb7cam.cloudfront.net",
       "type": "awsCloudFront"
     }
-  ]
+  ],
+  "domainMinimumProtocolVersion": "TLSv1.2_2018"
 }
