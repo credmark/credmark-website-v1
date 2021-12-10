@@ -8,7 +8,6 @@ const navigation = {
         { name: 'Risk Management Tools', href: 'https://app.credmark.com/' },
     ],
     learn: [
-        { name: 'Archived Reports', href: '/reports' },
         { name: 'Blog', href: '/blog' },
         { name: 'Media', href: '/media' },
         { name: 'FAQ', href: '/faq' },
