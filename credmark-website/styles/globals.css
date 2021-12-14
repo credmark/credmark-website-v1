@@ -214,6 +214,10 @@ li {
   border-radius:50%;
 }
 
+.light-pink-bg{
+  background: #fcecf39f;
+}
+
 .img-hover:hover .overlay {
   opacity: 1;
 }
