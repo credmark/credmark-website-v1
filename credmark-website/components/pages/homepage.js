@@ -88,8 +88,6 @@ export default function Homepage() {
                     <div className="max-w-3xl block m-auto">
                         <p className="pt-5 text-center text-base">Credmark&apos;s community curates high-integrity data, develops risk tools, and produces research on crypto assets, protocols, and markets.</p>
                     </div>
-                    <div className="pt-7 border-b-1 border-gray-700 block m-auto md:m-auto space-x-5 md:space-x-20">
-                    </div>
                 </div>
             </div>
             <div>
@@ -142,15 +140,15 @@ export default function Homepage() {
                 </div>
                 <div className="max-w-4xl block m-auto">
                     <div className="grid grid-cols-1 m-auto block md:grid-cols-3 px-5 pb-0 md:pb-10">
-                        <img className="py-5" width={150} src="../assets/dlab-logo.svg" alt="DLAB logo" />
-                        <img className="py-5" width={150} src="../assets/longhash-logo.svg" alt="Long Hash Ventures logo" />
-                        <img className="py-5" width={150} src="../assets/API3-logo.svg" alt="API3 logo" />
+                    <a href="https://dlab.vc/" target="_blank" rel="noreferrer"><img className="py-5" width={150} src="../assets/dlab-logo.svg" alt="DLAB logo" /></a>
+                    <a href="https://www.longhash.com/en" target="_blank" rel="noreferrer"><img className="py-5 md:py-10" width={150} src="../assets/longhash-logo.svg" alt="Long Hash Ventures logo" /></a>
+                    <a href="https://api3.org/" target="_blank" rel="noreferrer"><img className="py-5 md:py-10" width={150} src="../assets/API3-logo.svg" alt="API3 logo" /></a>
                     </div>
                     <div className="grid grid-cols-1 m-auto block md:grid-cols-4 px-5 pb-10 md:pb-20 md:px-0">
-                        <img className="py-5" width={200} src="../assets/steady-state-logo.svg" alt="Solidity Ventures logo" />
-                        <img className="py-5" width={150} src="../assets/Coinshift.svg" alt="Coinshift logo" />
-                        <img className="py-5" width={150} src="../assets/yieldapp-logo.svg" alt="Spark Digital Capital logo" />
-                        <img className="py-5 md:py-0" width={180} src="../assets/alchemist.svg" alt="Alchemist logo" />
+                    <a href="https://steadystate.finance/" target="_blank" rel="noreferrer"><img className="py-5" width={200} src="../assets/steady-state-logo.svg" alt="Steady State logo" /></a>
+                    <a href="https://coinshift.xyz/" target="_blank" rel="noreferrer"><img className="py-5" width={150} src="../assets/Coinshift.svg" alt="Coinshift logo" /></a>
+                    <a href="https://www.yield.app/" target="_blank" rel="noreferrer"><img className="py-5" width={150} src="../assets/yieldapp-logo.svg" alt="Yield App logo" /></a>
+                    <a href="https://www.alchemist.wtf/" target="_blank" rel="noreferrer"><img className="py-5" width={180} src="../assets/alchemist.svg" alt="Alchemist logo" /></a>
                     </div>
                 </div>
             </div>
