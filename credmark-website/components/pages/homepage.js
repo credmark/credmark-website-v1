@@ -95,7 +95,7 @@ export default function Homepage() {
             <div>
                 <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-5 md:px-20 block m-auto max-w-6xl pt-16 md:py-20">
                     <div className="order-2 md:order-1">
-                        <a href="https://app.credmark.com/" target="_blank" rel="noreferrer"><img alt="Credmark Risk Terminal" className="md:pr-10 max-h-80 md:max-h-full" src="/assets/risk-terminal.svg" /></a>
+                        <a href="https://app.credmark.com/" target="_blank" rel="noreferrer"><img alt="Credmark Risk Terminal" className="md:pr-10 max-h-80 md:max-h-full" src="/assets/risk-terminal-test.svg" /></a>
                     </div>
                     <div className="md:pt-5 order-1 md:order-2">
                         <p>Risk Platform</p>
