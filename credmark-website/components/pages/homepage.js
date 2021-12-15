@@ -60,18 +60,18 @@ export default function Homepage() {
             <div className="light-pink-bg">
                 <div className="max-w-7xl block m-auto">
                     <div className="px-5">
-                        <div className="text-center">
-                            <strong><h3 className="font-extrabold text-5xl md:text-4xl pt-10">
-                                HOW IT WORKS
-                            </h3>
-                            </strong>
-                        </div>
-                        <div className="max-w-4xl pb-7 block m-auto">
-                            <p className="pt-5 text-center text-base">Access data, build risk applications and de-risk your DeFi experience.</p>
+                        <div className="grid grid-cols-1 lg:grid-cols-3 pt-16 px-5 md:px-20">
+                            <div className="col-span-1 md:px-10 pt-10">
+                                <h3 className="text-center font-semibold text-3xl pb-5">Driving credibility backed with mathematical formulas and complete data</h3>
+                                <div className="border-b-1 border-lightpurple block m-auto md:m-auto space-x-5 md:space-x-20 w-16" />
+                                <p className="text-center text-lightpurple pt-5 font-semibold pb-10">Access data, build risk applications and de-risk your DeFi experience in one ecosystem.</p>
+                            </div>
+                            <div className="col-span-2 pl-10">
+                            <img alt="Discord channel link" className="hidden md:flex block m-auto" src="/assets/how-credmark-works.png" />
                         </div>
                         <div className="max-w-4xl block m-auto pb-16">
-                            <img alt="Discord channel link" className="hidden md:flex block m-auto" src="/assets/how-credmark-works.png" />
                             <img alt="Discord channel link" className="flex md:hidden block m-auto" src="/assets/how-it-works-mobile.png" />
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ export default function Homepage() {
                 <div className="px-5">
                     <div className="text-center">
                         <strong>
-                            <h3 className="font-extrabold text-4xl pt-20 md:pt-10">
+                            <h3 className="font-extrabold text-4xl pt-20">
                                 UNCOVERING DEFI RISKS
                             </h3>
                         </strong>
