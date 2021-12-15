@@ -91,12 +91,15 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <div className="xl:grid xl:grid-cols-3 xl:gap-8">
                     <div className="space-y-8 xl:col-span-1">
+                        <div>
                         <img
-                            width={150}
-                            className="h-auto flex justify-start m-0"
-                            src="../assets/credmark-logo-purple.png"
+                            width={25}
+                            className="h-auto flex justify-start float-left mr-2 pt-1"
+                            src="../assets/credmark-logo.png"
                             alt="Credmark logo"
                         />
+                        <p className="uppercase credmark text-md">Credmark</p>
+                        </div>
                         <div className="flex space-x-6">
                             {navigation.social.map((item) => (
                                 <a key={item.name} href={item.href} className="text-black" target="_blank" rel="noreferrer">

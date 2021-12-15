@@ -57,20 +57,22 @@ export default function Homepage() {
                     </div>
                 </div>
             </div>
-            <div className="max-w-7xl block m-auto">
-                <div className="px-5">
-                    <div className="text-center">
-                        <strong><h3 className="font-extrabold text-5xl md:text-4xl pt-10">
-                            HOW IT WORKS
-                        </h3>
-                        </strong>
-                    </div>
-                    <div className="max-w-4xl pb-7 block m-auto">
-                        <p className="pt-5 text-center text-base">Access data, build risk applications and de-risk your DeFi experience.</p>
-                    </div>
-                    <div className="max-w-4xl block m-auto pb-16">
-                        <img alt="Discord channel link" className="hidden md:flex block m-auto" src="/assets/how-credmark-works.png" />
-                        <img alt="Discord channel link" className="flex md:hidden block m-auto" src="/assets/how-it-works-mobile.png" />
+            <div className="light-pink-bg">
+                <div className="max-w-7xl block m-auto">
+                    <div className="px-5">
+                        <div className="grid grid-cols-1 lg:grid-cols-3 pt-16 px-5 md:px-20">
+                            <div className="col-span-1 md:px-10 pt-10">
+                                <h3 className="text-center font-semibold text-3xl pb-5">Driving credibility backed with mathematical formulas and complete data</h3>
+                                <div className="border-b-1 border-lightpurple block m-auto md:m-auto space-x-5 md:space-x-20 w-16" />
+                                <p className="text-center text-lightpurple pt-5 font-semibold pb-10">Access data, build risk applications and de-risk your DeFi experience in one ecosystem.</p>
+                            </div>
+                            <div className="col-span-2 pl-10">
+                            <img alt="Discord channel link" className="hidden md:flex block m-auto" src="/assets/how-credmark-works.png" />
+                        </div>
+                        <div className="max-w-4xl block m-auto pb-16">
+                            <img alt="Discord channel link" className="flex md:hidden block m-auto" src="/assets/how-it-works-mobile.png" />
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,18 +80,38 @@ export default function Homepage() {
                 <div className="px-5">
                     <div className="text-center">
                         <strong>
-                            <h3 className="font-extrabold text-4xl md:pt-10">
+                            <h3 className="font-extrabold text-4xl pt-20">
                                 UNCOVERING DEFI RISKS
                             </h3>
                         </strong>
                     </div>
-                    <div className="max-w-3xl pb-16 md:pb-20 block m-auto">
+                    <div className="max-w-3xl block m-auto">
                         <p className="pt-5 text-center text-base">Credmark&apos;s community curates high-integrity data, develops risk tools, and produces research on crypto assets, protocols, and markets.</p>
                     </div>
                 </div>
             </div>
+            <div>
+                <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-5 md:px-20 block m-auto max-w-6xl pt-16 md:py-20">
+                    <div className="order-2 md:order-1">
+                        <a href="https://app.credmark.com/" target="_blank" rel="noreferrer"><img alt="Credmark Risk Terminal" className="md:pr-10 max-h-80 md:max-h-full" src="/assets/risk-terminal-test.svg" /></a>
+                    </div>
+                    <div className="md:pt-5 order-1 md:order-2">
+                        <p>Risk Platform</p>
+                        <p className="credmark text-2xl py-5 text-base">Risk Terminal</p>
+                        <p className="pt-5 text-base">Visualize risk levels across different protocols with intuitive graphs to stay informed on solvency and liquidity risks.</p>
+                        <a href="https://app.credmark.com/" target="_blank" rel="noreferrer">
+                            <button
+                                type="button"
+                                className="border-2 uppercase my-5 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple hover:text-credmarkpurple hover:bg-white"
+                            >
+                                View Terminal
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div className="riskEncyclopedia">
-                <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-5 md:px-20 block m-auto max-w-7xl">
+                <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-5 md:px-20 block m-auto max-w-6xl">
                     <div>
                         <p className="text-white">Research</p>
                         <p className="credmark text-2xl text-white py-5 text-base">Risk Library</p>
@@ -97,14 +119,14 @@ export default function Homepage() {
                         <a href="https://docs.credmark.com/credmark-risk-library/" target="_blank" rel="noreferrer">
                             <button
                                 type="button"
-                                className="border-2 border-white uppercase my-5 md:mt-16 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white hover:bg-white hover:text-credmarkpurple"
+                                className="border-2 border-white uppercase my-5 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white hover:bg-white hover:text-credmarkpurple"
                             >
                                 Open library
                             </button>
                         </a>
                     </div>
                     <div>
-                        <a href="https://docs.credmark.com/credmark-risk-library/" target="_blank" rel="noreferrer"><img alt="Credmark Risk Library" className="md:max-h-80 block m-auto p-10 lg:p-0" src="/assets/encyclopedia.png" /></a>
+                        <a href="https://docs.credmark.com/credmark-risk-library/" target="_blank" rel="noreferrer"><img alt="Credmark Risk Library" className="max-h-72 md:max-h-80 block m-auto" src="/assets/encyclopedia.png" /></a>
                     </div>
                 </div>
             </div>
@@ -117,13 +139,16 @@ export default function Homepage() {
                     </strong>
                 </div>
                 <div className="max-w-4xl block m-auto">
-                    <div className="grid grid-cols-1 m-auto block md:grid-cols-3 px-5 pb-10 md:pb-20">
-                        <img className="py-5" width={150} src="../assets/dlab-logo.svg" alt="DLAB logo" />
-                        <img className="py-5" width={150} src="../assets/longhash-logo.svg" alt="Long Hash Ventures logo" />
-                        <img className="py-5" width={150} src="../assets/API3-logo.svg" alt="API3 logo" />
-                        <img className="py-5" width={200} src="../assets/steady-state-logo.svg" alt="Solidity Ventures logo" />
-                        <img className="py-5" width={150} src="../assets/Coinshift.svg" alt="Coinshift logo" />
-                        <img className="py-5" width={150} src="../assets/yieldapp-logo.svg" alt="Spark Digital Capital logo" />
+                    <div className="grid grid-cols-1 m-auto block md:grid-cols-3 px-5 pb-0 md:pb-10">
+                    <a href="https://dlab.vc/" target="_blank" rel="noreferrer"><img className="py-5" width={150} src="../assets/dlab-logo.svg" alt="DLAB logo" /></a>
+                    <a href="https://www.longhash.com/en" target="_blank" rel="noreferrer"><img className="py-5 md:py-10" width={150} src="../assets/longhash-logo.svg" alt="Long Hash Ventures logo" /></a>
+                    <a href="https://api3.org/" target="_blank" rel="noreferrer"><img className="py-5 md:py-10" width={150} src="../assets/API3-logo.svg" alt="API3 logo" /></a>
+                    </div>
+                    <div className="grid grid-cols-1 m-auto block md:grid-cols-4 px-5 pb-10 md:pb-20 md:px-0">
+                    <a href="https://steadystate.finance/" target="_blank" rel="noreferrer"><img className="py-5" width={200} src="../assets/steady-state-logo.svg" alt="Steady State logo" /></a>
+                    <a href="https://coinshift.xyz/" target="_blank" rel="noreferrer"><img className="py-5" width={150} src="../assets/Coinshift.svg" alt="Coinshift logo" /></a>
+                    <a href="https://www.yield.app/" target="_blank" rel="noreferrer"><img className="py-5" width={150} src="../assets/yieldapp-logo.svg" alt="Yield App logo" /></a>
+                    <a href="https://www.alchemist.wtf/" target="_blank" rel="noreferrer"><img className="py-5" width={180} src="../assets/alchemist.svg" alt="Alchemist logo" /></a>
                     </div>
                 </div>
             </div>
