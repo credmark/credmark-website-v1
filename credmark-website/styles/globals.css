@@ -96,6 +96,12 @@ img {
   margin-top: -150px;
 }
 
+.riskLibrary {
+  background: url("/assets/risk-encyclopedia.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #blogPage{
   border-radius: 15px;
 }
