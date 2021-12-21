@@ -1,11 +1,5 @@
 export default [
-    {
-        id: 1,
-        category: 'New',
-        title:"Risk Library",
-        url:"https://docs.credmark.com/credmark-risk-library/",
-        type:"Risk Library"
-    },
+
     {
         id: 2,
         category: 'Historical',
