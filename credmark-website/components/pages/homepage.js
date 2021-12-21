@@ -104,7 +104,7 @@ export default function Homepage() {
                                 type="button"
                                 className="border-2 uppercase my-5 inline-flex items-center px-7 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple hover:text-credmarkpurple hover:bg-white"
                             >
-                                View Terminal
+                                APP
                             </button>
                         </a>
                     </div>
