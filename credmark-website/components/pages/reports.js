@@ -32,7 +32,7 @@ export default function Reports() {
                     <Header
                         title="Reports"
                         description="Check out the latest and historical reports regarding risk in the DeFi industry" />
-                         {/* <ReportsButton button={buttons} filter={filter} /> */}
+                         <ReportsButton button={buttons} filter={filter} /> 
                     <div className="px-5 md:px-0 py-10 max-w-5xl block m-auto">
                         <ReportsMenu menuItem={menuItem} />
                     </div>
