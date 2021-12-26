@@ -13,7 +13,7 @@ export default function NavWhite(props) {
     return (
         <div className="h-16 sticky top-0 z-10">
             <main>
-                <Disclosure as="nav" className="shadow">
+                <Disclosure as="nav">
                     {({ open }) => (
                         <>
                             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-6">

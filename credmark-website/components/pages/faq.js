@@ -68,8 +68,8 @@ export default function faq() {
                     </div>
                 </div>
                 <Subscribe />
-                <Footer />
             </main>
+            <Footer />
         </>
     )
 }

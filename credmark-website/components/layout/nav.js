@@ -13,7 +13,7 @@ export default function Nav(props) {
     return (
         <div className="h-16 sticky top-0 z-10">
             <main>
-                <Disclosure as="nav" className="bg-lightpink shadow">
+                <Disclosure as="nav">
                     {({ open }) => (
                         <>
                             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,7 +30,7 @@ export default function Nav(props) {
                                             <Link href="/">
                                                 <img
                                                     width={250}
-                                                    className="cursor-pointer h-auto hidden lg:block h-12 flex justify-start m-0 mt-4 px-10"
+                                                    className="cursor-pointer h-auto hidden lg:block flex justify-start m-0 mt-4 px-10"
                                                     src="../assets/credmark-logo-purple.png"
                                                     alt="Credmark logo"
                                                 />

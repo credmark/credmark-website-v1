@@ -131,7 +131,7 @@ function BlogPageContent({posts: blogsData}) {
 
     return (
         <div>
-            <div className="bg-lightpink py-20">
+            <div className="header-bg py-20">
                 <div className="max-w-6xl px-5 block m-auto">
                     <h1 className="uppercase text-5xl py-5">Credmark Blog</h1>
                     <h2 className="uppercase font-bold text-pink text-lg">For the latest technical analysis, partnerships, and community updates</h2>
@@ -173,7 +173,7 @@ function BlogPageContent({posts: blogsData}) {
                     }
                 </div>
             </div>
-            <footer className="bg-lightpink" aria-labelledby="footer-heading">
+            <footer className="footerBg" aria-labelledby="footer-heading">
             <h2 id="footer-heading" className="sr-only">
                 Footer
             </h2>

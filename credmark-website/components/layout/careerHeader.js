@@ -3,7 +3,7 @@ import * as React from 'react';
 const CareerHeader = (props) => {
     return (
         <>
-            <div className="bg-lightpink py-20">
+            <div className="header-bg py-20">
                 <div className="max-w-3xl px-5 block m-auto">
                     <strong><h1 className="uppercase font-extrabold text-center text-5xl py-5">{props.title}</h1></strong>
                     <h2 className="uppercase font-bold text-lg text-pink text-center">{props.description}</h2>
