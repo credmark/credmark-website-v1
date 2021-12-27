@@ -58,7 +58,7 @@ export default function Homepage() {
                     <div className="max-w-7xl block m-auto">
                         <div className="px-5">
                             <div className="grid grid-cols-1 lg:grid-cols-3 pt-16 px-5 md:px-20">
-                                <div className="col-span-1 md:px-10 pt-10">
+                                <div className="col-span-1 md:px-10 md:pt-10">
                                     <h3 className="text-center font-semibold text-3xl pb-5">Driving credibility backed with mathematical formulas and complete data</h3>
                                     <div className="border-b-1 border-lightpurple block m-auto md:m-auto space-x-5 md:space-x-20 w-16" />
                                     <p className="text-center text-lightpurple pt-5 font-semibold pb-10">Access data, build risk applications and de-risk your DeFi experience in one ecosystem.</p>
@@ -107,7 +107,7 @@ export default function Homepage() {
                         <img alt="Staking CMK token" className="float-left mr-5" src="/assets/cmklogo.svg" /><p className="credmark text-2xl text-base">$CMK Token</p>
                         <p className="text-base pt-5">Use your $CMK to access the Credmark Risk Terminal. How? Easy. Stake your $CMK to get $xCMK. You $xCMK is your key to the Terminal. And, by the way, while your $CMK is staked, you’ll be earning interest. Win, win.</p>
                         <div className="flex">
-                            <a href="https://app.credmark.com/" target="_blank" rel="noreferrer">
+                            <a href="https://app.sushi.com/swap" target="_blank" rel="noreferrer">
                                 <button
                                     type="button"
                                     className="uppercase mr-5 transform hover:scale-110 mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple"
@@ -115,7 +115,7 @@ export default function Homepage() {
                                     Buy CMK
                                 </button>
                             </a>
-                            <a href="https://app.sushi.com/swap" target="_blank" rel="noreferrer">
+                            <a href="https://app.credmark.com/" target="_blank" rel="noreferrer">
                                 <button
                                     type="button"
                                     className="uppercase mr-5 transform hover:scale-110 mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple"
