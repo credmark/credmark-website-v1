@@ -3,7 +3,7 @@ import * as React from 'react';
 const HeaderHome = (props) => {
     return (
         <>
-            <div className="bg-lightpink pt-20 pb-40">
+            <div className="header-bg pt-20 pb-40">
                 <div className="max-w-6xl px-5 block m-auto">
                     <strong><h1 className="text-5xl py-5">{props.title}</h1></strong>
                     <h2 className="uppercase text-pink text-lg font-bold max-w-2xl">{props.description}</h2>
