@@ -110,7 +110,7 @@ const BlogDetail = ({ post }) => {
                 </span>
                 <div className="flex">
                     <Link href="/blog" rel="noreferrer">
-                        <p className="cursor-pointer font-bold pt-10 pb-5 px-5 md:px-20"><img width={40} className="float-left pt-0 pr-5" src="../assets/arrow.svg" />Back to blog</p>
+                        <p className="cursor-pointer font-bold pt-10 pb-5 px-5 md:px-20">Back to blog<img width={40} className="float-right pt-2 pl-5" src="../assets/arrow-right-2.svg" /></p>
                     </Link>
                 </div>
             </div>

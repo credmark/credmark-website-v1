@@ -71,10 +71,39 @@ img {
   margin-top: -155px;
 }
 
+/* Gradient backgrounds */ 
+
+.header-bg {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 193, 219, 0.5));
+}
+
+.whatIsBg {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(218, 193, 232, 0.5), rgba(243, 222, 255, 0.5), rgba(248, 186, 209, 0.5), rgba(255, 255, 255, 0.5))
+}
+
+.riskPlatform {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(64, 8, 93, 0.5),
+  rgba(243, 222, 255, 0.5));
+}
+
+.staking {
+  background: linear-gradient(rgba(243, 222, 255, 0.5),
+  rgba(255, 193, 219, 0.5),
+  rgba(255, 255, 255, 0.5));
+}
+
+.footerBg {
+  background: linear-gradient(180deg, rgba(255, 193, 219, 0.5) 0%, rgba(248, 186, 209, 0.25) 50.52%, rgba(255, 255, 255, 0.5) 100%);
+}
+
+.riskLibrary {
+  background: radial-gradient(100% 360% at 100% 100%, #FFFFFF 0%, #005488 44.79%, #001725 100%);
+  border-radius: 20px;
+}
+
 .riskEncyclopedia{
-  background: url("/assets/purple-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: radial-gradient(100% 360% at 100% 100%, #FDEDF3 0%, #E21569 18.75%, #005488 55.73%, #40085D 100%);
+  border-radius: 20px;
 }
 
 .faqBackground{
@@ -242,7 +271,7 @@ li {
   .riskEncyclopedia {
     background: url(/assets/purple-bg.jpg);
     background-size: cover;
-    background-position: center top;
+    border-radius: 20px;
   }
   .job-image{
     margin-top: auto;
@@ -268,6 +297,7 @@ li {
     background: url(/assets/purple-bg.jpg);
     background-size: cover;
     background-position: center top;
+    border-radius: 20px;
   }
   .job-image{
     margin-top: auto;
@@ -279,3 +309,4 @@ li {
     margin-top: auto;
   }
 }
+
