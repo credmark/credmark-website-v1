@@ -7,7 +7,7 @@ export default function SeniorCloudArchitectPage() {
     <>
       <Head>
         <title>Careers | Senior Cloud Architect | CREDMARK</title>
-        <meta content="Team | Credmark" property="og:title" key="og:title" />
+        <meta content="Careers | Senior Cloud Architect | CREDMARK" property="og:title" key="og:title" />
         <meta name="description" content="Build the future of DeFi with us by joining the Credmark team." />
         <meta property="og:image" content="https://credmark.com/assets/credmark-og-image.png"/>
         <link rel="icon" href="/favicon.ico" />
