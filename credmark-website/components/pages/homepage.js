@@ -124,7 +124,7 @@ export default function Homepage() {
                                 </button>
                             </a>
                         </div>
-                        <a href="https://docs.sushi.com/how-to-get-started-on-sushi/how-to-swap#:~:text=Step%201%3A%20Head%20to%20sushi,you%20wish%20to%20swap%20to." target="blank" rel="noreferrer"><p className="text-center md:text-left text-sm float-left pt-5">How to stake $CMK<img width={35} className="float-right pt-1 pl-4" alt="arrow right" src="../assets/arrow-right-2.svg" /></p></a>
+                        <a href="https://docs.credmark.com/credmark-faq/staking" target="blank" rel="noreferrer"><p className="text-center md:text-left text-sm float-left pt-5">How to stake $CMK<img width={35} className="float-right pt-1 pl-4" alt="arrow right" src="../assets/arrow-right-2.svg" /></p></a>
                     </div>
                 </div>
             </div>
