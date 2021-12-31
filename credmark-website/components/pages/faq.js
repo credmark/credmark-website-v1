@@ -9,7 +9,7 @@ import QuestionsToken from "../faq/questionsToken";
 export default function faq() {
     return (
         <>
-            <main className="max-w-full flex-1 relative overflow-y-auto focus:outline-none bg-credmarkpurple">
+            <main className="max-w-full flex-1 relative overflow-y-auto focus:outline-none bg-credmarkpurple mt-6">
                 <div>
                     <CenteredHeader
                         title="FAQ"
