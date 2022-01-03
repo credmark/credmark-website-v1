@@ -115,7 +115,7 @@ export default function Homepage() {
                                     Buy CMK
                                 </button>
                             </a>
-                            <a href="https://app.credmark.com/" target="_blank" rel="noreferrer">
+                            <a href="https://app.credmark.com/?stake=true" target="_blank" rel="noreferrer">
                                 <button
                                     type="button"
                                     className="uppercase mr-5 transform hover:scale-110 mt-5 inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-credmarkpurple"
@@ -124,7 +124,7 @@ export default function Homepage() {
                                 </button>
                             </a>
                         </div>
-                       
+                        <a href="https://docs.credmark.com/credmark-faq/staking" target="blank" rel="noreferrer"><p className="text-center md:text-left text-sm float-left pt-5">How to stake $CMK<img width={35} className="float-right pt-1 pl-4" alt="arrow right" src="../assets/arrow-right-2.svg" /></p></a>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@ export default function Homepage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 md:py-10 px-5 md:px-20 block m-auto max-w-6xl">
                     <div>
                         <p className="credmark text-2xl text-white py-5 text-base md:pt-10">Risk Library</p>
-                        <p className="text-white pt-5 text-base">Discover the industry standards for DeFi risks — learn how it is  assessed and matricized to safeguard your assets.</p>
+                        <p className="text-white pt-5 text-base">Discover the industry standards for DeFi risks — learn how it is  assessed and metricized to safeguard your assets.</p>
                         <a href="https://docs.credmark.com/credmark-risk-library/" target="_blank" rel="noreferrer">
                             <button
                                 type="button"
