@@ -1,6 +1,6 @@
 import FAQ from '../components/pages/faq'
 import Head from 'next/head'
-import Nav from '../components/layout/navWhite'
+import Nav from '../components/layout/nav'
 
 
 export default function FAQPage() {
