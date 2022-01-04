@@ -3,7 +3,7 @@ import BlogCard from '../components/blog/blogCard'
 import Nav from '../components/layout/nav'
 import moment from 'moment'
 
-import FilteringMenu from "../components/blog/fiterMenu"
+import React from "react";
 import { useState } from "react"
 import Head from 'next/head'
 
@@ -93,20 +93,20 @@ export default function BlogPage({ posts }) {
 
     return (
         <>
-        <Head>
-        <title>Blog | CREDMARK</title>
-        <meta content="Blog | Credmark" property="og:title" key="og:title" />
-        <meta name="description" content="Welcome to the Credmark blog. Subscribe to find out about company updates and industry research." />
-        <meta property="og:image" content="https://credmark.com/assets/credmark-og-image.png"/>
-        <link rel="icon" href="/favicon.ico" />
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
+            <Head>
+                <title>Blog | CREDMARK</title>
+                <meta content="Blog | Credmark" property="og:title" key="og:title" />
+                <meta name="description" content="Welcome to the Credmark blog. Subscribe to find out about company updates and industry research." />
+                <meta property="og:image" content="https://credmark.com/assets/credmark-og-image.png" />
+                <link rel="icon" href="/favicon.ico" />
+                {/* Global Site Tag (gtag.js) - Google Analytics */}
+                <script
+                    async
+                    src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+                />
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -114,17 +114,29 @@ export default function BlogPage({ posts }) {
               page_path: window.location.pathname,
             });
           `,
-            }}
-          />
-      </Head>
-      <div className="nav">
-            <Nav page={<BlogPageContent posts={posts} />} />
+                    }}
+                />
+            </Head>
+            <div className="nav">
+                <Nav page={<BlogPageContent posts={posts} />} />
             </div>
         </>
     )
 }
 
-function BlogPageContent({posts: blogsData}) {
+function BlogPageContent({ posts }) {
+    const [filteredPosts, setFilteredPosts] = React.useState([]);
+    const [selectedCategory, setSelectedCategory] = React.useState("all");
+    React.useEffect(() => {
+        if (selectedCategory === "all") {
+            setFilteredPosts(posts);
+        } else {
+            setFilteredPosts(
+                posts.filter((post) => post.blogcategory === selectedCategory)
+            );
+        }
+    }, [selectedCategory]);
+
     const [filter, setFilter] = useState({
         view: { list: 0 }
     });
@@ -137,36 +149,40 @@ function BlogPageContent({posts: blogsData}) {
                     <h2 className="uppercase font-bold text-pink text-lg">For the latest technical analysis, partnerships, and community updates</h2>
                 </div>
             </div>
-            <FilteringMenu
-                filter={filter}
-                onChange={(option, value) => {
-                    setFilter({ ...filter, [option]: value });
-                }}
-            />
+            {<div className="px-5 max-w-5xl md:m-auto">
+                <div className="pt-20 border-b-1 border-gray-700 block m-auto md:m-auto space-x-5 md:space-x-20">
+                    <button className="border-b-2 border-transparent hover:border-purple pb-5 pl-5" onClick={() => { setSelectedCategory("all") }}>All</button>
+                    <button className="border-b-2 border-transparent hover:border-purple pb-5" onClick={() => { setSelectedCategory("Technical Analysis") }}>Technical Analysis</button>
+                    <button className="border-b-2 border-transparent hover:border-purple pb-5" onClick={() => { setSelectedCategory("Community Updates") }}>Community Updates</button>
+                    <button className="border-b-2 border-transparent hover:border-purple pb-5" onClick={() => { setSelectedCategory("Partnerships") }}>Partnerships</button>
+                </div>
+            </div>}
             <div className="max-w-5xl block m-auto px-4 pt-10 pb-24">
                 <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 pt-10">
-                    {blogsData?.map(posts =>
+                    {filteredPosts?.map(post =>
                         filter.view.list ?
-                            <div key={`${posts.slug}-list`}>
+                            <div key={`${post.slug}-list`}>
                                 <BlogCard
-                                    title={posts.title}
-                                    date={moment(posts.date).format('MM/DD/YYYY')}
-                                    author={posts.author}
-                                    slug={posts.slug}
+                                    title={post.title}
+                                    date={moment(post.date).format('MM/DD/YYYY')}
+                                    author={post.author}
+                                    category={post.category}
+                                    slug={post.slug}
                                     link={{
-                                        href: `/blog/${posts.slug}`
+                                        href: `/blog/${post.slug}`
                                     }} />
                             </div>
                             :
                             <BlogCard
-                                key={`${posts.slug}-list`}
-                                title={posts.title}
-                                date={moment(posts.date).format('MM/DD/YYYY')}
-                                img={posts.mainImage}
-                                author={posts.author}
-                                slug={posts.slug}
+                                key={`${post.slug}-list`}
+                                title={post.title}
+                                date={moment(post.date).format('MM/DD/YYYY')}
+                                img={post.mainImage}
+                                author={post.author}
+                                category={post.category}
+                                slug={post.slug}
                                 link={{
-                                    href: `/blog/${posts.slug}`
+                                    href: `/blog/${post.slug}`
                                 }}
                             />
                     )
@@ -174,79 +190,79 @@ function BlogPageContent({posts: blogsData}) {
                 </div>
             </div>
             <footer className="footerBg" aria-labelledby="footer-heading">
-            <h2 id="footer-heading" className="sr-only">
-                Footer
-            </h2>
-            <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-                <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-                    <div className="space-y-8 xl:col-span-1">
-                        <img
-                            width={150}
-                            className="h-auto flex justify-start m-0"
-                            src="../assets/credmark-logo-purple.png"
-                            alt="Credmark logo"
-                        />
-                        <div className="flex space-x-6">
-                            {navigation.social.map((item) => (
-                                <a key={item.name} href={item.href} className="text-black" target="_blank" rel="noreferrer">
-                                    <span className="sr-only">{item.name}</span>
-                                    <item.icon className="h-6 w-6" aria-hidden="true" />
-                                </a>
-                            ))}
+                <h2 id="footer-heading" className="sr-only">
+                    Footer
+                </h2>
+                <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+                    <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+                        <div className="space-y-8 xl:col-span-1">
+                            <img
+                                width={150}
+                                className="h-auto flex justify-start m-0"
+                                src="../assets/credmark-logo-purple.png"
+                                alt="Credmark logo"
+                            />
+                            <div className="flex space-x-6">
+                                {navigation.social.map((item) => (
+                                    <a key={item.name} href={item.href} className="text-black" target="_blank" rel="noreferrer">
+                                        <span className="sr-only">{item.name}</span>
+                                        <item.icon className="h-6 w-6" aria-hidden="true" />
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                            <div className="md:grid md:grid-cols-2 md:gap-8">
+                                <div>
+                                </div>
+                                <div>
+                                    <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase text-lightpurple">Projects</h3>
+                                    <ul role="list" className="mt-4 space-y-4 pl-0">
+                                        {navigation.projects.map((item) => (
+                                            <li className="list-none" key={item.name}>
+                                                <a href={item.href} className="text-base text-purple font-medium">
+                                                    {item.name}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="md:grid md:grid-cols-2 md:gap-8">
+                                <div>
+                                    <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase text-lightpurple">Learn</h3>
+                                    <ul role="list" className="mt-4 space-y-4 pl-0">
+                                        {navigation.learn.map((item) => (
+                                            <li className="list-none" key={item.name}>
+                                                <a href={item.href} className="text-base text-purple font-medium">
+                                                    {item.name}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="mt-12 md:mt-0">
+                                    <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase text-lightpurple">Community</h3>
+                                    <ul role="list" className="mt-4 space-y-4 pl-0">
+                                        {navigation.community.map((item) => (
+                                            <li className="list-none" key={item.name}>
+                                                <a href={item.href} className="text-base text-purple font-medium">
+                                                    {item.name}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-                        <div className="md:grid md:grid-cols-2 md:gap-8">
-                            <div>
-                            </div>
-                            <div>
-                                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase text-lightpurple">Projects</h3>
-                                <ul role="list" className="mt-4 space-y-4 pl-0">
-                                    {navigation.projects.map((item) => (
-                                        <li className="list-none" key={item.name}>
-                                            <a href={item.href} className="text-base text-purple font-medium">
-                                                {item.name}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="md:grid md:grid-cols-2 md:gap-8">
-                            <div>
-                                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase text-lightpurple">Learn</h3>
-                                <ul role="list" className="mt-4 space-y-4 pl-0">
-                                    {navigation.learn.map((item) => (
-                                        <li className="list-none" key={item.name}>
-                                            <a href={item.href} className="text-base text-purple font-medium">
-                                                {item.name}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className="mt-12 md:mt-0">
-                                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase text-lightpurple">Community</h3>
-                                <ul role="list" className="mt-4 space-y-4 pl-0">
-                                    {navigation.community.map((item) => (
-                                        <li className="list-none" key={item.name}>
-                                            <a href={item.href} className="text-base text-purple font-medium">
-                                                {item.name}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
+                    <div className="mt-12 border-t border-gray-200 pt-8">
+                        <p className="text-base text-purple text-center">&copy; 2021 Credmark, Inc. All rights reserved.</p>
                     </div>
                 </div>
-                <div className="mt-12 border-t border-gray-200 pt-8">
-                    <p className="text-base text-purple text-center">&copy; 2021 Credmark, Inc. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
+            </footer>
         </div>
-        
+
     );
 }
 
