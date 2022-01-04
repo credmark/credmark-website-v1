@@ -1,7 +1,6 @@
 import client from './sanity';
 
 const postFields = `
-"blogcategory": blogcategory->name,
 title, 
 subtitle,
 "date": publishedAt,
