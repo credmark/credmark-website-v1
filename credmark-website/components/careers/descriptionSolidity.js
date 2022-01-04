@@ -4,7 +4,7 @@ import * as React from 'react';
 const DescriptionSolidity = (props) => {
     return (
         <>
-            <div className="bg-lightpink py-20">
+            <div className="header-bg py-20">
                 <div className="max-w-3xl px-5 block m-auto">
                     <h1 className="uppercase text-center text-5xl py-5">{props.title}</h1>
                     <h2 className="text-lg text-pink text-center pb-10 md:pb-32">{props.description}</h2>
